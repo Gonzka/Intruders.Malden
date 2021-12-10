@@ -1,0 +1,1559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Intruders -- Project">
+    <Package name="Main Menu">	
+		<Key ID="STR_MM_Version">
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.7.1&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.7.1&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Play">
+			<Original>PLAY</Original>
+			<German>SPIELEN</German>
+		</Key>
+		<Key ID="STR_MM_PlayColor">
+			<Original>&lt;t color='#FFFFFF'&gt;PLAY&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;SPIELEN&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Perks">
+			<Original>PERKS</Original>
+			<German>TALENTE</German>
+		</Key>
+		<Key ID="STR_MM_PerksColor">
+			<Original>&lt;t color='#FFFFFF'&gt;PERKS&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;TALENTE&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Skins">
+			<Original>SKINS</Original>
+			<German>AUSSEHEN</German>
+		</Key>
+		<Key ID="STR_MM_SkinsColor">
+			<Original>&lt;t color='#FFFFFF'&gt;SKINS&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;AUSSEHEN&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Quests">
+			<Original>QUEST</Original>
+			<German>AUFTRÄGE</German>
+		</Key>
+		<Key ID="STR_MM_QuestsColor">
+			<Original>&lt;t color='#FFFFFF'&gt;QUEST&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;AUFTRÄGE&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Shop">
+			<Original>SHOP</Original>
+			<German>SHOP</German>
+		</Key>
+		<Key ID="STR_MM_ShopColor">
+			<Original>&lt;t color='#FFFFFF'&gt;SHOP&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;SHOP&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Quit">
+			<Original>QUIT</Original>
+			<German>BEENDEN</German>
+		</Key>
+		<Key ID="STR_MM_QuitColor">
+			<Original>&lt;t color='#FFFFFF'&gt;QUIT&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;BEENDEN&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_More">
+			<Original>MORE</Original>
+			<German>MEHR</German>
+		</Key>
+		<Key ID="STR_MM_MoreColor">
+			<Original>&lt;t color='#FFFFFF'&gt;MORE&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;MEHR&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Return">
+			<Original>RETURN</Original>
+			<German>ZURÜCK</German>
+		</Key>
+		<Key ID="STR_MM_ReturnColor">
+			<Original>&lt;t color='#FFFFFF'&gt;RETURN&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;ZURÜCK&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Code">
+			<Original>REDEEM CODE</Original>
+			<German>CODE EINLÖSEN</German>
+		</Key>
+		<Key ID="STR_MM_CodeColor">
+			<Original>&lt;t color='#FFFFFF'&gt;REDEEM CODE&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;CODE EINLÖSEN&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Credits">
+			<Original>CREDITS</Original>
+			<German>MITWIRKENDE</German>
+		</Key>
+		<Key ID="STR_MM_CreditsColor">
+			<Original>&lt;t color='#FFFFFF'&gt;CREDITS&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;MITWIRKENDE&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_CreditsScrollTitle">
+			<Original>&lt;t align='center' color='#cc0000' shadow='1'&gt;CREDITS&lt;/t&gt;</Original>
+			<German>&lt;t align='center' color='#cc0000' shadow='1'&gt;MITWIRKENDE&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_Partners">
+			<Original>PARTNERS</Original>
+			<German>PARTNER</German>
+		</Key>
+		<Key ID="STR_MM_PartnersColor">
+			<Original>&lt;t color='#FFFFFF'&gt;PARTNERS&lt;/t&gt;</Original>
+			<German>&lt;t color='#FFFFFF'&gt;PARTNER&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_OurPartners">
+			<Original>&lt;t shadow='0'&gt;OUR PARTNERS&lt;/t&gt;</Original>
+			<German>&lt;t shadow='0'&gt;UNSERE PARTNER&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_MM_BecomePartner">
+			<Original>&lt;t size='1' font='PuristaMedium' align='center' shadow='0'&gt;&lt;a href='https://discord.intruders-a3.de'&gt;BECOME A PARTNER NOW!&lt;/a&gt;&lt;/t&gt;</Original>
+			<German>&lt;t size='1' font='PuristaMedium' align='center' shadow='0'&gt;&lt;a href='https://discord.intruders-a3.de'&gt;JETZT EIN PARTNER WERDEN!&lt;/a&gt;&lt;/t&gt;</German>
+		</Key>
+	</Package>
+	<Package name="Init">
+	    <Key ID="STR_INIT_ClientSetup">
+			<Original>Setting up the client</Original>
+			<German>Einrichten des Clients</German>
+		</Key>
+		<Key ID="STR_INIT_PlantsSetup">
+			<Original>Plants are being cultivated</Original>
+			<German>Pflanzen werden gezüchtet</German>
+		</Key>
+		<Key ID="STR_INIT_KillerWaiting">
+			<Original>Waiting for a Killer</Original>
+			<German>Warte auf einen Killer</German>
+		</Key>
+		<Key ID="STR_INIT_IntruderWaiting">
+			<Original>Waiting for a Survivor</Original>
+			<German>Warte auf einen Überlebenden</German>
+		</Key>
+		<Key ID="STR_INIT_ReadyWaiting">
+			<Original>Wait until the players are ready</Original>
+			<German>Warte bis die Mitspieler bereit sind</German>
+		</Key>
+	</Package>
+	<Package name="Gameplay">
+		<Key ID="STR_GAME_IntrudersTask">
+			<Original>Repair the Generators</Original>
+			<German>Repariere die Stromverteiler</German>
+		</Key>
+		<Key ID="STR_GAME_KillerTask">
+			<Original>Kill the Survivors</Original>
+			<German>Töte die Überlebenden</German>
+		</Key>
+		<Key ID="STR_GAME_SkillCheck">
+			<Original>Press the left mouse button</Original>
+			<German>Drücke die linke Maustaste</German>
+		</Key>
+		<Key ID="STR_GAME_Repair">
+			<Original>Repair</Original>
+			<German>Reparieren</German>
+		</Key>
+		<Key ID="STR_GAME_GenAlreadyActive">
+			<Original>This generator has already been repaired!</Original>
+			<German>Dieser Stromverteiler wurde bereits repariert!</German>
+		</Key>
+		<Key ID="STR_GAME_SuccessLockpick">
+			<Original>This escape vehicle has been lockpicked!</Original>
+			<German>Dieses Fluchtfahrzeug wurde geknackt!</German>
+		</Key>
+		<Key ID="STR_GAME_EscapeVehicle">
+			<Original>Escape Vehicle</Original>
+			<German>Fluchtfahrzeug</German>
+		</Key>
+		<Key ID="STR_GAME_Chest">
+			<Original>Unlock</Original>
+			<German>Aufschliessen</German>
+		</Key>
+		<Key ID="STR_GAME_ChestLooted">
+			<Original>This chest has already been unlocked!</Original>
+			<German>Diese Kiste wurde bereits geöffnet!</German>
+		</Key>
+		<Key ID="STR_GAME_InventoryFull">
+			<Original>You cannot add the selected item to your inventory!</Original>
+			<German>Du kannst das auserwählte Item nicht in dein Inventar aufnehmen!</German>
+		</Key>
+		<Key ID="STR_GAME_PlayerUnconscious">
+			<Original>This player is already unconscious! Wait until he bleeds out. Maybe others will try to save him.</Original>
+			<German>Dieser Spieler ist bereits bewusstlos! Warte bis er ausblutet. Möglicherweise werden andere versuchen ihn zu retten.</German>
+		</Key>
+		<Key ID="STR_GAME_UnsuitableTerrain">
+			<Original>You cannot place anything on this terrain!</Original>
+			<German>Du kannst auf diesem Gelände nichts platzieren!</German>
+		</Key>
+		<Key ID="STR_GAME_LoudMusic">
+			<Original>Turn the music off!</Original>
+			<German>Schalte die Musik aus!</German>
+		</Key>
+		<Key ID="STR_GAME_QuestCompleted">
+			<Original>Quest completed</Original>
+			<German>Auftrag abgeschlossen</German>
+		</Key>
+		<Key ID="STR_GAME_Rewards">
+			<Original>REWARDS</Original>
+			<German>BELOHNUNGEN</German>
+		</Key>
+		<Key ID="STR_GAME_Close">
+			<Original>CLOSE</Original>
+			<German>SCHLIESSEN</German>
+		</Key>
+		<Key ID="STR_GAME_NoQuests">
+			<Original>No quests available</Original>
+			<German>Keine Aufträge verfügbar</German>
+		</Key>
+		<Key ID="STR_GAME_NoQuestsForChar">
+			<Original>There are no more quests available today.</Original>
+			<German>Heute sind keine weiteren Aufträge mehr verfügbar.</German>
+		</Key>
+		<Key ID="STR_GAME_NoRewards">
+			<Original>No rewards available.</Original>
+			<German>Keine Belohnungen verfügbar.</German>
+		</Key>
+		<Key ID="STR_GAME_DailyQuest">
+			<Original>Daily Quest</Original>
+			<German>Täglicher Auftrag</German>
+		</Key>
+		<Key ID="STR_GAME_DailyQuestActive">
+			<Original>A new daily quest is active.</Original>
+			<German>Es ist ein neuer täglicher Auftrag aktiv.</German>
+		</Key>
+		<Key ID="STR_GAME_Error">
+			<Original>Not possible</Original>
+			<German>Nicht möglich</German>
+		</Key>
+		<Key ID="STR_GAME_Redeem">
+			<Original>REDEEM</Original>
+			<German>EINLÖSEN</German>
+		</Key>
+		<Key ID="STR_GAME_EnterCode">
+			<Original>Enter promo code:</Original>
+			<German>Prämiencode eingeben:</German>
+		</Key>
+		<Key ID="STR_GAME_EnterCodeHere">
+			<Original>ENTER CODE HERE</Original>
+			<German>CODE HIER EINGEBEN</German>
+		</Key>
+		<Key ID="STR_GAME_CodeInvalid">
+			<Original>The code is invalid!</Original>
+			<German>Der Code ist ungültig!</German>
+		</Key>
+		<Key ID="STR_GAME_AlreadyRedeemed">
+			<Original>You have already redeemed this code!</Original>
+			<German>Du hast diesen Code bereits eingelöst!</German>
+		</Key>
+		<Key ID="STR_GAME_NotSelected">
+			<Original>You have not selected anything!</Original>
+			<German>Du hast nichts ausgewählt!</German>
+		</Key>
+		<Key ID="STR_GAME_AlreadyUsePerk">
+			<Original>You are already using this perk!</Original>
+			<German>Du verwendest dieses Talent bereits!</German>
+		</Key>
+		<Key ID="STR_GAME_NotForYourSide">
+			<Original>This item is not for your side!</Original>
+			<German>Dieser Gegenstand ist nicht für deine Seite gedacht!</German>
+		</Key>
+		<Key ID="STR_GAME_InventoryEmpty">
+			<Original>Collect Bloodpoints to purchase Perks in the Shop...</Original>
+			<German>Sammle Blutpunkte um im Shop Talente zu kaufen...</German>
+		</Key>
+		<Key ID="STR_GAME_AdminCommand">
+			<Original>Admin Command</Original>
+			<German>Admin Befehl</German>
+		</Key>
+		<Key ID="STR_GAME_CodesReseted">
+			<Original>Personal promo codes reseted.</Original>
+			<German>Persönliche Prämiencodes zurückgesetzt.</German>
+		</Key>
+	    <Key ID="STR_GAME_QuestReseted">
+			<Original>Daily quests reseted.</Original>
+			<German>Tägliche Aufträge zurückgesetzt.</German>
+		</Key>
+		<Key ID="STR_GAME_KillerSelected">
+			<Original>Killer selected</Original>
+			<German>Killer ausgewählt</German>
+		</Key>
+		<Key ID="STR_GAME_SelectKiller">
+			<Original>SELECT A KILLER</Original>
+			<German>WÄHLE EINEN KILLER</German>
+		</Key>
+		<Key ID="STR_GAME_Select">
+			<Original>SELECT</Original>
+			<German>AUSWÄHLEN</German>
+		</Key>
+		<Key ID="STR_GAME_Wendigo">
+			<Original>Wendigo</Original>
+			<German>Wendigo</German>
+		</Key>
+		<Key ID="STR_GAME_WendigoTooltip">
+			<Original>THE WENDIGO\n\nA Wendigo is a vengeful, evil spirit that possesses humans. He is a stealth Killer, able to cloak and uncloak to surprise Survivors.</Original>
+			<German>DER WENDIGO\n\nEin Wendigo ist ein rachsüchtiger, böser Geist, der von Menschen Besitz ergreift. Er ist ein heimlicher Killer, der sich verhüllen oder enthüllen kann, um Überlebende zu überraschen.</German>
+		</Key>
+		<Key ID="STR_GAME_Compactor">
+			<Original>Compactor</Original>
+			<German>Verdichter</German>
+		</Key>
+		<Key ID="STR_GAME_CompactorTooltip">
+			<Original>THE COMPACTOR\n\nThe Compactor was a Construction Worker who had an accident while compacting crane sites. He is able to traverse between multiple Portals to cover large distances.</Original>
+			<German>DER VERDICHTER\n\nDer Verdichter war ein Bauarbeiter, der beim Verdichten von Kranplätzen verunglückte. Er kann mehrere Portale nutzen, um große Entfernungen zu überbrücken.</German>
+		</Key>
+		<Key ID="STR_GAME_Butcher">
+			<Original>Butcher</Original>
+			<German>Metzger</German>
+		</Key>
+		<Key ID="STR_GAME_ButcherTooltip">
+			<Original>THE BUTCHER\n\nIn the past, the Butcher hunted bears in Livonia. Over time, his prey changed. He is able to apply pressure across the Map by placing deadly Bear Traps for Survivors to step into.</Original>
+			<German>DER METZGER\n\nFrüher jagte der Metzger in Livonia Bären. Im Laufe der Zeit änderte sich seine Beute. Er kann auf der ganzen Karte Druck ausüben, indem er tödliche Bärenfallen für die Überlebenden platziert.</German>
+		</Key>
+		<Key ID="STR_GAME_Oldman">
+			<Original>Old Man (SCP 106)</Original>
+			<German>Alter Mann (SCP 106)</German>
+		</Key>
+		<Key ID="STR_GAME_OldmanTooltip">
+			<Original>THE OLD MAN\n\nSCP-106 appears to be an elderly humanoid, with a general appearance of advanced decomposition. He is capable of passing through solid matter and can catch Survivors off-guard.</Original>
+			<German>DER ALTE MANN\n\nSCP-106 hat die Erscheinung eines älteren Mannes und weist fortgeschrittene Zersetzungsmerkmale auf. Er ist in der Lage, durch feste Materie hindurchzugehen und Überlebende zu überrumpeln.</German>
+		</Key>
+		<Key ID="STR_GAME_AlreadyAtPortal">
+			<Original>You are already at this portal!</Original>
+			<German>Du befindest dich bereits bei diesem Portal!</German>
+		</Key>
+		<Key ID="STR_GAME_CleanseTotem">
+			<Original>Cleanse Totem</Original>
+			<German>Totem zerstören</German>
+		</Key>
+		<Key ID="STR_GAME_FreeFromTrap">
+			<Original>Free from Bear Trap</Original>
+			<German>Aus Bärenfalle befreien</German>
+		</Key>
+		<Key ID="STR_GAME_DisarmTrap">
+			<Original>Disarm Trap</Original>
+			<German>Falle entschärfen</German>
+		</Key>
+		<Key ID="STR_GAME_CollectTrap">
+			<Original>Collect Trap</Original>
+			<German>Falle einsammeln</German>
+		</Key>
+		<Key ID="STR_GAME_ResetTrap">
+			<Original>Reset Trap</Original>
+			<German>Falle zurücksetzen</German>
+		</Key>
+		<Key ID="STR_GAME_TrapTooClose">
+			<Original>You are too close to another bear trap!</Original>
+			<German>Du befindest dich zu nah an einer anderen Bärenfalle!</German>
+		</Key>
+		<Key ID="STR_GAME_Destroy">
+			<Original>Destroy</Original>
+			<German>Zerstören</German>
+		</Key>
+		<Key ID="STR_GAME_PullDown">
+			<Original>Pull down</Original>
+			<German>Umstossen</German>
+		</Key>
+		<Key ID="STR_GAME_LockpickRotate">
+			<Original>Rotate the lock</Original>
+			<German>Schloss drehen</German>
+		</Key>
+		<Key ID="STR_GAME_LockpickClockwise">
+			<Original>Rotate the pick clockwise</Original>
+			<German>Dietrich im Uhrzeigersinn drehen</German>
+		</Key>
+		<Key ID="STR_GAME_LockpickCounterClockwise">
+			<Original>Rotate the pick counter-clockwise</Original>
+			<German>Dietrich gegen den Uhrzeigersinn drehen</German>
+		</Key>
+		<Key ID="STR_GAME_TakeVideotape">
+			<Original>Take videotape</Original>
+			<German>Videoband nehmen</German>
+		</Key>
+		<Key ID="STR_GAME_Videotape">
+			<Original>Videotape</Original>
+			<German>Videoband</German>
+		</Key>
+		<Key ID="STR_GAME_WatchTrailer">
+			<Original>Click here to watch the videotape!</Original>
+			<German>Klicke hier um dir das Videoband anzusehen!</German>
+		</Key>
+		<Key ID="STR_GAME_McClaneSecretLine">
+			<Original>JOHN MCCLANE: Help, help me. The videotape from my vest... for the mission report!</Original>
+			<German>JOHN MCCLANE: Hilfe, helfen Sie mir. Das Videoband von meiner Weste... für den Einsatzbericht!</German>
+		</Key>
+		<Key ID="STR_GAME_WelcomeBack">
+			<Original>Welcome back</Original>
+			<German>Willkommen zurück</German>
+		</Key>
+		<Key ID="STR_GAME_LoginReward">
+			<Original>You have received 5000 Bloodpoints.</Original>
+			<German>Du hast 5000 Blutpunkte erhalten.</German>
+		</Key>
+		<Key ID="STR_GAME_Cursed">
+			<Original>Cursed</Original>
+			<German>Verflucht</German>
+		</Key>
+		<Key ID="STR_GAME_RemoveUniforms">
+			<Original>Remove Uniform</Original>
+			<German>Entferne Kleidung</German>
+		</Key>
+		<Key ID="STR_GAME_RemoveHeadgear">
+			<Original>Remove Hat</Original>
+			<German>Entferne Kopfbedeckung</German>
+		</Key>
+		<Key ID="STR_GAME_RemoveGoggles">
+			<Original>Remove Glasses</Original>
+			<German>Entferne Brille</German>
+		</Key>
+		<Key ID="STR_GAME_RemoveVests">
+			<Original>Remove Vest</Original>
+			<German>Entferne Weste</German>
+		</Key>
+		<Key ID="STR_GAME_RemoveBackpacks">
+			<Original>Remove Backpack</Original>
+			<German>Entferne Rucksack</German>
+		</Key>
+		<Key ID="STR_GAME_Clothing">
+			<Original>Clothing</Original>
+			<German>Kleidung</German>
+		</Key>
+		<Key ID="STR_GAME_Hats">
+			<Original>Hats</Original>
+			<German>Kopfbedeckungen</German>
+		</Key>
+		<Key ID="STR_GAME_Glasses">
+			<Original>Glasses</Original>
+			<German>Brillen</German>
+		</Key>
+		<Key ID="STR_GAME_Vests">
+			<Original>Vests</Original>
+			<German>Westen</German>
+		</Key>
+		<Key ID="STR_GAME_Backpack">
+			<Original>Backpack</Original>
+			<German>Rucksack</German>
+		</Key>
+		<Key ID="STR_GAME_Faces">
+			<Original>Faces</Original>
+			<German>Gesichter</German>
+		</Key>
+		<Key ID="STR_GAME_Equip">
+			<Original>EQUIP</Original>
+			<German>AUSRÜSTEN</German>
+		</Key>
+		<Key ID="STR_GAME_Purchase">
+			<Original>Purchase</Original>
+			<German>Kaufen</German>
+		</Key>
+		<Key ID="STR_GAME_Purchased">
+			<Original>Purchased</Original>
+			<German>Gekauft</German>
+		</Key>
+		<Key ID="STR_GAME_Confirmation">
+			<Original>Confirmation</Original>
+			<German>Bestätigung</German>
+		</Key>
+		<Key ID="STR_GAME_BuyConfirmation">
+			<Original>Are you sure you want to buy this item?&lt;br/&gt;You cannot undo this action.</Original>
+			<German>Möchtest du diesen Gegenstand wirklich kaufen?&lt;br/&gt;Diese Aktion kann nicht rückgängig gemacht werden.</German>
+		</Key>
+		<Key ID="STR_GAME_PerkUnlocked">
+			<Original>Perk unlocked</Original>
+			<German>Talent freigeschaltet</German>
+		</Key>
+		<Key ID="STR_GAME_SkinUnlocked">
+			<Original>Skin unlocked</Original>
+			<German>Aussehen freigeschaltet</German>
+		</Key>
+		<Key ID="STR_GAME_PumpkinAction">
+			<Original>Destroy Pumpkin</Original>
+			<German>Kürbis zerstören</German>
+		</Key>
+		<Key ID="STR_GAME_Hindered">
+			<Original>Hindered</Original>
+			<German>Eingeschränkt</German>
+		</Key>
+		<Key ID="STR_GAME_TrickHaste">
+			<Original>The Movement speed is increased for 6 seconds.</Original>
+			<German>Die Laufgeschwindigkeit ist für 6 Sekunden erhöht.</German>
+		</Key>
+		<Key ID="STR_GAME_Haste">
+			<Original>Haste</Original>
+			<German>Eile</German>
+		</Key>
+		<Key ID="STR_GAME_TreatHindered">
+			<Original>The Movement speed is reduced for 6 seconds.</Original>
+			<German>Die Laufgeschwindigkeit ist für 6 Sekunden reduziert.</German>
+		</Key>
+		<Key ID="STR_GAME_HalloweenEvent">
+			<Original>Halloween Event</Original>
+			<German>Halloween Event</German>
+		</Key>
+		<Key ID="STR_GAME_HalloweenEventDesc">
+			<Original>Now pumpkins are growing on the map and can be destroyed to gain bonus Bloodpoints and the chance to find a trick or a treat.&lt;br/&gt;&lt;br/&gt;Additionally, Firecrackers can be found in Chests.</Original>
+			<German>Jetzt wachsen Kürbisse auf der Karte, die zerstört werden können, um an Bonus-Blutpunkte sowie Süßes oder Saures zu gelangen.&lt;br/&gt;&lt;br/&gt;Außerdem können Böller in Truhen gefunden werden.</German>
+		</Key>
+		<Key ID="STR_GAME_WinterEvent">
+			<Original>Winter Event</Original>
+			<German>Winter Event</German>
+		</Key>
+		<Key ID="STR_GAME_WinterEventDesc">
+			<Original>The Intruders-Team wishes you a Merry Christmas Season!&lt;br/&gt;&lt;br/&gt;To celebrate the last days of the year, Firecrackers can be found in Chests again.</Original>
+			<German>Das Intruders-Team wünscht dir eine frohe Weihnachtszeit!&lt;br/&gt;&lt;br/&gt;Um die letzten Tage des Jahres zu feiern, können wieder Böller in Truhen gefunden werden.</German>
+		</Key>
+		<Key ID="STR_GAME_PremonitionWarning">
+			<Original>You are looking in the Killer's direction.</Original>
+			<German>Du schaust in die Richtung des Killers.</German>
+		</Key>
+		<Key ID="STR_GAME_SelfHealAction">
+			<Original>&lt;t color='#EEC900'&gt;Self Healing&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Selbstheilung&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_LockpickAction">
+			<Original>&lt;t color='#EEC900'&gt;Lockpick Escape Vehicle&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Fluchtfahrzeug knacken&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_PortalTravel">
+			<Original>&lt;t color='#EEC900'&gt;Travel to Portal %1&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Nach Portal %1 reisen&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_FirecrackersAction">
+			<Original>&lt;t color='#EEC900'&gt;Drop Firecracker&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Böller ablegen&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_SmokeBombAction">
+			<Original>&lt;t color='#EEC900'&gt;Drop Smoke Bomb&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Rauchbombe ablegen&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_CircuitAction">
+			<Original>&lt;t color='#EEC900'&gt;Manipulate Generator&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Stromverteiler manipulieren&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_UnbreakableAction">
+			<Original>&lt;t color='#EEC900'&gt;Recover&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Erholen&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_SprintBurstAction">
+			<Original>&lt;t color='#EEC900'&gt;Sprint&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Sprint&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_WendigoAbilityAction">
+			<Original>&lt;t color='#EEC900'&gt;Cloak / Uncloak&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Verhüllen / Enthüllen&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_ButcherAbilityAction">
+			<Original>&lt;t color='#EEC900'&gt;Set Trap&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Falle platzieren&lt;/t&gt;</German>
+		</Key>
+		<Key ID="STR_GAME_OldmanAbilityAction">
+			<Original>&lt;t color='#EEC900'&gt;Enter Pocket Dimension&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Taschendimension betreten&lt;/t&gt;</German>
+		</Key>
+	</Package>
+	<Package name="Debriefing">
+		<Key ID="STR_BRIEF_GameOver">
+			<Original>Game over</Original>
+			<German>Spielrunde beendet</German>
+		</Key>
+		<Key ID="STR_BRIEF_KillerWin">
+			<Original>The Killer has won</Original>
+			<German>Der Killer hat gewonnen</German>
+		</Key>
+		<Key ID="STR_BRIEF_IntrudersWin">
+			<Original>The Survivors have won</Original>
+			<German>Die Überlebenden haben gewonnen</German>
+		</Key>
+		<Key ID="STR_BRIEF_KillerLeft">
+			<Original>The Killer has disconnected</Original>
+			<German>Der Killer hat die Verbindung getrennt</German>
+		</Key>
+		<Key ID="STR_BRIEF_Goodbye">
+			<Original>Goodbye</Original>
+			<German>Auf Wiedersehen</German>
+		</Key>
+		<Key ID="STR_BRIEF_LobbyReturn">
+			<Original>You have returned to the lobby</Original>
+			<German>Du bist in die Lobby zurückgekehrt</German>
+		</Key>
+		<Key ID="STR_BRIEF_NoJoining">
+			<Original>Joining not possible</Original>
+			<German>Beitritt nicht möglich</German>
+		</Key>
+		<Key ID="STR_BRIEF_MatchInProgress">
+			<Original>The match has already started</Original>
+			<German>Die Partie hat bereits begonnen</German>
+		</Key>
+	</Package>
+	<Package name="Hints">
+		<Key ID="STR_HINT_WendigoAbility">
+			<Original>Cloaking</Original>
+			<German>Verhüllung</German>
+		</Key>
+		<Key ID="STR_HINT_WendigoAbilityDesc">
+			<Original>%1%3Use the scroll wheel menu to cloak yourself. Use it again to uncloak.%4%1%2While cloaked, the Wendigo gains increased movement speed, almost complete invisibility and is undetectable (disabled heartbeat).%1%2The Wendigo cannot attack while cloaked.%1</Original>
+			<German>%1%3Benutzte das Scrollradmenü, um dich zu verhüllen. Benutzte es erneut, während du verhüllt bist, um die Verhüllung aufzuheben.%4%1%2Während er verhüllt ist, erhält der Wendigo eine erhöhte Bewegungsgeschwindigkeit, fast vollständige Unsichtbarkeit und ist unentdeckbar (deaktivierter Herzschlag).%1%2Der Wendigo kann nicht angreifen, während er verhüllt ist.%1</German>
+		</Key>
+	    <Key ID="STR_HINT_CompactorAbility">
+			<Original>Portal Travel</Original>
+			<German>Portalreise</German>
+		</Key>
+		<Key ID="STR_HINT_CompactorAbilityDesc">
+			<Original>%1%3Approach a Portal and use the scroll wheel menu to travel to another Portal.%4%1%2After emerging from a Portal, you remain undetectable for 3 seconds (disabled heartbeat).%1%2Traveling between portals has a cooldown of 10 seconds.%1</Original>
+			<German>%1%3Nähere dich einem Portal und benutzte das Scrollradmenü, um zu einem anderen Portal zu reisen.%4%1%2Nach der Reise bleibst du noch für 3 Sekunden unentdeckbar (deaktivierter Herzschlag).%1%2Das Reisen zwischen den Portalen hat eine Abklingzeit von 10 Sekunden.%1</German>
+		</Key>
+		<Key ID="STR_HINT_ButcherAbility">
+			<Original>Bear Trap</Original>
+			<German>Bärenfalle</German>
+		</Key>
+		<Key ID="STR_HINT_ButcherAbilityDesc">
+			<Original>%1%3You have 6 Bear Traps at your disposal.%4%1%2Use the scroll wheel menu to set and arm a Bear Trap in a valid location in front of you. %1%2Press and hold the spacebar while standing near a disarmed Bear Trap to collect it, or reset it.%1%2Any Survivor who steps into an armed Bear Trap will be immobilized and injured, but can attempt to free himself from the trap.%1</Original>
+			<German>%1%3Dir stehen 6 Bärenfallen zur Verfügung.%4%1%2Benutze das Scrollradmenü, um eine Bärenfalle an einer geeigneten Position vor dir zu legen.%1%2Drücke und halte die Leertaste, um eine Bärenfalle einzusammeln, oder an Ort und Stelle zurückzusetzen, sofern sie nicht schon gespannt ist.%1%2Ein darin gefangener Spieler wird bewegungsunfähig und verletzt, kann aber versuchen, der Falle zu entkommen.%1</German>
+		</Key>
+		<Key ID="STR_HINT_OldmanAbility">
+			<Original>Containment Breach</Original>
+			<German>Eindämmungsbruch</German>
+		</Key>
+		<Key ID="STR_HINT_OldmanAbilityDesc">
+			<Original>%1%3Use the scroll wheel menu to enter the Pocket Dimension and re-appear at a new location.%4%1%2The Old Man may traverse to a new location at an increased Movement speed.%1%2He loses sight of all Survivors, but still sees the footprints they leave behind.%1%2The Power recovery is 15 seconds.%1</Original>
+			<German>%1%3Benutzte das Scrollradmenü, um die Taschendimension zu betreten und an einem anderen Ort wieder aufzutauchen.%4%1%2Der alte Mann kann sich frei zu einem neuen Ort bewegen und ist für kurze Zeit schneller.%1%2Er verliert alle Überlebenden aus dem Blick, kann aber noch die Fußspuren wahrnehmen, die sie hinterlassen.%1%2Die Erholung der Fähigkeit beträgt 15 Sekunden.%1</German>
+		</Key>
+	</Package>
+	<Package name="Scoring">
+		<Key ID="STR_SCORE_BloodPoints">
+			<Original>Bloodpoints</Original>
+			<German>Blutpunkte</German>
+		</Key>
+		<Key ID="STR_SCORE_Survived">
+			<Original>Survived</Original>
+			<German>Überlebt</German>
+		</Key>
+		<Key ID="STR_SCORE_Chest">
+			<Original>Chest Unlocked</Original>
+			<German>Kiste durchsucht</German>
+		</Key>
+		<Key ID="STR_SCORE_Generator">
+			<Original>Generator Repaired</Original>
+			<German>Stromverteiler repariert</German>
+		</Key>
+		<Key ID="STR_SCORE_SkillCheck">
+			<Original>Successful Skill Check</Original>
+			<German>Erfolgreicher Fähigkeitencheck</German>
+		</Key>
+		<Key ID="STR_SCORE_Blind">
+			<Original>Killer Blind</Original>
+			<German>Killerblendung</German>
+		</Key>
+		<Key ID="STR_SCORE_Stun">
+			<Original>Killer Stun</Original>
+			<German>Killerbetäubung</German>
+		</Key>
+		<Key ID="STR_SCORE_Heal">
+			<Original>Heal</Original>
+			<German>Heilen</German>
+		</Key>
+		<Key ID="STR_SCORE_Rescue">
+			<Original>Rescue</Original>
+			<German>Rettung</German>
+		</Key>
+		<Key ID="STR_SCORE_Lockpick">
+			<Original>Lockpicking</Original>
+			<German>Schlösserknacken</German>
+		</Key>
+		<Key ID="STR_SCORE_Totem">
+			<Original>Dull Totem destroyed</Original>
+			<German>Glanzloses Totem zerstört</German>
+		</Key>
+		<Key ID="STR_SCORE_HexTotem">
+			<Original>Hex Totem destroyed</Original>
+			<German>Verfluchtes Totem zerstört</German>
+		</Key>
+		<Key ID="STR_SCORE_Hit">
+			<Original>Hit</Original>
+			<German>Schlag</German>
+		</Key>
+		<Key ID="STR_SCORE_SurpriseAttack">
+			<Original>Surprise Attack</Original>
+			<German>Überraschungsangriff</German>
+		</Key>
+		<Key ID="STR_SCORE_NoOneEscaped">
+			<Original>No One Escaped</Original>
+			<German>Niemand ist entkommen</German>
+		</Key>
+		<Key ID="STR_SCORE_Killed">
+			<Original>Killed</Original>
+			<German>Getötet</German>
+		</Key>
+		<Key ID="STR_SCORE_Incapacitated">
+			<Original>Incapacitated</Original>
+			<German>Niedergestreckt</German>
+		</Key>
+		<Key ID="STR_SCORE_Evasion">
+			<Original>Flashbang Evasion</Original>
+			<German>Blendgranatenlicht meiden</German>
+		</Key>
+		<Key ID="STR_SCORE_PortalTravel">
+			<Original>Portal Travel</Original>
+			<German>Portalreise</German>
+		</Key>
+		<Key ID="STR_SCORE_Trapped">
+			<Original>Trapped</Original>
+			<German>Gefangen</German>
+		</Key>
+		<Key ID="STR_SCORE_SetTrap">
+			<Original>Set Trap</Original>
+			<German>Falle platzieren</German>
+		</Key>
+		<Key ID="STR_SCORE_TrapDisarm">
+			<Original>Trap Disarm</Original>
+			<German>Fallenentschärfung</German>
+		</Key>
+		<Key ID="STR_SCORE_TrapEscape">
+			<Original>Trap Escape</Original>
+			<German>Flucht aus der Falle</German>
+		</Key>
+		<Key ID="STR_SCORE_Destruction">
+			<Original>Destruction</Original>
+			<German>Zerstörung</German>
+		</Key>
+		<Key ID="STR_SCORE_Bonus">
+			<Original>Bonus</Original>
+			<German>Bonus</German>
+		</Key>
+		<Key ID="STR_SCORE_Pumpkin">
+			<Original>Pumpkin Destroyed</Original>
+			<German>Kürbis zerstört</German>
+		</Key>
+		<Key ID="STR_SCORE_PumpkinTrick">
+			<Original>Trick Pumpkin Destroyed</Original>
+			<German>Kürbis mit süssem zerstört</German>
+		</Key>
+		<Key ID="STR_SCORE_PumpkinTreat">
+			<Original>Treat Pumpkin Destroyed</Original>
+			<German>Kürbis mit saurem zerstört</German>
+		</Key>
+	</Package>
+	<Package name="Items">
+		<Key ID="STR_ITEM_Toolbox">
+			<Original>Toolbox</Original>
+			<German>Werkzeugkasten</German>
+		</Key>
+		<Key ID="STR_ITEM_ToolboxDesc">
+			<Original>%1%2The zones for successful skill checks are larger.%1%2The toolbox is depleted after 6 skill checks.%1</Original>
+			<German>%1%2Die Zonen für erfolgreiche Fähigkeitenchecks sind größer.%1%2Der Werkzeugkasten wird nach 6 Fähigkeitenchecks aufgebraucht.%1</German>
+		</Key>
+		<Key ID="STR_ITEM_SmokeBomb">
+			<Original>Smoke Bomb</Original>
+			<German>Rauchbombe</German>
+		</Key>
+		<Key ID="STR_ITEM_SmokeBombDesc">
+			<Original>%1%2Smoke Bombs cover a circular area with a thick smoke lasting 20 seconds.%1</Original>
+			<German>%1%2Rauchbomben decken einen kreisförmigen Bereich ab und erzeugen dichten Rauch, der 20 Sekunden anhält.%1</German>
+		</Key>
+		<Key ID="STR_ITEM_Flashbang">
+			<Original>Flashbang</Original>
+			<German>Blendgranate</German>
+		</Key>
+		<Key ID="STR_ITEM_FlashbangDesc">
+			<Original>%1%2Detonates into loud bangs and intense light flashes.%1</Original>
+			<German>%1%2Explodiert mit einem lauten Knall und blendendem Licht.%1</German>
+		</Key>
+		<Key ID="STR_ITEM_FirstAidKit">
+			<Original>First Aid Kit</Original>
+			<German>Erste-Hilfe-Kasten</German>
+		</Key>
+		<Key ID="STR_ITEM_FirstAidKitDesc">
+			<Original>%1%2The First Aid Kit is used to heal yourself.%1</Original>
+			<German>%1%2Erste-Hilfe-Kästen werden zur Selbstheilung verwendet.%1</German>
+		</Key>
+		<Key ID="STR_ITEM_Circuit">
+			<Original>Defective Electric Circuit</Original>
+			<German>Defekter Stromschaltkreis</German>
+		</Key>
+		<Key ID="STR_ITEM_CircuitDesc">
+			<Original>%1%2Can be installed 2 times on a generator.%1%2When it explodes, the Killer receives a notification at the location of another generator.%1</Original>
+			<German>%1%2Kann 2-mal an einem Stromverteiler installiert werden.%1%2Wenn dieser explodiert, erhält der Killer eine Meldung am Standort eines anderen Stromverteilers.%1</German>
+		</Key>
+		<Key ID="STR_ITEM_Rifle">
+			<Original>Rifle</Original>
+			<German>Gewehr</German>
+		</Key>
+		<Key ID="STR_ITEM_RifleDesc">
+			<Original>%1%2Is used to stun the Killer.%1%2The Rifle has 1 bullet at default.%1%2Additional bullets can be found in further chests.%1</Original>
+			<German>%1%2Wird zur Betäubung des Killers verwendet.%1%2Standardmäßig besitzt das Gewehr eine Patrone.%1%2Zusätzliche Patronen können in weiteren Kisten gefunden werden.%1</German>
+		</Key>
+		<Key ID="STR_ITEM_Firecrackers">
+			<Original>Firecrackers</Original>
+			<German>Böller</German>
+		</Key>
+		<Key ID="STR_ITEM_FirecrackersLore">
+			<Original>Firecrackers can only be collected during events.%1</Original>
+			<German>Böller können nur bei Events erhalten werden.%1</German>
+		</Key>
+		<Key ID="STR_ITEM_FirecrackersDesc">
+			<Original>%1%2Can be used as a blinding device or to celebrate.</Original>
+			<German>%1%2Kann als Blendgerät oder zum Feiern genutzt werden.</German>
+		</Key>
+		<Key ID="STR_ITEM_JamAndBanana">
+			<Original>Jam and Banana</Original>
+			<German>Marmelade und Banane</German>
+		</Key>
+		<Key ID="STR_ITEM_JamAndBananaDesc">
+			<Original>- After striking down a Survivor, all Survivors' positions are revealed to you for 4 seconds when they are farther than 40 meters away.</Original>
+			<German>- Nachdem du einen Überlebenden niedergestreckt hast, siehst du die Positionen aller Überlebenden für 4 Sekunden, wenn sie weiter als 40 Meter entfernt sind.</German>
+		</Key>
+		<Key ID="STR_ITEM_BoobyTrap">
+			<Original>Booby Trap</Original>
+			<German>Sprengfalle</German>
+		</Key>
+		<Key ID="STR_ITEM_BoobyTrapDesc">
+			<Original>- Start the Match with 2 Trapped Chests.\n\n- Survivors who unlock a Trapped Chest will trigger a trap that will injure them.</Original>
+			<German>- Die Partie beginnt mit 2 sabotierten Truhen.\n\n- Überlebende, die eine sabotierte Truhe öffnen, lösen eine Falle aus, die sie verletzt.</German>
+		</Key>
+	    <Key ID="STR_ITEM_DarkSense">
+			<Original>Dark Sense</Original>
+			<German>Dunkle Wahrnehmung</German>
+		</Key>
+		<Key ID="STR_ITEM_DarkSenseDesc">
+			<Original>- Each time a Generator is completed, the Killer's Position is revealed to you for 5 seconds and for 10 seconds when the last Generator is completed.</Original>
+			<German>- Jedes Mal, wenn ein Stromverteiler repariert worden ist, wird dir die Position des Killers für 5 Sekunden angezeigt.\n\n- Wenn der letzte Stromverteiler mit Energie versorgt ist, wird dir die Position des Killers für 10 Sekunden angezeigt.</German>
+		</Key>
+		<Key ID="STR_ITEM_HexRuin">
+			<Original>Hex: Ruin </Original>
+			<German>Fluch: Ruin</German>
+		</Key>
+		<Key ID="STR_ITEM_HexRuinDesc">
+			<Original>- All Generators regress whenever they are not being repaired.\n\n- The Hex effects persist as long as the related Hex Totem is standing.</Original>
+			<German>- Wird ein Stromverteiler nicht von einem Überlebenden repariert, beginnt sofort ein Reparatur-Rückgang.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
+		</Key>
+		<Key ID="STR_ITEM_Unbreakable">
+			<Original>Unbreakable</Original>
+			<German>Unbeugsam</German>
+		</Key>
+		<Key ID="STR_ITEM_UnbreakableDesc">
+			<Original>- Once per Match, you can completely recover from the Dying State.</Original>
+			<German>- Gewährt die Fähigkeit, dich einmal pro Runde vollständig von einem Todesstatus zu erholen.</German>
+		</Key>
+		<Key ID="STR_ITEM_BotanyKnowledge">
+			<Original>Botany Knowledge </Original>
+			<German>Botanisches Wissen</German>
+		</Key>
+		<Key ID="STR_ITEM_BotanyKnowledgeDesc">
+			<Original>- Whenever you rescue a Survivor, the Revival speed is increased by 100 %.</Original>
+			<German>- Rettest du einen Überlebenden, erhältst du zusätzlich 100 % Geschwindigkeitsanstieg bei der Wiederbelebung.</German>
+		</Key>
+		<Key ID="STR_ITEM_BitterMurmur">
+			<Original>Bitter Murmur</Original>
+			<German>Verbittertes Gemurmel</German>
+		</Key>
+		<Key ID="STR_ITEM_BitterMurmurDesc">
+			<Original>- Each time a Generator is fully repaired, Survivors within 16 meters of the completed Generator will be revealed for 5 seconds.\n\n- When the last Generator is fully repaired, all Survivors are revealed for 10 seconds.</Original>
+			<German>- Jedes Mal, wenn ein Stromverteiler vollständig repariert wurde, werden Überlebende in einem Umkreis von 16 Metern vom reparierten Stromverteiler 5 Sekunden lang angezeigt.\n\n- Wurde der letzte Stromverteiler vollständig repariert, werden alle Überlebenden 10 Sekunden lang angezeigt.</German>
+		</Key>
+		<Key ID="STR_ITEM_DejaVu">
+			<Original>Déjà Vu</Original>
+			<German>Déjà-Vu-Erlebnis</German>
+		</Key>
+		<Key ID="STR_ITEM_DejaVuDesc">
+			<Original>- The Position of 3 Generators in closest proximity to one another are revealed to you for 30 seconds at the start of the Match.</Original>
+			<German>- Die Position von 3 Stromverteilern, die nah beieinander stehen, werden dir zu Beginn der Partie 30 Sekunden lang angezeigt.</German>
+		</Key>
+		<Key ID="STR_ITEM_Unrelenting">
+			<Original>Unrelenting</Original>
+			<German>Unerbittlich</German>
+		</Key>
+		<Key ID="STR_ITEM_UnrelentingDesc">
+			<Original>- You recuperate faster from missed attacks. The Cool-down is reduced by 30 %.</Original>
+			<German>- Du erholst dich schneller von misslungenen Angriffen. Die Abklingzeit wird um 30 % verkürzt.</German>
+		</Key>
+		<Key ID="STR_ITEM_PlunderersInstinct">
+			<Original>Plunderer's Instinct</Original>
+			<German>Plündererspürsinn</German>
+		</Key>
+		<Key ID="STR_ITEM_PlunderersInstinctDesc">
+			<Original>- Closed Chests throughout the Map are revealed to you within 32 meters.</Original>
+			<German>- Ungeöffnete Kisten werden dir angezeigt, wenn du im Umkreis von 32 Metern stehst.</German>
+		</Key>
+		<Key ID="STR_ITEM_Bond">
+			<Original>Bond</Original>
+			<German>Bindung</German>
+		</Key>
+		<Key ID="STR_ITEM_BondDesc">
+			<Original>- Other Survivors are revealed to you when they are within a range of 36 meters.</Original>
+			<German>- Verbündete werden dir angezeigt, wenn sie sich im Umkreis von 36 Metern befinden.</German>
+		</Key>
+		<Key ID="STR_ITEM_Whispers">
+			<Original>Whispers</Original>
+			<German>Geflüster</German>
+		</Key>
+		<Key ID="STR_ITEM_WhispersDesc">
+			<Original>- Sporadically hear the whispers of the Devil when a Survivor is within 32 meters of your location.</Original>
+			<German>- Höre vereinzelt das Flüstern des Teufels, wenn du im Umkreis von 32 Metern eines Überlebenden stehst.</German>
+		</Key>
+		<Key ID="STR_ITEM_LethalPursuer">
+			<Original>Lethal Pursuer</Original>
+			<German>Tödlicher Verfolger</German>
+		</Key>
+		<Key ID="STR_ITEM_LethalPursuerDesc">
+			<Original>- At the start of the Match, the Positions of all Survivors are revealed to you for 9 seconds.</Original>
+			<German>- Zu Beginn der Partie werden dir die Positionen aller Überlebenden für 9 Sekunden angezeigt.</German>
+		</Key>
+		<Key ID="STR_ITEM_Armageddon">
+			<Original>Armageddon</Original>
+			<German>Armageddon</German>
+		</Key>
+		<Key ID="STR_ITEM_ArmageddonDesc">
+			<Original>- Once the Escape Vehicles have arrived, the Endgame Collapse immediately begins.</Original>
+			<German>- Sobald die Fluchtfahrzeuge eingetroffen sind, beginnt sofort der Endspiel-Untergang.</German>
+		</Key>
+		<Key ID="STR_ITEM_HexNoOneEscapesDeath">
+			<Original>Hex: No One Escapes Death</Original>
+			<German>Fluch: Niemand entrinnt dem Tod</German>
+		</Key>
+		<Key ID="STR_ITEM_HexNoOneEscapesDeathDesc">
+			<Original>- Once the Escape Vehicles have arrived and there is at least one Dull Totem remaining in the Match, Hex: No One Escapes Death activates and lights the Totem.\n\n- All Survivors will be knocked down with one hit.\n\n- The Hex effects persist as long as the related Hex Totem is standing.</Original>
+			<German>- Sobald die Fluchtfahrzeuge eingetroffen sind, wird dieser Fluch auf ein glanzloses Totem angewendet, wenn auf der Karte noch eines existiert.\n\n- Solange der Fluch aktiv ist, werden alle Überlebenden mit einem Schlag niedergestreckt.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
+		</Key>
+		<Key ID="STR_ITEM_HexRetribution">
+			<Original>Hex: Retribution</Original>
+			<German>Fluch: Vergeltung</German>
+		</Key>
+		<Key ID="STR_ITEM_HexRetributionDesc">
+			<Original>- Survivors cleansing any Totem are oblivious to the Killer's whereabouts for 45 seconds (disabled heartbeat).\n\n- After cleansing a Hex Totem, the Positions of all Survivors are revealed to you for 15 seconds.\n\n- The Hex effects persist as long as the related Hex Totem is standing.</Original>
+			<German>- Jeder Überlebende, der mit einem glanzlosen Totem oder einem Fluchtotem interagiert, bemerkt für 45 Sekunden nicht die drohende Gefahr des Killers (deaktivierter Herzschlag).\n\n- Wird ein beliebiges Fluchtotem, einschließlich diesem, entfernt, werden die Positionen aller Überlebenden für 15 Sekunden angezeigt.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
+		</Key>
+		<Key ID="STR_ITEM_HuntersConcealment">
+			<Original>Hunter's Concealment</Original>
+			<German>Tarnkappe des Jägers</German>
+		</Key>
+		<Key ID="STR_ITEM_HuntersConcealmentDesc">
+			<Original>- Press 'Y' to go Prone. Press 'Y' again to stand up.</Original>
+			<German>- Drücke 'Y' um dich hinzulegen. Drücke erneut 'Y', um aufzustehen.</German>
+		</Key>
+		<Key ID="STR_ITEM_Counterforce">
+			<Original>Counterforce</Original>
+			<German>Gegengewalt</German>
+		</Key>
+		<Key ID="STR_ITEM_CounterforceDesc">
+			<Original>- After cleansing a Totem, the Position of the Totem farthest from you is revealed to you for 4 seconds.</Original>
+			<German>- Wenn du ein Totem zerstört hast, siehst du für 4 Sekunden die Position des Totems, das am weitesten von dir entfernt ist.</German>
+		</Key>
+		<Key ID="STR_ITEM_Hope">
+			<Original>Hope</Original>
+			<German>Hoffnung</German>
+		</Key>
+		<Key ID="STR_ITEM_HopeDesc">
+			<Original>- As soon as the Escape Vehicles have arrived, your Movement speed is increased by 7 % for 120 seconds.</Original>
+			<German>- Deine Bewegungsgeschwindigkeit erhöht sich um 7 %, und zwar für 120 Sekunden, sobald die Fluchtfahrzeuge eingetroffen sind.</German>
+		</Key>
+		<Key ID="STR_ITEM_SprintBurst">
+			<Original>Sprint Burst</Original>
+			<German>Sprintboost</German>
+		</Key>
+		<Key ID="STR_ITEM_SprintBurstDesc">
+			<Original>- Use the scroll wheel menu while running and break into a sprint at 150 % of your normal running speed for a maximum of 3 seconds.\n\n- Sprint Burst causes a cooldown for 60 seconds.</Original>
+			<German>- Benutzte das Scrollradmenü während du läufst und verfalle in einen Sprint mit 150 % deiner normalen Laufgeschwindigkeit für maximal 3 Sekunden.\n\n- Verursacht eine Abklingzeit von 60 Sekunden.</German>
+		</Key>
+		<Key ID="STR_ITEM_HexUndying">
+			<Original>Hex: Undying</Original>
+			<German>Fluch: Unsterblich</German>
+		</Key>
+		<Key ID="STR_ITEM_HexUndyingDesc">
+			<Original>- The Positions of Survivors within 4 meters of any Dull Totem are revealed to you.\n\n- When another Perk's Hex Totem is cleansed, its Hex is transferred to the Hex: Undying Totem, disabling Hex: Undying instead.\n\n- The Hex effects persist as long as the related Hex Totem is standing.</Original>
+			<German>- Während Fluch: Unsterblich aktiv ist, werden die Positionen aller Überlebenden im Umkreis von 4 Metern um ein glanzloses Totem angezeigt.\n\n- Wird ein anderes Fluchtotem zerstört, wird dieser Fluch auf das Fluch: Unsterblich-Totem übertragen, und Fluch: Unsterblich wird deaktiviert.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
+		</Key>
+		<Key ID="STR_ITEM_Technician">
+			<Original>Technician</Original>
+			<German>Techniker</German>
+		</Key>
+		<Key ID="STR_ITEM_TechnicianDesc">
+			<Original>- On a failed Repair Skill Check, there is a 50 % chance that the Generator Explosion will be prevented.</Original>
+			<German>- Bei einem misslungenen Reparatur-Fähigkeitscheck besteht eine Chance von 50 %, dass der Stromverteiler nicht explodiert.</German>
+		</Key>
+		<Key ID="STR_ITEM_Premonition">
+			<Original>Premonition</Original>
+			<German>Vorwarnung</German>
+		</Key>
+		<Key ID="STR_ITEM_PremonitionDesc">
+			<Original>- Get an warning when looking in the direction of the Killer in a 45° cone within a range of 36 meters.\n\n- Premonition has a cool-down of 30 seconds each time it activates.</Original>
+			<German>- Erhalte eine Warnung, wenn du in einem 45 Grad-Kegel in die Richtung des Killers schaust, und zwar innerhalb einer Reichweite von 36 Metern.\n\n- Die Vorwarnung hat eine Abklingzeit von 30 Sekunden nach jeder Aktivierung.</German>
+		</Key>
+	</Package>
+	<Package name="Voicelines">
+		<Key ID="STR_VL_Helmut1">
+			<Original>I need a break</Original>
+			<German>Ich brauche eine Pause</German>
+		</Key>
+		<Key ID="STR_VL_Helmut2">
+			<Original>This is the island of dope</Original>
+			<German>Das ist die Insel des Dopes</German>
+		</Key>
+		<Key ID="STR_VL_Helmut3">
+			<Original>Hashish in the pockets</Original>
+			<German>Haschisch in den Taschen</German>
+		</Key>
+		<Key ID="STR_VL_Helmut4">
+			<Original>Helmut survives everything</Original>
+			<German>Helmut überlebt alles</German>
+		</Key>
+		<Key ID="STR_VL_Helmut5">
+			<Original>We are trapped here</Original>
+			<German>Wir sitzen hier fest</German>
+		</Key>
+		<Key ID="STR_VL_Helmut6">
+			<Original>You klutz</Original>
+			<German>Sie Tolpatsch</German>
+		</Key>
+		<Key ID="STR_VL_Helmut7">
+			<Original>Mirror, mirror</Original>
+			<German>Spieglein, Spieglein</German>
+		</Key>
+		<Key ID="STR_VL_Helmut8">
+			<Original>Would you like a lollipop?</Original>
+			<German>Möchten Sie einen Dauerlutscher?</German>
+		</Key>
+		<Key ID="STR_VL_Helmut9">
+			<Original>I can only drive truck</Original>
+			<German>Ich kann nur LKW fahren</German>
+		</Key>
+		<Key ID="STR_VL_Stanislaw1">
+			<Original>I am pursued by a deer</Original>
+			<German>Mich verfolgt ein Hirsch</German>
+		</Key>
+		<Key ID="STR_VL_Stanislaw2">
+			<Original>Let's go</Original>
+			<German>Nichts wie weg</German>
+		</Key>
+		<Key ID="STR_VL_Stanislaw3">
+			<Original>Who are you?</Original>
+			<German>Wer sind Sie denn?</German>
+		</Key>
+		<Key ID="STR_VL_Stanislaw4">
+			<Original>Do you know Mr. Steif von Penen?</Original>
+			<German>Kennen Sie Herrn Steif von Penen?</German>
+		</Key>
+		<Key ID="STR_VL_Stanislaw5">
+			<Original>I also didn't want to go here</Original>
+			<German>Ich wollte auch nicht hier hin</German>
+		</Key>
+		<Key ID="STR_VL_Stanislaw6">
+			<Original>The police is looking for you</Original>
+			<German>Die Polizei sucht nach Ihnen</German>
+		</Key>
+		<Key ID="STR_VL_Stanislaw7">
+			<Original>Boo</Original>
+			<German>Buuuh</German>
+		</Key>
+		<Key ID="STR_VL_Stanislaw8">
+			<Original>Get out of here!</Original>
+			<German>Verschwinden Sie von hier!</German>
+		</Key>
+		<Key ID="STR_VL_Stanislaw9">
+			<Original>My boss will be surprised</Original>
+			<German>Mein Chef wird überrascht sein</German>
+		</Key>
+		<Key ID="STR_VL_Rammel1">
+			<Original>Your time will come</Original>
+			<German>Ihre Zeit wird kommen</German>
+		</Key>
+		<Key ID="STR_VL_Rammel2">
+			<Original>Everything goes to plan</Original>
+			<German>Alles verläuft nach Plan</German>
+		</Key>
+		<Key ID="STR_VL_Rammel3">
+			<Original>All too easy</Original>
+			<German>Allzu leicht</German>
+		</Key>
+		<Key ID="STR_VL_Rammel4">
+			<Original>You have failed</Original>
+			<German>Sie haben versagt</German>
+		</Key>
+		<Key ID="STR_VL_Rammel5">
+			<Original>Give me a tank</Original>
+			<German>Mir einen Panzer herschieben</German>
+		</Key>
+		<Key ID="STR_VL_Rammel6">
+			<Original>My loyalty lies with the Schakal</Original>
+			<German>Meine Loyalität gilt dem Schakal</German>
+		</Key>
+		<Key ID="STR_VL_Rammel7">
+			<Original>Live on the Volksempfänger</Original>
+			<German>Live auf dem Volksempfänger</German>
+		</Key>
+		<Key ID="STR_VL_Rammel8">
+			<Original>Take off the mask</Original>
+			<German>Die Maske absetzen</German>
+		</Key>
+		<Key ID="STR_VL_Rammel9">
+			<Original>Victory is our</Original>
+			<German>Der Sieg ist unser</German>
+		</Key>
+		<Key ID="STR_VL_Sandro1">
+			<Original>You will not stop me</Original>
+			<German>Ihr werdet mich nicht aufhalten</German>
+		</Key>
+		<Key ID="STR_VL_Sandro2">
+			<Original>This is my territory</Original>
+			<German>Das ist mein Revier</German>
+		</Key>
+		<Key ID="STR_VL_Sandro3">
+			<Original>I will deal with this</Original>
+			<German>Selbst darum kümmern</German>
+		</Key>
+		<Key ID="STR_VL_Sandro4">
+			<Original>He interrupted my plan</Original>
+			<German>Er hat meinen Plan durchkreuzt</German>
+		</Key>
+		<Key ID="STR_VL_Sandro5">
+			<Original>I roll over you!</Original>
+			<German>Ich überrolle Sie!</German>
+		</Key>
+		<Key ID="STR_VL_Sandro6">
+			<Original>Someone is following us</Original>
+			<German>Jemand verfolgt uns</German>
+		</Key>
+	    <Key ID="STR_VL_Sandro7">
+			<Original>I did not want to go here</Original>
+			<German>Hier wollte ich nicht hin</German>
+		</Key>
+		<Key ID="STR_VL_Sandro8">
+			<Original>Law on mummery</Original>
+			<German>Vermummungsgesetz</German>
+		</Key>
+		<Key ID="STR_VL_Sandro9">
+			<Original>Speed it up</Original>
+			<German>Macht schneller</German>
+		</Key>
+		<Key ID="STR_VL_Bruce1">
+			<Original>I take care of him</Original>
+			<German>Ich kümmere mich um ihn</German>
+		</Key>
+		<Key ID="STR_VL_Bruce2">
+			<Original>Traitor!</Original>
+			<German>Verräter!</German>
+		</Key>
+		<Key ID="STR_VL_Bruce3">
+			<Original>I do not trust him</Original>
+			<German>Ich traue ihm nicht</German>
+		</Key>
+		<Key ID="STR_VL_Bruce4">
+			<Original>What happened?</Original>
+			<German>Was ist passiert?</German>
+		</Key>
+		<Key ID="STR_VL_Bruce5">
+			<Original>I am done</Original>
+			<German>Ich bin fertig</German>
+		</Key>
+		<Key ID="STR_VL_Bruce6">
+			<Original>I am here</Original>
+			<German>Hier bin ich</German>
+		</Key>
+		<Key ID="STR_VL_Bruce7">
+			<Original>What are you doing?!</Original>
+			<German>Was machen Sie da?!</German>
+		</Key>
+		<Key ID="STR_VL_Opterix1">
+			<Original>Welcome to this interview</Original>
+			<German>Willkommen zu diesem Interview</German>
+		</Key>
+		<Key ID="STR_VL_Opterix2">
+			<Original>We have an appointment</Original>
+			<German>Wir haben einen Termin</German>
+		</Key>
+		<Key ID="STR_VL_Opterix3">
+			<Original>We cut that out</Original>
+			<German>Das schneiden wir raus</German>
+		</Key>
+		<Key ID="STR_VL_Opterix4">
+			<Original>How do you look!?</Original>
+			<German>Wie sehen Sie denn aus!?</German>
+		</Key>
+		<Key ID="STR_VL_Opterix5">
+			<Original>Where did Schmidtler go?</Original>
+			<German>Wo ist Schmidtler hin?</German>
+		</Key>
+	</Package>
+	<Package name="Skins">
+		<Key ID="STR_SKIN_Default">
+			<Original>Default</Original>
+			<German>Standard</German>
+		</Key>
+		<Key ID="STR_SKIN_PersonalFace">
+			<Original>Personal Face</Original>
+			<German>Eigenes Gesicht</German>
+		</Key>
+		<Key ID="STR_SKIN_CodeArmaOpterix">
+			<Original>You have unlocked the ArmaOpterix collection. It includes journalist clothes and the face of Martin Opterix along with custom voicelines!</Original>
+			<German>Du hast die ArmaOpterix Kollektion freigeschaltet. Sie enthält Journalisten-Kleidung und das Gesicht von Martin Opterix, zusammen mit eigenen Sprecherzeilen!</German>
+		</Key>
+		<Key ID="STR_SKIN_HolidaySweater">
+			<Original>Holiday Sweater</Original>
+			<German>Weihnachtspullover</German>
+		</Key>
+		<Key ID="STR_SKIN_CodeHolidaySweater">
+			<Original>You have unlocked a Holiday Sweater.</Original>
+			<German>Du hast einen Weihnachtspullover freigeschaltet.</German>
+		</Key>
+		<Key ID="STR_SKIN_SpookyScarySkeleton">
+			<Original>Spooky Scary Skeleton</Original>
+			<German>Gespenstisch Gruseliges Skelett</German>
+		</Key>
+		<Key ID="STR_SKIN_CodeSpookyScarySkeleton">
+			<Original>You have unlocked a Spooky Scary Skeleton-Outfit.</Original>
+			<German>Du hast ein gespenstisch gruseliges Skelett-Outfit freigeschaltet.</German>
+		</Key>
+		<Key ID="STR_SKIN_Gendarme">
+			<Original>Gendarme</Original>
+			<German>Gendarm</German>
+		</Key>
+		<Key ID="STR_SKIN_Paramedic">
+			<Original>Paramedic</Original>
+			<German>Sanitäter</German>
+		</Key>
+		<Key ID="STR_SKIN_Drugbaron">
+			<Original>Drug Baron (Helmut Mueller)</Original>
+			<German>Drogenbaron (Helmut Mueller)</German>
+		</Key>
+		<Key ID="STR_SKIN_Masked">
+			<Original>Masked (Stanislaw Kowalski)</Original>
+			<German>Maskiert (Stanislaw Kowalski)</German>
+		</Key>
+		<Key ID="STR_SKIN_Adjutant">
+			<Original>Adjutant (Hans Rammel)</Original>
+			<German>Adjutant (Hans Rammel)</German>
+		</Key>
+		<Key ID="STR_SKIN_General">
+			<Original>General (Hans Rammel)</Original>
+			<German>General (Hans Rammel)</German>
+		</Key>
+		<Key ID="STR_SKIN_StolenCarDealer">
+			<Original>Stolen Car Dealer (Sandro Kalaschnikow)</Original>
+			<German>Autoschieber (Sandro Kalaschnikow)</German>
+		</Key>
+		<Key ID="STR_SKIN_Survivor">
+			<Original>Survivor (Sandro Kalaschnikow)</Original>
+			<German>Überlebender (Sandro Kalaschnikow)</German>
+		</Key>
+		<Key ID="STR_SKIN_Hero">
+			<Original>Hero (Bruce Willis)</Original>
+			<German>Held (Bruce Willis)</German>
+		</Key>
+		<Key ID="STR_SKIN_WendigoDefaultTanoa">
+			<Original>Default (Jungle)</Original>
+			<German>Standard (Urwald)</German>
+		</Key>
+		<Key ID="STR_SKIN_WendigoDefaultMalden">
+			<Original>Default (Wasteland)</Original>
+			<German>Standard (Ödland)</German>
+		</Key>
+		<Key ID="STR_SKIN_WendigoBloody">
+			<Original>Bloody Antler</Original>
+			<German>Blutiges Geweih</German>
+		</Key>
+		<Key ID="STR_SKIN_WendigoGlow">
+			<Original>Glowing Eyes</Original>
+			<German>Glühende Augen</German>
+		</Key>
+		<Key ID="STR_SKIN_CompactorSmile">
+			<Original>Sadistic Grin</Original>
+			<German>Sadistisches Grinsen</German>
+		</Key>
+	</Package>
+	<Package name="Quests">
+		<Key ID="STR_QUEST_Killer0">
+			<Original>Slaughtering</Original>
+			<German>Abschlachtung</German>
+		</Key>
+		<Key ID="STR_QUEST_KillerTask0">
+			<Original>Kill 2 Survivors.</Original>
+			<German>Töte 2 Überlebende.</German>
+		</Key>
+		<Key ID="STR_QUEST_Killer1">
+			<Original>Dark Adherent</Original>
+			<German>Dunkler Anhänger</German>
+		</Key>
+		<Key ID="STR_QUEST_KillerTask1">
+			<Original>Knock down 5 survivors.</Original>
+			<German>Strecke 5 Überlebende nieder.</German>
+		</Key>
+		<Key ID="STR_QUEST_Killer2">
+			<Original>None Shall Survive</Original>
+			<German>Niemand wird überleben</German>
+		</Key>
+		<Key ID="STR_QUEST_KillerTask2">
+			<Original>Kill all Survivors.</Original>
+			<German>Töte 1-mal alle Überlebenden.</German>
+		</Key>
+		<Key ID="STR_QUEST_Killer3">
+			<Original>Dark Triumph</Original>
+			<German>Finsterer Triumph</German>
+		</Key>
+		<Key ID="STR_QUEST_KillerTask3">
+			<Original>Kill 1 Survivor during the Endgame Collapse.</Original>
+			<German>Töte während des Endspiel-Untergangs 1 Überlebenden.</German>
+		</Key>
+		<Key ID="STR_QUEST_Killer4">
+			<Original>From Here to There</Original>
+			<German>Von Hier nach Da</German>
+		</Key>
+		<Key ID="STR_QUEST_KillerTask4">
+			<Original>Teleport to a Portal 5 times as The Compactor.</Original>
+			<German>Teleportiere dich 5-mal als Der Verdichter zu einem Portal</German>
+		</Key>
+		<Key ID="STR_QUEST_Killer5">
+			<Original>Concealed Cut-Throat</Original>
+			<German>Verborgener Halsabschneider</German>
+		</Key>
+		<Key ID="STR_QUEST_KillerTask5">
+			<Original>Hit a Survivor after uncloaking 4 times as The Wendigo.</Original>
+			<German>Triff 4-mal als Der Wendigo einen Überlebenden, nachdem du deine Verhüllung aufgehoben hast.</German>
+		</Key>
+		<Key ID="STR_QUEST_Killer6">
+			<Original>Hungry Jaws</Original>
+			<German>Hungrige Beißerchen</German>
+		</Key>
+		<Key ID="STR_QUEST_KillerTask6">
+			<Original>Catch a Survivor in a Bear Trap 2 times as The Butcher.</Original>
+			<German>Fange 2-mal als der Metzger einen Überlebenden in einer Bärenfalle.</German>
+		</Key>
+		<Key ID="STR_QUEST_Killer7">
+			<Original>Make Them Suffer</Original>
+			<German>Lass sie leiden</German>
+		</Key>
+		<Key ID="STR_QUEST_KillerTask7">
+			<Original>Have 4 Survivors be injured or dying at the same time.</Original>
+			<German>Sorge dafür, dass 4 Überlebende gleichzeitig verletzt oder im Todesstatus sind.</German>
+		</Key>
+		<Key ID="STR_QUEST_Intruder0">
+			<Original>Bring the Light</Original>
+			<German>Es werde Licht</German>
+		</Key>
+		<Key ID="STR_QUEST_IntruderTask0">
+			<Original>Finish repairing 2 Generators.</Original>
+			<German>Repariere 2 Stromverteiler.</German>
+		</Key>
+		<Key ID="STR_QUEST_Intruder1">
+			<Original>Escape</Original>
+			<German>Flucht</German>
+		</Key>
+		<Key ID="STR_QUEST_IntruderTask1">
+			<Original>Escape a match.</Original>
+			<German>Entkomme einer Partie.</German>
+		</Key>
+		<Key ID="STR_QUEST_Intruder2">
+			<Original>Plunder King</Original>
+			<German>König der Plünderer</German>
+		</Key>
+		<Key ID="STR_QUEST_IntruderTask2">
+			<Original>Unlock 4 chests.</Original>
+			<German>Schließe 4 Truhen auf.</German>
+		</Key>
+		<Key ID="STR_QUEST_Intruder3">
+			<Original>Chilling Escape</Original>
+			<German>Kalte Flucht</German>
+		</Key>
+		<Key ID="STR_QUEST_IntruderTask3">
+			<Original>Escape without being knocked down by the Killer.</Original>
+			<German>Entkomme, ohne vom Killer niedergestreckt zu werden.</German>
+		</Key>
+		<Key ID="STR_QUEST_Intruder4">
+			<Original>Self Care Service</Original>
+			<German>Selbstfürsorgedienst</German>
+		</Key>
+		<Key ID="STR_QUEST_IntruderTask4">
+			<Original>Heal yourself 2 times while using a First-Aid-Kit.</Original>
+			<German>Heile dich 2-mal selbst, während du einen Erste-Hilfe-Kasten nutzt.</German>
+		</Key>
+		<Key ID="STR_QUEST_Intruder5">
+			<Original>Max Dexterity</Original>
+			<German>Maximale Geschicklichkeit</German>
+		</Key>
+		<Key ID="STR_QUEST_IntruderTask5">
+			<Original>Succeed at 10 consecutive skill checks.</Original>
+			<German>Schließe 10 Fähigkeitenchecks in Folge erfolgreich ab.</German>
+		</Key>
+		<Key ID="STR_QUEST_Intruder6">
+			<Original>Risky Repairs</Original>
+			<German>Riskante Reparaturen</German>
+		</Key>
+		<Key ID="STR_QUEST_IntruderTask6">
+			<Original>Finish repairing 2 generators while in the Killer's terror radius. Must be in the terror radius when the generator is completed.</Original>
+			<German>Repariere 2 Stromverteiler, während du im Terrorradius des Killers bist. Du musst dich im Terrorradius befinden, während die Reparatur abgeschlossen wird.</German>
+		</Key>
+		<Key ID="STR_QUEST_Intruder7">
+			<Original>Fight Back</Original>
+			<German>Zur Wehr setzen</German>
+		</Key>
+		<Key ID="STR_QUEST_IntruderTask7">
+			<Original>Stun or blind the Killer 2 times.</Original>
+			<German>Betäube oder blende den Killer 2-mal.</German>
+		</Key>
+		<Key ID="STR_QUEST_Intruder8">
+			<Original>Thorough Cleansing</Original>
+			<German>Gründliche Zerstörung</German>
+		</Key>
+		<Key ID="STR_QUEST_IntruderTask8">
+			<Original>Finish the match with no more than 0 totems remaining and escape.</Original>
+			<German>Beende die Partie mit 0 übrigen Totems und entkomme.</German>
+		</Key>
+	</Package>
+	<Package name="Maps">
+		<Key ID="STR_TANOA_Map">
+			<Original>Green Hell</Original>
+			<German>Grüne Hölle</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn1">
+			<Original>Crashed Japanese</Original>
+			<German>Abgestürzter Japaner</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn2">
+			<Original>Native Village</Original>
+			<German>Eingeborenen Dorf</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn3">
+			<Original>Shipwreck</Original>
+			<German>Schiffswrack</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn4">
+			<Original>Treehouse</Original>
+			<German>Baumhaus</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn5">
+			<Original>Pier</Original>
+			<German>Pier</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn6">
+			<Original>Lighthouse</Original>
+			<German>Leuchtturm</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn7">
+			<Original>Bomber Wreck</Original>
+			<German>Bomberwrack</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn8">
+			<Original>Sunbeds</Original>
+			<German>Sonnenliegen</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn9">
+			<Original>Native Village</Original>
+			<German>Eingeborenen Dorf</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn10">
+			<Original>Native Village</Original>
+			<German>Eingeborenen Dorf</German>
+		</Key>
+			<Key ID="STR_TANOA_IntruderSpawn11">
+			<Original>NATO Camp</Original>
+			<German>NATO Lager</German>
+		</Key>
+		<Key ID="STR_TANOA_IntruderSpawn12">
+			<Original>Sugarcane Plantation</Original>
+			<German>Zuckerrohrplantage</German>
+		</Key>
+		<Key ID="STR_TANOA_KillerSpawn1">
+			<Original>Sugarcane Ülantation</Original>
+			<German>Zuckerrohrplantage</German>
+		</Key>
+		<Key ID="STR_TANOA_KillerSpawn2">
+			<Original>Deep Forest</Original>
+			<German>Tiefer Wald</German>
+		</Key>
+		<Key ID="STR_TANOA_KillerSpawn3">
+			<Original>Mountain Slope</Original>
+			<German>Berghang</German>
+		</Key>
+		<Key ID="STR_TANOA_KillerSpawn4">
+			<Original>Cave</Original>
+			<German>Höhle</German>
+		</Key>
+		<Key ID="STR_MALDEN_Map">
+			<Original>Wasteland</Original>
+			<German>Ödland</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn1">
+			<Original>Mine</Original>
+			<German>Mine</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn2">
+			<Original>Sidetrack</Original>
+			<German>Abstellgleis</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn3">
+			<Original>Chicken Coop</Original>
+			<German>Hühnerstall</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn4">
+			<Original>Archaeological Site</Original>
+			<German>Ausgrabungsstätte</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn5">
+			<Original>Train Station</Original>
+			<German>Bahnhof</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn6">
+			<Original>Hunterwreck</Original>
+			<German>Hunterwrack</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn7">
+			<Original>Sealed Mine</Original>
+			<German>Verschlossene Mine</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn8">
+			<Original>Cactus Farm</Original>
+			<German>Kakteenfarm</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn9">
+			<Original>Workshop Kozlowsky</Original>
+			<German>Werkstatt Kozlowski</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn10">
+			<Original>Oil Pumps</Original>
+			<German>Ölpumpen</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn11">
+			<Original>Funny Construction Wagon</Original>
+			<German>Lustiger Bauwagen</German>
+		</Key>
+		<Key ID="STR_MALDEN_IntruderSpawn12">
+			<Original>Crashed Spaniards</Original>
+			<German>Abgestürzte Spanier</German>
+		</Key>
+		<Key ID="STR_MALDEN_KillerSpawn1">
+			<Original>Graveyard</Original>
+			<German>Friedhof</German>
+		</Key>
+		<Key ID="STR_MALDEN_KillerSpawn2">
+			<Original>Railroad Bridge</Original>
+			<German>Eisenbahnbrücke</German>
+		</Key>
+		<Key ID="STR_MALDEN_KillerSpawn3">
+			<Original>Washing Line</Original>
+			<German>Waschstraße</German>
+		</Key>
+	</Package>
+	<Package name="LoadingTexts">
+		<Key ID="STR_LOADING_1">
+			<Original>Each Killer has unique abilities.</Original>
+			<German>Jeder Killer besitzt einzigartige Fähigkeiten.</German>
+		</Key>
+		<Key ID="STR_LOADING_2">
+			<Original>Press the spacebar to jump as a survivor.</Original>
+			<German>Drücke die Leertaste um als Überlebender zu springen.</German>
+		</Key>
+		<Key ID="STR_LOADING_3">
+			<Original>Press 'F' to play different voice lines.</Original>
+			<German>Drücke 'F' um verschiedene Sprecherzeilen abzuspielen.</German>
+		</Key>
+		<Key ID="STR_LOADING_4">
+			<Original>Every second can decide about life and death, because a killer wants your head. So you should quickly turn on the generators to get off the island as soon as possible with the escape vehicles.</Original>
+			<German>Jede Sekunde kann über Leben und Tod entscheiden, denn ein Mörder will deinen Kopf. Du solltest also schnell die Stromverteiler einschalten, um zügig mit den Fluchtfahrzeugen von der Insel verschwinden zu können.</German>
+		</Key>
+		<Key ID="STR_LOADING_5">
+			<Original>Grab your axe and slice the intruders from belly to chest and gut them slowly but with relish.</Original>
+			<German>Schnapp dir deine Axt und schlitze die Eindringlinge vom Bauch bis zur Brust auf und weide sie langsam und genüsslich aus.</German>
+		</Key>
+		<Key ID="STR_LOADING_6">
+			<Original>Equip yourself with extra ammunition or flashbangs and successfully defend yourself against the monster!</Original>
+			<German>Rüste dich mit zusätzlicher Munition oder Blendgranaten und wehre dich erfolgreich gegen das Monster!</German>
+		</Key>
+		<Key ID="STR_LOADING_7">
+			<Original>Perks are the core mechanic of Intruders. Collect bloodpoints and unlock more and more.</Original>
+			<German>Talente sind die Kernmechanik von Intruders. Sammle Blutpunkte und schalte immer mehr frei.</German>
+		</Key>
+		<Key ID="STR_LOADING_8">
+			<Original>In chests, depending on your luck, you can find better or worse items that can help you escape. However, you must be quick so that no one else opens the chests before you!</Original>
+			<German>In Truhen findest du je nach Glück, bessere oder schlechtere Gegenstände, die dir die Flucht erleichtern können. Du musst jedoch schnell sein, damit kein anderer die Truhen vor dir öffnet!</German>
+		</Key>
+	</Package>
+</Project>

@@ -1,0 +1,1049 @@
+﻿overviewText = "Intruders";
+overviewTextLocked = "Escape from Insanity";
+overviewPicture = "thumbnail.jpg";
+
+onLoadName = "Intruders";
+onLoadMission = "Escape from Insanity";
+loadScreen = "thumbnail.jpg";
+author = "Gonzka";
+
+unsafeCVL = 1;
+briefing = 0;
+
+ReviveMode = 2;
+ReviveUnconsciousStateMode = 0;
+ReviveRequiredTrait = 0;
+ReviveRequiredItems = 0;
+ReviveRequiredItemsFakConsumed = 0;
+ReviveDelay = 10;
+ReviveMedicSpeedMultiplier = 2;
+ReviveForceRespawnDelay = 3;
+ReviveBleedOutDelay = 120;
+
+#include "config\Config_Master.hpp"
+
+class cfgFunctions {
+    #include "Functions.hpp"
+};
+
+#include "defines.hpp"
+#include "scripts\mainmenu\menuprinc.hpp"
+#include "scripts\quests\questTerminal.hpp"
+#include "scripts\items\redeemCode.hpp"
+#include "scripts\perks\perkMenu.hpp"
+#include "scripts\shop\shopMenu.hpp"
+#include "scripts\clothing\clothing.hpp"
+#include "scripts\killer\selectKillerMenu.hpp"
+
+class RscTitles {
+	#include "scripts\functions\notification.hpp"
+	#include "scripts\wheelmenu\wheelmenu.hpp"
+	#include "scripts\functions\statusbar.hpp"
+	#include "scripts\lockpicking\hud_default.hpp"
+    #include "scripts\lockpicking\hud_lockpick.hpp"
+	#include "scripts\generator\skillCheckMenu.hpp"
+};
+
+class CfgSounds {
+    sounds[] = {};
+    //SFX
+	class Click1 {
+  	    name = "Click1";
+  	    sound[] = {"\sfx\Click1.ogg", 10.0, 1};
+  	    titles[] = {};
+	};
+	
+    class Click2 {
+        name = "Click2";
+        sound[] = {"\sfx\Click2.ogg", 10.0, 1};
+        titles[] = {};
+    };
+	
+    class Click3 {
+    	name = "Click3";
+    	sound[] = {"\sfx\Click3.ogg", 12.0, 1};
+    	titles[] = {};
+    };
+	
+    class heartbeat {
+        name = "heartbeat";
+        sound[] = {"\sfx\heartbeat.ogg", 1.5, 1};
+        titles[] = {};
+    };
+
+    class weaponHit_1 {
+        name = "weaponHit_1";
+        sound[] = {"\sfx\weaponHit_1.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class weaponHit_2 {
+        name = "weaponHit_2";
+        sound[] = {"\sfx\weaponHit_2.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class weaponHit_3 {
+        name = "weaponHit_3";
+        sound[] = {"\sfx\weaponHit_3.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class weaponHit_4 {
+        name = "weaponHit_4";
+        sound[] = {"\sfx\weaponHit_4.ogg", 3.0, 1};
+        titles[] = {};
+    };
+
+    class weaponSwing_1 {
+        name = "weaponSwing_1";
+        sound[] = {"\sfx\weaponSwing_1.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class weaponSwing_2 {
+        name = "weaponSwing_2";
+        sound[] = {"\sfx\weaponSwing_2.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class weaponSwing_3 {
+        name = "weaponSwing_3";
+        sound[] = {"\sfx\weaponSwing_3.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class weaponSwing_4 {
+        name = "weaponSwing_4";
+        sound[] = {"\sfx\weaponSwing_4.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class weaponSwing_5 {
+        name = "weaponSwing_5";
+        sound[] = {"\sfx\weaponSwing_5.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class weaponSwing_6 {
+        name = "weaponSwing_6";
+        sound[] = {"\sfx\weaponSwing_6.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class weaponSwing_7 {
+        name = "weaponSwing_7";
+        sound[] = {"\sfx\weaponSwing_7.ogg", 3.0, 1};
+        titles[] = {};
+    };
+	
+	class vehicleUnlocked {
+        name = "vehicleUnlocked";
+        sound[] = {"\sfx\vehicleUnlocked.ogg", 3.0, 1};
+        titles[] = {};
+    };
+
+    class ewok_long {
+        name = "ewok_long";
+        sound[] = {"\sfx\ewok_long.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class growl_1 {
+        name = "growl_1";
+        sound[] = {"\sfx\growl_1.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	class growl_2 {
+        name = "growl_2";
+        sound[] = {"\sfx\growl_2.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	class growl_3 {
+        name = "growl_3";
+        sound[] = {"\sfx\growl_3.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	class growl_4 {
+        name = "growl_4";
+        sound[] = {"\sfx\growl_4.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	class growl_5 {
+        name = "growl_5";
+        sound[] = {"\sfx\growl_5.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	class growl_6 {
+        name = "growl_6";
+        sound[] = {"\sfx\growl_6.ogg", 1.5, 1};
+        titles[] = {};
+    };
+	
+	class evilLaugh_1 {
+        name = "evilLaugh_1";
+        sound[] = {"\sfx\evilLaugh_1.ogg", 2.5, 1};
+        titles[] = {};
+    };
+	
+	class evilLaugh_2 {
+        name = "evilLaugh_2";
+        sound[] = {"\sfx\evilLaugh_2.ogg", 2.5, 1};
+        titles[] = {};
+    };
+	
+	class evilLaugh_3 {
+        name = "evilLaugh_3";
+        sound[] = {"\sfx\evilLaugh_3.ogg", 2.5, 1};
+        titles[] = {};
+    };
+	
+	class evilLaugh_4 {
+        name = "evilLaugh_4";
+        sound[] = {"\sfx\evilLaugh_4.ogg", 2.5, 1};
+        titles[] = {};
+    };
+	
+	class evilLaugh_5 {
+        name = "evilLaugh_5";
+        sound[] = {"\sfx\evilLaugh_5.ogg", 2.5, 1};
+        titles[] = {};
+    };
+	
+	class evilLaugh_6 {
+        name = "evilLaugh_6";
+        sound[] = {"\sfx\evilLaugh_6.ogg", 2.5, 1};
+        titles[] = {};
+    };
+	
+	class evilLaugh_7 {
+        name = "evilLaugh_7";
+        sound[] = {"\sfx\evilLaugh_7.ogg", 2.5, 1};
+        titles[] = {};
+    };
+	
+	class growlWeird_1 {
+        name = "growlWeird_1";
+        sound[] = {"\sfx\growlWeird_1.ogg", 1.8, 1};
+        titles[] = {};
+    };
+	
+	class growlWeird_2 {
+        name = "growlWeird_2";
+        sound[] = {"\sfx\growlWeird_2.ogg", 1.8, 1};
+        titles[] = {};
+    };
+	
+	class growlWeird_3 {
+        name = "growlWeird_3";
+        sound[] = {"\sfx\growlWeird_3.ogg", 1.8, 1};
+        titles[] = {};
+    };
+	
+	class growlWeird_4 {
+        name = "growlWeird_4";
+        sound[] = {"\sfx\growlWeird_4.ogg", 1.8, 1};
+        titles[] = {};
+    };
+	
+	class killed_1 {
+        name = "killed_1";
+        sound[] = {"\sfx\killed_1.ogg", 0.7, 1};
+        titles[] = {};
+    };
+	
+	class knockedDown_1 {
+        name = "knockedDown_1";
+        sound[] = {"\sfx\knockedDown_1.ogg", 0.7, 1};
+        titles[] = {};
+    };
+	
+	class skillCheckIncoming {
+        name = "skillCheckIncoming";
+        sound[] = {"\sfx\skillCheckIncoming.ogg", 0.7, 1};
+        titles[] = {};
+    };
+	
+	class skillCheckFail {
+        name = "skillCheckFail";
+        sound[] = {"\sfx\skillCheckFail.ogg", 0.8, 1};
+        titles[] = {};
+    };
+	
+	class skillCheckSuccess {
+        name = "skillCheckSuccess";
+        sound[] = {"\sfx\skillCheckSuccess.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class cloak_1 {
+        name = "cloak_1";
+        sound[] = {"\sfx\cloak_1.ogg", 2.0, 1};
+        titles[] = {};
+    };
+	
+	class cloak_2 {
+        name = "cloak_2";
+        sound[] = {"\sfx\cloak_2.ogg", 2.0, 1};
+        titles[] = {};
+    };
+	
+	class cloak_3 {
+        name = "cloak_3";
+        sound[] = {"\sfx\cloak_3.ogg", 2.0, 1};
+        titles[] = {};
+    };
+	
+	class cloak_4 {
+        name = "cloak_4";
+        sound[] = {"\sfx\cloak_4.ogg", 2.0, 1};
+        titles[] = {};
+    };
+	
+	class bearTrap_1 {
+        name = "bearTrap_1";
+        sound[] = {"\sfx\bearTrap_1.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class bearTrap_2 {
+        name = "bearTrap_2";
+        sound[] = {"\sfx\bearTrap_2.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class bearTrap_3 {
+        name = "bearTrap_3";
+        sound[] = {"\sfx\bearTrap_3.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class bearTrap_4 {
+        name = "bearTrap_4";
+        sound[] = {"\sfx\bearTrap_4.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+	class bearTrapSnap_1 {
+        name = "bearTrapSnap_1";
+        sound[] = {"\sfx\bearTrapSnap_1.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class bearTrapSnap_2 {
+        name = "bearTrapSnap_2";
+        sound[] = {"\sfx\bearTrapSnap_2.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class bearTrapSnap_3 {
+        name = "bearTrapSnap_3";
+        sound[] = {"\sfx\bearTrapSnap_3.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class whispers_1 {
+        name = "whispers_1";
+        sound[] = {"\sfx\whispers_1.ogg", 0.7, 1};
+        titles[] = {};
+    };
+	
+	class whispers_2 {
+        name = "whispers_2";
+        sound[] = {"\sfx\whispers_2.ogg", 0.7, 1};
+        titles[] = {};
+    };
+	
+	class whispers_3 {
+        name = "whispers_3";
+        sound[] = {"\sfx\whispers_3.ogg", 0.7, 1};
+        titles[] = {};
+    };
+	
+	class whispers_4 {
+        name = "whispers_4";
+        sound[] = {"\sfx\whispers_4.ogg", 0.7, 1};
+        titles[] = {};
+    };
+	
+	class whispers_5 {
+        name = "whispers_5";
+        sound[] = {"\sfx\whispers_5.ogg", 0.7, 1};
+        titles[] = {};
+    };
+	
+	class palletBreak_1 {
+        name = "palletBreak_1";
+        sound[] = {"\sfx\palletBreak_1.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class palletBreak_2 {
+        name = "palletBreak_2";
+        sound[] = {"\sfx\palletBreak_2.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class palletBreak_3 {
+        name = "palletBreak_3";
+        sound[] = {"\sfx\palletBreak_3.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class palletDrop_1 {
+        name = "palletDrop_1";
+        sound[] = {"\sfx\palletDrop_1.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class palletDrop_2 {
+        name = "palletDrop_2";
+        sound[] = {"\sfx\palletDrop_2.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class palletDrop_3 {
+        name = "palletDrop_3";
+        sound[] = {"\sfx\palletDrop_3.ogg", 4.0, 1};
+        titles[] = {};
+    };
+	
+	class firecracker_1 {
+		name = "firecracker_1";
+		sound[] = {"\sfx\firecracker_1.ogg", 1.5, 1};
+		titles[] = {};
+	};
+	
+	class firecracker_2 {
+		name = "firecracker_2";
+		sound[] = {"\sfx\firecracker_2.ogg", 3.0, 1};
+		titles[] = {};
+	};
+	
+	class premonition {
+		name = "premonition";
+		sound[] = {"\sfx\premonition.ogg", 2.5, 1};
+		titles[] = {};
+	};
+
+    //SPEECH	
+	class mcClane_secret_1 {	     
+	    name = "mcClane_secret_1";
+	    sound[] = {"\speech\mcClane_secret_1.ogg", 5.0, 1};
+	    titles[] = {0, "$STR_GAME_McClaneSecretLine"};
+    };
+	
+	class mcClane_secret_2 {	     
+	    name = "mcClane_secret_2";
+	    sound[] = {"\speech\mcClane_secret_2.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class bruce_spawn_1 {	     
+	    name = "bruce_spawn_1";
+	    sound[] = {"\speech\bruce_spawn_1.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class bruce_spawn_2 {	     
+	    name = "bruce_spawn_2";
+	    sound[] = {"\speech\bruce_spawn_2.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class bruce_spawn_3 {	     
+	    name = "bruce_spawn_3";
+	    sound[] = {"\speech\bruce_spawn_3.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_bruce_1 {
+    	name = "voiceline_bruce_1";
+    	sound[] = {"\speech\voiceline_bruce_1.ogg", 5.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_bruce_2 {
+    	name = "voiceline_bruce_2";
+    	sound[] = {"\speech\voiceline_bruce_2.ogg", 4.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_bruce_3 {
+    	name = "voiceline_bruce_3";
+    	sound[] = {"\speech\voiceline_bruce_3.ogg", 5.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_bruce_4 {
+    	name = "voiceline_bruce_4";
+    	sound[] = {"\speech\voiceline_bruce_4.ogg", 5.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_bruce_5 {
+    	name = "voiceline_bruce_5";
+    	sound[] = {"\speech\voiceline_bruce_5.ogg", 5.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_bruce_6 {
+    	name = "voiceline_bruce_6";
+    	sound[] = {"\speech\voiceline_bruce_6.ogg", 4.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_bruce_7 {
+    	name = "voiceline_bruce_7";
+    	sound[] = {"\speech\voiceline_bruce_7.ogg", 4.0, 1};
+    	titles[] = {};
+    };
+	
+    class sandro_spawn_1 {
+	    name = "sandro_spawn_1";
+	    sound[] = {"\speech\sandro_spawn_1.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+
+    class sandro_spawn_2 {
+    	name = "sandro_spawn_2";
+	    sound[] = {"\speech\sandro_spawn_2.ogg", 4.0, 1};
+	    titles[] = {};
+    };
+
+    class sandro_spawn_3 {
+    	name = "sandro_spawn_3";
+    	sound[] = {"\speech\sandro_spawn_3.ogg", 4.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_sandro_1 {
+    	name = "voiceline_sandro_1";
+    	sound[] = {"\speech\voiceline_sandro_1.ogg", 4.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_sandro_2 {
+    	name = "voiceline_sandro_2";
+    	sound[] = {"\speech\voiceline_sandro_2.ogg", 4.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_sandro_3 {
+    	name = "voiceline_sandro_3";
+	    sound[] = {"\speech\voiceline_sandro_3.ogg", 4.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_sandro_4 {
+    	name = "voiceline_sandro_4";
+	    sound[] = {"\speech\voiceline_sandro_4.ogg", 4.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_sandro_5 {
+	    name = "voiceline_sandro_5";
+	    sound[] = {"\speech\voiceline_sandro_5.ogg", 4.0, 1};
+	    titles[] = {};
+    };
+
+    class voiceline_sandro_6 {
+    	name = "voiceline_sandro_6";
+    	sound[] = {"\speech\voiceline_sandro_6.ogg", 4.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_sandro_7 {
+    	name = "voiceline_sandro_7";
+    	sound[] = {"\speech\voiceline_sandro_7.ogg", 4.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_sandro_8 {
+    	name = "voiceline_sandro_8";
+	    sound[] = {"\speech\voiceline_sandro_8.ogg", 4.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_sandro_9 {
+    	name = "voiceline_sandro_9";
+	    sound[] = {"\speech\voiceline_sandro_9.ogg", 4.0, 1};
+	    titles[] = {};
+    };
+	
+    class stanislaw_spawn_1 {
+    	name = "stanislaw_spawn_1";
+	    sound[] = {"\speech\stanislaw_spawn_1.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+
+    class stanislaw_spawn_2 {
+    	name = "stanislaw_spawn_2";
+    	sound[] = {"\speech\stanislaw_spawn_2.ogg", 5.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_stanislaw_1 {
+		name = "voiceline_stanislaw_1";
+		sound[] = {"\speech\voiceline_stanislaw_1.ogg", 4.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_stanislaw_2 {
+		name = "voiceline_stanislaw_2";
+		sound[] = {"\speech\voiceline_stanislaw_2.ogg", 3.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_stanislaw_3 {
+		name = "voiceline_stanislaw_3";
+		sound[] = {"\speech\voiceline_stanislaw_3.ogg", 4.0, 1};
+		titles[] = {};
+	};
+
+	class voiceline_stanislaw_4 {
+		name = "voiceline_stanislaw_4";
+		sound[] = {"\speech\voiceline_stanislaw_4.ogg", 4.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_stanislaw_5 {
+    	name = "voiceline_stanislaw_5";
+    	sound[] = {"\speech\voiceline_stanislaw_5.ogg", 4.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_stanislaw_6 {
+    	name = "voiceline_stanislaw_6";
+    	sound[] = {"\speech\voiceline_stanislaw_6.ogg", 4.0, 1};
+    	titles[] = {};
+    };
+	
+	class voiceline_stanislaw_7 {
+    	name = "voiceline_stanislaw_7";
+	    sound[] = {"\speech\voiceline_stanislaw_7.ogg", 3.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_stanislaw_8 {
+    	name = "voiceline_stanislaw_8";
+	    sound[] = {"\speech\voiceline_stanislaw_8.ogg", 3.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_stanislaw_9 {
+    	name = "voiceline_stanislaw_9";
+	    sound[] = {"\speech\voiceline_stanislaw_9.ogg", 3.0, 1};
+	    titles[] = {};
+    };
+
+    class rammel_spawn_1 {
+    	name = "rammel_spawn_1";
+	    sound[] = {"\speech\rammel_spawn_1.ogg", 25.0, 1};
+	    titles[] = {};
+    };
+
+    class rammel_spawn_2 {
+    	name = "rammel_spawn_2";
+	    sound[] = {"\speech\rammel_spawn_2.ogg", 25.0, 1};
+	    titles[] = {};
+    };
+
+    class rammel_spawn_3 {
+    	name = "rammel_spawn_3";
+	    sound[] = {"\speech\rammel_spawn_3.ogg", 25.0, 1};
+	    titles[] = {};
+    };
+	
+	class rammel_spawn_4 {
+	    name = "rammel_spawn_4";
+	    sound[] = {"\speech\rammel_spawn_4.ogg", 25.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_rammel_1 {
+		name = "voiceline_rammel_1";
+		sound[] = {"\speech\voiceline_rammel_1.ogg", 25.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_rammel_2 {
+		name = "voiceline_rammel_2";
+		sound[] = {"\speech\voiceline_rammel_2.ogg", 20.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_rammel_3 {
+		name = "voiceline_rammel_3";
+		sound[] = {"\speech\voiceline_rammel_3.ogg", 25.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_rammel_4 {
+    	name = "voiceline_rammel_4";
+	    sound[] = {"\speech\voiceline_rammel_4.ogg", 20.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_rammel_5 {
+	    name = "voiceline_rammel_5";
+	    sound[] = {"\speech\voiceline_rammel_5.ogg", 20.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_rammel_6 {
+	    name = "voiceline_rammel_6";
+	    sound[] = {"\speech\voiceline_rammel_6.ogg", 20.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_rammel_7 {
+		name = "voiceline_rammel_7";
+		sound[] = {"\speech\voiceline_rammel_7.ogg", 25.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_rammel_8 {
+		name = "voiceline_rammel_8";
+		sound[] = {"\speech\voiceline_rammel_8.ogg", 20.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_rammel_9 {
+		name = "voiceline_rammel_9";
+		sound[] = {"\speech\voiceline_rammel_9.ogg", 20.0, 1};
+		titles[] = {};
+	};
+
+    class helmut_spawn_1 {
+	    name = "helmut_spawn_1";
+	    sound[] = {"\speech\helmut_spawn_1.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+
+    class helmut_spawn_2 {
+	    name = "helmut_spawn_2";
+	    sound[] = {"\speech\helmut_spawn_2.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+
+    class helmut_spawn_3 {
+	    name = "helmut_spawn_3";
+	    sound[] = {"\speech\helmut_spawn_3.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+
+    class helmut_spawn_4 {
+    	name = "helmut_spawn_4";
+	    sound[] = {"\speech\helmut_spawn_4.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_helmut_1 {
+		name = "voiceline_helmut_1";
+		sound[] = {"\speech\voiceline_helmut_1.ogg", 4.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_helmut_2 {
+    	name = "voiceline_helmut_2";
+    	sound[] = {"\speech\voiceline_helmut_2.ogg", 4.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_helmut_3 {
+		name = "voiceline_helmut_3";
+		sound[] = {"\speech\voiceline_helmut_3.ogg", 4.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_helmut_4 {
+		name = "voiceline_helmut_4";
+		sound[] = {"\speech\voiceline_helmut_4.ogg", 4.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_helmut_5 {
+		name = "voiceline_helmut_5";
+		sound[] = {"\speech\voiceline_helmut_5.ogg", 4.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_helmut_6 {
+		name = "voiceline_helmut_6";
+		sound[] = {"\speech\voiceline_helmut_6.ogg", 4.0, 1};
+		titles[] = {};
+	};
+	
+	class voiceline_helmut_7 {
+		name = "voiceline_helmut_7";
+		sound[] = {"\speech\voiceline_helmut_7.ogg", 3.0, 1};
+		titles[] = {};
+	};
+
+	class voiceline_helmut_8 {
+    	name = "voiceline_helmut_8";
+	    sound[] = {"\speech\voiceline_helmut_8.ogg", 3.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_helmut_9 {
+    	name = "voiceline_helmut_9";
+	    sound[] = {"\speech\voiceline_helmut_9.ogg", 3.0, 1};
+	    titles[] = {};
+    };
+	
+	class opterix_spawn_1 {
+    	name = "opterix_spawn_1";
+	    sound[] = {"\speech\opterix_spawn_1.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class opterix_spawn_2 {
+    	name = "opterix_spawn_2";
+	    sound[] = {"\speech\opterix_spawn_2.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_opterix_1 {
+    	name = "voiceline_opterix_1";
+	    sound[] = {"\speech\voiceline_opterix_1.ogg", 10.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_opterix_2 {
+    	name = "voiceline_opterix_2";
+	    sound[] = {"\speech\voiceline_opterix_2.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_opterix_3 {
+    	name = "voiceline_opterix_3";
+	    sound[] = {"\speech\voiceline_opterix_3.ogg", 7.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_opterix_4 {
+    	name = "voiceline_opterix_4";
+	    sound[] = {"\speech\voiceline_opterix_4.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_opterix_5 {
+    	name = "voiceline_opterix_5";
+	    sound[] = {"\speech\voiceline_opterix_5.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+	
+	class voiceline_opterix_6 {
+    	name = "voiceline_opterix_6";
+	    sound[] = {"\speech\voiceline_opterix_6.ogg", 5.0, 1};
+	    titles[] = {};
+    };
+};
+
+class CfgMusic {
+    tracks[] = {};
+	
+	class lobby_halloween {
+        name = "lobby_halloween";
+        sound[] = {"\music\lobby_halloween.ogg", 0.6, 1};
+    };
+	
+	class lobby_winter {
+        name = "lobby_winter";
+        sound[] = {"\music\lobby_winter.ogg", 1.3, 1};
+    };
+	
+	class terrorMusic_1 {
+        name = "terrorMusic_1";
+        sound[] = {"\music\terrorMusic_1.ogg", 1.0, 1};
+    };
+	
+	class terrorMusic_2 {
+        name = "terrorMusic_2";
+        sound[] = {"\music\terrorMusic_2.ogg", 1.0, 1};
+    };
+};
+
+class CfgDebriefing {  
+	class KillerWin {
+		title = "$STR_BRIEF_GameOver";
+		subtitle = "$STR_BRIEF_KillerWin";
+		description = "";
+		pictureBackground = "thumbnail.jpg";
+		picture = "";
+		pictureColor[] = {1.0,1.0,1.0,1};
+	};
+	
+	class IntrudersWin {
+		title = "$STR_BRIEF_GameOver";
+		subtitle = "$STR_BRIEF_IntrudersWin";
+		description = "";
+		pictureBackground = "thumbnail.jpg";
+		picture = "";
+		pictureColor[] = {1.0,1.0,1.0,1};
+	};
+	
+	class KillerLeft {
+		title = "$STR_BRIEF_GameOver";
+		subtitle = "$STR_BRIEF_KillerLeft";
+		description = "";
+		pictureBackground = "thumbnail.jpg";
+		picture = "";
+		pictureColor[] = {1.0,1.0,1.0,1};
+	};
+	
+	class LeaveMenuPrinc {
+        title = "$STR_BRIEF_Goodbye";
+        subtitle = "$STR_BRIEF_LobbyReturn";
+        description = "<t align='center' size='1.1' font='PuristaMedium'>See you soon!</t><br/><t align='center' size='0.8' font='PuristaLight'>-- Keep up to date with the latest news about Intruders --</t><br/><t align='center' size='0.8' font='PuristaLight'>Discord: </t><a font='PuristaLight' underline='false' color='#cc0000' size='0.8' href='https://discord.intruders-a3.de'><t align='center' font='PuristaLight' size='0.8' color='#cc0000'>discord.intruders-a3.de</a></t><br/>";
+        pictureBackground = "thumbnail.jpg";
+        picture = "";
+        pictureColor[] = {1.0,1.0,1.0,1};
+    };
+	
+	class matchInProgress {
+        title = "$STR_BRIEF_NoJoining";
+        subTitle = "$STR_BRIEF_MatchInProgress";
+        description = "";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {1.0,1.0,1.0,1};
+    };
+};
+
+class CfgHints {
+	class Intruders {
+	    displayName = "Intruders";
+		
+		class wendigo {
+			displayName = "$STR_HINT_WendigoAbility";
+			description = "$STR_HINT_WendigoAbilityDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_abilityWendigo.paa";
+		};
+		
+		class compactor {
+			displayName = "$STR_HINT_CompactorAbility";
+			description = "$STR_HINT_CompactorAbilityDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_abilityCompactor.paa";
+		};
+		
+		class butcher {
+			displayName = "$STR_HINT_ButcherAbility";
+			description = "$STR_HINT_ButcherAbilityDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_abilityButcher.paa";
+		};
+		
+		class oldman {
+			displayName = "$STR_HINT_OldmanAbility";
+			description = "$STR_HINT_OldmanAbilityDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_abilityOldman.paa";
+		};
+	
+		class flashbang {
+			displayName = "$STR_ITEM_Flashbang";
+			description = "$STR_ITEM_FlashbangDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_flashbang.paa";
+		};
+		
+		class firstAidKit {
+			displayName = "$STR_ITEM_FirstAidKit";
+			description = "$STR_ITEM_FirstAidKitDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_firstAidKit.paa";
+		};
+		
+		class toolbox {
+			displayName = "$STR_ITEM_Toolbox";
+			description = "$STR_ITEM_ToolboxDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_toolbox.paa";
+		};
+		
+		class smokeBomb {
+			displayName = "$STR_ITEM_SmokeBomb";
+			description = "$STR_ITEM_SmokeBombDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_smokeBomb.paa";
+		};
+		
+		class circuit {
+			displayName = "$STR_ITEM_Circuit";
+			description = "$STR_ITEM_CircuitDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_circuit.paa";
+		};
+		
+		class rifle {
+			displayName = "$STR_ITEM_Rifle";
+			description = "$STR_ITEM_RifleDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_rifle.paa";
+		};
+		
+		class firecrackers {
+			displayName = "$STR_ITEM_Firecrackers";
+			description = "$STR_ITEM_FirecrackersDesc";
+			tip = "$STR_ITEM_FirecrackersLore";
+			arguments[] = {};
+			image = "textures\ico_firecrackers.paa";
+		};
+	};
+};
+
+class CfgWorlds {
+	class Tanoa {
+		author = "Affiger_Affe";
+		description = "$STR_TANOA_Map";
+		pictureMap = "textures\tanoa\tanoa.jpg";
+
+		loadingTexts[] = {
+			"$STR_LOADING_1",
+			"$STR_LOADING_2",
+			"$STR_LOADING_3",
+			"$STR_LOADING_4",
+			"$STR_LOADING_5",
+			"$STR_LOADING_6",
+			"$STR_LOADING_7",
+			"$STR_LOADING_8"
+		};
+	};
+	
+	class Malden {
+		author = "Affiger_Affe";
+		description = "$STR_MALDEN_Map";
+		pictureMap = "textures\malden\malden.jpg";
+
+		loadingTexts[] = {
+			"$STR_LOADING_1",
+			"$STR_LOADING_2",
+			"$STR_LOADING_3",
+			"$STR_LOADING_4",
+			"$STR_LOADING_5",
+			"$STR_LOADING_6",
+			"$STR_LOADING_7",
+			"$STR_LOADING_8"
+		};
+	};
+};
