@@ -45,7 +45,6 @@ cloakingCooldown = false;
 portalTravelInUse = false;
 unbreakable = false;
 exhausted = false;
-phaseWalkCooldown = false;
 beartraps = 6;
 
 //ITEMS

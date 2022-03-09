@@ -945,14 +945,6 @@ class CfgHints {
 			arguments[] = {};
 			image = "textures\ico_abilityButcher.paa";
 		};
-		
-		class oldman {
-			displayName = "$STR_HINT_OldmanAbility";
-			description = "$STR_HINT_OldmanAbilityDesc";
-			tip = "";
-			arguments[] = {};
-			image = "textures\ico_abilityOldman.paa";
-		};
 	
 		class flashbang {
 			displayName = "$STR_ITEM_Flashbang";

@@ -38,9 +38,6 @@ switch (season) do {
 		//NOTIFICATION
 	    ["STR_GAME_WinterEvent", "STR_GAME_WinterEventDesc", "textures\ico_snowman.paa", "06.12 - 31.12"] call gonzka_fnc_eventNotification;
 		
-		//EFFECT
-	    [] spawn gonzka_fnc_weatherWinter;
-		
 		//LOBBY OBJECTS
 		{
 		    _x hideObject false;

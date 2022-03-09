@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.7.1&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.7.1&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.7.2&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.7.2&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -301,14 +301,6 @@
 			<Original>THE BUTCHER\n\nIn the past, the Butcher hunted bears in Livonia. Over time, his prey changed. He is able to apply pressure across the Map by placing deadly Bear Traps for Survivors to step into.</Original>
 			<German>DER METZGER\n\nFrüher jagte der Metzger in Livonia Bären. Im Laufe der Zeit änderte sich seine Beute. Er kann auf der ganzen Karte Druck ausüben, indem er tödliche Bärenfallen für die Überlebenden platziert.</German>
 		</Key>
-		<Key ID="STR_GAME_Oldman">
-			<Original>Old Man (SCP 106)</Original>
-			<German>Alter Mann (SCP 106)</German>
-		</Key>
-		<Key ID="STR_GAME_OldmanTooltip">
-			<Original>THE OLD MAN\n\nSCP-106 appears to be an elderly humanoid, with a general appearance of advanced decomposition. He is capable of passing through solid matter and can catch Survivors off-guard.</Original>
-			<German>DER ALTE MANN\n\nSCP-106 hat die Erscheinung eines älteren Mannes und weist fortgeschrittene Zersetzungsmerkmale auf. Er ist in der Lage, durch feste Materie hindurchzugehen und Überlebende zu überrumpeln.</German>
-		</Key>
 		<Key ID="STR_GAME_AlreadyAtPortal">
 			<Original>You are already at this portal!</Original>
 			<German>Du befindest dich bereits bei diesem Portal!</German>
@@ -537,10 +529,6 @@
 			<Original>&lt;t color='#EEC900'&gt;Set Trap&lt;/t&gt;</Original>
 			<German>&lt;t color='#EEC900'&gt;Falle platzieren&lt;/t&gt;</German>
 		</Key>
-		<Key ID="STR_GAME_OldmanAbilityAction">
-			<Original>&lt;t color='#EEC900'&gt;Enter Pocket Dimension&lt;/t&gt;</Original>
-			<German>&lt;t color='#EEC900'&gt;Taschendimension betreten&lt;/t&gt;</German>
-		</Key>
 	</Package>
 	<Package name="Debriefing">
 		<Key ID="STR_BRIEF_GameOver">
@@ -600,14 +588,6 @@
 		<Key ID="STR_HINT_ButcherAbilityDesc">
 			<Original>%1%3You have 6 Bear Traps at your disposal.%4%1%2Use the scroll wheel menu to set and arm a Bear Trap in a valid location in front of you. %1%2Press and hold the spacebar while standing near a disarmed Bear Trap to collect it, or reset it.%1%2Any Survivor who steps into an armed Bear Trap will be immobilized and injured, but can attempt to free himself from the trap.%1</Original>
 			<German>%1%3Dir stehen 6 Bärenfallen zur Verfügung.%4%1%2Benutze das Scrollradmenü, um eine Bärenfalle an einer geeigneten Position vor dir zu legen.%1%2Drücke und halte die Leertaste, um eine Bärenfalle einzusammeln, oder an Ort und Stelle zurückzusetzen, sofern sie nicht schon gespannt ist.%1%2Ein darin gefangener Spieler wird bewegungsunfähig und verletzt, kann aber versuchen, der Falle zu entkommen.%1</German>
-		</Key>
-		<Key ID="STR_HINT_OldmanAbility">
-			<Original>Containment Breach</Original>
-			<German>Eindämmungsbruch</German>
-		</Key>
-		<Key ID="STR_HINT_OldmanAbilityDesc">
-			<Original>%1%3Use the scroll wheel menu to enter the Pocket Dimension and re-appear at a new location.%4%1%2The Old Man may traverse to a new location at an increased Movement speed.%1%2He loses sight of all Survivors, but still sees the footprints they leave behind.%1%2The Power recovery is 15 seconds.%1</Original>
-			<German>%1%3Benutzte das Scrollradmenü, um die Taschendimension zu betreten und an einem anderen Ort wieder aufzutauchen.%4%1%2Der alte Mann kann sich frei zu einem neuen Ort bewegen und ist für kurze Zeit schneller.%1%2Er verliert alle Überlebenden aus dem Blick, kann aber noch die Fußspuren wahrnehmen, die sie hinterlassen.%1%2Die Erholung der Fähigkeit beträgt 15 Sekunden.%1</German>
 		</Key>
 	</Package>
 	<Package name="Scoring">

@@ -49,6 +49,9 @@ season = _season; publicvariable "season";
 //SPAWN PUMPKINS
 [] spawn gonzka_fnc_spawnPumpkins;
 
+//SNOW
+[] spawn gonzka_fnc_weatherWinter;
+
 //CHESTS
 private _chestresult = []; 
 private _chestgroups = [

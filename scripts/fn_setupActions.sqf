@@ -10,7 +10,6 @@
 if (playerSide isEqualTo east) then {
 	player addAction["<img image='textures\ico_abilityWendigo.paa'/> " + localize "STR_GAME_WendigoAbilityAction",gonzka_fnc_cloak,"",0,false,true,"",' !cloakingCooldown && player getVariable "killer" isEqualTo "wendigo" '];
 	player addAction["<img image='textures\ico_abilityButcher.paa'/> " + localize "STR_GAME_ButcherAbilityAction",gonzka_fnc_setBeartrap,"",0,false,true,"",' beartraps > 0 && player getVariable "killer" isEqualTo "butcher" '];
-	player addAction["<img image='textures\ico_abilityOldman.paa'/> " + localize "STR_GAME_OldmanAbilityAction",gonzka_fnc_phaseWalk,"",0,false,true,"",' !phaseWalkCooldown && player getVariable "killer" isEqualTo "oldman" '];
 };
 
 player addAction["<img image='textures\ico_unbreakable.paa'/> " + localize "STR_GAME_UnbreakableAction",{unbreakable = true; ["#rev", 1, player] call BIS_fnc_reviveOnState;},"",0,false,true,"",' "unbreakable" in (player getVariable "intruders_activePerks") && !unbreakable && player getVariable ["BIS_revive_incapacitated", false] ',50,true];

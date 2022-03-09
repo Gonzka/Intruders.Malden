@@ -15,9 +15,7 @@ class Intruders {
 		class cloak {};
 		class cloakParticles {};
 		class cloakTransition {};
-		class endPhaseWalk {};
 		class knockedOut {};
-		class phaseWalk {};
 		class portalBlastWave {};
 		class travelThroughPortal {};
 	};

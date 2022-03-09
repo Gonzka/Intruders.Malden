@@ -55,10 +55,4 @@ switch (_code) do {
 	case "HOLIDAYSWEATER": {
         ["STR_GAME_SkinUnlocked", "STR_SKIN_CodeHolidaySweater", 15, "textures\ico_snowman.paa"] spawn gonzka_fnc_notification;
 	};
-	case "VAHANALIFE": {
-        //COMING SOON
-    };
-	case "SECONDLIFE": {
-        //COMING SOON
-    };
 };
