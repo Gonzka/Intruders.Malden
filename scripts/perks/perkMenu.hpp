@@ -47,7 +47,7 @@ class PerkMenu {
 		
 		class PerkTitle : RscText {
             idc = -1;
-		    text = "AUSGEWÄHLTE TALENTE";
+		    text = "$STR_GAME_SelectedPerks";
 			font = PuristaBold;
             x = 0.349479166666667 * safezoneW + safezoneX;
             y = 0.319625038348083 * safezoneH + safezoneY;
@@ -86,7 +86,7 @@ class PerkMenu {
 			style = ST_CENTER;
 			colorBackground[] = {0.7,0.13,0.13,1};
 			onButtonClick = "playSound ""Click1""; [1] call gonzka_fnc_selectPerk;";
-			text = "AUSWÄHLEN";
+			text = "$STR_GAME_Select";
 			
 			class Attributes {
 				align="center";
@@ -122,7 +122,7 @@ class PerkMenu {
 			style = ST_CENTER;
 			colorBackground[] = {0.7,0.13,0.13,1};
 			onButtonClick = "playSound ""Click1""; [2] call gonzka_fnc_selectPerk;";
-			text = "AUSWÄHLEN";
+			text = "$STR_GAME_Select";
 			
 			class Attributes {
 				align="center";
@@ -158,7 +158,7 @@ class PerkMenu {
 			style = ST_CENTER;
 			colorBackground[] = {0.7,0.13,0.13,1};
 			onButtonClick = "playSound ""Click1""; [3] call gonzka_fnc_selectPerk;";
-			text = "AUSWÄHLEN";
+			text = "$STR_GAME_Select";
 			
 			class Attributes {
 				align="center";
@@ -194,7 +194,7 @@ class PerkMenu {
 			style = ST_CENTER;
 			colorBackground[] = {0.7,0.13,0.13,1};
 			onButtonClick = "playSound ""Click1""; [4] call gonzka_fnc_selectPerk;";
-			text = "AUSWÄHLEN";
+			text = "$STR_GAME_Select";
 			
 			class Attributes {
 				align="center";

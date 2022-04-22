@@ -277,6 +277,10 @@
 			<Original>SELECT</Original>
 			<German>AUSWÄHLEN</German>
 		</Key>
+		<Key ID="STR_GAME_SelectedPerks">
+			<Original>SELECTED PERKS</Original>
+			<German>AUSGEWÄHLTE TALENTE</German>
+		</Key>
 		<Key ID="STR_GAME_Wendigo">
 			<Original>Wendigo</Original>
 			<German>Wendigo</German>
@@ -426,11 +430,11 @@
 			<German>AUSRÜSTEN</German>
 		</Key>
 		<Key ID="STR_GAME_Purchase">
-			<Original>Purchase</Original>
+			<Original>Buy</Original>
 			<German>Kaufen</German>
 		</Key>
 		<Key ID="STR_GAME_Purchased">
-			<Original>Purchased</Original>
+			<Original>Bought</Original>
 			<German>Gekauft</German>
 		</Key>
 		<Key ID="STR_GAME_Confirmation">
