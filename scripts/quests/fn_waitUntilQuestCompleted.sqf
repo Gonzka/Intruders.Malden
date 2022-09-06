@@ -52,6 +52,7 @@ switch (_case) do {
 	
 	case "Killer7": {
         waitUntil {{if (_x isNotEqualTo Killer) then {lifeState _x in ["INJURED", "INCAPACITATED"]}} count playableUnits >= 4};
+	};
 	
 	case "Intruder0": {
         waitUntil {quest_generators > 1};

@@ -23,9 +23,7 @@ initWeapon = {
     }];
 };
 
-chopWeapon = {
-    [] spawn gonzka_fnc_endPhaseWalk; //Old Man Ability
-	
+chopWeapon = {	
 	player playAction "GestureSwing";
     [player, selectRandom ["weaponSwing_1","weaponSwing_2","weaponSwing_3","weaponSwing_4","weaponSwing_5","weaponSwing_6","weaponSwing_7"]] remoteExecCall ["say3D"];
 	player forceWalk true;
