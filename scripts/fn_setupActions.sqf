@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         17.10.2020
-	Description:	 Master addAction file handler for all client-based actions.
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Master addAction file handler for all client-based actions.
+*/
 
 //PERKS & ABILITIES
 if (playerSide isEqualTo east) then {
@@ -25,7 +23,7 @@ player addAction["<img image='textures\gui\hud_escape.paa'/> " + localize "STR_G
 player addAction["<img image='textures\ico_smokeBomb.paa'/> " + localize "STR_GAME_SmokeBombAction",{smokeBombs = smokeBombs - 1; [player] remoteExec ["gonzka_fnc_smokeBomb", [0, -2] select isDedicated];},"",0,false,true,"",' smokeBombs > 0 '];
 player addAction["<img image='textures\ico_firecrackers.paa'/> " + localize "STR_GAME_FirecrackersAction",{firecrackers = firecrackers - 1; [] spawn gonzka_fnc_firecracker;},"",0,false,true,"",' firecrackers > 0 '];
 player addAction["<img image='textures\ico_circuit.paa'/> " + localize "STR_GAME_CircuitAction",{
-    circuits = circuits - 1;
+	circuits = circuits - 1;
 	_circuitCharges = cursorObject getVariable ["circuitCharges",0];
 	_circuitCharges = _circuitCharges + 1; cursorObject setVariable ["circuitCharges",_circuitCharges,true];
 	
@@ -43,8 +41,8 @@ player addAction["<img image='textures\ico_circuit.paa'/> " + localize "STR_GAME
 	"str attachedObjects player find 'beartrap' != -1",
 	{},
 	{},
-	{ 
-	    call gonzka_fnc_detachBeartrap; [player,""] remoteExec ["switchMove"];
+	{
+		call gonzka_fnc_detachBeartrap; [player,""] remoteExec ["switchMove"];
 		["STR_SCORE_TrapEscape",500] call gonzka_fnc_addFunds;
 	},
 	{},
@@ -64,11 +62,11 @@ player addAction["<img image='textures\ico_circuit.paa'/> " + localize "STR_GAME
 	"_this distance _target < 2 && side _this != east && _this != _target && damage _target > 0 && !(_target getVariable ['BIS_revive_incapacitated', false]) && alive _target",
 	"_this distance _target < 2 && side _this != east && _this != _target && damage _target > 0 && !(_target getVariable ['BIS_revive_incapacitated', false]) && alive _target",
 	{
-	    _caller playMoveNow "AinvPknlMstpSlayWpstDnon_medicOther";
+		_caller playMoveNow "AinvPknlMstpSlayWpstDnon_medicOther";
 	},
 	{},
-	{ 
-        _target setDamage 0;
+	{
+		_target setDamage 0;
 		["STR_SCORE_Heal",500] remoteExecCall ["gonzka_fnc_addFunds", _caller];
 		
 		//QUEST
@@ -76,7 +74,7 @@ player addAction["<img image='textures\ico_circuit.paa'/> " + localize "STR_GAME
 		//_caller setVariable ["quest_heals",_heals + 1,true];
 	},
 	{
-	    [_caller, ""] remoteExec ["switchMove"];
+		[_caller, ""] remoteExec ["switchMove"];
 	},
 	[],
 	8,
@@ -93,16 +91,16 @@ player addAction["<img image='textures\ico_circuit.paa'/> " + localize "STR_GAME
 	"\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\destroy_ca.paa",
 	"count (nearestObjects [player, ['Intruders_Object_Palett'], 3]) > 0 && ((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 1 && side _this isEqualTo east",
 	"count (nearestObjects [player, ['Intruders_Object_Palett'], 3]) > 0 && ((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 1 && side _this isEqualTo east",
-	{ 
-	    blockMainWeapon = true; 
+	{
+		blockMainWeapon = true; 
 	},
 	{},
 	{
 		private _nearestPaletts = nearestObjects [player, ["Intruders_Object_Palett"], 3];
 		if !(_nearestPaletts isEqualTo []) then {
-		    player playAction "GestureSwing";
-            [player, selectRandom ["weaponSwing_1","weaponSwing_2","weaponSwing_3","weaponSwing_4","weaponSwing_5","weaponSwing_6","weaponSwing_7"]] remoteExecCall ["say3D"];
-	        
+			player playAction "GestureSwing";
+			[player, selectRandom ["weaponSwing_1","weaponSwing_2","weaponSwing_3","weaponSwing_4","weaponSwing_5","weaponSwing_6","weaponSwing_7"]] remoteExecCall ["say3D"];
+			
 			private _palett = _nearestPaletts select 0;
 			private _soundSrc = "Land_HelipadEmpty_F" createVehicle getPos _palett;			
 			
@@ -113,13 +111,13 @@ player addAction["<img image='textures\ico_circuit.paa'/> " + localize "STR_GAME
 			["STR_SCORE_Destruction",100] call gonzka_fnc_addFunds;
 			
 			[_soundSrc] spawn {
-		        sleep 1.5;
-		        deleteVehicle (_this select 0);
-	        };
+				sleep 1.5;
+				deleteVehicle (_this select 0);
+			};
 		};
 	},
-	{ 
-	    blockMainWeapon = false;
+	{
+		blockMainWeapon = false;
 	},
 	[],
 	2,
@@ -148,7 +146,7 @@ player addAction["<img image='textures\ico_circuit.paa'/> " + localize "STR_GAME
 				
 				//PALETT STUN
 				if (Killer distance _x < 2) then {
-				    [] remoteExec ["gonzka_fnc_palettStun",Killer];
+					[] remoteExec ["gonzka_fnc_palettStun",Killer];
 					
 					["STR_SCORE_Stun",250] remoteExecCall ["gonzka_fnc_addFunds",player];
 

@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         06.08.2021
-	Description:	 Updates the available perks in the perk menu
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Updates the available perks in the perk menu
+*/
 
 disableSerialization;
 

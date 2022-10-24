@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         12.10.2020
-	Description:	 Local function when a generator explodes
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Local function when a generator explodes
+*/
 
 private _generator = getPos player nearestObject "Land_TransferSwitch_01_F"; 
 

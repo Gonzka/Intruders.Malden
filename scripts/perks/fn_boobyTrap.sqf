@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         24.09.2021
-	Description:	 Booby Trap Killer Perk
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Booby Trap Killer Perk
+*/
 
 if !("boobyTrap" in (player getVariable "intruders_activePerks")) exitWith {};
 

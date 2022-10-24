@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.7.2&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.7.2&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.8.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.8.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -305,9 +305,9 @@
 			<Original>THE BUTCHER\n\nIn the past, the Butcher hunted bears in Livonia. Over time, his prey changed. He is able to apply pressure across the Map by placing deadly Bear Traps for Survivors to step into.</Original>
 			<German>DER METZGER\n\nFrüher jagte der Metzger in Livonia Bären. Im Laufe der Zeit änderte sich seine Beute. Er kann auf der ganzen Karte Druck ausüben, indem er tödliche Bärenfallen für die Überlebenden platziert.</German>
 		</Key>
-		<Key ID="STR_GAME_AlreadyAtPortal">
-			<Original>You are already at this portal!</Original>
-			<German>Du befindest dich bereits bei diesem Portal!</German>
+		<Key ID="STR_GAME_PortalTooClose">
+			<Original>You are too close to this portal!</Original>
+			<German>Du bist zu nah an diesem Portal!</German>
 		</Key>
 		<Key ID="STR_GAME_CleanseTotem">
 			<Original>Cleanse Totem</Original>
@@ -582,8 +582,8 @@
 			<German>Portalreise</German>
 		</Key>
 		<Key ID="STR_HINT_CompactorAbilityDesc">
-			<Original>%1%3Approach a Portal and use the scroll wheel menu to travel to another Portal.%4%1%2After emerging from a Portal, you remain undetectable for 3 seconds (disabled heartbeat).%1%2Traveling between portals has a cooldown of 10 seconds.%1</Original>
-			<German>%1%3Nähere dich einem Portal und benutzte das Scrollradmenü, um zu einem anderen Portal zu reisen.%4%1%2Nach der Reise bleibst du noch für 3 Sekunden unentdeckbar (deaktivierter Herzschlag).%1%2Das Reisen zwischen den Portalen hat eine Abklingzeit von 10 Sekunden.%1</German>
+			<Original>%1%3Use the scroll wheel menu to travel to a Portal.%4%1%2After emerging from a Portal, you remain undetectable for 3 seconds (disabled heartbeat).%1%2Traveling to portals has a cooldown of 10 seconds.%1</Original>
+			<German>%1%3Benutzte das Scrollradmenü, um zu einem Portal zu reisen.%4%1%2Nach der Reise bleibst du noch für 3 Sekunden unentdeckbar (deaktivierter Herzschlag).%1%2Das Reisen zu den Portalen hat eine Abklingzeit von 10 Sekunden.%1</German>
 		</Key>
 		<Key ID="STR_HINT_ButcherAbility">
 			<Original>Bear Trap</Original>
@@ -870,8 +870,8 @@
 			<German>Tödlicher Verfolger</German>
 		</Key>
 		<Key ID="STR_ITEM_LethalPursuerDesc">
-			<Original>- At the start of the Match, the Positions of all Survivors are revealed to you for 9 seconds.</Original>
-			<German>- Zu Beginn der Partie werden dir die Positionen aller Überlebenden für 9 Sekunden angezeigt.</German>
+			<Original>- At the start of the Match, the Positions of all Survivors are revealed to you for 9 seconds.\n\n- Extends the duration of a Survivor's Position being revealed to you by +2 seconds.</Original>
+			<German>- Zu Beginn der Partie werden dir die Positionen aller Überlebenden für 9 Sekunden angezeigt.\n\n- Immer wenn die Position eines Überlebenden eine Zeitlang angezeigt wird, wird die Dauer um 2 Sekunden verlängert.</German>
 		</Key>
 		<Key ID="STR_ITEM_Armageddon">
 			<Original>Armageddon</Original>
@@ -918,8 +918,8 @@
 			<German>Hoffnung</German>
 		</Key>
 		<Key ID="STR_ITEM_HopeDesc">
-			<Original>- As soon as the Escape Vehicles have arrived, your Movement speed is increased by 7 % for 120 seconds.</Original>
-			<German>- Deine Bewegungsgeschwindigkeit erhöht sich um 7 %, und zwar für 120 Sekunden, sobald die Fluchtfahrzeuge eingetroffen sind.</German>
+			<Original>- As soon as the Escape Vehicles have arrived, your Movement speed is increased by 7 %.</Original>
+			<German>- Deine Bewegungsgeschwindigkeit erhöht sich um 7 %, sobald die Fluchtfahrzeuge eingetroffen sind.</German>
 		</Key>
 		<Key ID="STR_ITEM_SprintBurst">
 			<Original>Sprint Burst</Original>

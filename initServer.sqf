@@ -3,13 +3,13 @@ setTimeMultiplier 0.1;
 
 {
     _x setVariable ["active",false,true];
-	{
-        [_x, "OFF"] remoteExec ["switchLight",0,true];  
+    {
+        [_x, "OFF"] remoteExec ["switchLight",0,true];
     } forEach (nearestObjects [_x, [], 3]);
     _x animateSource ["switchposition",1];   
     _x animateSource ["light",0];   
     _x setDamage 1;
-	[_x] remoteExec ["gonzka_fnc_generatorHoldAction", [0, -2] select isDedicated, _x];
+    [_x] remoteExec ["gonzka_fnc_generatorHoldAction", [0, -2] select isDedicated, _x];
 } forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5 , genericGen_6, genericGen_7];
 
 matchInProgress = false; publicvariable "matchInProgress";
@@ -27,21 +27,21 @@ gen7_special = false; publicvariable "gen7_special";
 
 //SEASONING
 seasons = [	
-//  Start: Monat,Tag - Ende: Monat,Tag
+    //  Start: Monat,Tag - Ende: Monat,Tag
     [10,21,				10,31,		"Halloween"],
-	[11,1,				11,11,		"Halloween"],
-	[12,6,				12,31,		"Winter"]
+    [11,1,				11,11,		"Halloween"],
+    [12,6,				12,31,		"Winter"]
 ];
 
 _now = systemTime;
 _season = "";
 
 {	
-	if ((_x select 0) <= (_now select 1) && (_x select 2) >= (_now select 1)) then {
-		if ((_x select 1) <= (_now select 2) && (_x select 3) >= (_now select 2)) then {
-			_season = _x select 4;
-		};
-	};
+    if ((_x select 0) <= (_now select 1) && (_x select 2) >= (_now select 1)) then {
+        if ((_x select 1) <= (_now select 2) && (_x select 3) >= (_now select 2)) then {
+            _season = _x select 4;
+        };
+    };
 } forEach seasons;
 
 season = _season; publicvariable "season";
@@ -66,10 +66,10 @@ private _chestgroups = [
 ];
 
 {
-	private _randSel = selectRandom _x;
-	private _rIndex = _x find _randSel;
-	_x deleteAt _rindex;
-	_chestresult pushBack _randSel;
+    private _randSel = selectRandom _x;
+    private _rIndex = _x find _randSel;
+    _x deleteAt _rindex;
+    _chestresult pushBack _randSel;
 } forEach _chestgroups;
 
 {
@@ -83,8 +83,8 @@ chestgroup = _chestresult; publicvariable "chestgroup";
 private _totemResult = []; 
 private _totems = [
     totem_1, totem_2, totem_3, totem_4 ,totem_5, totem_6, totem_7, totem_8, totem_9, totem_10,
-	totem_11, totem_12, totem_13, totem_14, totem_15, totem_16, totem_17, totem_18, totem_19, totem_20,
-	totem_21, totem_22, totem_23, totem_24, totem_25, totem_26, totem_27, totem_28
+    totem_11, totem_12, totem_13, totem_14, totem_15, totem_16, totem_17, totem_18, totem_19, totem_20,
+    totem_21, totem_22, totem_23, totem_24, totem_25, totem_26, totem_27, totem_28
 ];
 
 for "_i" from 0 to 4 do { //Select 5 Totems
@@ -92,11 +92,11 @@ for "_i" from 0 to 4 do { //Select 5 Totems
     private _rIndex = _totems find _randSel;
     _totems deleteAt _rindex;
     _totemResult pushBack _randSel;
-	
-	_randSel hideObjectGlobal false;
-	private _totemPole = getPos _randSel nearestObject "Land_WoodenWall_03_s_d_pole_F";
-	_totemPole hideObjectGlobal false; 
-	[_randSel] remoteExec ["gonzka_fnc_totemHoldAction", [0, -2] select isDedicated, _randSel];
+    
+    _randSel hideObjectGlobal false;
+    private _totemPole = getPos _randSel nearestObject "Land_WoodenWall_03_s_d_pole_F";
+    _totemPole hideObjectGlobal false; 
+    [_randSel] remoteExec ["gonzka_fnc_totemHoldAction", [0, -2] select isDedicated, _randSel];
 };
 
 totems = _totemResult; publicvariable "totems";
@@ -121,10 +121,10 @@ if (_rain) then {
 if (_sunset) then {
     private _date = date select [0,3]; 
     if (worldName isEqualTo "Tanoa") then {
-	    _date append [17,30];
-	} else {
-	    _date append [19,0];
-	};
-	[_date] remoteExec ["setDate"];
+        _date append [17,30];
+    } else {
+        _date append [19,0];
+    };
+    [_date] remoteExec ["setDate"];
 };
 */

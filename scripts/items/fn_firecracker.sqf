@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         15.11.2021
-	Description:	 An exploding firecracker that can blind killers and survivors
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    An exploding firecracker that can blind killers and survivors
+*/
 
 private _firecracker = createSimpleObject ["Land_ButaneCanister_F", [0,0,0]];
 _firecracker setPosATL getPosATL player;

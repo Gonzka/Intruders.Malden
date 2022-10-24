@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Unkown modified by Gonzka
-    Date:	         07.10.2020
-	Description:	 Creates local fog around the player
+/*
+    Author:	Unkown modified by Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Creates local fog around the player
+*/
 
 createFogParticles = {
     private _obj = player;
@@ -33,7 +31,7 @@ createFogParticles = {
  
     _this setVariable ["playerFog", floor time + 5];
     
-	sleep 120;
+    sleep 120;
     deleteVehicle _fog1;
     deleteVehicle _fog2;
     deleteVehicle _fog3;

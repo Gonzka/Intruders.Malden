@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         31.01.2021
-	Description:	 Definitely not a copy of Barbeque and Chili
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Definitely not a copy of Barbeque and Chili
+*/
 
 if !("jamAndBanana" in (player getVariable "intruders_activePerks")) exitWith {};
 

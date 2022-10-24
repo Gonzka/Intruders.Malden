@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         12.10.2020
-	Description:	 The killer may only use the first person view
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    The killer may only use the first person view
+*/
 
 while {true} do {
 	waitUntil {sleep 0.01; cameraOn == player && cameraView == "External"}; 

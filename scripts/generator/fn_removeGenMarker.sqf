@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         24.10.2020
-	Description:	 Removes the marker when a generator is repaired
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Removes the marker when a generator is repaired
+*/
 
 params [
     ["_generator", objNull, [objNull]]

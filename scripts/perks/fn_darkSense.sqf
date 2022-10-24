@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         04.08.2021
-	Description:	 Dark Sense Survivor Perk
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Dark Sense Survivor Perk
+*/
 
 if !("darkSense" in (player getVariable "intruders_activePerks")) exitWith {};
 

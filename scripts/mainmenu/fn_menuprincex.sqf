@@ -14,9 +14,9 @@ disableSerialization;
 createDialog "menuprincipal";
 
 if (playerSide isEqualTo east) then {
-    createDialog "SelectKillerMenu";
+	createDialog "SelectKillerMenu";
 } else {
-    call gonzka_fnc_loadGear;
+	call gonzka_fnc_loadGear;
 };
 
 uiNamespace setVariable ["BeginStartBtnPushed",0];

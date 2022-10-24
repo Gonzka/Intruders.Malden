@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         28.10.2020
-	Description:	 Generates sparks effect
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Generates sparks effect
+*/
 
 params [
     ["_generator", objNull, [objNull]]

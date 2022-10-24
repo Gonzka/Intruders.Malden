@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         06.10.2021
-	Description:	 Shows information about events
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Shows information about events
+*/
 
 params [
 	["_eventTitle", "", [""]],

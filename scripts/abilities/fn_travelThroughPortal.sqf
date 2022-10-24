@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         07.02.2021
-	Description:	 Teleportation from one portal to another
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Teleportation from one portal to another
+*/
 
 params [
     ["_portal", objNull, [objNull]]
@@ -14,7 +12,7 @@ if (portalTravelInUse) exitWith { titleText [localize "STR_GAME_AbilityCooldown"
 
 private _currentPortal = getPos player nearestObject "Land_ShellCrater_02_large_F";
 if (_portal == _currentPortal) exitWith { 
-    ["STR_GAME_Error", "STR_GAME_AlreadyAtPortal", 5, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
+    ["STR_GAME_Error", "STR_GAME_PortalTooClose", 5, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
 };
 
 titleCut ["","BLACK OUT",1.5];
@@ -48,7 +46,7 @@ quest_portalTravels = quest_portalTravels + 1;
 
 [] spawn { //COOLDOWN
     sleep 3;
-	player setVariable ["undetectable", false, true];
-	sleep 7;
+    player setVariable ["undetectable", false, true];
+    sleep 7;
     portalTravelInUse = false;
 };

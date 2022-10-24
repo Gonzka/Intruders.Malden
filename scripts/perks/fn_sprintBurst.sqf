@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         22.09.2021
-	Description:	 Sprint Burst Survivor Perk
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Sprint Burst Survivor Perk
+*/
 
 if !("sprintBurst" in (player getVariable "intruders_activePerks")) exitWith {};
 if (exhausted) exitWith {};

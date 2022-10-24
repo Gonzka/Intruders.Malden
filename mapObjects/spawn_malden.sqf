@@ -1,5 +1,4 @@
-private ["_objects","_object","_data"];
-_data = [
+private _data = [
     //Dorf
 	["a3\plants_f\tree\t_oleae1s_f.p3d", [7048.64,11014.2,39.173], [[0,0.999979,0.0064037],[-0.0939822,-0.00637536,0.995553]]],
 	["a3\plants_f\tree\t_oleae2s_f.p3d", [7055.41,11023.6,38.3401], [[0,0.999136,-0.0415638],[-0.113659,0.0412945,0.992661]]],
@@ -284,16 +283,12 @@ _data = [
 	["a3\plants_f\bush\b_neriumo2d_f.p3d", [7099.67,11052.6,38.8522], [[-0.365427,-0.93084,0],[0,0,1]]],
 	["a3\plants_f\bush\b_neriumo2d_f.p3d", [7103.25,11090.2,38.3758], [[0,0.999136,-0.0415638],[0.0191975,0.0415561,0.998952]]],
 	["a3\plants_f\bush\b_neriumo2d_f.p3d", [7101.2,11082.4,38.3578], [[0,0.999136,-0.0415638],[0.0191975,0.0415561,0.998952]]]
-	
-	
 ];
-_objects = [];
+private "_object";
 {
 	_object = createSimpleObject [(_x select 0), (ASLToAGL(_x select 1)), true];
 	_object setVectorDirAndUp (_x select 2);
 	_object setPosASL (_x select 1);
 	_object enableSimulation false;
-	_object allowdamage false;
-	_objects pushBack _object;
+	_object allowDamage false;
 } forEach _data;
-_objects;

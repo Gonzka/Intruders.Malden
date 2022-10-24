@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Tonic modified by Gonzka
-    Date:	         17.02.2020
-	Description:	 Creates the effect when a player is hit by a flashbang
+/*
+    Author:	Tonic modified by Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Creates the effect when a player is hit by a flashbang
+*/
 
 params [
     ["_pos", [], [[]]],
@@ -24,16 +22,16 @@ private _norm = sqrt((_impactPos select 0)^2+(_impactPos select 1)^2+(_impactPos
 private _angle = aCos ((_eyeDir select 0)*((_impactPos select 0) / _norm)+((_impactPos select 1) / _norm)*(_eyeDir select 1)+((_impactPos select 2) / _norm)*(_eyeDir select 2));
 
 if (_angle < 90) then {
-	//SCORING
+    //SCORING
     if (playerSide isEqualTo east) then {
-		["STR_SCORE_Blind",1000] remoteExec ["gonzka_fnc_addFunds",_unit];
-		
-		//QUEST
-		private _stuns = _unit getVariable "quest_stuns";
-		_unit setVariable ["quest_stuns",_stuns + 1,true];
-	};
-	
-	playSound "combat_deafness";
+        ["STR_SCORE_Blind",1000] remoteExec ["gonzka_fnc_addFunds",_unit];
+        
+        //QUEST
+        private _stuns = _unit getVariable "quest_stuns";
+        _unit setVariable ["quest_stuns",_stuns + 1,true];
+    };
+    
+    playSound "combat_deafness";
     private _blurEffect = ppEffectCreate ["DynamicBlur",500];
     _blurEffect ppEffectForceInNVG true;
     _blurEffect ppEffectEnable true;
@@ -50,12 +48,12 @@ if (_angle < 90) then {
 
     _ppEffect ppEffectAdjust [1, 1, -0.02, [4.5, 3.5, 1.6, -0.02],[1.8, 1.6, 1.6, 1],[-1.5,0,-0.2,1]];
     _ppEffect ppEffectCommit 1;
-	_blurEffect ppEffectAdjust [0];
+    _blurEffect ppEffectAdjust [0];
     _blurEffect ppEffectCommit 1;
     sleep 1;
     _ppEffect ppEffectEnable false;
     ppEffectDestroy _ppEffect;
-	_blurEffect ppEffectEnable false;
+    _blurEffect ppEffectEnable false;
     ppEffectDestroy _blurEffect;
 } else {
     //SCORING

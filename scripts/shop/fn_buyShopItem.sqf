@@ -1,13 +1,11 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         24.09.2021
-	Description:	 Buy Item from Shop
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Buy Item from Shop
+*/
 
 params [
-    ["_item", "", [""]],
+	["_item", "", [""]],
 	["_price", 0, [0]]
 ];
 

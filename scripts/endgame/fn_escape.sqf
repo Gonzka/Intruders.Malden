@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         08.11.2020
-	Description:	 The player has escaped
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    The player has escaped
+*/
 
 intrudersWin = true; publicvariable "intrudersWin";
 

@@ -1,3 +1,9 @@
+/*
+    Author:	Gonzka
+
+    Statusbar HUD
+*/
+
 params ["_player","_pic","_name"];
 
 if (isNil "_player") exitWith {};
@@ -14,7 +20,7 @@ if (damage _player > 0 && damage _player != 1) then {
 };
 
 if (str attachedObjects _player find "beartrap" != -1) then {
-    _pic ctrlSetText "textures\gui\hud_trapped.paa";
+	_pic ctrlSetText "textures\gui\hud_trapped.paa";
 };
 
 if (_player getVariable ["BIS_revive_incapacitated", false] || lifeState _player isEqualTo "INCAPACITATED") then {

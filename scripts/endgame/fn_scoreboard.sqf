@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         25.01.2021
-	Description:	 Displays the scored points of all players
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Displays the scored points of all players
+*/
 
 private _scoreTable = [];
 {
@@ -18,17 +16,17 @@ private _text = format ["<t font='PuristaMedium'><t color='#B32121'><t size='1.8
 {
 	_text = _text + format ["%1: %2",_x select 1, _x select 0];
 	{
-	    if (isClass (missionConfigFile >> "VirtualItems" >> _x)) then {
-            _perks = format [" <img image='%1'/>",getText (missionConfigFile >> "VirtualItems" >> _x >> "icon")]; //SHOW PERKS
-		    _text = _text + _perks;
-	    };
+		if (isClass (missionConfigFile >> "VirtualItems" >> _x)) then {
+			_perks = format [" <img image='%1'/>",getText (missionConfigFile >> "VirtualItems" >> _x >> "icon")]; //SHOW PERKS
+			_text = _text + _perks;
+		};
 	} forEach (_x select 2);
 	_text = _text + "<br/><br/>";
 } forEach _scoreTable;
 
 /*
 if ((_scoreTable select 0 select 0) >= 9000) then { //MINIMUM OF 9.000 POINTS
-    _text = _text + format ["<t color='#B32121' size='1'>%1<br/><br/>",localize "STR_SCORE_ReceivedMysteryBox"];
+	_text = _text + format ["<t color='#B32121' size='1'>%1<br/><br/>",localize "STR_SCORE_ReceivedMysteryBox"];
 	
 	//MYSTERY BOX FOR PLAYER #1
 	//if (name player isEqualTo (_scoreTable select 0 select 1)) then { ["mysteryBox",1] call gonzka_fnc_addItem; };

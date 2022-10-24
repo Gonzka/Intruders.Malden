@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Karel Moricky
-    Date:	         ???
-	Description:	 Convert a number into string (avoiding scientific notation)
+/*
+    Author:	Karel Moricky
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Convert a number into string (avoiding scientific notation)
+*/
 
 private _number = [_this,0,0,[0]] call bis_fnc_param;
 private _mod = [_this,1,3,[0]] call bis_fnc_param;

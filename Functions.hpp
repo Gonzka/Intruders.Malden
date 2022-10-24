@@ -68,11 +68,11 @@ class Intruders {
 		class dammaged {};
 		class handleDamage {};
 		class jumpFnc {};
+		class loadingBar {};
 		class notification {};
 		class numberText {};
 		class onFired {};
 		class playerSkins {};
-		class say3D {};
 		class scream {};
 		class selfHeal {};
 		class setHoldActionDuration {};
@@ -125,7 +125,6 @@ class Intruders {
 		class menupartenariats {};
 		class menuprincex {};
 		class unfadebtn {};
-		class startLoadingScreen {};
 	};
 	
 	class perks {
@@ -198,8 +197,8 @@ class Lockpicking {
 	class lockpicking {
 		file = "scripts\lockpicking";
 		class handler_actions {};
-        class handler_keydown {};
-        class handler_keyup {};
+		class handler_keydown {};
+		class handler_keyup {};
 		class handler_mousedown {};
 		class hud_lockpick {};
 		class lockpick {};

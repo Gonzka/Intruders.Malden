@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         02.06.2021
-	Description:	 Cinematic background in the main menu
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Cinematic background in the main menu
+*/
 
 params [
     ["_speed",20,[20]]

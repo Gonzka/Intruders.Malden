@@ -1,3 +1,9 @@
+/*
+    Author:	Gonzka
+
+    Statusbar HUD
+*/
+
 waitUntil {!(isNull (findDisplay 46))};
 disableSerialization;
 
@@ -23,22 +29,22 @@ private _perk4 = _display displayCtrl 4012;
 
 private _activePerk1 = player getVariable "intruders_activePerks" select 0;
 if (_activePerk1 isNotEqualTo "") then {
-    _perk1 ctrlSetText getText (missionConfigFile >> "VirtualItems" >> _activePerk1 >> "icon");
+	_perk1 ctrlSetText getText (missionConfigFile >> "VirtualItems" >> _activePerk1 >> "icon");
 };
 
 private _activePerk2 = player getVariable "intruders_activePerks" select 1;
 if (_activePerk2 isNotEqualTo "") then {
-    _perk2 ctrlSetText getText (missionConfigFile >> "VirtualItems" >> _activePerk2 >> "icon");
+	_perk2 ctrlSetText getText (missionConfigFile >> "VirtualItems" >> _activePerk2 >> "icon");
 };
 
 private _activePerk3 = player getVariable "intruders_activePerks" select 2;
 if (_activePerk3 isNotEqualTo "") then {
-    _perk3 ctrlSetText getText (missionConfigFile >> "VirtualItems" >> _activePerk3 >> "icon");
+	_perk3 ctrlSetText getText (missionConfigFile >> "VirtualItems" >> _activePerk3 >> "icon");
 };
 
 private _activePerk4 = player getVariable "intruders_activePerks" select 3;
 if (_activePerk4 isNotEqualTo "") then {
-    _perk4 ctrlSetText getText (missionConfigFile >> "VirtualItems" >> _activePerk4 >> "icon");
+	_perk4 ctrlSetText getText (missionConfigFile >> "VirtualItems" >> _activePerk4 >> "icon");
 };
 
 while {true} do {

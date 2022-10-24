@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         08.03.2022
-	Description:	 Snow like effect
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Snow like effect
+*/
 
 if (season isNotEqualTo "Winter") exitWith {};
 

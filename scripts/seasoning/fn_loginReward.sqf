@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         11.06.2021
-	Description:	 Gives the player a login reward after one day
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Gives the player a login reward after one day
+*/
 
 private _lastReward = profileNamespace getVariable "intruders_lastReward";
 if (isNil "_lastReward") then {

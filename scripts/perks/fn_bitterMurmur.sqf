@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         04.08.2021
-	Description:	 Bitter Murmur Killer Perk
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Bitter Murmur Killer Perk
+*/
 
 params [
     ["_generator", objNull, [objNull]]
@@ -17,11 +15,11 @@ if !("bitterMurmur" in (player getVariable "intruders_activePerks")) exitWith {}
         if (repairedGenerators isEqualTo totalGenerators) then {
             [_x,"","",[1,1,1,1],10,false] spawn gonzka_fnc_auraNotification;
         } else {
-	        if (_x distance _generator <= 16) then {
-	    	    [_x,"","",[1,1,1,1],5,false] spawn gonzka_fnc_auraNotification;
-	        };
-		};
-	};
+            if (_x distance _generator <= 16) then {
+                [_x,"","",[1,1,1,1],5,false] spawn gonzka_fnc_auraNotification;
+            };
+        };
+    };
 } forEach playableUnits;
 
 playSound "Orange_Timeline_FadeOut";

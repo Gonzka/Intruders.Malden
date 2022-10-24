@@ -42,6 +42,3 @@ sleep 1.3;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0187) ctrlShow true;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0178) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0188) ctrlShow true;
-
-
-

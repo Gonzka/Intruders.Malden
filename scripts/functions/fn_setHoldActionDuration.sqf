@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         24.10.2021
-	Description:	 Returns the action id stored into object's namespace
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Returns the action id stored into object's namespace
+*/
 
 params [
     ["_object", objNull, [objNull]],

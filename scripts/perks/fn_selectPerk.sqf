@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         06.07.2021
-	Description:	 ???
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Perk Selection
+*/
 
 params [
 	["_perkSlot", 1, [1]]
@@ -21,9 +19,9 @@ if (_perk isEqualTo "") exitWith {
 //SIDE CONDITIONS
 private _mySide = "";
 if (playerSide isEqualTo east) then {
-    _mySide = "killer";
+	_mySide = "killer";
 } else {
-    _mySide = "survivor";
+	_mySide = "survivor";
 };
 
 private _side = getText (missionConfigFile >> "VirtualItems" >> _perk >> "side");

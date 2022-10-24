@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Alias
-    Date:	         ???
-	Description:	 Particle effect when a portal is used
+/*
+    Author:	Alias
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Particle effect when a portal is used
+*/
 
 params [
     ["_portal", objNull, [objNull]]

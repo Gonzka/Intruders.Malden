@@ -1,14 +1,11 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         18.10.2020
-	Description:	 Master Configuration File
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Master Configuration File
+*/
 
 //GENERAL
 bis_revive_killfeedShow = false;
-loadingText = "";
 blockMainWeapon = false;
 knockout = false;
 meleeCooldown = 0;
@@ -25,9 +22,9 @@ if (isNil {profileNamespace getVariable "intruders_perkInventory"}) then {
 private _globalInventory = profileNamespace getVariable "intruders_perkInventory";
 private _config = missionConfigFile >> "VirtualItems";
 {
-    if (!isClass (_config >> _x)) then { //REMOVE ITEMS THAT DONT EXIST ANYMORE
-	    _globalInventory deleteAt (_globalInventory find _x);
-	};
+    if !(isClass (_config >> _x)) then { //REMOVE ITEMS THAT DONT EXIST ANYMORE
+        _globalInventory deleteAt (_globalInventory find _x);
+    };
 } forEach _globalInventory;
 
 profileNamespace setVariable ["intruders_perkInventory",_globalInventory];
@@ -84,7 +81,7 @@ player setVariable ["intruders_activePerks", profileNamespace getVariable _perkV
 //BLOODPOINTS
 private _currencyVar = "intruders_bloodPoints";
 if (isNil {profileNamespace getVariable _currencyVar}) then {
-	profileNamespace setVariable [_currencyVar,0];
+    profileNamespace setVariable [_currencyVar,0];
 };
 
 saveProfileNamespace;

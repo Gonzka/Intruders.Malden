@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         14.10.2020
-	Description:	 Ends the mission when the killer disconnects
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Ends the mission when the killer disconnects
+*/
 
 waitUntil {isNil "Killer"}; 
 

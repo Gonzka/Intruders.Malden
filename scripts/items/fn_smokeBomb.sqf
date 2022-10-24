@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         24.10.2021
-	Description:	 Creates a thick smoke effect
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Creates a thick smoke effect
+*/
 
 params [
 	["_unit", objNull, [objNull]]

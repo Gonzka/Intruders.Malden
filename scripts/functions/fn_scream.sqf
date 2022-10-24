@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         07.12.2021
-	Description:	 Picks a random Hit Scream sound from the Arma Config and plays it
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Picks a random Hit Scream sound from the Arma Config and plays it
+*/
 
 params [
     ["_unit",objNull,[objNull]]

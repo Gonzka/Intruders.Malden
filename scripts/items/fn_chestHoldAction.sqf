@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         10.10.2020
-	Description:	 Creates an interaction with a chest
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Creates an interaction with a chest
+*/
 
 params [
     ["_chest", objNull, [objNull]]
@@ -18,25 +16,25 @@ private _actionID = [
     "_this distance _target < 2 && side _this != east && !(_target getVariable ['looted', false])",
     "_this distance _target < 2 && side _this != east",
     {	
-		playSound3D ["a3\sounds_f\sfx\objects\upload_terminal\terminal_lock_close.wss", _target, false, getPosASL _target, 4, 1, 20];
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
-	},
+        playSound3D ["a3\sounds_f\sfx\objects\upload_terminal\terminal_lock_close.wss", _target, false, getPosASL _target, 4, 1, 20];
+        player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+    },
     {
-	    params ["_target", "_caller", "_actionId", "_arguments", "_progress", "_maxProgress"];
-		private _elapsedTime = _progress / 24 * _duration;
-		_target setVariable ["duration", _duration - _elapsedTime, true];
-	},  
+        params ["_target", "_caller", "_actionId", "_arguments", "_progress", "_maxProgress"];
+        private _elapsedTime = _progress / 24 * _duration;
+        _target setVariable ["duration", _duration - _elapsedTime, true];
+    },  
     {
-	    [_target] spawn gonzka_fnc_openChest;
-		playSound3D ["a3\sounds_f\sfx\objects\upload_terminal\terminal_lock_open.wss", _target, false, getPosASL _target, 4, 1, 20];
-		[player, ""] remoteExec ["switchMove"];
-	},
+        [_target] spawn gonzka_fnc_openChest;
+        playSound3D ["a3\sounds_f\sfx\objects\upload_terminal\terminal_lock_open.wss", _target, false, getPosASL _target, 4, 1, 20];
+        [player, ""] remoteExec ["switchMove"];
+    },
     {
-		[_target, _target getVariable "duration"] remoteExecCall ["gonzka_fnc_setHoldActionDuration", [0, -2] select isDedicated];
-	    if !(_target getVariable ["looted", false]) then {
-		    [player, ""] remoteExec ["switchMove"];
-		};
-	},
+        [_target, _target getVariable "duration"] remoteExecCall ["gonzka_fnc_setHoldActionDuration", [0, -2] select isDedicated];
+        if !(_target getVariable ["looted", false]) then {
+            [player, ""] remoteExec ["switchMove"];
+        };
+    },
     [],  
     10,  
     nil,  

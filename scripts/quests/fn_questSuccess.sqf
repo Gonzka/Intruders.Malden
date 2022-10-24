@@ -1,14 +1,12 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         04.07.2021
-	Description:	 Unlocks an item with notification
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Unlocks an item with notification
+*/
 
 params [
-	["_questTitle", "", [""]],
-	["_rewardBloodpoints", 1, [1]]
+    ["_questTitle", "", [""]],
+    ["_rewardBloodpoints", 1, [1]]
 ];
 
 private _side = "";

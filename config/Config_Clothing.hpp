@@ -73,7 +73,7 @@ class Clothing {
 				
 				{ "NWTS_goggle_deer_mossy", $STR_SKIN_WendigoDefaultTanoa, "", "playerSide isEqualTo east && player getVariable 'killer' isEqualTo 'wendigo'" }, //MOD
 				{ "NWTS_goggle_deer", $STR_SKIN_WendigoDefaultMalden, "", "playerSide isEqualTo east && player getVariable 'killer' isEqualTo 'wendigo'" }, //MOD
-                { "NWTS_goggle_deer_bloody", $STR_SKIN_WendigoBloody, "", "playerSide isEqualTo east && player getVariable 'killer' isEqualTo 'wendigo'" }, //MOD
+				{ "NWTS_goggle_deer_bloody", $STR_SKIN_WendigoBloody, "", "playerSide isEqualTo east && player getVariable 'killer' isEqualTo 'wendigo'" }, //MOD
 				{ "NWTS_goggle_deer_glow", $STR_SKIN_WendigoGlow, "", "playerSide isEqualTo east && player getVariable 'killer' isEqualTo 'wendigo'" } //MOD
 			};
 		};

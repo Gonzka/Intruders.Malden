@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         22.09.2021
-	Description:	 The ambient music changes within the killer's terorr radius
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    The ambient music changes within the killer's terorr radius
+*/
 
 if (playerSide isEqualTo east) exitWith {};
 
@@ -24,10 +22,10 @@ while {sleep 1; alive player} do {
 		removeAllMusicEventHandlers "MusicStop";
 		_inTerrorRadius = _inTerrorRadiusUpdated;
 		if (_inTerrorRadiusUpdated) then {
-		    if (Killer getVariable "killer" isEqualTo "oldman") then {
-			    _track = "terrorMusic_oldman"
+			if (Killer getVariable "killer" isEqualTo "oldman") then {
+				_track = "terrorMusic_oldman"
 			} else {
-			    _track = selectRandom ["terrorMusic_1", "terrorMusic_2"];
+				_track = selectRandom ["terrorMusic_1", "terrorMusic_2"];
 			};
 			//_track = format ["terrorMusic_%1", Killer getVariable "killer"];
 			music = true;

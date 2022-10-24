@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         17.02.2021
-	Description:	 Camera movement when the player spawns
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Camera movement when the player spawns
+*/
 
 private _pos1 = player getRelPos [3, 0];
 private _pos2 = player getRelPos [-2, 50];
@@ -37,7 +35,7 @@ waitUntil {camCommitted _camera};
 
 [] spawn {
     sleep 7;
-	titleCut ["","BLACK OUT",1];
+    titleCut ["","BLACK OUT",1];
 };
 
 _camera camPrepareTarget player;

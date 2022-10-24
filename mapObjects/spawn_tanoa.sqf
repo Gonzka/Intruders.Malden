@@ -1,5 +1,4 @@
-private ["_objects","_object","_data"];
-_data = [
+private _data = [
     //Sugarcane field
 	["a3\vegetation_f_exp\crop\b_sugarcane_mature_row_f.p3d", [5312.51,14596.4,23.2591], [[-0.928939,0.368866,-0.0317802],[-0.0718139,-0.095313,0.992854]]],
 	["a3\vegetation_f_exp\crop\b_sugarcane_sapling_row_f.p3d", [5303.9,14593.4,21.9176], [[0.77627,0.60129,0.189354],[-0.121754,-0.151712,0.980897]]],
@@ -104,13 +103,11 @@ _data = [
 	["a3\vegetation_f_exp\tree\t_cocosnucifera3s_tall_f.p3d", [5571.14,14587.9,-0.977594], [[0.7852,0.611347,-0.0985682],[0.0518431,0.0937177,0.994248]]],
 	["a3\vegetation_f_exp\shrub\b_leucaena_f.p3d", [5545.46,14620.2,2.19333], [[0.961202,-0.0698674,-0.266851],[0.272009,0.0792795,0.959024]]]
 ];
-_objects = [];
+private "_object";
 {
 	_object = createSimpleObject [(_x select 0), (ASLToAGL(_x select 1)), true];
 	_object setVectorDirAndUp (_x select 2);
 	_object setPosASL (_x select 1);
 	_object enableSimulation false;
-	_object allowdamage false;
-	_objects pushBack _object;
+	_object allowDamage false;
 } forEach _data;
-_objects;

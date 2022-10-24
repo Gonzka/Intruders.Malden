@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         24.10.2020
-	Description:	 Shows when the player gets points and saves them
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Shows when the player gets points and saves them
+*/
 
 params [
 	["_actionName", "", [""]],

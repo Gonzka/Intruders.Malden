@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         04.07.2021
-	Description:	 Starts a quest and creates a task
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Starts a quest and creates a task
+*/
 
 private _side = "";
 if (playerSide isEqualTo east) then {

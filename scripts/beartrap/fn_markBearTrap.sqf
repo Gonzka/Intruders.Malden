@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         26.07.2021
-	Description:	 Marks the trap in the game environment
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Marks the trap in the game environment
+*/
 
 params [
     ["_trap", objNull, [objNull]]

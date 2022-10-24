@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         24.10.2021
-	Description:	 Skill check minigame function for repairing generators
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Skill check minigame function for repairing generators
+*/
 
 if !(isNull (uiNamespace getVariable "SkillCheckMenu")) exitWith {};
 
@@ -74,24 +72,24 @@ key_check = {
 
 	//TOOLBOX ITEM
 	if (toolboxCharges > 0) then { 
-	    toolboxCharges = toolboxCharges - 1;
+		toolboxCharges = toolboxCharges - 1;
 	};
 	if (toolboxCharges <= 0) then {
-	    skillCheckSize = 0.06;
+		skillCheckSize = 0.06;
 	};
 	
 	if ((_grpX >= _grpX2) && (_grpX <= (_grpX2 + (skillCheckSize * safezoneW)))) then {
-	    [true] call key_hit;
+		[true] call key_hit;
 	} else {
-	    [false] call key_hit;
+		[false] call key_hit;
 	};
 };
 
 key_hit = {
-    params [
-	    ["_success", false, [false]]
-    ];
-
+	params [
+		["_success", false, [false]]
+	];
+	
 	if (skillCheck_hit) exitWith { skillCheck_hit = false; };
 	skillCheck_hit = true;
 	
@@ -99,13 +97,13 @@ key_hit = {
 	("SkillCheckMenu" call BIS_fnc_rscLayer) cutText ["","PLAIN"];
 	
 	if (_success) then {
-		quest_skillCheckCombo = quest_skillCheckCombo + 1; 	//QUEST
-	    playSound "skillCheckSuccess";	
+		quest_skillCheckCombo = quest_skillCheckCombo + 1; //QUEST
+		playSound "skillCheckSuccess";	
 		["STR_SCORE_SkillCheck",100] call gonzka_fnc_addFunds;
 	} else {
-	    quest_skillCheckCombo = 0; //QUEST
-	    playSound "skillCheckFail";
-	    if ("technician" in (player getVariable "intruders_activePerks") && random 100 < 50) exitWith {}; //Technician Survivor Perk (Prevents the Generator Explosion)
-	    [] spawn gonzka_fnc_genFail;
+		quest_skillCheckCombo = 0; //QUEST
+		playSound "skillCheckFail";
+		if ("technician" in (player getVariable "intruders_activePerks") && random 100 < 50) exitWith {}; //Technician Survivor Perk (Prevents the Generator Explosion)
+		[] spawn gonzka_fnc_genFail;
 	};
 };

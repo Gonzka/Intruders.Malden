@@ -6,7 +6,7 @@ private _picked = [] call pizza_fnc_hud_lockpick;
 
 // Lockpicked failed
 if !(_picked) exitWith {
-	["play", _lockpick_target] remoteExecCall ["BIS_fnc_carAlarm"];
+    ["play", _lockpick_target] remoteExecCall ["BIS_fnc_carAlarm"];
     false;
 };
 

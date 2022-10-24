@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         04.09.2021
-	Description:	 A randomly chosen Dull Totem will become a Hex Totem 
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    A randomly chosen Dull Totem will become a Hex Totem
+*/
 
 params [
     ["_hex", "", [""]]
@@ -17,7 +15,7 @@ private _dullTotems = [];
 {
     if (_x getVariable ["hex",""] isEqualTo "") then {
         _dullTotems pushBack _x;
-	};
+    };
 } forEach totems;
 
 if (_dullTotems isEqualTo []) exitWith {};
@@ -36,7 +34,7 @@ _emitter setParticleClass "SmallFireBarrel";
 _emitter setParticleFire [0.3,1.0,0];
 
 call compile format ["
-	_eventHandlerId = addMissionEventHandler ['Draw3D', {drawIcon3D [getMissionPath 'textures\ico_totem.paa', [1,1,1,1], ASLToAGL getPosASL %1, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro'];}];
+    _eventHandlerId = addMissionEventHandler ['Draw3D', {drawIcon3D [getMissionPath 'textures\ico_totem.paa', [1,1,1,1], ASLToAGL getPosASL %1, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro'];}];
     waitUntil {isObjectHidden %1};
-	removeMissionEventHandler ['Draw3D', _eventHandlerId];
+    removeMissionEventHandler ['Draw3D', _eventHandlerId];
 ", _randSel];

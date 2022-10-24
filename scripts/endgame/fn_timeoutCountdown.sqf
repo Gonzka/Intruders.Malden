@@ -1,8 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Lou Montana
-    Date:	         04.06.2018
-	Description:	 A countdown, inspired by this function: BIS_fnc_VRTimer
----------------------------------------------------------------------------*/
+/*
+    Author:	Lou Montana
+
+    A countdown, inspired by this function: BIS_fnc_VRTimer
+*/
 
 params [
 	["_time", 30, [0]],

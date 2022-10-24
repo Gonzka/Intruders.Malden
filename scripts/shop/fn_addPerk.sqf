@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         24.09.2021
-	Description:	 Adds an item (unique) to the global inventory
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Adds an item (unique) to the global inventory
+*/
 
 params [
     ["_item", "", [""]]

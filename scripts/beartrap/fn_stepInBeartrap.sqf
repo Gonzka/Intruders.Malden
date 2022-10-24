@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         18.07.2021
-	Description:	 Triggers when a player runs into the trap
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Triggers when a player runs into the trap
+*/
 
 params [
     ["_trap", objNull, [objNull]]
@@ -17,7 +15,7 @@ if (isNull _trap || _trap animationPhase "door_1" isEqualTo 1) exitWith {};
     _trap animate [_x,1];
 } forEach ["door_1","door_2","door_3","door_4","door_5"];
 
-[_trap, selectRandom ["bearTrapSnap_1", "bearTrapSnap_2", "bearTrapSnap_3"], 1000] remoteExecCall ["gonzka_fnc_say3D"];
+[_trap, selectRandom ["bearTrapSnap_1", "bearTrapSnap_2", "bearTrapSnap_3"], 1000] remoteExecCall ["say3D"];
 
 if (player getVariable ["BIS_revive_incapacitated", false] || !alive player) exitWith {};
 

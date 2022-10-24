@@ -1,23 +1,21 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         04.07.2021
-	Description:	 Menu through which quests can be accepted
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Menu through which quests can be accepted
+*/
 
 private _side = "";
 if (playerSide isEqualTo east) then {
-    _side = "Killer";
+	_side = "Killer";
 } else {
-    _side = "Intruder";
+	_side = "Intruder";
 };
 
 //GET RANDOM DAILY QUEST
 private _dailyQuest = profileNamespace getVariable format ["intruders_dailyQuest%1",_side];
 if (isNil "_dailyQuest") then {
-    private _quests = count (missionConfigFile >> "Quests" >> _side);
-    private _randomQuest = floor random _quests;
+	private _quests = count (missionConfigFile >> "Quests" >> _side);
+	private _randomQuest = floor random _quests;
 	profileNamespace setVariable [format ["intruders_dailyQuest%1",_side],_randomQuest];
 	saveProfileNamespace;
 	_dailyQuest = profileNamespace getVariable format ["intruders_dailyQuest%1",_side];

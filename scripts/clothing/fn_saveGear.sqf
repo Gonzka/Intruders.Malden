@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         04.06.2021
-	Description:	 Saves the clothes of the player
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Saves the clothes of the player
+*/
 
 private _return = [];
 

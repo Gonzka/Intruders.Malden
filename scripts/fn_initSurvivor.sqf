@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         12.10.2020
-	Description:	 Initialization and spawn of survivors
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Initialization and spawn of survivors
+*/
 
 waitUntil {!(isNull (findDisplay 46))};
 player enableStamina false;
@@ -23,7 +21,7 @@ call gonzka_fnc_plunderersInstinct;
 [] spawn gonzka_fnc_premonition;
 
 if ("botanyKnowledge" in (player getVariable "intruders_activePerks")) then { //Survivor Perk Botany Knowledge
-	player setUnitTrait ["Medic",true];
+    player setUnitTrait ["Medic",true];
 };
 
 waitUntil {!(isNil "Killer")}; 

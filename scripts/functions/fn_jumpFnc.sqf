@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Bryan "Tonic" Boardwine
-    Date:	         ???
-	Description:	 Makes the target jump
+/*
+    Author:	Bryan "Tonic" Boardwine
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Makes the target jump
+*/
 
 private ["_unit","_vel","_dir","_v1","_v2","_anim","_oldpos"];
 _unit = [_this,0,objNull,[objNull]] call BIS_fnc_param;

@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         13.09.2021
-	Description:	 Counterforce Survivor Perk
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Counterforce Survivor Perk
+*/
 
 if !("counterforce" in (player getVariable "intruders_activePerks")) exitWith {};
 if (totems isEqualTo []) exitWith {};

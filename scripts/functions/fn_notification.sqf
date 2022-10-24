@@ -1,13 +1,11 @@
- /*--------------------------------------------------------------------------
-    Author:		     Patrick "Lucian" Schmidt modified by Gonzka
-    Date:	         05.01.2021
-	Description:	 This notification shows the progress of the game
+/*
+    Author:	Patrick "Lucian" Schmidt modified by Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    This notification shows the progress of the game
+*/
 
 params[
-    ["_title","",[""]],
+	["_title","",[""]],
 	["_text","",[""]],
 	["_duration",5,[5]],
 	["_icon","",[""]],
@@ -20,11 +18,11 @@ private _display = finddisplay 46;
 private _ctrlGroup = [];
 
 if (isLocalized _title) then {
-    _title = localize _title;
+	_title = localize _title;
 };
 
 if (isLocalized _text) then {
-    _text = localize _text;
+	_text = localize _text;
 };
 
 _text = format["<t size='1.3' color='#B32121' font = 'PuristaBold' >%1</t><br/><t size='0.9' color='f9f9f0' font = 'PuristaMedium'>%2</t>",toUpper _title, _text];
@@ -73,22 +71,22 @@ _picture ctrlSetFade 0;
 _picture ctrlCommit 0.4;
 
 if (_error) then {
-    playSound "3DEN_notificationWarning";
+	playSound "3DEN_notificationWarning";
 } else {
-    playSound "Orange_PeriodSwitch_Notification";
+	playSound "Orange_PeriodSwitch_Notification";
 };
 
 _ctrlGroup = [_group,_textField,_sidebar,_picture];
 
 [_ctrlGroup,_duration] spawn {
-    disableSerialization;
-    uiSleep (_this select 1);
-
+	disableSerialization;
+	uiSleep (_this select 1);
+	
 	{
 		_x ctrlSetFade 1;
 		_x ctrlCommit 0.3;
 	} foreach (_this select 0);
-    uiSleep 0.3;
+	uiSleep 0.3;
 	{
 		ctrlDelete _x;
 	} foreach (_this select 0);
@@ -98,11 +96,11 @@ private _groupHeight = (ctrlPosition (_ctrlGroup select 0)) select 3;
 
 if (count openNotifications > 0) then {
 	private _activeNotifications = 0;
- 	{
- 		private _notificationGroup = _x;
-
- 		if (!isNull (_notificationGroup select 0) && !isNull (_notificationGroup select 1) && !isNull (_notificationGroup select 2) && !isNull (_notificationGroup select 3)) then {
-
+	{
+		private _notificationGroup = _x;
+		
+		if (!isNull (_notificationGroup select 0) && !isNull (_notificationGroup select 1) && !isNull (_notificationGroup select 2) && !isNull (_notificationGroup select 3)) then {
+			
 			{
 				_x ctrlSetPosition [((ctrlPosition (_x)) select 0), ((ctrlPosition (_x)) select 1) + (_groupHeight + 1.5 * (0.011 * safezoneH))];
 			} foreach _notificationGroup;
@@ -111,15 +109,15 @@ if (count openNotifications > 0) then {
 				_x ctrlCommit 0.25;
 			} foreach _notificationGroup;
 			
- 			if (_activeNotifications > 3) then {
- 				{
+			if (_activeNotifications > 3) then {
+				{
 					_x ctrlSetFade 1;
- 					_x ctrlCommit 0.2;
+					_x ctrlCommit 0.2;
 				} foreach _notificationGroup;
- 			};
- 			_activeNotifications = _activeNotifications + 1;
- 		};
- 	} forEach openNotifications;
+			};
+			_activeNotifications = _activeNotifications + 1;
+		};
+	} forEach openNotifications;
 };
 
 openNotifications = ([_ctrlGroup] + openNotifications) select {!isNull (_x select 0) && !isNull (_x select 1) && !isNull (_x select 2) && !isNull (_x select 3)}; // Add the Element to the Front of the Array and remove the deleted Arrays

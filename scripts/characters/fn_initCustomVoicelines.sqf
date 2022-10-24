@@ -1,18 +1,16 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         06.03.2021
-	Description:	 Sends to the OptionWheelMenu which voicelines the character has
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Sends to the OptionWheelMenu which voicelines the character has
+*/
 
 private _params = [];
 
 private _voicelines = [];
 switch (face player) do {
-    case "GreekHead_A3_04": {
-	    _voicelines = [
-		    [localize "STR_VL_Helmut1","voiceline_helmut_1"],
+	case "GreekHead_A3_04": {
+		_voicelines = [
+			[localize "STR_VL_Helmut1","voiceline_helmut_1"],
 			[localize "STR_VL_Helmut2","voiceline_helmut_2"],
 			[localize "STR_VL_Helmut3","voiceline_helmut_3"],
 			[localize "STR_VL_Helmut4","voiceline_helmut_4"],
@@ -24,8 +22,8 @@ switch (face player) do {
 		];
 	};
 	case "WhiteHead_26": {
-	    _voicelines = [
-		    [localize "STR_VL_Stanislaw1","voiceline_stanislaw_1"],
+		_voicelines = [
+			[localize "STR_VL_Stanislaw1","voiceline_stanislaw_1"],
 			[localize "STR_VL_Stanislaw2","voiceline_stanislaw_2"],
 			[localize "STR_VL_Stanislaw3","voiceline_stanislaw_3"],
 			[localize "STR_VL_Stanislaw4","voiceline_stanislaw_4"],
@@ -37,8 +35,8 @@ switch (face player) do {
 		];
 	};
 	case "GreekHead_A3_11": {
-	    _voicelines = [
-		    [localize "STR_VL_Rammel1","voiceline_rammel_1"],
+		_voicelines = [
+			[localize "STR_VL_Rammel1","voiceline_rammel_1"],
 			[localize "STR_VL_Rammel2","voiceline_rammel_2"],
 			[localize "STR_VL_Rammel3","voiceline_rammel_3"],
 			[localize "STR_VL_Rammel4","voiceline_rammel_4"],
@@ -50,8 +48,8 @@ switch (face player) do {
 		];
 	};
 	case "PersianHead_A3_02": {
-	    _voicelines = [
-		    [localize "STR_VL_Sandro1","voiceline_sandro_1"],
+		_voicelines = [
+			[localize "STR_VL_Sandro1","voiceline_sandro_1"],
 			[localize "STR_VL_Sandro2","voiceline_sandro_2"],
 			[localize "STR_VL_Sandro3","voiceline_sandro_3"],
 			[localize "STR_VL_Sandro4","voiceline_sandro_4"],
@@ -63,8 +61,8 @@ switch (face player) do {
 		];
 	};
 	case "Bruce": {
-	    _voicelines = [
-		    [localize "STR_VL_Bruce1","voiceline_bruce_1"],
+		_voicelines = [
+			[localize "STR_VL_Bruce1","voiceline_bruce_1"],
 			[localize "STR_VL_Bruce2","voiceline_bruce_2"],
 			[localize "STR_VL_Bruce3","voiceline_bruce_3"],
 			[localize "STR_VL_Bruce4","voiceline_bruce_4"],
@@ -74,8 +72,8 @@ switch (face player) do {
 		];
 	};
 	case "Hladas": {
-	    _voicelines = [
-		    [localize "STR_VL_Opterix1","voiceline_opterix_1"],
+		_voicelines = [
+			[localize "STR_VL_Opterix1","voiceline_opterix_1"],
 			[localize "STR_VL_Opterix2","voiceline_opterix_2"],
 			[localize "STR_VL_Opterix3","voiceline_opterix_3"],
 			[localize "STR_VL_Opterix4","voiceline_opterix_4"],
@@ -91,15 +89,14 @@ switch (face player) do {
 
 if (_params isEqualTo []) then {_params = [["",""]]};
 
-[_params,{	
+[_params,{
 	private _sound = _this select 1;
-    if (player getVariable ["voiceActive", false] || !alive player || player getVariable ["BIS_revive_incapacitated", false]) exitWith {};
+	if (player getVariable ["voiceActive", false] || !alive player || player getVariable ["BIS_revive_incapacitated", false]) exitWith {};
 	
-    [player,_sound,50] remoteExecCall ["gonzka_fnc_say3D"];
+	[player,_sound,50] remoteExecCall ["say3D"];
 	player setVariable ["voiceActive",true,true];
 	[_sound] spawn {
 		sleep 10;
 		player setVariable ["voiceActive",false,true];
 	};
-	
 },0.4,0.5] call gonzka_fnc_setWheel;

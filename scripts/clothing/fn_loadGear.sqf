@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         04.06.2021
-	Description:	 Loads the saved clothes of the player
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Loads the saved clothes of the player
+*/
 
 private _gearVar = format ["intruders_gear_%1",if (playerSide isEqualTo east) then {player getVariable "killer"} else {"survivor"}];
 private _gearArray = profileNamespace getVariable _gearVar;
@@ -22,7 +20,7 @@ _gearArray params [
     "_backpack",
     "_goggles",
     "_headgear",
-	"_face"
+    "_face"
 ];
 
 if (!(_goggles isEqualTo "")) then {player addGoggles _goggles};

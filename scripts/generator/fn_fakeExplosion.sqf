@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         26.10.2020
-	Description:	 Generates an explosion
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Generates an explosion
+*/
 
 params ["_spawnPos"];
 

@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         18.07.2021
-	Description:	 Placement of a trap
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Placement of a trap
+*/
 
 if (beartraps < 1) exitWith {};
 

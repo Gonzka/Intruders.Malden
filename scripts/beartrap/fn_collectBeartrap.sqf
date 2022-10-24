@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         25.07.2021
-	Description:	 The Killer can collect bear traps again
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    The Killer can collect bear traps again
+*/
 
 params [
     ["_trap", objNull, [objNull]]
@@ -17,13 +15,13 @@ params [
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 	"_this distance _target < 2 && isNull attachedTo _target",
 	"_this distance _target < 2 && isNull attachedTo _target",
-	{ 
-	    player switchMove "AinvPknlMstpSlayWrflDnon";
-        player playMoveNow "AinvPknlMstpSlayWrflDnon";
+	{
+		player switchMove "AinvPknlMstpSlayWrflDnon";
+		player playMoveNow "AinvPknlMstpSlayWrflDnon";
 	},
 	{},
-	{ 
-	    deleteVehicle _target;
+	{
+		deleteVehicle _target;
 		[player, selectRandom ["bearTrap_1", "bearTrap_2", "bearTrap_3", "bearTrap_4"]] remoteExecCall ["say3D"];
 		beartraps = beartraps + 1;
 	},

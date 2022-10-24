@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         29.07.2021
-	Description:	 Self-healing
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Self-healing
+*/
 
 firstAidKits = firstAidKits - 1;
 

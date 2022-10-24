@@ -1,17 +1,15 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         23.08.2021
-	Description:	 Lethal Pursuer Killer Perk
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Lethal Pursuer Killer Perk
+*/
 
 if !("lethalPursuer" in (player getVariable "intruders_activePerks")) exitWith {};
 
 {
     if (side _x isEqualTo civilian) then {
-	    [_x,"","",[1,1,1,1],9,false] spawn gonzka_fnc_auraNotification;
-	};
+        [_x,"","",[1,1,1,1],9,false] spawn gonzka_fnc_auraNotification;
+    };
 } forEach playableUnits;
 
 playSound "Orange_Timeline_FadeOut";

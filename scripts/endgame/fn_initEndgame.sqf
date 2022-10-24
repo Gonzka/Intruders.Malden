@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         03.03.2021
-	Description:	 Starts the Endgame and reveals the escape vehicle
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Starts the Endgame and reveals the escape vehicle
+*/
 
 closeDialog 0;
 
@@ -21,11 +19,11 @@ if (worldName isEqualTo "Malden") then {
             private _explosive = "HelicopterExploSmall" createVehicleLocal getPosATL _x; 
             _explosive setPos getPosATL _x; 
             sleep 0.15; 
-        } forEach [boomStone_1_1, boomStone_2_1, boomStone_1_2, boomStone_2_2, boomStone_1_3, boomStone_2_3, boomStone_1_4, boomStone_2_4]; 
-		{
-		    if !(isNil _x) then {
+        } forEach [boomStone_1_1, boomStone_2_1, boomStone_1_2, boomStone_2_2, boomStone_1_3, boomStone_2_3, boomStone_1_4, boomStone_2_4];
+        {
+            if !(isNil _x) then {
                 deleteVehicle call compile _x; 
-			};
+            };
         } forEach ["exitRock_1", "exitRock_2"]; 
     };
 };
@@ -33,24 +31,23 @@ if (worldName isEqualTo "Malden") then {
 {
     if !(isNil "_x") then {
         _x hideObject false;
-	    _x enableSimulation true;
+        _x enableSimulation true;
     };
 } forEach [escapeVehicle_1, escapeVehicle_2, escapeLight_1, escapeLight_2];
 
 { 
-    if !(_x getVariable ["active", false]) then { 
-	    [_x] remoteExec ["gonzka_fnc_removeGenMarker",east];
-		_x setVariable ["active",true,true];
-	};	
+    if !(_x getVariable ["active", false]) then {
+        [_x] remoteExec ["gonzka_fnc_removeGenMarker",east];
+        _x setVariable ["active",true,true];
+    };	
 } forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5, genericGen_6, genericGen_7];
 
-
-addMissionEventHandler ["Draw3D", { 
+addMissionEventHandler ["Draw3D", {
     drawIcon3D [getMissionPath "textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_1, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #1", 1, 0.0315, "EtelkaMonospacePro"]; 
 }];
 
-addMissionEventHandler ["Draw3D", { 
-	drawIcon3D [getMissionPath "textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_2, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #2", 1, 0.0315, "EtelkaMonospacePro"]; 
+addMissionEventHandler ["Draw3D", {
+    drawIcon3D [getMissionPath "textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_2, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #2", 1, 0.0315, "EtelkaMonospacePro"]; 
 }];
 
 //No One Escapes Death Killer Perk (Hex)

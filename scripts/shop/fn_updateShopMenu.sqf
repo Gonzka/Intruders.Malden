@@ -1,10 +1,8 @@
-/*--------------------------------------------------------------------------
-    Author:		     Gonzka
-    Date:	         24.09.2021
-	Description:	 Updates the Shop Menu
+/*
+    Author:	Gonzka
 
-    You're not allowed to use this file without permission from the author!
----------------------------------------------------------------------------*/
+    Updates the Shop Menu
+*/
 
 disableSerialization;
 
@@ -19,13 +17,13 @@ private _cfgVirtualItems = "getNumber (_x >> 'released') isEqualTo 1" configClas
 
 private _i = 0;
 {
-    private _picture = _display displayCtrl (102 + _i * 2);
-    private _button = _display displayCtrl (103 + _i * 2);
+	private _picture = _display displayCtrl (102 + _i * 2);
+	private _button = _display displayCtrl (103 + _i * 2);
 	
 	private _item = getText (_x >> "variable");
 	private _displayName = getText (_x >> "displayName");
 	private _description = getText (_x >> "description");
-    private _icon = getText (_x >> "icon");
+	private _icon = getText (_x >> "icon");
 	private _price = getNumber (_x >> "price");
 	
 	_button ctrlSetText format ["%1 (%2)", toUpper localize "STR_GAME_Purchase", [_price] call gonzka_fnc_numberText];
@@ -40,8 +38,8 @@ private _i = 0;
 	};
 	
 	if (_bloodPoints < _price) then {
-        _button ctrlEnable false;
+		_button ctrlEnable false;
 	};
 	
-    _i = _i + 1;
+	_i = _i + 1;
 } forEach _cfgVirtualItems;
