@@ -24,7 +24,7 @@ params [
 			_target animate [_x,1];
 		} forEach ["door_1","door_2","door_3","door_4","door_5"];
 		
-		[_target, selectRandom ["bearTrapSnap_1", "bearTrapSnap_2", "bearTrapSnap_3"], 1000] remoteExecCall ["say3D"];
+		[_target, [selectRandom ["bearTrapSnap_1", "bearTrapSnap_2", "bearTrapSnap_3"], 1000]] remoteExecCall ["say3D"];
 		[_target,"textures\ico_abilityButcher.paa","",[1,0,0,1]] remoteExec ["gonzka_fnc_auraNotification",east];
 		
 		["STR_SCORE_TrapDisarm",300] call gonzka_fnc_addFunds;

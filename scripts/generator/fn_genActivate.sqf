@@ -69,7 +69,7 @@ switch true do {
 	
 	case (genericGen_3 getVariable ["active",false] && !gen3_special): {
 	    if (worldName isEqualTo "Tanoa") then {
-		    [ewok,"ewok_long",100] remoteExecCall ["say3D"];
+		    [ewok, ["ewok_long", 100]] remoteExecCall ["say3D"];
 		} else {
 		    _genLights = [gen3_light1, gen3_light2, gen3_light3];
 		};

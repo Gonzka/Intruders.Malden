@@ -93,7 +93,7 @@ if (_params isEqualTo []) then {_params = [["",""]]};
 	private _sound = _this select 1;
 	if (player getVariable ["voiceActive", false] || !alive player || player getVariable ["BIS_revive_incapacitated", false]) exitWith {};
 	
-	[player,_sound,50] remoteExecCall ["say3D"];
+	[player,[_sound,50]] remoteExecCall ["say3D"];
 	player setVariable ["voiceActive",true,true];
 	[_sound] spawn {
 		sleep 10;

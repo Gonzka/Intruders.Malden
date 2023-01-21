@@ -15,7 +15,7 @@ if (isNull _trap || _trap animationPhase "door_1" isEqualTo 1) exitWith {};
     _trap animate [_x,1];
 } forEach ["door_1","door_2","door_3","door_4","door_5"];
 
-[_trap, selectRandom ["bearTrapSnap_1", "bearTrapSnap_2", "bearTrapSnap_3"], 1000] remoteExecCall ["say3D"];
+[_trap, [selectRandom ["bearTrapSnap_1", "bearTrapSnap_2", "bearTrapSnap_3"], 1000]] remoteExecCall ["say3D"];
 
 if (player getVariable ["BIS_revive_incapacitated", false] || !alive player) exitWith {};
 
