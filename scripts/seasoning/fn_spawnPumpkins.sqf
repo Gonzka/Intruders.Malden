@@ -9,7 +9,7 @@ if (season isNotEqualTo "Halloween") exitWith {};
 for "_i" from 0 to 6 do { //Spawn 7 Pumpkins
 	private _pumpkin = "Intruders_Object_Pumpkin" createVehicle [0,0,0];
 	_pumpkin enableSimulation false; _pumpkin allowDamage false;
-	private _pos = [getMarkerPos "center", 1, 150, 3, 0, 20, 0] call BIS_fnc_findSafePos;
+	private _pos = [getMarkerPos "center", 0, 150, 0, 0, 1] call BIS_fnc_findSafePos;
 	_pumpkin setPos _pos;
 	_pumpkin setDir (random 360);  
 	

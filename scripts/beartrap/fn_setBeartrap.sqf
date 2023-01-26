@@ -22,8 +22,7 @@ private _trap = createVehicle ["Intruders_Object_Beartrap", getPosATL player, []
 _trap allowDamage false;
 _trap enableSimulation true;
 _trap setPosATL [getPosATL player select 0, getPosATL player select 1, getPosATL player select 2];
-private _dir = floor(random 360);  
-_trap setDir _dir;
+_trap setDir (random 360);
 
 {
     _trap animate [_x,0];

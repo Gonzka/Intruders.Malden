@@ -42,7 +42,7 @@ cloakingCooldown = false;
 portalTravelInUse = false;
 unbreakable = false;
 exhausted = false;
-beartraps = 6;
+beartraps = 3;
 
 //ITEMS
 firstAidKits = 0;

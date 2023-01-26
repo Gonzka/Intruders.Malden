@@ -26,6 +26,7 @@ class Intruders {
 		class detachBeartrap {};
 		class disarmBeartrap {};
 		class markBeartrap {};
+		class randomBeartraps {};
 		class resetBeartrap {};
 		class setBeartrap {};
 		class stepInBeartrap {};
