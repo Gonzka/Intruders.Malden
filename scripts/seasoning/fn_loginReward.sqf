@@ -5,17 +5,15 @@
 */
 
 private _lastReward = profileNamespace getVariable "intruders_lastReward";
+private _systemTime = systemTime select [0,3];
 if (isNil "_lastReward") then {
-	profileNamespace setVariable ["intruders_lastReward",systemTime select [0,5]];
+	profileNamespace setVariable ["intruders_lastReward", _systemTime];
 	saveProfileNamespace;
 	_lastReward = profileNamespace getVariable "intruders_lastReward";
 };
 
-_lastRewardFloat = dateToNumber _lastReward;
-_systemTimeFloat = dateToNumber (systemTime select [0,5]);
-
-if (_systemTimeFloat > (_lastRewardFloat +  0.00273973)) then { //1 DAY DIFF
-	profileNamespace setVariable ["intruders_lastReward",systemTime select [0,5]];
+if (_systemTime isNotEqualTo _lastReward) then {
+	profileNamespace setVariable ["intruders_lastReward", _systemTime];
 	
 	private _bloodPoints = profileNamespace getVariable "intruders_bloodPoints";
 	_bloodPoints = _bloodPoints + 5000;

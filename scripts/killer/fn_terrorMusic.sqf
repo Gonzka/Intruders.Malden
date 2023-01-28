@@ -22,12 +22,7 @@ while {sleep 1; alive player} do {
 		removeAllMusicEventHandlers "MusicStop";
 		_inTerrorRadius = _inTerrorRadiusUpdated;
 		if (_inTerrorRadiusUpdated) then {
-			if (Killer getVariable "killer" isEqualTo "oldman") then {
-				_track = "terrorMusic_oldman"
-			} else {
-				_track = selectRandom ["terrorMusic_1", "terrorMusic_2"];
-			};
-			//_track = format ["terrorMusic_%1", Killer getVariable "killer"];
+			_track = selectRandom ["terrorMusic_1", "terrorMusic_2"];
 			music = true;
 		} else {
 			_track = selectRandom _playlist;
