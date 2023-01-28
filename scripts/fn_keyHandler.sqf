@@ -36,7 +36,14 @@ if (stance player != "PRONE" && {inputAction "MoveDown" > 0} && {!("huntersConce
 //ANTI KILLER HOLSTER WEAPON (LAUNCHER)
 if (playerSide isEqualTo east && {inputAction "toggleRaiseWeapon" > 0}) exitWith {
 	true;
-}; 
+};
+
+//SPRINT BURST (L.SHIFT)
+if (playerSide isEqualTo civilian && {inputAction "turbo" > 0}) exitWith {
+	if ("sprintBurst" in (player getVariable "intruders_activePerks") && !exhausted && speed player > 10) then {
+		[] spawn gonzka_fnc_sprintburst;
+	};
+};
 
 switch (_code) do {
 	//Holster weapon (0)

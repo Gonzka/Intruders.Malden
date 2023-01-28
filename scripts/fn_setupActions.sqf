@@ -11,7 +11,7 @@ if (playerSide isEqualTo east) then {
 };
 
 player addAction["<img image='textures\ico_unbreakable.paa'/> " + localize "STR_GAME_UnbreakableAction",{unbreakable = true; ["#rev", 1, player] call BIS_fnc_reviveOnState;},"",0,false,true,"",' "unbreakable" in (player getVariable "intruders_activePerks") && !unbreakable && player getVariable ["BIS_revive_incapacitated", false] ',50,true];
-player addAction["<img image='textures\ico_sprintBurst.paa'/> " + localize "STR_GAME_SprintBurstAction",gonzka_fnc_sprintBurst,"",0,false,true,"",' "sprintBurst" in (player getVariable "intruders_activePerks") && !exhausted && speed player > 10 '];
+//player addAction["<img image='textures\ico_sprintBurst.paa'/> " + localize "STR_GAME_SprintBurstAction",gonzka_fnc_sprintBurst,"",0,false,true,"",' "sprintBurst" in (player getVariable "intruders_activePerks") && !exhausted && speed player > 10 ']; //Action replaced with Shift Hotkey
 
 //SELF HEAL
 player addAction["<img image='textures\ico_firstAidKit.paa'/> " + localize "STR_GAME_SelfHealAction",gonzka_fnc_selfHeal,"",0,false,true,"",' firstAidKits > 0 && damage player > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];

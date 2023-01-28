@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.9.0&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.9.0&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.9.1&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.9.1&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -493,6 +493,14 @@
 			<Original>You are looking in the Killer's direction.</Original>
 			<German>Du schaust in die Richtung des Killers.</German>
 		</Key>
+		<Key ID="STR_GAME_SprintBurstExhausted">
+			<Original>You are exhausted for 60 seconds and cannot sprint during that time.</Original>
+			<German>Du bist 60 Sekunden lang erschöpft und kannst währenddessen nicht sprinten.</German>
+		</Key>
+		<Key ID="STR_GAME_SprintBurstReady">
+			<Original>You are ready for another sprint.</Original>
+			<German>Du bist bereit für einen weiteren Sprint.</German>
+		</Key>
 		<Key ID="STR_GAME_SelfHealAction">
 			<Original>&lt;t color='#EEC900'&gt;Self Healing&lt;/t&gt;</Original>
 			<German>&lt;t color='#EEC900'&gt;Selbstheilung&lt;/t&gt;</German>
@@ -926,8 +934,8 @@
 			<German>Sprintboost</German>
 		</Key>
 		<Key ID="STR_ITEM_SprintBurstDesc">
-			<Original>- Use the scroll wheel menu while running and break into a sprint at 150 % of your normal running speed for a maximum of 3 seconds.\n\n- Sprint Burst causes a cooldown for 60 seconds.</Original>
-			<German>- Benutzte das Scrollradmenü während du läufst und verfalle in einen Sprint mit 150 % deiner normalen Laufgeschwindigkeit für maximal 3 Sekunden.\n\n- Verursacht eine Abklingzeit von 60 Sekunden.</German>
+			<Original>- Press 'L.Shift' while running and break into a sprint at 150 % of your normal running speed for a maximum of 3 seconds.\n\n- Sprint Burst causes a cooldown for 60 seconds.</Original>
+			<German>- Drücke 'L.Shift' während du läufst und verfalle in einen Sprint mit 150 % deiner normalen Laufgeschwindigkeit für maximal 3 Sekunden.\n\n- Verursacht eine Abklingzeit von 60 Sekunden.</German>
 		</Key>
 		<Key ID="STR_ITEM_HexUndying">
 			<Original>Hex: Undying</Original>
