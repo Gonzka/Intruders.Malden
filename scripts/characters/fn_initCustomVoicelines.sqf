@@ -4,9 +4,8 @@
     Sends to the OptionWheelMenu which voicelines the character has
 */
 
-private _params = [];
-
 private _voicelines = [];
+
 switch (face player) do {
 	case "GreekHead_A3_04": {
 		_voicelines = [
@@ -83,16 +82,12 @@ switch (face player) do {
 	};
 };
 
-{
-	_params pushBack _x;
-} forEach _voicelines;
+if (_voicelines isEqualTo []) exitWith {};
 
-if (_params isEqualTo []) then {_params = [["",""]]};
-
-[_params,{
-	private _sound = _this select 1;
+[_voicelines,{
 	if (player getVariable ["voiceActive", false] || !alive player || player getVariable ["BIS_revive_incapacitated", false]) exitWith {};
-	
+
+	private _sound = _this select 1;
 	[player,[_sound,50]] remoteExecCall ["say3D"];
 	player setVariable ["voiceActive",true,true];
 	[_sound] spawn {
