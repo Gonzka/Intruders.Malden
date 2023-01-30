@@ -76,7 +76,8 @@ private "_treeVatId";
         private "_undertreeid";
         private _className = _x select 0;
         private _displayName = _x select 1;
-		private _pic = _x select 2;
+        private _tooltip = _x select 2;
+		private _pic = _x select 3;
         if !(_className isEqualTo "NONE") then {
             _details = [_className] call gonzka_fnc_fetchCfgDetails;
 			if (_pic isEqualTo "") then {
@@ -86,16 +87,17 @@ private "_treeVatId";
         if ([_x] call gonzka_fnc_levelCheck) then {
             if (isNil "_details") then {
                 _undertreeid = _treelist tvAdd [[_treeVatId], _displayName];
-				_treelist tvSetData [ [_treeVatId,_undertreeid],_className];
+				_treelist tvSetData [ [_treeVatId, _undertreeid], _className];
             } else {
                 if (_displayName isEqualTo "") then {
                     _undertreeid = _treelist tvAdd [[_treeVatId], (_details select 1)];
                 } else {
                     _undertreeid = _treelist tvAdd [[_treeVatId], _displayName];
                 };
-                _treelist tvSetData [ [_treeVatId,_undertreeid],_className];
+                _treelist tvSetData [ [_treeVatId, _undertreeid], _className];
                 private _newpath = [_treeVatId] + [_undertreeid];
-                _treelist tvSetPicture [_newpath,_pic];
+                _treelist tvSetPicture [_newpath, _pic];
+                _treelist tvSetTooltip [_newpath, _tooltip];
             };
         };
     } forEach getArray (_x >> "clothing");

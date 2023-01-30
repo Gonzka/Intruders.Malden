@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.9.1&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.9.1&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.10.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.10.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -424,6 +424,14 @@
 		<Key ID="STR_GAME_Faces">
 			<Original>Faces</Original>
 			<German>Gesichter</German>
+		</Key>
+		<Key ID="STR_GAME_SkinUpdated">
+			<Original>Skin updated</Original>
+			<German>Aussehen aktualisiert</German>
+		</Key>
+		<Key ID="STR_GAME_SkinSaved">
+			<Original>Your skin has been saved.</Original>
+			<German>Dein Aussehen wurde gespeichert.</German>
 		</Key>
 		<Key ID="STR_GAME_Equip">
 			<Original>EQUIP</Original>
@@ -1181,6 +1189,10 @@
 			<Original>Spooky Scary Skeleton</Original>
 			<German>Gespenstisch Gruseliges Skelett</German>
 		</Key>
+		<Key ID="STR_SKIN_SpookyScarySkeletonLore">
+			<Original>Even Helmut Mueller still goes from door to door on Halloween at his age. With his spooky skeleton T-shirt, he would love to scam some lollipops.</Original>
+			<German>Sogar Helmut Mueller zieht in seinem Alter immer noch an Halloween von Tür zu Tür. Mit seinem gruseligen Skelett T-Shirt möchte er am liebsten Dauerlutscher ergaunern.</German>
+		</Key>
 		<Key ID="STR_SKIN_CodeSpookyScarySkeleton">
 			<Original>You have unlocked a Spooky Scary Skeleton-Outfit.</Original>
 			<German>Du hast ein gespenstisch gruseliges Skelett-Outfit freigeschaltet.</German>
@@ -1197,29 +1209,85 @@
 			<Original>Drug Baron (Helmut Mueller)</Original>
 			<German>Drogenbaron (Helmut Mueller)</German>
 		</Key>
+		<Key ID="STR_SKIN_DrugbaronLore">
+			<Original>Helmut Mueller is a drug baron and the rightful owner of Mett-Island. His favorite food is crystal meth buns with extra onions.</Original>
+			<German>Helmut Mueller ist ein Drogenbaron und rechtmäßiger Inhaber von Mett-Island. Sein Lieblingsessen sind Crystal-Meth-Brötchen mit extra vielen Zwiebeln.</German>
+		</Key>
 		<Key ID="STR_SKIN_Masked">
 			<Original>Masked (Stanislaw Kowalski)</Original>
 			<German>Maskiert (Stanislaw Kowalski)</German>
+		</Key>
+		<Key ID="STR_SKIN_MaskedLore">
+			<Original>Since his meeting with Mr. Steif von Penen, Stanislaw Kowalski suffers from amnesia. To keep his true identity secret, he never takes off his mask. This is the way.</Original>
+			<German>Seit seinem Treffen mit Herrn Steif von Penen, leidet Stanislaw Kowalski unter Gedächtnisschwund. Um seine wahre Identität geheimzuhalten, setzt er seine Maske niemals ab. Das ist der Weg.</German>
+		</Key>
+		<Key ID="STR_SKIN_Strollingman">
+			<Original>Strollingman (Stanislaw Kowalski)</Original>
+			<German>Schlendermann (Stanislaw Kowalski)</German>
+		</Key>
+		<Key ID="STR_SKIN_StrollingmanLore">
+			<Original>In search of Mr. Steif von Penen, Stanislaw Kowalski strolled through deep forests for nights on end.</Original>
+			<German>Auf der Suche nach Herrn Steif von Penen schlenderte Stanislaw Kowalski nächtelang durch tiefe Wälder.</German>
 		</Key>
 		<Key ID="STR_SKIN_Adjutant">
 			<Original>Adjutant (Hans Rammel)</Original>
 			<German>Adjutant (Hans Rammel)</German>
 		</Key>
+		<Key ID="STR_SKIN_AdjutantLore">
+			<Original>Hans Rammel is a former German officer now serving under a Spanish dictator. He is the right hand of the jackal - the ruler of Malden.</Original>
+			<German>Hans Rammel ist ein ehemaliger deutscher Offizier und dient nun unter einem spanischen Diktator. Er ist die rechte Hand des Schakals - dem Herrscher von Malden.</German>
+		</Key>
 		<Key ID="STR_SKIN_General">
 			<Original>General (Hans Rammel)</Original>
 			<German>General (Hans Rammel)</German>
+		</Key>
+		<Key ID="STR_SKIN_GeneralLore">
+			<Original>Hans Rammel served in the Spanish Army and was soon promoted by his heroic deeds.</Original>
+			<German>Hans Rammel diente in der spanischen Armee und wurde schon bald durch seine Heldentaten befördert.</German>
 		</Key>
 		<Key ID="STR_SKIN_StolenCarDealer">
 			<Original>Stolen Car Dealer (Sandro Kalaschnikow)</Original>
 			<German>Autoschieber (Sandro Kalaschnikow)</German>
 		</Key>
+		<Key ID="STR_SKIN_StolenCarDealerLore">
+			<Original>Sandro Kalaschnikow is a professional stolen car dealer and is known for successfully completing his jobs. He once hired an immigrant to steal Helmut Mueller's truck.</Original>
+			<German>Sandro Kalaschnikow ist professioneller Autoschieber und bekannt dafür seine Aufträge erfolgreich abzuschließen. Er hat einst einen Einwanderer angeheuert um Helmut Muellers LKW zu stehlen.</German>
+		</Key>
 		<Key ID="STR_SKIN_Survivor">
 			<Original>Survivor (Sandro Kalaschnikow)</Original>
 			<German>Überlebender (Sandro Kalaschnikow)</German>
 		</Key>
+		<Key ID="STR_SKIN_SurvivorLore">
+			<Original>During the skirmish at Charkia's gang hideout, Sandro Kalaschnikow proved his resilience.</Original>
+			<German>Während dem Scharmützel am Gangversteck von Charkia hat Sandro Kalaschnikow seine Widerstandsfähigkeit bewiesen.</German>
+		</Key>
 		<Key ID="STR_SKIN_Hero">
 			<Original>Hero (Bruce Willis)</Original>
 			<German>Held (Bruce Willis)</German>
+		</Key>
+		<Key ID="STR_SKIN_HeroLore">
+			<Original>Bruce Willis is the famous brother of the policeman John McClane. Some call him a hero, others just a myth.</Original>
+			<German>Bruce Willis ist der berühmte Bruder des Polizisten John McClane. Einige bezeichnen ihn als Held, andere nur als ein Mythos.</German>
+		</Key>
+		<Key ID="STR_SKIN_Businessman">
+			<Original>Businessman (Bruce Willis)</Original>
+			<German>Geschäftsmann (Bruce Willis)</German>
+		</Key>
+		<Key ID="STR_SKIN_BusinessmanLore">
+			<Original>Bruce Willis is an efficient businessman. On Tanoa, he runs a gun store for indigenous people and is instrumental in modernizing the society.</Original>
+			<German>Bruce Willis ist ein tüchtiger Geschäftsmann. Auf Tanoa betreibt er einen Waffenladen für Ureinwohner und ist maßgeblich an der Modernisierung der Gesellschaft beteiligt.</German>
+		</Key>
+		<Key ID="STR_SKIN_Harvester">
+			<Original>Harvester (Sonny Kolo)</Original>
+			<German>Erntehelfer (Sonny Kolo)</German>
+		</Key>
+		<Key ID="STR_SKIN_HarvesterLore">
+			<Original>Sonny Kolo works on Mett-Island as a harvest worker. Mett-Island's plantations are surrounded by mines. These are supposed to keep out unwanted people, but most of the time they accidentally explode during the harvest.</Original>
+			<German>Sonny Kolo arbeitet auf Mett-Island als Erntehelfer. Mett-Island's Plantagen sind von Minen umgeben. Diese sollen unerwünschtes Volk fernhalten, aber meistens explodieren sie versehentlich bei der Ernte.</German>
+		</Key>
+		<Key ID="STR_SKIN_JournalistLore">
+			<Original>Journalist Martin Opterix has even interviewed with Z celebrities, like Udo Lindenberg, Germany's worst musician. Now he has an appointment with the killer.</Original>
+			<German>Der Journalist Martin Opterix hat sogar schon Interviews mit Z-Promis geführt, wie Udo Lindenberg, dem schlechtesten deutschen Musiker. Jetzt hat er einen Termin mit dem Killer.</German>
 		</Key>
 		<Key ID="STR_SKIN_WendigoDefaultTanoa">
 			<Original>Default (Jungle)</Original>

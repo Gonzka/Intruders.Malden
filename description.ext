@@ -845,6 +845,30 @@ class CfgSounds {
 		sound[] = {"\speech\voiceline_opterix_6.ogg", 5.0, 1};
 		titles[] = {};
 	};
+	
+	class kolo_spawn_1 {
+		name = "kolo_spawn_1";
+		sound[] = {"\speech\kolo_spawn_1.ogg", 5.0, 1};
+		titles[] = {};
+	};
+
+	class kolo_spawn_2 {
+		name = "kolo_spawn_2";
+		sound[] = {"\speech\kolo_spawn_2.ogg", 5.0, 1};
+		titles[] = {};
+	};
+	
+	class kolo_spawn_3 {
+		name = "kolo_spawn_3";
+		sound[] = {"\speech\kolo_spawn_3.ogg", 5.0, 1};
+		titles[] = {};
+	};
+	
+	class kolo_spawn_4 {
+		name = "kolo_spawn_4";
+		sound[] = {"\speech\kolo_spawn_4.ogg", 6.0, 1};
+		titles[] = {};
+	};
 };
 
 class CfgMusic {

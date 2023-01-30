@@ -35,6 +35,11 @@ if (playerSide isEqualTo civilian) then {
 			[player, "Acts_Dance_02"] remoteExec ["switchMove"];
 			player say3D [selectRandom ["opterix_spawn_1","opterix_spawn_2"], 50];
 		};
+		
+		case "LivonianHead_1": {
+			player playMoveNow "Acts_A_M01_briefing";
+			player say3D [selectRandom ["kolo_spawn_1","kolo_spawn_2","kolo_spawn_3","kolo_spawn_4"], 100];
+		};
 	};
 };
 
