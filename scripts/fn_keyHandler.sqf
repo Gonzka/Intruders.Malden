@@ -39,7 +39,7 @@ if (playerSide isEqualTo east && {inputAction "toggleRaiseWeapon" > 0}) exitWith
 };
 
 //SPRINT BURST (L.SHIFT)
-if (playerSide isEqualTo civilian && {inputAction "turbo" > 0}) exitWith {
+if (playerSide isEqualTo civilian && {inputAction "turbo" > 0}) then {
 	if ("sprintBurst" in (player getVariable "intruders_activePerks") && !exhausted && speed player > 10) then {
 		[] spawn gonzka_fnc_sprintburst;
 	};
@@ -59,7 +59,7 @@ switch (_code) do {
 	case 57: {
 		if (playerSide isEqualTo east) exitWith {};
 		if (isNil "jumpActionTime") then {jumpActionTime = 0;};
-		if (_shift && {!(animationState player isEqualTo "AovrPercMrunSrasWrflDf")} && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 2} && {((velocity player) select 2) < 2.5} && {time - jumpActionTime > 1.5}) then {
+		if (!(animationState player isEqualTo "AovrPercMrunSrasWrflDf") && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 10} && {((velocity player) select 2) < 2.5} && {time - jumpActionTime > 1.5}) then {
 			jumpActionTime = time; //Update the time.
 			[player] remoteExec ["gonzka_fnc_jumpFnc",0]; //Global execution
 			_handled = true;
