@@ -70,8 +70,8 @@ player addAction["<img image='textures\ico_circuit.paa'/> " + localize "STR_GAME
 		["STR_SCORE_Heal",500] remoteExecCall ["gonzka_fnc_addFunds", _caller];
 		
 		//QUEST
-		//private _heals = _caller getVariable "quest_heals";
-		//_caller setVariable ["quest_heals",_heals + 1,true];
+		private _heals = _caller getVariable "quest_heals";
+		_caller setVariable ["quest_heals",_heals + 1,true];
 	},
 	{
 		[_caller, ""] remoteExec ["switchMove"];

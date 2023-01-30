@@ -48,6 +48,12 @@ class Quests {
 			"STR_QUEST_KillerTask7",
 			10000
 		};
+		
+		Quest8[] = {
+			"STR_QUEST_Killer8",
+			"STR_QUEST_KillerTask8",
+			10000
+		};
 	};
 	
 	class Intruder {

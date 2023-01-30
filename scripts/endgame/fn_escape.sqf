@@ -12,6 +12,3 @@ intrudersWin = true; publicvariable "intrudersWin";
 
 //QUEST
 quest_escape = true;
-if (totems isEqualTo []) then {
-    quest_thoroughCleansing = true;
-};

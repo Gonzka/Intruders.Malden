@@ -926,7 +926,7 @@ class CfgDebriefing {
 	class LeaveMenuPrinc {
 		title = "$STR_BRIEF_Goodbye";
 		subtitle = "$STR_BRIEF_LobbyReturn";
-		description = "<t align='center' size='1.1' font='PuristaMedium'>See you soon!</t><br/><t align='center' size='0.8' font='PuristaLight'>-- Keep up to date with the latest news about Intruders --</t><br/><t align='center' size='0.8' font='PuristaLight'>Discord: </t><a font='PuristaLight' underline='false' color='#cc0000' size='0.8' href='https://discord.intruders-a3.de'><t align='center' font='PuristaLight' size='0.8' color='#cc0000'>discord.intruders-a3.de</a></t><br/>";
+		description = "<t align='center' size='1.1' font='PuristaMedium'>See you soon!</t><br/>";
 		pictureBackground = "thumbnail.jpg";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};

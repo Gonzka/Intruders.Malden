@@ -56,19 +56,17 @@ player setVariable ["quest_kills", 0, true];
 player setVariable ["quest_stuns", 0, true];
 player setVariable ["quest_knockDowns", 0, true];
 player setVariable ["quest_bearTrapCatches", 0, true];
-//player setVariable ["quest_heals", 0, true];
+player setVariable ["quest_heals", 0, true];
 player setVariable ["quest_endgameKill", false, true];
 quest_generators = 0;
 quest_chests = 0;
 quest_skillCheckCombo = 0;
 quest_terrorGenerators = 0;
-quest_selfHeals = 0;
 quest_portalTravels = 0;
 quest_uncloakingHit = 0;
 quest_escape = false;
 quest_hit_openTimeSlot = false;
 quest_killAll = false;
-quest_thoroughCleansing = false;
 
 //PERKS
 private _perkVar = format ["intruders_activePerks_%1",if (playerSide isEqualTo east) then {"killer"} else {"survivor"}];

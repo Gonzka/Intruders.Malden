@@ -77,17 +77,17 @@ private "_treeVatId";
         private _className = _x select 0;
         private _displayName = _x select 1;
         private _tooltip = _x select 2;
-		private _pic = _x select 3;
+        private _pic = _x select 3;
         if !(_className isEqualTo "NONE") then {
             _details = [_className] call gonzka_fnc_fetchCfgDetails;
-			if (_pic isEqualTo "") then {
+            if (_pic isEqualTo "") then {
                 _pic = (_details select 2);
-			};
+            };
         };
         if ([_x] call gonzka_fnc_levelCheck) then {
             if (isNil "_details") then {
                 _undertreeid = _treelist tvAdd [[_treeVatId], _displayName];
-				_treelist tvSetData [ [_treeVatId, _undertreeid], _className];
+                _treelist tvSetData [ [_treeVatId, _undertreeid], _className];
             } else {
                 if (_displayName isEqualTo "") then {
                     _undertreeid = _treelist tvAdd [[_treeVatId], (_details select 1)];

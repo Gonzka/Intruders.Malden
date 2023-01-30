@@ -14,6 +14,3 @@ waitUntil {!(animationState player in ["ainvpknlmstpslaywnondnon_medic", "ainvpp
 player setDamage 0;
 
 ["STR_SCORE_Heal",300] call gonzka_fnc_addFunds;
-
-//QUEST
-quest_selfHeals = quest_selfHeals + 1;
