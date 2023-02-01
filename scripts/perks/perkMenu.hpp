@@ -58,13 +58,13 @@ class PerkMenu {
         };
 		
 		//PERK 1
-		class Frame_1 : RscFrame {
+		class Background_1 : RscText {
 			idc = -1;
             x = 0.349479166666667 * safezoneW + safezoneX;
             y = 0.39283185840708 * safezoneH + safezoneY;
 			w = 0.0705 * safezoneW;
 			h = 0.126 * safezoneH;
-			colorText[] = {0.7,0.13,0.13,1};
+			colorBackground[] = {0.7,0.13,0.13,0.3};
 		};
 		class Picture_1 : RscPictureKeepAspect {
 			idc = 1502;
@@ -94,13 +94,13 @@ class PerkMenu {
 		};
 		
 		//PERK 2
-		class Frame_2 : RscFrame {
+		class Background_2 : RscText {
 			idc = -1;
             x = 0.426 * safezoneW + safezoneX;
             y = 0.39283185840708 * safezoneH + safezoneY;
 			w = 0.0705 * safezoneW;
 			h = 0.126 * safezoneH;
-			colorText[] = {0.7,0.13,0.13,1};
+			colorBackground[] = {0.7,0.13,0.13,0.3};
 		};
 		class Picture_2 : RscPictureKeepAspect {
 			idc = 1503;
@@ -130,13 +130,13 @@ class PerkMenu {
 		};
 		
 		//PERK 3
-		class Frame_3 : RscFrame {
+		class Background_3 : RscText {
 			idc = -1;
             x = 0.5028 * safezoneW + safezoneX;
             y = 0.39283185840708 * safezoneH + safezoneY;
 			w = 0.0705 * safezoneW;
 			h = 0.126 * safezoneH;
-			colorText[] = {0.7,0.13,0.13,1};
+			colorBackground[] = {0.7,0.13,0.13,0.3};
 		};
 		class Picture_3 : RscPictureKeepAspect {
 			idc = 1504;
@@ -166,13 +166,13 @@ class PerkMenu {
 		};
 
 		//PERK 4
-		class Frame_4 : RscFrame {
+		class Background_4 : RscText {
 			idc = -1;
             x = 0.5793 * safezoneW + safezoneX;
             y = 0.39283185840708 * safezoneH + safezoneY;
 			w = 0.0705 * safezoneW;
 			h = 0.126 * safezoneH;
-			colorText[] = {0.7,0.13,0.13,1};
+			colorBackground[] = {0.7,0.13,0.13,0.3};
 		};
 		class Picture_4 : RscPictureKeepAspect {
 			idc = 1505;

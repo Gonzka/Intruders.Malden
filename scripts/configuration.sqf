@@ -84,5 +84,5 @@ if (isNil {profileNamespace getVariable _currencyVar}) then {
 
 saveProfileNamespace;
 
-diag_log format ["[Intruders Client] Player: %1 (%2) | Perks: %3 | Bloodpoints: %4 | Date: %5", profileName, getPlayerUID player, _globalInventory, profileNamespace getVariable _currencyVar, systemTime];
+diag_log format ["[Intruders Client] Player: %1 (%2) | Inventory: %3 | Bloodpoints: %4 | Date: %5", profileName, getPlayerUID player, _globalInventory, profileNamespace getVariable _currencyVar, systemTime];
 diag_log ("configuration" + str(diag_ticktime));

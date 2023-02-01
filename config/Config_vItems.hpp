@@ -2,7 +2,9 @@
 #define true 1
 
 class VirtualItems {
-
+	
+	featuredItem = "sprintBurst";
+	
 	class armageddon {
 		variable = "armageddon";
 		displayName = "STR_ITEM_Armageddon";

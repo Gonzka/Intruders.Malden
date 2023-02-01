@@ -461,6 +461,22 @@
 			<Original>Skin unlocked</Original>
 			<German>Aussehen freigeschaltet</German>
 		</Key>
+		<Key ID="STR_GAME_ShopRefreshTime">
+			<Original>refreshes in %1 hours</Original>
+			<German>wird aktualisiert in %1 Stunden</German>
+		</Key>
+		<Key ID="STR_GAME_ShopRefreshed">
+			<Original>Shop refreshed</Original>
+			<German>Shop aktualisiert</German>
+		</Key>
+		<Key ID="STR_GAME_ShopNewItems">
+			<Original>There are new items for sale.</Original>
+			<German>Es gibt neue Items zu kaufen.</German>
+		</Key>
+		<Key ID="STR_GAME_FeaturedItem">
+			<Original>FEATURED ITEM</Original>
+			<German>VORGESTELLTES ITEM</German>
+		</Key>
 		<Key ID="STR_GAME_PumpkinAction">
 			<Original>Destroy Pumpkin</Original>
 			<German>Kürbis zerstören</German>

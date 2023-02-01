@@ -24,6 +24,9 @@ if (_systemTime isNotEqualTo _lastReward) then {
 	//NEW DAILY QUEST
 	profileNamespace setVariable ["intruders_dailyQuestIntruder",nil];
 	profileNamespace setVariable ["intruders_dailyQuestKiller",nil];
+
+	//REFRESH OF SHOP ITEMS
+	profileNamespace setVariable ["intruders_dailyShopItems",nil];
 	
 	saveProfileNamespace;
 };
