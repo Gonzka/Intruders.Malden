@@ -32,7 +32,7 @@ _trap setDir (random 360);
 
 [_trap] call gonzka_fnc_resetBeartrap;
 [_trap] call gonzka_fnc_collectBeartrap;
-[_trap] spawn gonzka_fnc_markBeartrap;
+[_trap] call gonzka_fnc_markBeartrap;
 [_trap] remoteExec ["gonzka_fnc_stepInBeartrap",civilian];
 [_trap] remoteExec ["gonzka_fnc_disarmBeartrap",civilian];
 

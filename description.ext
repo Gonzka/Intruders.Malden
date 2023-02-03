@@ -15,7 +15,7 @@ ReviveUnconsciousStateMode = 0;
 ReviveRequiredTrait = 0;
 ReviveRequiredItems = 0;
 ReviveRequiredItemsFakConsumed = 0;
-ReviveDelay = 10;
+ReviveDelay = 8;
 ReviveMedicSpeedMultiplier = 2;
 ReviveForceRespawnDelay = 3;
 ReviveBleedOutDelay = 120;
@@ -208,7 +208,8 @@ class CfgWorlds {
 			"$STR_LOADING_5",
 			"$STR_LOADING_6",
 			"$STR_LOADING_7",
-			"$STR_LOADING_8"
+			"$STR_LOADING_8",
+			"$STR_LOADING_9"
 		};
 	};
 };

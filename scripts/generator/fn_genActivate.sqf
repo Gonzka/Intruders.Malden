@@ -26,7 +26,6 @@ playSound3D [_activateSound, _generator, false, getPosASL _generator, 3, 1, 1000
 repairedGenerators = repairedGenerators + 1;
 publicvariable "repairedGenerators";
 
-[_generator] remoteExecCall ["gonzka_fnc_removeGenMarker",east];
 [_generator,"textures\gui\hud_generator.paa","",[0,1,0,1]] remoteExec ["gonzka_fnc_auraNotification", [0, -2] select isDedicated];
 
 if (repairedGenerators isEqualTo totalGenerators) then {

@@ -79,7 +79,7 @@ player setVariable ["intruders_activePerks", profileNamespace getVariable _perkV
 //BLOODPOINTS
 private _currencyVar = "intruders_bloodPoints";
 if (isNil {profileNamespace getVariable _currencyVar}) then {
-    profileNamespace setVariable [_currencyVar,0];
+    profileNamespace setVariable [_currencyVar,10000]; //Initial value. Everyone starts with 10,000 blood points.
 };
 
 saveProfileNamespace;

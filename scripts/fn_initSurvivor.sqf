@@ -16,7 +16,6 @@ player setDir (random 360);
 [] spawn gonzka_fnc_spawnCamera;
 
 //PERKS
-call gonzka_fnc_bond;
 call gonzka_fnc_plunderersInstinct;
 [] spawn gonzka_fnc_premonition;
 

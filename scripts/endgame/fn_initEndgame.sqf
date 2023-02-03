@@ -37,17 +37,13 @@ if (worldName isEqualTo "Malden") then {
 
 { 
     if !(_x getVariable ["active", false]) then {
-        [_x] remoteExec ["gonzka_fnc_removeGenMarker",east];
         _x setVariable ["active",true,true];
     };	
 } forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5, genericGen_6, genericGen_7];
 
 addMissionEventHandler ["Draw3D", {
-    drawIcon3D [getMissionPath "textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_1, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #1", 1, 0.0315, "EtelkaMonospacePro"]; 
-}];
-
-addMissionEventHandler ["Draw3D", {
-    drawIcon3D [getMissionPath "textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_2, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #2", 1, 0.0315, "EtelkaMonospacePro"]; 
+    drawIcon3D [getMissionPath "textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_1, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #1", 1, 0.0315, "EtelkaMonospacePro"];
+    drawIcon3D [getMissionPath "textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_2, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #2", 1, 0.0315, "EtelkaMonospacePro"];
 }];
 
 //No One Escapes Death Killer Perk (Hex)

@@ -55,8 +55,10 @@ player selectWeapon secondaryWeapon player;
 ["hex_retribution"] spawn gonzka_fnc_igniteHexTotem;
 
 //GEN MARKERS
-for "_i" from 1 to 7 do {
-	missionNamespace setVariable [format ["draw_genericGen_%1",_i], call compile format ["addMissionEventHandler ['Draw3D', {
-		drawIcon3D [getMissionPath 'textures\gui\hud_generator.paa', [1,1,1,1], ASLToAGL getPosASL %1, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro']; 
-	}];", format ['genericGen_%1',_i]]];
-};
+addMissionEventHandler ['Draw3D', {
+	{
+		if !(_x getVariable ['active',false]) then {
+			drawIcon3D [getMissionPath 'textures\gui\hud_generator.paa', [1,1,1,1], ASLToAGL getPosASL _x, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro'];
+		};
+	} forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5 , genericGen_6, genericGen_7];
+}];

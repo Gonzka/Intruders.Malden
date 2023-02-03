@@ -1,15 +1,17 @@
 /*
     Author:	Gonzka
 
-    Sprint Burst Survivor Perk
+    Sprint Burst Survivor Perk. Now Basekit, but longer duration with perk.
 */
 
-if !("sprintBurst" in (player getVariable "intruders_activePerks")) exitWith {};
 if (exhausted) exitWith {};
 
 exhausted = true;
 player setAnimSpeedCoef 1.5;
-sleep 3;
+sleep 5;
+if ("sprintBurst" in (player getVariable "intruders_activePerks")) then {
+    sleep 5;
+};
 if (player getVariable ["hope", false]) then {
     player setAnimSpeedCoef 1.07; //Hope Survivor Perk
 } else {

@@ -47,7 +47,7 @@ private _actionID = [
 		
 		//Ruin Killer Perk (Hex)
 		if !(isNil "totem_hex_ruin" || {isObjectHidden totem_hex_ruin}) then {
-			["hex_ruin"] call gonzka_fnc_revealHex;
+			["hex_ruin", totem_hex_ruin] call gonzka_fnc_revealHex;
 			[_target, _duration] spawn {
 				_target = _this select 0;
 				_duration = _this select 1;
@@ -68,7 +68,7 @@ private _actionID = [
 		};
 	},
 	[],  
-	80,
+	60,
 	nil,  
 	true,  
 	false 

@@ -28,8 +28,8 @@ if (({inputAction _x > 0} count _blacklistedKeys) > 0) exitWith {
 	true;
 };
 
-//DISABLES TO LAY DOWN, BUT STANDING UP IS POSSIBLE
-if (stance player != "PRONE" && {inputAction "MoveDown" > 0} && {!("huntersConcealment" in (player getVariable "intruders_activePerks"))}) exitWith {
+//DISABLES TO LAY DOWN FOR THE KILLER, BUT STANDING UP IS POSSIBLE
+if (playerSide isEqualTo east && {stance player != "PRONE"} && {inputAction "MoveDown" > 0}) exitWith {
 	true;
 };
 
@@ -39,10 +39,8 @@ if (playerSide isEqualTo east && {inputAction "toggleRaiseWeapon" > 0}) exitWith
 };
 
 //SPRINT BURST (L.SHIFT)
-if (playerSide isEqualTo civilian && {inputAction "turbo" > 0}) then {
-	if ("sprintBurst" in (player getVariable "intruders_activePerks") && !exhausted && speed player > 10) then {
-		[] spawn gonzka_fnc_sprintburst;
-	};
+if (playerSide isEqualTo civilian && {inputAction "turbo" > 0} && {!exhausted} && {speed player > 10}) then {
+	[] spawn gonzka_fnc_sprintburst;
 };
 
 switch (_code) do {

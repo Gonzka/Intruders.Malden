@@ -38,16 +38,14 @@ params [
 			//Retribution Killer Perk (Hex)
 			if !(isNil "totem_hex_retribution" || {isObjectHidden totem_hex_retribution}) then {
 				{
-					if (side _x isEqualTo civilian) then {
-						[_x,"","",[1,1,1,1],15,false] remoteExec ["gonzka_fnc_auraNotification",east];
-					};
-				} forEach playableUnits;
+					[_x,"","",[1,1,1,1],15,false] remoteExec ["gonzka_fnc_auraNotification",east];
+				} forEach playableUnits - [Killer];
 				["Orange_Timeline_FadeOut"] remoteExecCall ["playSound",east];
 			};
 			
 			//Undying Killer Perk (Hex)
 			if !(isNil "totem_hex_undying" || {isObjectHidden totem_hex_undying}) then {
-				["hex_undying"] call gonzka_fnc_revealHex;
+				["hex_undying", totem_hex_undying] call gonzka_fnc_revealHex;
 				missionNamespace setVariable [format ["totem_%1", _target getVariable "hex"], totem_hex_undying, true];
 				totem_hex_undying = nil;
 			};
@@ -59,7 +57,7 @@ params [
 		if !(isNil "totem_hex_retribution" || {isObjectHidden totem_hex_retribution}) then {
 			if !(player getVariable ["oblivious",false]) then {
 				player setVariable ["oblivious",true,true];
-				["hex_retribution"] call gonzka_fnc_revealHex;
+				["hex_retribution", totem_hex_retribution] call gonzka_fnc_revealHex;
 				[] spawn {
 					sleep 45;
 					player setVariable ["oblivious",false,true];

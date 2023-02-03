@@ -90,7 +90,6 @@ class Intruders {
 		class generatorHoldAction {};
 		class genFail {};
 		class genSoundLoop {};
-		class removeGenMarker {};
 		class skillCheckMenuCtrl {};
 		class sparkParticles {};
 	};
@@ -131,7 +130,6 @@ class Intruders {
 	class perks {
 		file = "scripts\perks";
 		class bitterMurmur {};
-		class bond {};
 		class boobyTrap {};
 		class counterforce {};
 		class darkSense {};

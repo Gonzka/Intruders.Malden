@@ -6,7 +6,10 @@
 
 params ["_player","_pic","_name"];
 
-if (isNil "_player") exitWith {};
+if (isNil "_player") exitWith { //When a player disconnects
+	_pic ctrlSetText "";
+	_name ctrlSetText "";
+};
 
 _pic ctrlSetText "textures\gui\hud_survivor.paa";
 _name ctrlSetText name _player;	
@@ -23,7 +26,7 @@ if (str attachedObjects _player find "beartrap" != -1) then {
 	_pic ctrlSetText "textures\gui\hud_trapped.paa";
 };
 
-if (_player getVariable ["BIS_revive_incapacitated", false] || lifeState _player isEqualTo "INCAPACITATED") then {
+if (_player getVariable ["BIS_revive_incapacitated", false]) then {
 	_pic ctrlSetText "textures\gui\hud_incapacitated.paa";
 };
 

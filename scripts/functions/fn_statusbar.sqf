@@ -51,10 +51,7 @@ while {true} do {
 	_genCounter ctrlSetText format ["textures\gui\hud_%1.paa", totalGenerators - repairedGenerators];
 	
 	private _playerCount = civilian countSide allPlayers;
-	private _players = allPlayers;
-	if !(isNil "Killer") then {
-		_players = allPlayers - [Killer];
-	};
+	private _players = allPlayers - [Killer];
 	
 	if (_playerCount > 0) then {
 		[_players select 0,_pic1,_name1] call gonzka_fnc_statusBarPlayers;

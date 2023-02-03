@@ -135,16 +135,6 @@ class VirtualItems {
 		released = true;
 	};
 	
-	class huntersConcealment {
-		variable = "huntersConcealment";
-		displayName = "STR_ITEM_HuntersConcealment";
-		description = "STR_ITEM_HuntersConcealmentDesc";
-		icon = "textures\ico_huntersConcealment.paa";
-		side = "survivor";
-		price = 10000;
-		released = true;
-	};
-	
 	class jamAndBanana {
 		variable = "jamAndBanana";
 		displayName = "STR_ITEM_JamAndBanana";

@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.11.0&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.11.0&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.12.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.12.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -929,14 +929,6 @@
 			<Original>- Survivors cleansing any Totem are oblivious to the Killer's whereabouts for 45 seconds (disabled heartbeat).\n\n- After cleansing a Hex Totem, the Positions of all Survivors are revealed to you for 15 seconds.\n\n- The Hex effects persist as long as the related Hex Totem is standing.</Original>
 			<German>- Jeder Überlebende, der mit einem glanzlosen Totem oder einem Fluchtotem interagiert, bemerkt für 45 Sekunden nicht die drohende Gefahr des Killers (deaktivierter Herzschlag).\n\n- Wird ein beliebiges Fluchtotem, einschließlich diesem, entfernt, werden die Positionen aller Überlebenden für 15 Sekunden angezeigt.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
 		</Key>
-		<Key ID="STR_ITEM_HuntersConcealment">
-			<Original>Hunter's Concealment</Original>
-			<German>Tarnkappe des Jägers</German>
-		</Key>
-		<Key ID="STR_ITEM_HuntersConcealmentDesc">
-			<Original>- Press 'Y' to go Prone. Press 'Y' again to stand up.</Original>
-			<German>- Drücke 'Y' um dich hinzulegen. Drücke erneut 'Y', um aufzustehen.</German>
-		</Key>
 		<Key ID="STR_ITEM_Counterforce">
 			<Original>Counterforce</Original>
 			<German>Gegengewalt</German>
@@ -958,8 +950,8 @@
 			<German>Sprintboost</German>
 		</Key>
 		<Key ID="STR_ITEM_SprintBurstDesc">
-			<Original>- Press 'L.Shift' while running and break into a sprint at 150 % of your normal running speed for a maximum of 3 seconds.\n\n- Sprint Burst causes a cooldown for 60 seconds.</Original>
-			<German>- Drücke 'L.Shift' während du läufst und verfalle in einen Sprint mit 150 % deiner normalen Laufgeschwindigkeit für maximal 3 Sekunden.\n\n- Verursacht eine Abklingzeit von 60 Sekunden.</German>
+			<Original>- Whenever you sprint, you retain the Movement Speed burst for 5 additional seconds.</Original>
+			<German>- Wenn du sprintest, behältst du den Bewegungsgeschwindigkeitsbonus für weitere 5 Sekunden.</German>
 		</Key>
 		<Key ID="STR_ITEM_HexUndying">
 			<Original>Hex: Undying</Original>
@@ -1642,6 +1634,10 @@
 		<Key ID="STR_LOADING_8">
 			<Original>In chests, depending on your luck, you can find better or worse items that can help you escape. However, you must be quick so that no one else opens the chests before you!</Original>
 			<German>In Truhen findest du je nach Glück, bessere oder schlechtere Gegenstände, die dir die Flucht erleichtern können. Du musst jedoch schnell sein, damit kein anderer die Truhen vor dir öffnet!</German>
+		</Key>
+		<Key ID="STR_LOADING_9">
+			<Original>Press 'L.Shift' as a survivor while running and break into a sprint at 150 % of your normal running speed for a few seconds.</Original>
+			<German>Drücke als Überlebender während du läufst 'L.Shift' und verfalle in einen Sprint mit 150 % deiner normalen Laufgeschwindigkeit für einige Sekunden.</German>
 		</Key>
 	</Package>
 </Project>

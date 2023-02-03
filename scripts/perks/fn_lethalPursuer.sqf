@@ -7,9 +7,7 @@
 if !("lethalPursuer" in (player getVariable "intruders_activePerks")) exitWith {};
 
 {
-    if (side _x isEqualTo civilian) then {
-        [_x,"","",[1,1,1,1],9,false] spawn gonzka_fnc_auraNotification;
-    };
-} forEach playableUnits;
+    [_x,"","",[1,1,1,1],9,false] spawn gonzka_fnc_auraNotification;
+} forEach playableUnits - [player];
 
 playSound "Orange_Timeline_FadeOut";
