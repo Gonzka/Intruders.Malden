@@ -81,6 +81,7 @@ class Intruders {
 		class spawnPoint {};
 		class statusbar {};
 		class statusbarPlayers {};
+		class waterIsLava {};
 	};
 	
 	class generator {

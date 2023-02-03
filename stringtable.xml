@@ -525,6 +525,14 @@
 			<Original>You are ready for another sprint.</Original>
 			<German>Du bist bereit für einen weiteren Sprint.</German>
 		</Key>
+		<Key ID="STR_GAME_WaterIsLava">
+			<Original>Water is lava</Original>
+			<German>Wasser ist Lava</German>
+		</Key>
+		<Key ID="STR_GAME_FurtherIntoWater">
+			<Original>If you go further into the water you will die!</Original>
+			<German>Wenn du weiter ins Wasser gehst, wirst du sterben!</German>
+		</Key>
 		<Key ID="STR_GAME_SelfHealAction">
 			<Original>&lt;t color='#EEC900'&gt;Self Healing&lt;/t&gt;</Original>
 			<German>&lt;t color='#EEC900'&gt;Selbstheilung&lt;/t&gt;</German>
