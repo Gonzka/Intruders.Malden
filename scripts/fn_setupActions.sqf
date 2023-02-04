@@ -10,7 +10,7 @@ if (playerSide isEqualTo east) then {
 	player addAction["<img image='textures\ico_abilityButcher.paa'/> " + localize "STR_GAME_ButcherAbilityAction",gonzka_fnc_setBeartrap,"",0,false,true,"",' beartraps > 0 && player getVariable "killer" isEqualTo "butcher" '];
 };
 
-player addAction["<img image='textures\ico_unbreakable.paa'/> " + localize "STR_GAME_UnbreakableAction",{unbreakable = true; ["#rev", 1, player] call BIS_fnc_reviveOnState;},"",0,false,true,"",' "unbreakable" in (player getVariable "intruders_activePerks") && !unbreakable && player getVariable ["BIS_revive_incapacitated", false] ',50,true];
+player addAction["<img image='textures\ico_unbreakable.paa'/> " + localize "STR_GAME_UnbreakableAction",{unbreakable = true; ["#rev", 1, player] call BIS_fnc_reviveOnState; player setVariable ["#rev", 1];},"",0,false,true,"",' "unbreakable" in (player getVariable "intruders_activePerks") && !unbreakable && player getVariable ["BIS_revive_incapacitated", false] ',50,true];
 //player addAction["<img image='textures\ico_sprintBurst.paa'/> " + localize "STR_GAME_SprintBurstAction",gonzka_fnc_sprintBurst,"",0,false,true,"",' "sprintBurst" in (player getVariable "intruders_activePerks") && !exhausted && speed player > 10 ']; //Action replaced with Shift Hotkey
 
 //SELF HEAL

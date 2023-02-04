@@ -26,7 +26,7 @@ if (str attachedObjects _player find "beartrap" != -1) then {
 	_pic ctrlSetText "textures\gui\hud_trapped.paa";
 };
 
-if (_player getVariable ["BIS_revive_incapacitated", false]) then {
+if (_player getVariable ["BIS_revive_incapacitated", false] || lifeState _player isEqualTo "INCAPACITATED") then {
 	_pic ctrlSetText "textures\gui\hud_incapacitated.paa";
 };
 

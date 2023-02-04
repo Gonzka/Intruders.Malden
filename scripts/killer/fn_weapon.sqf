@@ -50,7 +50,7 @@ chopWeapon = {
 
 	private _tar = _allTargets select 0;
 	
-	if (_tar getVariable ["BIS_revive_incapacitated", false]) exitWith { 
+	if (_tar getVariable ["BIS_revive_incapacitated", false] || lifeState _tar == "INCAPACITATED") exitWith { 
 		["STR_GAME_Error", "STR_GAME_PlayerUnconscious", 5, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
 	};
 	
@@ -67,7 +67,7 @@ chopWeapon = {
 	[10] remoteExecCall ["BIS_fnc_bloodEffect",_tar]; //Adds the bleeding effect post-processing effect to the players screen
 	
 	//ON-HIT SPRINT
-	if !(_tar getVariable ["BIS_revive_incapacitated", false]) then {
+	if !(_tar getVariable ["BIS_revive_incapacitated", false] && lifeState _tar == "INCAPACITATED") then {
 		[_tar] spawn {
 			_tar = _this select 0;
 			[_tar, 1.5] remoteExec ["setAnimSpeedCoef", _tar];
