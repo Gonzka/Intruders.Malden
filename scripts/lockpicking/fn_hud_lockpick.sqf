@@ -69,8 +69,7 @@ _effect_handle ppEffectCommit 0;
 		if (pizza_lockpick_picked) then {
 		    [player, "vehicleUnlocked"] remoteExecCall ["say3D"];
 		} else {
-		    private _sound = selectRandom ["a3\missions_f_oldman\data\sound\light_switch\light_switch_01.wss","a3\missions_f_oldman\data\sound\light_switch\light_switch_02.wss","a3\missions_f_oldman\data\sound\light_switch\light_switch_03.wss"];
-            playSound3D [_sound, player, false, getPosASL player, 4, 1, 20];
+            playSound3D [selectRandom ["a3\missions_f_oldman\data\sound\light_switch\light_switch_01.wss", "a3\missions_f_oldman\data\sound\light_switch\light_switch_02.wss", "a3\missions_f_oldman\data\sound\light_switch\light_switch_03.wss"], player, false, getPosASL player, 4, 1, 20];
 		};
     };
 

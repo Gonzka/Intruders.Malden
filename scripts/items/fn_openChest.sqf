@@ -23,7 +23,7 @@ if (_chest getVariable ["boobyTrap",false]) exitWith { //Booby Trap Killer Perk
 	[player] call gonzka_fnc_scream; //SURVIVOR SCREAM
 };
 
-private _givenItems = ["toolbox", "flashbang", "firstAidKit", "circuit", "smokeBomb", "rifle"];
+private _givenItems = ["toolbox", "flashbang", "firstAidKit", "circuit", "smokeBomb", "rifle", "vitalCapsule"];
 private _item = "";
 private _amount = 1; //Amount of extra given Items
 private _exit = false;
@@ -70,6 +70,10 @@ switch (_item) do {
 	
 	case "firecrackers": {
 		firecrackers = firecrackers + 1;
+	};
+	
+	case "vitalCapsule": {
+		vitalCapsules = vitalCapsules + 1;
 	};
 };
 

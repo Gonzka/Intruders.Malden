@@ -40,7 +40,6 @@ player setVariable ["killer", ""];
 //ABILITIES
 cloakingCooldown = false;
 portalTravelInUse = false;
-unbreakable = false;
 exhausted = false;
 beartraps = 3;
 
@@ -50,6 +49,7 @@ toolboxCharges = 0;
 circuits = 0;
 smokeBombs = 0;
 firecrackers = 0;
+vitalCapsules = 0;
 
 //QUEST
 player setVariable ["quest_kills", 0, true];
@@ -79,7 +79,7 @@ player setVariable ["intruders_activePerks", profileNamespace getVariable _perkV
 //BLOODPOINTS
 private _currencyVar = "intruders_bloodPoints";
 if (isNil {profileNamespace getVariable _currencyVar}) then {
-    profileNamespace setVariable [_currencyVar,10000]; //Initial value. Everyone starts with 10,000 blood points.
+    profileNamespace setVariable [_currencyVar,15000]; //Initial value. Everyone starts with 15,000 blood points.
 };
 
 saveProfileNamespace;

@@ -10,9 +10,6 @@ if (playerSide isEqualTo east) then {
 	player addAction["<img image='textures\ico_abilityButcher.paa'/> " + localize "STR_GAME_ButcherAbilityAction",gonzka_fnc_setBeartrap,"",0,false,true,"",' beartraps > 0 && player getVariable "killer" isEqualTo "butcher" '];
 };
 
-player addAction["<img image='textures\ico_unbreakable.paa'/> " + localize "STR_GAME_UnbreakableAction",{unbreakable = true; ["#rev", 1, player] call BIS_fnc_reviveOnState; player setVariable ["#rev", 1];},"",0,false,true,"",' "unbreakable" in (player getVariable "intruders_activePerks") && !unbreakable && player getVariable ["BIS_revive_incapacitated", false] ',50,true];
-//player addAction["<img image='textures\ico_sprintBurst.paa'/> " + localize "STR_GAME_SprintBurstAction",gonzka_fnc_sprintBurst,"",0,false,true,"",' "sprintBurst" in (player getVariable "intruders_activePerks") && !exhausted && speed player > 10 ']; //Action replaced with Shift Hotkey
-
 //SELF HEAL
 player addAction["<img image='textures\ico_firstAidKit.paa'/> " + localize "STR_GAME_SelfHealAction",gonzka_fnc_selfHeal,"",0,false,true,"",' firstAidKits > 0 && damage player > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];
 
@@ -22,14 +19,7 @@ player addAction["<img image='textures\gui\hud_escape.paa'/> " + localize "STR_G
 //ITEMS
 player addAction["<img image='textures\ico_smokeBomb.paa'/> " + localize "STR_GAME_SmokeBombAction",{smokeBombs = smokeBombs - 1; [player] remoteExec ["gonzka_fnc_smokeBomb", [0, -2] select isDedicated];},"",0,false,true,"",' smokeBombs > 0 '];
 player addAction["<img image='textures\ico_firecrackers.paa'/> " + localize "STR_GAME_FirecrackersAction",{firecrackers = firecrackers - 1; [] spawn gonzka_fnc_firecracker;},"",0,false,true,"",' firecrackers > 0 '];
-player addAction["<img image='textures\ico_circuit.paa'/> " + localize "STR_GAME_CircuitAction",{
-	circuits = circuits - 1;
-	_circuitCharges = cursorObject getVariable ["circuitCharges",0];
-	_circuitCharges = _circuitCharges + 1; cursorObject setVariable ["circuitCharges",_circuitCharges,true];
-	
-	private _circuitSound = selectRandom ["a3\missions_f_oldman\data\sound\light_switch\light_switch_01.wss","a3\missions_f_oldman\data\sound\light_switch\light_switch_02.wss","a3\missions_f_oldman\data\sound\light_switch\light_switch_03.wss"];
-	playSound3D [_circuitSound, player, false, getPosASL cursorObject, 4, 1, 20];
-},"",0,false,true,"",' circuits > 0 && cursorObject isKindOf "Land_TransferSwitch_01_F" && cursorObject distance player < 2 && !(cursorObject getVariable ["active",true]) '];
+player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR_GAME_VitalCapsuleAction",{vitalCapsules = vitalCapsules - 1; [] spawn gonzka_fnc_vitalCapsule;},"",0,false,true,"",' vitalCapsules > 0 && {_x getVariable ["BIS_revive_incapacitated", false] || lifeState _x isEqualTo "INCAPACITATED"} count playableUnits - [player, Killer] > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];
 
 //FREE FROM BEAR TRAP
 [

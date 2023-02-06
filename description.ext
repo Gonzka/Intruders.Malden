@@ -44,6 +44,21 @@ class RscTitles {
 	#include "scripts\generator\skillCheckMenu.hpp"
 };
 
+class CfgSFX {
+	class powergenerator {
+		sound0[] = {"@a3\missions_f_tank\data\sounds\powergenerator.wss", db+10, 1.0, 50, 1, 0, 0, 0};
+		sound1[] = {"@a3\missions_f_tank\data\sounds\powergenerator2.wss", db+10, 1.0, 50, 1, 0, 0, 0};
+		sounds[] = {sound0, sound1};
+		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
+	};
+};
+
+class CfgVehicles {
+	class powergenerator {
+		sound = "powergenerator";
+	};
+};
+
 class CfgDebriefing {
 	class KillerWin {
 		title = "$STR_BRIEF_GameOver";
@@ -77,15 +92,6 @@ class CfgDebriefing {
 		subtitle = "$STR_BRIEF_LobbyReturn";
 		description = "<t align='center' size='1.1' font='PuristaMedium'>See you soon!</t><br/>";
 		pictureBackground = "thumbnail.jpg";
-		picture = "";
-		pictureColor[] = {1.0,1.0,1.0,1};
-	};
-	
-	class matchInProgress {
-		title = "$STR_BRIEF_NoJoining";
-		subTitle = "$STR_BRIEF_MatchInProgress";
-		description = "";
-		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};
@@ -165,6 +171,14 @@ class CfgHints {
 			tip = "";
 			arguments[] = {};
 			image = "textures\ico_rifle.paa";
+		};
+		
+		class vitalCapsule {
+			displayName = "$STR_ITEM_VitalCapsule";
+			description = "$STR_ITEM_VitalCapsuleDesc";
+			tip = "";
+			arguments[] = {};
+			image = "textures\ico_vitalCapsule.paa";
 		};
 		
 		class firecrackers {

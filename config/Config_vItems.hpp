@@ -195,16 +195,6 @@ class VirtualItems {
 		released = true;
 	};
 	
-	class unbreakable  {
-		variable = "unbreakable";
-		displayName = "STR_ITEM_Unbreakable";
-		description = "STR_ITEM_UnbreakableDesc";
-		icon = "textures\ico_unbreakable.paa";
-		side = "survivor";
-		price = 25000;
-		released = true;
-	};
-	
 	class unrelenting {
 		variable = "unrelenting";
 		displayName = "STR_ITEM_Unrelenting";

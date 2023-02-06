@@ -1,29 +1,21 @@
 //GENERAL VARS
 setTimeMultiplier 0.1;
 
+private _switchLightRange = switch (worldName) do {
+	case "Tanoa": {7};
+	case "Malden": {31};
+	case default {18};
+};
 {
     _x setVariable ["active",false,true];
-    {
-        [_x, "OFF"] remoteExec ["switchLight",0,true];
-    } forEach (nearestObjects [_x, [], 3]);
-    _x animateSource ["switchposition",1];   
-    _x animateSource ["light",0];   
-    _x setDamage 1;
+    {[_x, "OFF"] remoteExec ["switchLight",0,true]} forEach (nearestObjects [_x, [], _switchLightRange]);
     [_x] remoteExec ["gonzka_fnc_generatorHoldAction", [0, -2] select isDedicated, _x];
 } forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5 , genericGen_6, genericGen_7];
 
-matchInProgress = false; publicvariable "matchInProgress";
 totalGenerators = 5; publicvariable "totalGenerators";
 repairedGenerators = 0; publicvariable "repairedGenerators";
 intrudersWin = false; publicvariable "intrudersWin";
-
-gen1_special = false; publicvariable "gen1_special";
-gen2_special = false; publicvariable "gen2_special";
-gen3_special = false; publicvariable "gen3_special";
-gen4_special = false; publicvariable "gen4_special";
-gen5_special = false; publicvariable "gen5_special";
-gen6_special = false; publicvariable "gen6_special";
-gen7_special = false; publicvariable "gen7_special";
+endgameActivated = false; publicvariable "endgameActivated";
 
 //SEASONING
 seasons = [	

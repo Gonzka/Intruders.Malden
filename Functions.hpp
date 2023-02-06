@@ -90,7 +90,6 @@ class Intruders {
 		class genActivate {};
 		class generatorHoldAction {};
 		class genFail {};
-		class genSoundLoop {};
 		class skillCheckMenuCtrl {};
 		class sparkParticles {};
 	};
@@ -103,6 +102,7 @@ class Intruders {
 		class openChest {};
 		class redeemCode {};
 		class smokeBomb {};
+		class vitalCapsule {};
 	};
 	
 	class killer {

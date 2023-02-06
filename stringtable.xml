@@ -124,8 +124,8 @@
 			<German>Warte auf einen Überlebenden</German>
 		</Key>
 		<Key ID="STR_INIT_ReadyWaiting">
-			<Original>Wait until the players are ready</Original>
-			<German>Warte bis die Mitspieler bereit sind</German>
+			<Original>Wait for all players to be ready</Original>
+			<German>Warte bis alle Spieler bereit sind</German>
 		</Key>
 	</Package>
 	<Package name="Gameplay">
@@ -304,10 +304,6 @@
 		<Key ID="STR_GAME_ButcherTooltip">
 			<Original>THE BUTCHER\n\nIn the past, the Butcher hunted bears in Livonia. Over time, his prey changed. He is able to apply pressure across the Map by placing deadly Bear Traps for Survivors to step into.</Original>
 			<German>DER METZGER\n\nFrüher jagte der Metzger in Livonia Bären. Im Laufe der Zeit änderte sich seine Beute. Er kann auf der ganzen Karte Druck ausüben, indem er tödliche Bärenfallen für die Überlebenden platziert.</German>
-		</Key>
-		<Key ID="STR_GAME_PortalTooClose">
-			<Original>You are too close to this portal!</Original>
-			<German>Du bist zu nah an diesem Portal!</German>
 		</Key>
 		<Key ID="STR_GAME_CleanseTotem">
 			<Original>Cleanse Totem</Original>
@@ -553,17 +549,9 @@
 			<Original>&lt;t color='#EEC900'&gt;Drop Smoke Bomb&lt;/t&gt;</Original>
 			<German>&lt;t color='#EEC900'&gt;Rauchbombe ablegen&lt;/t&gt;</German>
 		</Key>
-		<Key ID="STR_GAME_CircuitAction">
-			<Original>&lt;t color='#EEC900'&gt;Manipulate Generator&lt;/t&gt;</Original>
-			<German>&lt;t color='#EEC900'&gt;Generator manipulieren&lt;/t&gt;</German>
-		</Key>
-		<Key ID="STR_GAME_UnbreakableAction">
-			<Original>&lt;t color='#EEC900'&gt;Recover&lt;/t&gt;</Original>
-			<German>&lt;t color='#EEC900'&gt;Erholen&lt;/t&gt;</German>
-		</Key>
-		<Key ID="STR_GAME_SprintBurstAction">
-			<Original>&lt;t color='#EEC900'&gt;Sprint&lt;/t&gt;</Original>
-			<German>&lt;t color='#EEC900'&gt;Sprint&lt;/t&gt;</German>
+		<Key ID="STR_GAME_VitalCapsuleAction">
+			<Original>&lt;t color='#EEC900'&gt;Use Vital Capsule&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Vitalkapsel verwenden&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_GAME_WendigoAbilityAction">
 			<Original>&lt;t color='#EEC900'&gt;Cloak / Uncloak&lt;/t&gt;</Original>
@@ -598,14 +586,6 @@
 		<Key ID="STR_BRIEF_LobbyReturn">
 			<Original>You have returned to the lobby</Original>
 			<German>Du bist in die Lobby zurückgekehrt</German>
-		</Key>
-		<Key ID="STR_BRIEF_NoJoining">
-			<Original>Joining not possible</Original>
-			<German>Beitritt nicht möglich</German>
-		</Key>
-		<Key ID="STR_BRIEF_MatchInProgress">
-			<Original>The match has already started</Original>
-			<German>Die Partie hat bereits begonnen</German>
 		</Key>
 	</Package>
 	<Package name="Hints">
@@ -786,15 +766,15 @@
 			<German>Defekter Stromschaltkreis</German>
 		</Key>
 		<Key ID="STR_ITEM_CircuitDesc">
-			<Original>%1%2Can be installed 2 times on a generator.%1%2When it explodes, the Killer receives a notification at the location of another generator.%1</Original>
-			<German>%1%2Kann 2-mal an einem Generator installiert werden.%1%2Wenn dieser explodiert, erhält der Killer eine Meldung am Standort eines anderen Generators.%1</German>
+			<Original>%1%2On the next two failed Repair Skill Checks, the Killer receives a notification at the location of another generator.%1</Original>
+			<German>%1%2Bei den nächsten zwei misslungenen Reparatur-Fähigkeitschecks, erhält der Killer eine Meldung am Standort eines anderen Generators.%1</German>
 		</Key>
 		<Key ID="STR_ITEM_Rifle">
 			<Original>Rifle</Original>
 			<German>Gewehr</German>
 		</Key>
 		<Key ID="STR_ITEM_RifleDesc">
-			<Original>%1%2Is used to stun the Killer.%1%2The Rifle has 1 bullet at default.%1%2Additional bullets can be found in further chests.%1</Original>
+			<Original>%1%2Is used to stun the Killer.%1%2The Rifle has 1 bullet by default.%1%2Additional bullets can be found in further chests.%1</Original>
 			<German>%1%2Wird zur Betäubung des Killers verwendet.%1%2Standardmäßig besitzt das Gewehr eine Patrone.%1%2Zusätzliche Patronen können in weiteren Kisten gefunden werden.%1</German>
 		</Key>
 		<Key ID="STR_ITEM_Firecrackers">
@@ -808,6 +788,14 @@
 		<Key ID="STR_ITEM_FirecrackersDesc">
 			<Original>%1%2Can be used as a blinding device or to celebrate.</Original>
 			<German>%1%2Kann als Blendgerät oder zum Feiern genutzt werden.</German>
+		</Key>
+		<Key ID="STR_ITEM_VitalCapsule">
+			<Original>Vital Capsule</Original>
+			<German>Vitalkapsel</German>
+		</Key>
+		<Key ID="STR_ITEM_vitalCapsuleDesc">
+			<Original>%1%2Spend some of your life energy to instantly revive a distant, unconscious survivor.%1%2You will be injured and can be knocked out with one hit as long as you do not heal yourself.%1%2Your position will be revealed to the killer for 5 seconds.%1</Original>
+			<German>%1%2Verbrauche einen Teil deiner Lebensenergie, um einen weit entfernten, bewusstlosen Überlebenden sofort wiederzubeleben.%1%2Du wirst verletzt und kannst mit einem Schlag niedergestreckt werden, solange du dich nicht selbst heilst.%1%2Deine Position wird dem Killer für 5 Sekunden angezeigt.%1</German>
 		</Key>
 		<Key ID="STR_ITEM_JamAndBanana">
 			<Original>Jam and Banana</Original>
@@ -840,14 +828,6 @@
 		<Key ID="STR_ITEM_HexRuinDesc">
 			<Original>- All Generators regress whenever they are not being repaired.\n\n- The Hex effects persist as long as the related Hex Totem is standing.</Original>
 			<German>- Wird ein Generator nicht von einem Überlebenden repariert, beginnt sofort ein Reparatur-Rückgang.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
-		</Key>
-		<Key ID="STR_ITEM_Unbreakable">
-			<Original>Unbreakable</Original>
-			<German>Unbeugsam</German>
-		</Key>
-		<Key ID="STR_ITEM_UnbreakableDesc">
-			<Original>- Once per Match, you can completely recover from the Dying State.</Original>
-			<German>- Gewährt die Fähigkeit, dich einmal pro Runde vollständig von einem Todesstatus zu erholen.</German>
 		</Key>
 		<Key ID="STR_ITEM_BotanyKnowledge">
 			<Original>Botany Knowledge </Original>
@@ -1616,8 +1596,8 @@
 			<German>Jeder Killer besitzt einzigartige Fähigkeiten.</German>
 		</Key>
 		<Key ID="STR_LOADING_2">
-			<Original>Press the spacebar to jump as a survivor.</Original>
-			<German>Drücke die Leertaste um als Überlebender zu springen.</German>
+			<Original>Run and press 'V' to jump as a survivor.</Original>
+			<German>Laufe und drücke 'V' um als Überlebender zu springen.</German>
 		</Key>
 		<Key ID="STR_LOADING_3">
 			<Original>Press 'F' to play different voice lines.</Original>

@@ -53,8 +53,8 @@ switch (_code) do {
 		};
 	};
 	
-	//Space key for Jumping
-	case 57: {
+	//V key for Jumping
+	case 47: {
 		if (playerSide isEqualTo east) exitWith {};
 		if (isNil "jumpActionTime") then {jumpActionTime = 0;};
 		if (!(animationState player isEqualTo "AovrPercMrunSrasWrflDf") && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 10} && {((velocity player) select 2) < 2.5} && {time - jumpActionTime > 1.5}) then {

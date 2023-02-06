@@ -22,7 +22,7 @@ player addEventHandler ["Killed", {
 	private _kills = Killer getVariable "quest_kills";
 	Killer setVariable ["quest_kills",_kills + 1,true];
 	
-	if !(isNil "RscFiringDrillTime_done") then {
+	if (endgameActive) then {
 	    private _endgameKill = Killer getVariable "quest_endgameKill";
 	    Killer setVariable ["quest_endgameKill",true,true];
 	};
@@ -52,6 +52,15 @@ if (playerSide isEqualTo civilian) then {
 		} forEach playableUnits - [player, Killer];
 	}];
 };
+
+//Scripted event called on revived
+[missionNamespace, "reviveRevived", {
+    params ["_unit", "_revivor"];
+    if !(isNull _revivor) then {
+		["STR_SCORE_Rescue",1500] remoteExecCall ["gonzka_fnc_addFunds",_revivor];
+    };
+    hint "DEBUG: reviveRevived Eventhandler ausgelöst!";
+}] call BIS_fnc_addScriptedEventHandler;
 
 //LOCKPICKING
 disableSerialization;

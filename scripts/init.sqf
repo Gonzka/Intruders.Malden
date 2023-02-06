@@ -49,10 +49,6 @@ call gonzka_fnc_clientSeason;
 waitUntil {player getVariable ["playerReady",false]};
 diag_log "[Intruders Client] Player has pressed play";
 
-if (matchInProgress) then {
-    failMission "matchInProgress";
-};
-
 ["Einrichten des Clients"] spawn gonzka_fnc_loadingBar; // Start loading screen
 
 diag_log "[Intruders Client] Setting up Eventhandlers";
@@ -93,16 +89,15 @@ if (playerSide isEqualTo east) then {
 [] spawn gonzka_fnc_checkWinFailConditions;
 [] spawn gonzka_fnc_killerLeftGame;
 
-uiNamespace setVariable ["loadingBarText",nil]; // Stop loading screen
-
-if !(matchInProgress) then {
-    matchInProgress = true; publicvariable "matchInProgress";
-    totalGenerators = count allPlayers;
-    if (totalGenerators > 5) then { //MAX 5
+if !(endgameActivated) then {
+    totalGenerators = count allPlayers; //For each player, a generator that needs repairs is added.
+    if (totalGenerators > 5) then { //Up to a maximum of 5
         totalGenerators = 5;
     };
-    publicvariable "totalGenerators";
+    publicVariable "totalGenerators";
 };
+
+uiNamespace setVariable ["loadingBarText",nil]; // Stop loading screen
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["--------------- End of Intruders Client Init: Total Execution Time %1 seconds ---------------",(diag_tickTime - _timeStamp)];

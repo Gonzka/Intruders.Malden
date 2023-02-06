@@ -12,12 +12,7 @@ player setAnimSpeedCoef 1.15;
 
 switch (player getVariable "killer") do {
 	case "compactor": {
-		{
-			[_x,false] remoteExec ["hideObject",0,true];
-			private _decal = "Crater" createVehicle getPos _x;
-			_decal setPos getPos _x;
-			_decal setDir getDir _x;
-			
+		{			
 			call compile format ["
 			addMissionEventHandler ['Draw3D', {drawIcon3D [getMissionPath 'textures\ico_abilityCompactor.paa', [1,1,1,1], ASLToAGL getPosASL (objectFromNetId '%1'), 0.8, 0.8, 0, '%2', 1, 0.0315, 'EtelkaMonospacePro'];}];
 			", netId _x, toUpper (_x getVariable "portalName")];
@@ -25,7 +20,7 @@ switch (player getVariable "killer") do {
 			player addAction [format ["<img image='textures\ico_abilityCompactor.paa'/> " + localize "STR_GAME_PortalTravel",_x getVariable "portalName"],{
 				_portal = _this select 3; 
 				[_portal] spawn gonzka_fnc_travelThroughPortal;
-			},_x,0,false,false,"",'!portalTravelInUse']; //_portal = nearestObjects [player, ["Land_ShellCrater_02_large_F"], 3]; !(_portal isEqualTo [] && {isObjectHidden (_portal select 0)}) && {!portalTravelInUse}
+			},_x,0,false,false,"",'!portalTravelInUse'];
 		} forEach [portal_1, portal_2, portal_3, portal_4, portal_5, portal_6, portal_7];
 	};
 	case "butcher": {
