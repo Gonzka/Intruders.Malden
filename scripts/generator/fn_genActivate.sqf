@@ -6,7 +6,7 @@
 
 private _generator = getPos player nearestObject "Land_TransferSwitch_01_F";
  
-if (_generator getVariable "active") exitWith {
+if (_generator getVariable "active" || endgameActivated) exitWith {
 	["STR_GAME_Error", "STR_GAME_GenAlreadyActive", 5, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
 };
 
@@ -18,7 +18,8 @@ _generator setObjectTextureGlobal [1, "#(argb,8,8,3)color(0,1,0,1,ca)"];
 private _switchLightRange = switch (worldName) do {
 	case "Tanoa": {7};
 	case "Malden": {31};
-	case default {18};
+	case "Altis": {28};
+	case default {10};
 };
 {[_x, "ON"] remoteExec ["switchLight",0,true]} forEach (nearestObjects [_generator, [], _switchLightRange]);
 	

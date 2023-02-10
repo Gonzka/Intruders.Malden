@@ -37,23 +37,13 @@ uiNamespace setVariable ["BeginStartBtnPushed",0];
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0187) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0176) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0186) ctrlShow false;
-((uiNamespace getVariable "menuprincipal")displayCtrl 0175) ctrlShow false;
-((uiNamespace getVariable "menuprincipal")displayCtrl 0185) ctrlShow false;
 
 ((uiNamespace getVariable "menuprincipal")displayCtrl 1188) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 1178) ctrlShow false;
-((uiNamespace getVariable "menuprincipal")displayCtrl 1288) ctrlShow false;
-((uiNamespace getVariable "menuprincipal")displayCtrl 1278) ctrlShow false;
 
 ((uiNamespace getVariable "menuprincipal")displayCtrl 1074) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 1030) ctrlShow false;
-((uiNamespace getVariable "menuprincipal")displayCtrl 1075) ctrlShow false;
 
-((uiNamespace getVariable "menuprincipal")displayCtrl 2075) ctrlShow false;
-
-((uiNamespace getVariable "menuprincipal")displayCtrl 3075) ctrlShow false;
-
-((uiNamespace getVariable "menuprincipal")displayCtrl 0002) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0005) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0005) ctrlSetFade 0;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0005) ctrlCommit 0;
@@ -65,12 +55,10 @@ uiNamespace setVariable ["BeginStartBtnPushed",0];
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0087) buttonSetAction "playSound 'Click1'; createDialog 'ShopMenu';";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0088) buttonSetAction "playSound 'Click1'; player setVariable ['videorun', 0, false]; [''] call BIS_fnc_playVideo;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0089) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_fadebtn;";
-((uiNamespace getVariable "menuprincipal")displayCtrl 0185) buttonSetAction "playSound 'Click1'; createDialog 'RedeemCodeMenu';";
-((uiNamespace getVariable "menuprincipal")displayCtrl 0186) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_menupartenariats;";
+((uiNamespace getVariable "menuprincipal")displayCtrl 0186) buttonSetAction "playSound 'Click1'; createDialog 'RedeemCodeMenu';";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0187) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_menucredits;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0188) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_unfadebtn;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 1188) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_menucreditsuf;";
-((uiNamespace getVariable "menuprincipal")displayCtrl 1288) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_menucreditsuf;";
 
 waitUntil { 
 	if ((uiNamespace getVariable "BeginStartBtnPushed") isEqualTo 1) then { true; } else { false; }; 

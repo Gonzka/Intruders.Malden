@@ -24,7 +24,7 @@ if (_data isEqualTo "NONE") then {
         case 2: {goggles player};
         case 3: {vest player};
         case 4: {backpack player};
-		case 5: {face player};
+        case 5: {face player};
     };
 
     [_item,false] call gonzka_fnc_handleItem;

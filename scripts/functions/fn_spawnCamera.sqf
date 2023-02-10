@@ -56,6 +56,7 @@ titleCut ["","BLACK IN",3];
 sleep 3;
 
 [] spawn gonzka_fnc_statusbar;
+[] spawn gonzka_fnc_endgameTimer;
 
 //PERKS
 if (playerSide isEqualTo east) then {

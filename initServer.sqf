@@ -4,7 +4,8 @@ setTimeMultiplier 0.1;
 private _switchLightRange = switch (worldName) do {
 	case "Tanoa": {7};
 	case "Malden": {31};
-	case default {18};
+	case "Altis": {28};
+    case default {10};
 };
 {
     _x setVariable ["active",false,true];
@@ -16,33 +17,6 @@ totalGenerators = 5; publicvariable "totalGenerators";
 repairedGenerators = 0; publicvariable "repairedGenerators";
 intrudersWin = false; publicvariable "intrudersWin";
 endgameActivated = false; publicvariable "endgameActivated";
-
-//SEASONING
-seasons = [	
-    //  Start: Monat,Tag - Ende: Monat,Tag
-    [10,21,				10,31,		"Halloween"],
-    [11,1,				11,11,		"Halloween"],
-    [12,6,				12,31,		"Winter"]
-];
-
-_now = systemTime;
-_season = "";
-
-{	
-    if ((_x select 0) <= (_now select 1) && (_x select 2) >= (_now select 1)) then {
-        if ((_x select 1) <= (_now select 2) && (_x select 3) >= (_now select 2)) then {
-            _season = _x select 4;
-        };
-    };
-} forEach seasons;
-
-season = _season; publicvariable "season";
-
-//SPAWN PUMPKINS
-[] spawn gonzka_fnc_spawnPumpkins;
-
-//SNOW
-[] spawn gonzka_fnc_weatherWinter;
 
 //CHESTS
 private _chestresult = []; 
@@ -92,6 +66,39 @@ for "_i" from 0 to 4 do { //Select 5 Totems
 };
 
 totems = _totemResult; publicvariable "totems";
+
+//SEASONING
+seasons = [	
+    //  Start: Monat,Tag - Ende: Monat,Tag
+    [10,21,				10,31,		"Halloween"],
+    [11,1,				11,11,		"Halloween"],
+    [12,6,				12,31,		"Winter"]
+];
+
+_now = systemTime;
+_season = "";
+
+{	
+    if ((_x select 0) <= (_now select 1) && (_x select 2) >= (_now select 1)) then {
+        if ((_x select 1) <= (_now select 2) && (_x select 3) >= (_now select 2)) then {
+            _season = _x select 4;
+        };
+    };
+} forEach seasons;
+
+season = _season; publicVariable "season";
+
+[] spawn gonzka_fnc_spawnPumpkins;
+[] spawn gonzka_fnc_weatherWinter;
+
+//Bonus Bloodpoint Events
+bloodHunt = false; publicVariable "bloodHunt"; //2x
+bloodRush = false; //1.5x
+private _weekDay = call gonzka_fnc_getWeekDay;
+if (_weekDay in [0,6]) then { //Every Saturday and Sunday
+    bloodRush = true;
+};
+publicVariable "bloodRush";
 
 //WEATHER AND DAYTIME
 /*

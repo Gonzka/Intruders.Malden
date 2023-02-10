@@ -55,11 +55,11 @@ class Intruders {
 	class endgame {
 		file = "scripts\endgame";
 		class checkWinFailConditions {};
+		class endgameTimer {};
 		class escape {};
 		class initEndgame {};
 		class killerLeftGame {};
 		class scoreboard {};
-		class timeoutCountdown {};
 	};
 	
 	class functions {
@@ -123,7 +123,6 @@ class Intruders {
 		class menuCinematic {};
 		class menucredits {};
 		class menucreditsuf {};
-		class menupartenariats {};
 		class menuprincex {};
 		class unfadebtn {};
 	};
@@ -161,6 +160,7 @@ class Intruders {
 		file = "scripts\seasoning";
 		class clientSeason {};
 		class eventNotification {};
+		class getWeekDay {};
 		class loginReward {};
 		class spawnPumpkins {};
 		class weatherWinter {};

@@ -8,7 +8,7 @@ waitUntil {!(isNull (findDisplay 46))};
 player enableStamina false;
 player allowSprint false;
 
-player setPos ([getMarkerPos ((player getVariable "spawnPoint") select 0), 0, 5, 3, 0, 1] call BIS_fnc_findSafePos);
+player setPos getMarkerPos ((player getVariable "spawnPoint") select 0);
 player setDir (random 360);
 
 [] spawn gonzka_fnc_createFogParticles;

@@ -4,7 +4,7 @@
     Sends to the OptionWheelMenu which voicelines the character has
 */
 
-private _voicelines = [];
+private _voicelines = [["",""]];
 
 switch (face player) do {
 	case "GreekHead_A3_04": {
@@ -82,9 +82,8 @@ switch (face player) do {
 	};
 };
 
-if (_voicelines isEqualTo []) exitWith {};
-
 [_voicelines,{
+	if (_sound isEqualTo "") exitWith {};
 	if (player getVariable ["voiceActive", false] || !alive player || player getVariable ["BIS_revive_incapacitated", false]) exitWith {};
 
 	private _sound = _this select 1;

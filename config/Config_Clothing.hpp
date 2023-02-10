@@ -35,13 +35,13 @@ class Clothing {
 				{ "U_B_T_FullGhillie_tna_F", $STR_SKIN_WendigoDefaultTanoa, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" },
 				{ "U_B_FullGhillie_ard", $STR_SKIN_WendigoDefaultMalden, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" },
 				
-				{ "U_C_ConstructionCoverall_Red_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'compactor'" },
-				{ "U_C_ConstructionCoverall_Black_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'compactor'" },
-				{ "U_C_ConstructionCoverall_Blue_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'compactor'" },
-				{ "U_C_ConstructionCoverall_Vrana_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'compactor'" },
+				{ "U_C_ConstructionCoverall_Red_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" },
+				{ "U_C_ConstructionCoverall_Black_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" },
+				{ "U_C_ConstructionCoverall_Blue_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" },
+				{ "U_C_ConstructionCoverall_Vrana_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" },
 				
-				{ "U_C_E_LooterJacket_01_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'butcher'" },
-				{ "U_BG_Guerilla3_1", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'butcher'" }
+				{ "U_C_E_LooterJacket_01_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'trapper'" },
+				{ "U_BG_Guerilla3_1", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'trapper'" }
 			};
 		};
 		
@@ -68,10 +68,10 @@ class Clothing {
 				{ "H_Cap_White_IDAP_F", $STR_SKIN_Paramedic, "", "", "playerSide isEqualTo civilian" },
 				{ "H_Hat_Safari_olive_F", "Safari", "", "", "playerSide isEqualTo civilian" },*/
 				
-				{ "Intruders_BucketHead", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'compactor'" }, //MOD
-				{ "Intruders_BucketHead_Smile", $STR_SKIN_CompactorSmile, "", "", "player getVariable 'killer' isEqualTo 'compactor'" }, //MOD
+				{ "Intruders_BucketHead", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" }, //MOD
+				{ "Intruders_BucketHead_Smile", $STR_SKIN_BucketheadSmile, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" }, //MOD
 
-				{ "Intruders_HockeyMask", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'butcher'" } //MOD
+				{ "Intruders_HockeyMask", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'trapper'" } //MOD
 			};
 		};
 		

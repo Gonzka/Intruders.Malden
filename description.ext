@@ -42,6 +42,7 @@ class RscTitles {
 	#include "scripts\lockpicking\hud_default.hpp"
 	#include "scripts\lockpicking\hud_lockpick.hpp"
 	#include "scripts\generator\skillCheckMenu.hpp"
+	#include "scripts\endgame\timer.hpp"
 };
 
 class CfgSFX {
@@ -109,20 +110,20 @@ class CfgHints {
 			image = "textures\ico_abilityWendigo.paa";
 		};
 		
-		class compactor {
-			displayName = "$STR_HINT_CompactorAbility";
-			description = "$STR_HINT_CompactorAbilityDesc";
+		class buckethead {
+			displayName = "$STR_HINT_BucketheadAbility";
+			description = "$STR_HINT_BucketheadAbilityDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_abilityCompactor.paa";
+			image = "textures\ico_abilityBuckethead.paa";
 		};
 		
-		class butcher {
-			displayName = "$STR_HINT_ButcherAbility";
-			description = "$STR_HINT_ButcherAbilityDesc";
+		class trapper {
+			displayName = "$STR_HINT_TrapperAbility";
+			description = "$STR_HINT_TrapperAbilityDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_abilityButcher.paa";
+			image = "textures\ico_abilityTrapper.paa";
 		};
 	
 		class flashbang {
@@ -213,6 +214,24 @@ class CfgWorlds {
 		author = "Affiger_Affe";
 		description = "$STR_MALDEN_Map";
 		pictureMap = "textures\malden\malden.jpg";
+
+		loadingTexts[] = {
+			"$STR_LOADING_1",
+			"$STR_LOADING_2",
+			"$STR_LOADING_3",
+			"$STR_LOADING_4",
+			"$STR_LOADING_5",
+			"$STR_LOADING_6",
+			"$STR_LOADING_7",
+			"$STR_LOADING_8",
+			"$STR_LOADING_9"
+		};
+	};
+	
+	class Altis {
+		author = "Gonzka";
+		description = "$STR_ALTIS_Map";
+		pictureMap = "textures\altis\altis.jpg";
 
 		loadingTexts[] = {
 			"$STR_LOADING_1",

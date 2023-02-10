@@ -110,8 +110,8 @@ class SelectKillerMenu {
             y = 0.39283185840708 * safezoneH + safezoneY;
 			w = 0.094 * safezoneW;
 			h = 0.168 * safezoneH;
-			text = "textures\ico_compactor.paa";
-			tooltip = "$STR_GAME_CompactorTooltip";
+			text = "textures\ico_buckethead.paa";
+			tooltip = "$STR_GAME_BucketheadTooltip";
 		};
 		
 		//KILLER 3
@@ -143,8 +143,8 @@ class SelectKillerMenu {
             y = 0.39283185840708 * safezoneH + safezoneY;
 			w = 0.094 * safezoneW;
 			h = 0.168 * safezoneH;
-			text = "textures\ico_butcher.paa";
-			tooltip = "$STR_GAME_ButcherTooltip";
+			text = "textures\ico_trapper.paa";
+			tooltip = "$STR_GAME_TrapperTooltip";
 		};
     };
 };

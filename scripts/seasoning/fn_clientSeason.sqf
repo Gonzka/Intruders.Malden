@@ -4,17 +4,28 @@
     Client-side functions that are executed at the start of the game during a Season
 */
 
-private _generators = [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5, genericGen_6, genericGen_7];
-	
+playMusic "OM_Intro";
+
+if (bloodRush) then { //1.5x Bloodpoints
+	["STR_GAME_BloodRushEvent", "STR_GAME_BloodRushDesc", 15, "textures\ico_points.paa"] spawn gonzka_fnc_notification;
+};
+
+if (bloodHunt) then { //2x Bloodpoints
+	["STR_GAME_BloodHuntEvent", "STR_GAME_BloodHuntDesc", 15, "textures\ico_points.paa"] spawn gonzka_fnc_notification;
+};
+
 switch (season) do {
 	case "Halloween": {
-		//LOBBY MUSIC
+		//Lobby Music
 		playMusic "lobby_halloween";
 		
-		//NOTIFICATION
+		//Event Notification
 		["STR_GAME_HalloweenEvent", "STR_GAME_HalloweenEventDesc", "textures\ico_pumpkin.paa", "21.10 - 11.11"] call gonzka_fnc_eventNotification;
+
+		//Bonus Bloodpoints
+		bloodHunt = true;
 		
-		//GENERATORS
+		//Special Generators
 		{
 			private _generator = getPos _x nearestObject "Land_PowerGenerator_F";
 			private _gamePackage = createSimpleObject ["EauDeCombat_01_box_F", [0,0,0], true];   	
@@ -26,21 +37,22 @@ switch (season) do {
 				_controller attachTo [_generator, [-0.3,-0.12,0.77]];
 				_controller setDir 40;
 			};
-		} forEach _generators;
+		} forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5, genericGen_6, genericGen_7];
 	};
 	
 	case "Winter": {
-		//LOBBY MUSIC
+		//Lobby Music
 		playMusic "lobby_winter";
 		
-		//NOTIFICATION
+		//Event Notification
 		["STR_GAME_WinterEvent", "STR_GAME_WinterEventDesc", "textures\ico_snowman.paa", "06.12 - 31.12"] call gonzka_fnc_eventNotification;
 		
-		//LOBBY OBJECTS
+		//Bonus Bloodpoints
+		bloodRush = true;
+		
+		//Special Lobby
 		{
 			_x hideObject false;
 		} forEach [winterObj_1, winterObj_2, winterObj_3, winterObj_4];
 	};
-	
-	default {playMusic "OM_Intro"};
 };

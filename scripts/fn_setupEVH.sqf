@@ -22,7 +22,7 @@ player addEventHandler ["Killed", {
 	private _kills = Killer getVariable "quest_kills";
 	Killer setVariable ["quest_kills",_kills + 1,true];
 	
-	if (endgameActive) then {
+	if (endgameCountdown) then {
 	    private _endgameKill = Killer getVariable "quest_endgameKill";
 	    Killer setVariable ["quest_endgameKill",true,true];
 	};

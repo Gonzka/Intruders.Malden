@@ -5,7 +5,6 @@
 */
 
 //GENERAL
-bis_revive_killfeedShow = false;
 blockMainWeapon = false;
 knockout = false;
 meleeCooldown = 0;
@@ -14,6 +13,7 @@ incapacitatedCounter = 0;
 clothing_filter = 0;
 clothing_equip = ["","","","","",""];
 skillCheck_hit = false;
+endgameCountdown = false;
 
 if (isNil {profileNamespace getVariable "intruders_perkInventory"}) then {
     profileNamespace setVariable ["intruders_perkInventory",[]];

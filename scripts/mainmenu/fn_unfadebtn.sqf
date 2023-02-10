@@ -8,21 +8,13 @@
 	჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻჻ 
 */
 
-((uiNamespace getVariable "menuprincipal")displayCtrl 0185) ctrlShow false;
-
-((uiNamespace getVariable "menuprincipal")displayCtrl 0175) ctrlShow true;
-((uiNamespace getVariable "menuprincipal")displayCtrl 0175) ctrlSetFade 0;
-((uiNamespace getVariable "menuprincipal")displayCtrl 0175) ctrlCommit 0;
-((uiNamespace getVariable "menuprincipal")displayCtrl 0175) ctrlSetFade 1;
-((uiNamespace getVariable "menuprincipal")displayCtrl 0175) ctrlCommit 0.7;
-
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0186) ctrlShow false;
 
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0176) ctrlShow true;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0176) ctrlSetFade 0;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0176) ctrlCommit 0;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0176) ctrlSetFade 1;
-((uiNamespace getVariable "menuprincipal")displayCtrl 0176) ctrlCommit 0.9;
+((uiNamespace getVariable "menuprincipal")displayCtrl 0176) ctrlCommit 0.7;
 
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0187) ctrlShow false;
 
@@ -30,7 +22,7 @@
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0177) ctrlSetFade 0;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0177) ctrlCommit 0;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0177) ctrlSetFade 1;
-((uiNamespace getVariable "menuprincipal")displayCtrl 0177) ctrlCommit 1.1;
+((uiNamespace getVariable "menuprincipal")displayCtrl 0177) ctrlCommit 0.9;
 
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0188) ctrlShow false;
 
@@ -38,11 +30,10 @@
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0178) ctrlSetFade 0;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0178) ctrlCommit 0;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0178) ctrlSetFade 1;
-((uiNamespace getVariable "menuprincipal")displayCtrl 0178) ctrlCommit 1.3;
+((uiNamespace getVariable "menuprincipal")displayCtrl 0178) ctrlCommit 1.1;
 
-sleep 1.3;
+sleep 1.1;
 
-((uiNamespace getVariable "menuprincipal")displayCtrl 0175) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0176) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0177) ctrlShow false;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0178) ctrlShow false;

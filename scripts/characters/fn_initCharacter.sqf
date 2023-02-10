@@ -49,13 +49,13 @@ if (playerSide isEqualTo east) then {
 		player say3D [selectRandom ["growl_1","growl_2","growl_3","growl_4","growl_5","growl_6"], 50];
 	};
 	
-	//COMPACTOR
-	if (player getVariable "killer" isEqualTo "compactor") then {
+	//BUCKETHEAD
+	if (player getVariable "killer" isEqualTo "buckethead") then {
 		player say3D [selectRandom ["evilLaugh_1","evilLaugh_2","evilLaugh_3","evilLaugh_4","evilLaugh_5","evilLaugh_6","evilLaugh_7"], 50];
 	};
 	
-	//BUTCHER
-	if (player getVariable "killer" isEqualTo "butcher") then {
+	//TRAPPER
+	if (player getVariable "killer" isEqualTo "trapper") then {
 		player say3D [selectRandom ["growlWeird_1","growlWeird_2","growlWeird_3","growlWeird_4"], 50];
 	};
 	
@@ -64,7 +64,6 @@ if (playerSide isEqualTo east) then {
 };
 
 call gonzka_fnc_playerSkins;
-[] spawn gonzka_fnc_initCustomVoicelines;
 
 sleep 20;
 [] spawn gonzka_fnc_terrorMusic;

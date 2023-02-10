@@ -7,7 +7,7 @@
 //PERKS & ABILITIES
 if (playerSide isEqualTo east) then {
 	player addAction["<img image='textures\ico_abilityWendigo.paa'/> " + localize "STR_GAME_WendigoAbilityAction",gonzka_fnc_cloak,"",0,false,true,"",' !cloakingCooldown && player getVariable "killer" isEqualTo "wendigo" '];
-	player addAction["<img image='textures\ico_abilityButcher.paa'/> " + localize "STR_GAME_ButcherAbilityAction",gonzka_fnc_setBeartrap,"",0,false,true,"",' beartraps > 0 && player getVariable "killer" isEqualTo "butcher" '];
+	player addAction["<img image='textures\ico_abilityTrapper.paa'/> " + localize "STR_GAME_TrapperAbilityAction",gonzka_fnc_setBeartrap,"",0,false,true,"",' beartraps > 0 && player getVariable "killer" isEqualTo "trapper" '];
 };
 
 //SELF HEAL

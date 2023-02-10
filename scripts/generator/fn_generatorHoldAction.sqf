@@ -13,8 +13,8 @@ private _actionID = [
 	localize "STR_GAME_Repair",  
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",  
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",  
-	"_this distance _target < 2 && side _this isEqualTo civilian && (isNull (_target getVariable ['worker', objNull]) || _target getVariable ['worker', objNull] isEqualTo _this)",
-	"_this distance _target < 2 && side _this isEqualTo civilian",
+	"_this distance _target < 2 && {side _this isEqualTo civilian} && {!endgameActivated} && {(isNull (_target getVariable ['worker', objNull]) || _target getVariable ['worker', objNull] isEqualTo _this)}",
+	"_this distance _target < 2 && {side _this isEqualTo civilian}",
 	{
 		_target setVariable ['worker', _caller, true];
 		_caller playMoveNow "Acts_carFixingWheel";
@@ -22,6 +22,8 @@ private _actionID = [
     {
 		params ["_target", "_caller", "_actionId", "_arguments", "_progress", "_maxProgress"];
 		private _elapsedTime = _progress / 24 * _duration;
+
+		if (endgameActivated) exitWith { [_caller, ""] remoteExec ["switchMove"]; };
 		
 		if (_progress < 2) exitWith { _target setVariable ["duration", _duration, true]; }; //Anti-Holdaction Space Spam
 		

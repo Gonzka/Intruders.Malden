@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.12.0&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.12.0&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.13.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.13.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -89,31 +89,11 @@
 			<Original>&lt;t align='center' color='#cc0000' shadow='1'&gt;CREDITS&lt;/t&gt;</Original>
 			<German>&lt;t align='center' color='#cc0000' shadow='1'&gt;MITWIRKENDE&lt;/t&gt;</German>
 		</Key>
-		<Key ID="STR_MM_Partners">
-			<Original>PARTNERS</Original>
-			<German>PARTNER</German>
-		</Key>
-		<Key ID="STR_MM_PartnersColor">
-			<Original>&lt;t color='#FFFFFF'&gt;PARTNERS&lt;/t&gt;</Original>
-			<German>&lt;t color='#FFFFFF'&gt;PARTNER&lt;/t&gt;</German>
-		</Key>
-		<Key ID="STR_MM_OurPartners">
-			<Original>&lt;t shadow='0'&gt;OUR PARTNERS&lt;/t&gt;</Original>
-			<German>&lt;t shadow='0'&gt;UNSERE PARTNER&lt;/t&gt;</German>
-		</Key>
-		<Key ID="STR_MM_BecomePartner">
-			<Original>&lt;t size='1' font='PuristaMedium' align='center' shadow='0'&gt;BECOME A PARTNER NOW!&lt;/t&gt;</Original>
-			<German>&lt;t size='1' font='PuristaMedium' align='center' shadow='0'&gt;JETZT EIN PARTNER WERDEN!&lt;/t&gt;</German>
-		</Key>
 	</Package>
 	<Package name="Init">
 	    <Key ID="STR_INIT_ClientSetup">
 			<Original>Setting up the client</Original>
 			<German>Einrichten des Clients</German>
-		</Key>
-		<Key ID="STR_INIT_PlantsSetup">
-			<Original>Plants are being cultivated</Original>
-			<German>Pflanzen werden gezüchtet</German>
 		</Key>
 		<Key ID="STR_INIT_KillerWaiting">
 			<Original>Waiting for a Killer</Original>
@@ -289,21 +269,21 @@
 			<Original>THE WENDIGO\n\nA Wendigo is a vengeful, evil spirit that possesses humans. He is a stealth Killer, able to cloak and uncloak to surprise Survivors.</Original>
 			<German>DER WENDIGO\n\nEin Wendigo ist ein rachsüchtiger, böser Geist, der von Menschen Besitz ergreift. Er ist ein heimlicher Killer, der sich verhüllen oder enthüllen kann, um Überlebende zu überraschen.</German>
 		</Key>
-		<Key ID="STR_GAME_Compactor">
-			<Original>Compactor</Original>
-			<German>Verdichter</German>
+		<Key ID="STR_GAME_Buckethead">
+			<Original>Buckethead</Original>
+			<German>Eimerkopf</German>
 		</Key>
-		<Key ID="STR_GAME_CompactorTooltip">
-			<Original>THE COMPACTOR\n\nThe Compactor was a Construction Worker who had an accident while compacting crane sites. He is able to traverse between multiple Portals to cover large distances.</Original>
-			<German>DER VERDICHTER\n\nDer Verdichter war ein Bauarbeiter, der beim Verdichten von Kranplätzen verunglückte. Er kann mehrere Portale nutzen, um große Entfernungen zu überbrücken.</German>
+		<Key ID="STR_GAME_BucketheadTooltip">
+			<Original>THE BUCKETHEAD\n\nWhen this construction worker stumbled over a toolbox completely drunk, nobody could help him anymore... He can traverse to multiple Portals to cover large distances.</Original>
+			<German>DER EIMERKOPF\n\nAls dieser Bauarbeiter völlig betrunken über einen Werkzeugkasten stolperte, konnte ihm niemand mehr helfen... Er kann mehrere Portale nutzen, um große Entfernungen zu überbrücken.</German>
 		</Key>
-		<Key ID="STR_GAME_Butcher">
-			<Original>Butcher</Original>
-			<German>Metzger</German>
+		<Key ID="STR_GAME_Trapper">
+			<Original>Trapper</Original>
+			<German>Fallensteller</German>
 		</Key>
-		<Key ID="STR_GAME_ButcherTooltip">
-			<Original>THE BUTCHER\n\nIn the past, the Butcher hunted bears in Livonia. Over time, his prey changed. He is able to apply pressure across the Map by placing deadly Bear Traps for Survivors to step into.</Original>
-			<German>DER METZGER\n\nFrüher jagte der Metzger in Livonia Bären. Im Laufe der Zeit änderte sich seine Beute. Er kann auf der ganzen Karte Druck ausüben, indem er tödliche Bärenfallen für die Überlebenden platziert.</German>
+		<Key ID="STR_GAME_TrapperTooltip">
+			<Original>THE TRAPPER\n\nIn the past, he hunted bears in Livonia. Over time, his prey changed. He is able to apply pressure across the Map by placing deadly Bear Traps for Survivors to step into.</Original>
+			<German>DER FALLENSTELLER\n\nFrüher jagte er in Livonia Bären. Im Laufe der Zeit änderte sich seine Beute. Er kann auf der ganzen Karte Druck ausüben, indem er tödliche Bärenfallen für die Überlebenden platziert.</German>
 		</Key>
 		<Key ID="STR_GAME_CleanseTotem">
 			<Original>Cleanse Totem</Original>
@@ -509,6 +489,22 @@
 			<Original>The Intruders-Team wishes you a Merry Christmas Season!&lt;br/&gt;&lt;br/&gt;To celebrate the last days of the year, Firecrackers can be found in Chests again.</Original>
 			<German>Das Intruders-Team wünscht dir eine frohe Weihnachtszeit!&lt;br/&gt;&lt;br/&gt;Um die letzten Tage des Jahres zu feiern, können wieder Böller in Truhen gefunden werden.</German>
 		</Key>
+		<Key ID="STR_GAME_BloodRushEvent">
+			<Original>Blood Rush Event</Original>
+			<German>Blutrausch Event</German>
+		</Key>
+		<Key ID="STR_GAME_BloodRushDesc">
+			<Original>Earn 1.5x more Bloodpoints from all matches!</Original>
+			<German>Verdiene 1,5x mehr Blutpunkte in allen Partien!</German>
+		</Key>
+		<Key ID="STR_GAME_BloodHuntEvent">
+			<Original>Blood Hunt Event</Original>
+			<German>Blutjagd Event</German>
+		</Key>
+		<Key ID="STR_GAME_BloodHuntDesc">
+			<Original>Earn double Bloodpoints from all matches!</Original>
+			<German>Verdiene doppelte Blutpunkte in allen Partien!</German>
+		</Key>
 		<Key ID="STR_GAME_PremonitionWarning">
 			<Original>You are looking in the Killer's direction.</Original>
 			<German>Du schaust in die Richtung des Killers.</German>
@@ -557,7 +553,7 @@
 			<Original>&lt;t color='#EEC900'&gt;Cloak / Uncloak&lt;/t&gt;</Original>
 			<German>&lt;t color='#EEC900'&gt;Verhüllen / Enthüllen&lt;/t&gt;</German>
 		</Key>
-		<Key ID="STR_GAME_ButcherAbilityAction">
+		<Key ID="STR_GAME_TrapperAbilityAction">
 			<Original>&lt;t color='#EEC900'&gt;Set Trap&lt;/t&gt;</Original>
 			<German>&lt;t color='#EEC900'&gt;Falle platzieren&lt;/t&gt;</German>
 		</Key>
@@ -597,19 +593,19 @@
 			<Original>%1%3Use the scroll wheel menu to cloak yourself. Use it again to uncloak.%4%1%2While cloaked, the Wendigo gains increased movement speed, almost complete invisibility and is undetectable (disabled heartbeat).%1%2The Wendigo cannot attack while cloaked.%1</Original>
 			<German>%1%3Benutzte das Scrollradmenü, um dich zu verhüllen. Benutzte es erneut, während du verhüllt bist, um die Verhüllung aufzuheben.%4%1%2Während er verhüllt ist, erhält der Wendigo eine erhöhte Bewegungsgeschwindigkeit, fast vollständige Unsichtbarkeit und ist unentdeckbar (deaktivierter Herzschlag).%1%2Der Wendigo kann nicht angreifen, während er verhüllt ist.%1</German>
 		</Key>
-	    <Key ID="STR_HINT_CompactorAbility">
+	    <Key ID="STR_HINT_BucketheadAbility">
 			<Original>Portal Travel</Original>
 			<German>Portalreise</German>
 		</Key>
-		<Key ID="STR_HINT_CompactorAbilityDesc">
+		<Key ID="STR_HINT_BucketheadAbilityDesc">
 			<Original>%1%3Use the scroll wheel menu to travel to a Portal.%4%1%2After emerging from a Portal, you remain undetectable for 3 seconds (disabled heartbeat).%1%2Traveling to portals has a cooldown of 10 seconds.%1</Original>
 			<German>%1%3Benutzte das Scrollradmenü, um zu einem Portal zu reisen.%4%1%2Nach der Reise bleibst du noch für 3 Sekunden unentdeckbar (deaktivierter Herzschlag).%1%2Das Reisen zu den Portalen hat eine Abklingzeit von 10 Sekunden.%1</German>
 		</Key>
-		<Key ID="STR_HINT_ButcherAbility">
+		<Key ID="STR_HINT_TrapperAbility">
 			<Original>Bear Trap</Original>
 			<German>Bärenfalle</German>
 		</Key>
-		<Key ID="STR_HINT_ButcherAbilityDesc">
+		<Key ID="STR_HINT_TrapperAbilityDesc">
 			<Original>%1%3You start with 3 Bear Traps. Find and collect more throughout the Environment.%4%1%2Use the scroll wheel menu to set and arm a Bear Trap in a valid location in front of you. %1%2Press and hold the spacebar while standing near a disarmed Bear Trap to collect it, or reset it.%1%2Any Survivor who steps into an armed Bear Trap will be immobilized and injured, but can attempt to free himself from the trap.%1</Original>
 			<German>%1%3Du beginnst mit 3 Bärenfallen. Weitere kannst du in der Umgebung finden und einsammeln.%4%1%2Benutze das Scrollradmenü, um eine Bärenfalle an einer geeigneten Position vor dir zu legen.%1%2Drücke und halte die Leertaste, um eine Bärenfalle einzusammeln, oder an Ort und Stelle zurückzusetzen.%1%2Ein darin gefangener Spieler wird bewegungsunfähig und verletzt, kann aber versuchen, der Falle zu entkommen.%1</German>
 		</Key>
@@ -915,7 +911,7 @@
 		</Key>
 		<Key ID="STR_ITEM_HexRetributionDesc">
 			<Original>- Survivors cleansing any Totem are oblivious to the Killer's whereabouts for 45 seconds (disabled heartbeat).\n\n- After cleansing a Hex Totem, the Positions of all Survivors are revealed to you for 15 seconds.\n\n- The Hex effects persist as long as the related Hex Totem is standing.</Original>
-			<German>- Jeder Überlebende, der mit einem glanzlosen Totem oder einem Fluchtotem interagiert, bemerkt für 45 Sekunden nicht die drohende Gefahr des Killers (deaktivierter Herzschlag).\n\n- Wird ein beliebiges Fluchtotem, einschließlich diesem, entfernt, werden die Positionen aller Überlebenden für 15 Sekunden angezeigt.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
+			<German>- Jeder Überlebende, der mit einem Totem interagiert, bemerkt für 45 Sekunden nicht die drohende Gefahr des Killers (deaktivierter Herzschlag).\n\n- Wird ein beliebiges Fluchtotem, einschließlich diesem, entfernt, werden die Positionen aller Überlebenden für 15 Sekunden angezeigt.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
 		</Key>
 		<Key ID="STR_ITEM_Counterforce">
 			<Original>Counterforce</Original>
@@ -1305,7 +1301,7 @@
 			<Original>Glowing Eyes</Original>
 			<German>Glühende Augen</German>
 		</Key>
-		<Key ID="STR_SKIN_CompactorSmile">
+		<Key ID="STR_SKIN_BucketheadSmile">
 			<Original>Sadistic Grin</Original>
 			<German>Sadistisches Grinsen</German>
 		</Key>
@@ -1344,12 +1340,12 @@
 			<German>Töte während des Endspiel-Untergangs 1 Überlebenden.</German>
 		</Key>
 		<Key ID="STR_QUEST_Killer4">
-			<Original>Master Compactor</Original>
-			<German>Meisterhafter Verdichter</German>
+			<Original>Master Buckethead</Original>
+			<German>Meisterhafter Eimerkopf</German>
 		</Key>
 		<Key ID="STR_QUEST_KillerTask4">
-			<Original>Teleport to a Portal 5 times in one match as The Compactor.</Original>
-			<German>Teleportiere dich 5-mal in einer Partie als Der Verdichter zu einem Portal.</German>
+			<Original>Teleport to a Portal 5 times in one match as The Buckethead.</Original>
+			<German>Teleportiere dich 5-mal in einer Partie als Der Eimerkopf zu einem Portal.</German>
 		</Key>
 		<Key ID="STR_QUEST_Killer5">
 			<Original>Master Wendigo</Original>
@@ -1360,12 +1356,12 @@
 			<German>Triff 4-mal in einer Partie als Der Wendigo einen Überlebenden, nachdem du deine Verhüllung aufgehoben hast.</German>
 		</Key>
 		<Key ID="STR_QUEST_Killer6">
-			<Original>Master Butcher</Original>
-			<German>Meisterhafter Metzger</German>
+			<Original>Master Trapper</Original>
+			<German>Meisterhafter Fallensteller</German>
 		</Key>
 		<Key ID="STR_QUEST_KillerTask6">
-			<Original>Catch a Survivor in a Bear Trap 2 times in one match as The Butcher.</Original>
-			<German>Fange 2-mal in einer Partie als der Metzger einen Überlebenden in einer Bärenfalle.</German>
+			<Original>Catch a Survivor in a Bear Trap 2 times in one match as The Trapper.</Original>
+			<German>Fange 2-mal in einer Partie als der Fallensteller einen Überlebenden in einer Bärenfalle.</German>
 		</Key>
 		<Key ID="STR_QUEST_Killer7">
 			<Original>Same Fate</Original>
@@ -1588,6 +1584,58 @@
 		<Key ID="STR_MALDEN_KillerSpawn3">
 			<Original>Washing Line</Original>
 			<German>Waschstraße</German>
+		</Key>
+		<Key ID="STR_ALTIS_Map">
+			<Original>Marketsquare</Original>
+			<German>Marktplatz</German>
+		</Key>
+		<Key ID="STR_ALTIS_IntruderSpawn1">
+			<Original>Borrisow`s House</Original>
+			<German>Borrisow`s Haus</German>
+		</Key>
+		<Key ID="STR_ALTIS_IntruderSpawn2">
+			<Original>General Store</Original>
+			<German>Gemischtwarenladen</German>
+		</Key>
+		<Key ID="STR_ALTIS_IntruderSpawn3">
+			<Original>Clothing Store</Original>
+			<German>Kleidungsgeschäft</German>
+		</Key>
+		<Key ID="STR_ALTIS_IntruderSpawn4">
+			<Original>HSP Election Marquee</Original>
+			<German>HSP-Wahlzelt</German>
+		</Key>
+		<Key ID="STR_ALTIS_IntruderSpawn5">
+			<Original>Auction House</Original>
+			<German>Auktionshaus</German>
+		</Key>
+		<Key ID="STR_ALTIS_IntruderSpawn6">
+			<Original>Town Hall</Original>
+			<German>Rathaus</German>
+		</Key>
+		<Key ID="STR_ALTIS_IntruderSpawn7">
+			<Original>Parking Garage</Original>
+			<German>Parkhaus</German>
+		</Key>
+		<Key ID="STR_ALTIS_IntruderSpawn8">
+			<Original>Car Dealership</Original>
+			<German>Autohaus</German>
+		</Key>
+		<Key ID="STR_ALTIS_IntruderSpawn9">
+			<Original>Supermarket</Original>
+			<German>Supermarkt</German>
+		</Key>
+		<Key ID="STR_ALTIS_KillerSpawn1">
+			<Original>Town Hall Backyard</Original>
+			<German>Rathaus Hinterhof</German>
+		</Key>
+		<Key ID="STR_ALTIS_KillerSpawn2">
+			<Original>Garage</Original>
+			<German>Garage</German>
+		</Key>
+		<Key ID="STR_ALTIS_KillerSpawn3">
+			<Original>Gonzka`s Garden</Original>
+			<German>Gonzka`s Garten</German>
 		</Key>
 	</Package>
 	<Package name="LoadingTexts">

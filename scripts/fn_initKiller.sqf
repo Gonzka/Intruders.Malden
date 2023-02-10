@@ -11,24 +11,24 @@ player allowSprint true;
 player setAnimSpeedCoef 1.15;
 
 switch (player getVariable "killer") do {
-	case "compactor": {
+	case "buckethead": {
 		{			
 			call compile format ["
-			addMissionEventHandler ['Draw3D', {drawIcon3D [getMissionPath 'textures\ico_abilityCompactor.paa', [1,1,1,1], ASLToAGL getPosASL (objectFromNetId '%1'), 0.8, 0.8, 0, '%2', 1, 0.0315, 'EtelkaMonospacePro'];}];
+			addMissionEventHandler ['Draw3D', {drawIcon3D [getMissionPath 'textures\ico_abilityBuckethead.paa', [1,1,1,1], ASLToAGL getPosASL (objectFromNetId '%1'), 0.8, 0.8, 0, '%2', 1, 0.0315, 'EtelkaMonospacePro'];}];
 			", netId _x, toUpper (_x getVariable "portalName")];
 			
-			player addAction [format ["<img image='textures\ico_abilityCompactor.paa'/> " + localize "STR_GAME_PortalTravel",_x getVariable "portalName"],{
+			player addAction [format ["<img image='textures\ico_abilityBuckethead.paa'/> " + localize "STR_GAME_PortalTravel",_x getVariable "portalName"],{
 				_portal = _this select 3; 
 				[_portal] spawn gonzka_fnc_travelThroughPortal;
 			},_x,0,false,false,"",'!portalTravelInUse'];
 		} forEach [portal_1, portal_2, portal_3, portal_4, portal_5, portal_6, portal_7];
 	};
-	case "butcher": {
+	case "trapper": {
 		call gonzka_fnc_randomBeartraps;
 	};
 };
 
-player setPos ([getMarkerPos ((player getVariable "spawnPoint") select 0), 0, 5, 3, 0, 1] call BIS_fnc_findSafePos);
+player setPos getMarkerPos ((player getVariable "spawnPoint") select 0);
 player setDir (random 360);
 
 private _weaponFunctions = [] spawn gonzka_fnc_weapon;

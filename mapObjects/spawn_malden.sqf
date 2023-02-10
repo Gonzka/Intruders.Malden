@@ -1,3 +1,5 @@
+diag_log "[Intruders Client] Setting up MapObjects";
+
 private _data = [
     //Dorf
 	["a3\plants_f\tree\t_oleae1s_f.p3d", [7048.64,11014.2,39.173], [[0,0.999979,0.0064037],[-0.0939822,-0.00637536,0.995553]]],
@@ -284,6 +286,7 @@ private _data = [
 	["a3\plants_f\bush\b_neriumo2d_f.p3d", [7103.25,11090.2,38.3758], [[0,0.999136,-0.0415638],[0.0191975,0.0415561,0.998952]]],
 	["a3\plants_f\bush\b_neriumo2d_f.p3d", [7101.2,11082.4,38.3578], [[0,0.999136,-0.0415638],[0.0191975,0.0415561,0.998952]]]
 ];
+
 private "_object";
 {
 	_object = createSimpleObject [(_x select 0), (ASLToAGL(_x select 1)), true];
@@ -292,3 +295,5 @@ private "_object";
 	_object enableSimulation false;
 	_object allowDamage false;
 } forEach _data;
+
+diag_log "[Intruders Client] MapObjects completed";

@@ -226,32 +226,56 @@ class menuprincipal {
         };
 		
 		//-------------
-		
-		class PlayBtn10: RscButtonMenuPlayBtn3 {
-			idc = 0188;
-            text = "$STR_MM_Return";
+
+        /*class PlayBtn8: RscButtonMenuPlayBtn2 {
+			idc = 0185;
+            text = "";
             colorBackground[] = {0.8, 0.0, 0.0, 0};
             onButtonClick = "";
-            x = 0.061 * safezoneW + safezoneX;
-            y = 0.81 * safezoneH + safezoneY;
-            w = 0.045 * safezoneW;
-            h = 0.022 * safezoneH;
+            x = 0.06 * safezoneW + safezoneX;
+            y = 0.65 * safezoneH + safezoneY;
+            w = 0.18 * safezoneW;
+            h = 0.042 * safezoneH;
 			font = PuristaLight;
 			onMouseEnter = "playSound ""Click2"";";
         };
 		
-		class PlayBtnTxt10: RscStructuredTextBtnTxt3 {
-			idc = 0178;
-            text = "$STR_MM_ReturnColor";
+		class PlayBtnTxt8: RscStructuredTextBtnTxt2 {
+			idc = 0175;
+            text = "";
             colorBackground[] = {0.8, 0.0, 0.0, 0};
-            x = 0.058 * safezoneW + safezoneX;
-            y = 0.81 * safezoneH + safezoneY;
-            w = 0.45 * safezoneW;
-            h = 0.022 * safezoneH;
+            x = 0.057 * safezoneW + safezoneX;
+            y = 0.65 * safezoneH + safezoneY;
+            w = 0.48 * safezoneW;
+            h = 0.042 * safezoneH;
 			font = PuristaLight;
+        };*/
+
+        class PlayBtn9: RscButtonMenuPlayBtn2 {
+			idc = 0186;
+            text = "$STR_MM_Code";
+            colorBackground[] = {0.8, 0.0, 0.0, 0};
+            onButtonClick = "";
+            x = 0.06 * safezoneW + safezoneX;
+            y = 0.7 * safezoneH + safezoneY;
+            w = 0.18 * safezoneW;
+            h = 0.042 * safezoneH;
+			font = PuristaLight;
+			onMouseEnter = "playSound ""Click2"";";
         };
 		
-		class PlayBtn11: RscButtonMenuPlayBtn2 {
+		class PlayBtnTxt9: RscStructuredTextBtnTxt2 {
+			idc = 0176;
+            text = "$STR_MM_CodeColor";
+            colorBackground[] = {0.8, 0.0, 0.0, 0};
+            x = 0.057 * safezoneW + safezoneX;
+            y = 0.7 * safezoneH + safezoneY;
+            w = 0.48 * safezoneW;
+            h = 0.042 * safezoneH;
+			font = PuristaLight;
+        };
+
+        class PlayBtn10: RscButtonMenuPlayBtn2 {
 			idc = 0187;
             text = "$STR_MM_Credits";
             colorBackground[] = {0.8, 0.0, 0.0, 0};
@@ -264,7 +288,7 @@ class menuprincipal {
 			onMouseEnter = "playSound ""Click2"";";
         };
 		
-		class PlayBtnTxt11: RscStructuredTextBtnTxt2 {
+		class PlayBtnTxt10: RscStructuredTextBtnTxt2 {
 			idc = 0177;
             text = "$STR_MM_CreditsColor";
             colorBackground[] = {0.8, 0.0, 0.0, 0};
@@ -275,51 +299,27 @@ class menuprincipal {
 			font = PuristaLight;
         };
 		
-		class PlayBtn12: RscButtonMenuPlayBtn2 {
-			idc = 0186;
-            text = "$STR_MM_Partners";
+		class PlayBtn11: RscButtonMenuPlayBtn3 {
+			idc = 0188;
+            text = "$STR_MM_Return";
             colorBackground[] = {0.8, 0.0, 0.0, 0};
             onButtonClick = "";
-            x = 0.06 * safezoneW + safezoneX;
-            y = 0.7 * safezoneH + safezoneY;
-            w = 0.18 * safezoneW;
-            h = 0.042 * safezoneH;
+            x = 0.061 * safezoneW + safezoneX;
+            y = 0.81 * safezoneH + safezoneY;
+            w = 0.045 * safezoneW;
+            h = 0.022 * safezoneH;
 			font = PuristaLight;
 			onMouseEnter = "playSound ""Click2"";";
         };
-		
-		class PlayBtnTxt12: RscStructuredTextBtnTxt2 {
-			idc = 0176;
-            text = "$STR_MM_PartnersColor";
+        
+        class PlayBtnTxt11: RscStructuredTextBtnTxt3 {
+			idc = 0178;
+            text = "$STR_MM_ReturnColor";
             colorBackground[] = {0.8, 0.0, 0.0, 0};
-            x = 0.057 * safezoneW + safezoneX;
-            y = 0.7 * safezoneH + safezoneY;
-            w = 0.48 * safezoneW;
-            h = 0.042 * safezoneH;
-			font = PuristaLight;
-        };
-		
-		class PlayBtn13: RscButtonMenuPlayBtn2 {
-			idc = 0185;
-            text = "$STR_MM_Code";
-            colorBackground[] = {0.8, 0.0, 0.0, 0};
-            onButtonClick = "";
-            x = 0.06 * safezoneW + safezoneX;
-            y = 0.65 * safezoneH + safezoneY;
-            w = 0.18 * safezoneW;
-            h = 0.042 * safezoneH;
-			font = PuristaLight;
-			onMouseEnter = "playSound ""Click2"";";
-        };
-		
-		class PlayBtnTxt13: RscStructuredTextBtnTxt2 {
-			idc = 0175;
-            text = "$STR_MM_CodeColor";
-            colorBackground[] = {0.8, 0.0, 0.0, 0};
-            x = 0.057 * safezoneW + safezoneX;
-            y = 0.65 * safezoneH + safezoneY;
-            w = 0.48 * safezoneW;
-            h = 0.042 * safezoneH;
+            x = 0.058 * safezoneW + safezoneX;
+            y = 0.81 * safezoneH + safezoneY;
+            w = 0.45 * safezoneW;
+            h = 0.022 * safezoneH;
 			font = PuristaLight;
         };
 		
@@ -376,30 +376,6 @@ class menuprincipal {
 			font = PuristaLight;
         };
 		
-		class PlayBtnP10: RscButtonMenuPlayBtn3 {
-			idc = 1288;
-            text = "$STR_MM_Return";
-            colorBackground[] = {0.8, 0.0, 0.0, 0};
-            onButtonClick = "";
-            x = 0.061 * safezoneW + safezoneX;
-            y = 0.81 * safezoneH + safezoneY;
-            w = 0.045 * safezoneW;
-            h = 0.022 * safezoneH;
-			font = PuristaLight;
-			onMouseEnter = "playSound ""Click2"";";
-        };
-		
-		class PlayBtnTxtP10: RscStructuredTextBtnTxt3 {
-			idc = 1278;
-            text = "$STR_MM_ReturnColor";
-            colorBackground[] = {0.8, 0.0, 0.0, 0};
-            x = 0.058 * safezoneW + safezoneX;
-            y = 0.81 * safezoneH + safezoneY;
-            w = 0.45 * safezoneW;
-            h = 0.022 * safezoneH;
-			font = PuristaLight;
-        };
-		
 		class PlayBtnTxtCTitle: RscStructuredTextBtnTxt {
 			idc = 1074;
             text = "$STR_MM_CreditsScrollTitle";
@@ -408,42 +384,6 @@ class menuprincipal {
             x = 0 * safezoneW + safezoneX;
             y = 0.075 * safezoneH + safezoneY;
             w = 1 * safezoneW;
-            h = 0.042 * safezoneH;
-			font = PuristaLight;
-        };
-		
-		class PlayBtnTxtPTitle: RscStructuredTextBtnTxt {
-			idc = 1075;
-            text = "$STR_MM_OurPartners";
-            colorBackground[] = {0.8, 0.0, 0.0, 0};
-            onButtonClick = "";
-            x = 0.057 * safezoneW + safezoneX;
-            y = 0.075 * safezoneH + safezoneY;
-            w = 1 * safezoneW;
-            h = 0.042 * safezoneH;
-			font = PuristaLight;
-        };
-		
-		class PlayBtnTxtPSTitle: RscStructuredTextBtnTxt {
-			idc = 2075;
-            text = "<t size='1.0' shadow='0'><a href='https://www.youtube.com/channel/UCf15ZON61Cgu6F3kw1Q22LA'>ARMAopterix - Deine Armawelt</a><br/><br/><a href='https://vahana-life.de/'>Vahana Life</a><br/><br/></t>";
-            colorBackground[] = {0.8, 0.0, 0.0, 0};
-            onButtonClick = "";
-            x = 0.058 * safezoneW + safezoneX;
-            y = 0.14 * safezoneH + safezoneY;
-            w = 1 * safezoneW;
-            h = 0.1 * safezoneH;
-			font = PuristaLight;
-        };
-		
-		class PlayBtnTxtPTxt1: RscStructuredTextBtnTxt {
-			idc = 3075;
-            text = "$STR_MM_BecomePartner";
-            colorBackground[] = {0.8, 0.0, 0.0, 0};
-            onButtonClick = "";
-            x = 0.427* safezoneW + safezoneX;
-            y = 0.6 * safezoneH + safezoneY;
-            w = 0.15 * safezoneW;
             h = 0.042 * safezoneH;
 			font = PuristaLight;
         };
@@ -468,15 +408,6 @@ class menuprincipal {
 					font = PuristaLight;
                 };
             };
-        };
-		
-		class PartnerLogo: RscPicture {
-            idc = 0002;
-            text = "textures\gui\partner.paa";
-            x = 0.45 * safezoneW + safezoneX;
-            y = 0.4 * safezoneH + safezoneY;
-            w = 0.103 * safezoneW;
-            h = 0.18 * safezoneH;
         };
     };
 };

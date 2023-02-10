@@ -24,7 +24,7 @@ switch (_killer) do {
 		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Wendigo", 5, "textures\ico_wendigo.paa"] spawn gonzka_fnc_notification;
 	};
 	case 2: {
-		player setVariable ["killer","compactor",true];
+		player setVariable ["killer","buckethead",true];
 		
 		player addHeadgear "Intruders_BucketHead";
 		removeUniform player;
@@ -33,10 +33,10 @@ switch (_killer) do {
 		
 		player addWeapon "intruders_pickaxe";
 		
-		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Compactor", 5, "textures\ico_compactor.paa"] spawn gonzka_fnc_notification;
+		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Buckethead", 5, "textures\ico_buckethead.paa"] spawn gonzka_fnc_notification;
 	};
 	case 3: {
-		player setVariable ["killer","butcher",true];
+		player setVariable ["killer","trapper",true];
 		
 		player addHeadgear "Intruders_HockeyMask";
 		removeUniform player;
@@ -45,7 +45,7 @@ switch (_killer) do {
 		
 		player addWeapon "intruders_machete";
 		
-		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Butcher", 5, "textures\ico_butcher.paa"] spawn gonzka_fnc_notification;
+		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Trapper", 5, "textures\ico_trapper.paa"] spawn gonzka_fnc_notification;
 	};
 };
 

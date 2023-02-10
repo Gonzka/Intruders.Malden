@@ -4,6 +4,14 @@
     Displays the scored points of all players
 */
 
+//Bonus Bloodpoints
+if (bloodRush) then { //1.5x Bloodpoints
+	["STR_SCORE_Bonus",player getVariable "bloodPoints" * 0.5] call gonzka_fnc_addFunds;
+};
+if (bloodHunt) then { //2x Bloodpoints
+	["STR_SCORE_Bonus",player getVariable "bloodPoints"] call gonzka_fnc_addFunds;
+};
+
 private _scoreTable = [];
 {
 	_scoreTable pushBack [_x getVariable "bloodPoints", name _x, _x getVariable "intruders_activePerks"];
@@ -38,13 +46,6 @@ if ((_scoreTable select 0 select 0) >= 9000) then { //MINIMUM OF 9.000 POINTS
 playSound "Orange_Timeline_FadeOut";
 
 //SAVE BLOODPOINTS
-private _earnedBloodPoints = player getVariable "bloodPoints";
-private _multiplicator = 1;
-
-//_multiplicator = 1.3;
-//["STR_SCORE_Bonus",round (_earnedBloodPoints * (_multiplicator - 1))] call gonzka_fnc_addFunds;
-
-private _bloodPoints = profileNamespace getVariable "intruders_bloodPoints";
-_bloodPoints = round (_bloodPoints + _earnedBloodPoints * _multiplicator);
-profileNamespace setVariable ["intruders_bloodPoints", _bloodPoints];
+private _totalBloodPoints = profileNamespace getVariable "intruders_bloodPoints";
+profileNamespace setVariable ["intruders_bloodPoints", _totalBloodPoints + (player getVariable "bloodPoints")];
 saveProfileNamespace;

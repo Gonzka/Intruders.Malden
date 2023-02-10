@@ -87,10 +87,10 @@ chopWeapon = {
 		case "wendigo": {
 			[player, [selectRandom ["growl_1","growl_2","growl_3","growl_4","growl_5","growl_6"], 50]] remoteExecCall ["say3D"];
 		};
-		case "compactor": {
+		case "buckethead": {
 			[player, [selectRandom ["evilLaugh_1","evilLaugh_2","evilLaugh_3","evilLaugh_4","evilLaugh_5","evilLaugh_6","evilLaugh_7"], 50]] remoteExecCall ["say3D"];
 		};
-		case "butcher": {
+		case "trapper": {
 			[player, [selectRandom ["growlWeird_1","growlWeird_2","growlWeird_3","growlWeird_4"], 50]] remoteExecCall ["say3D"];
 		};
 	};

@@ -46,6 +46,18 @@ call gonzka_fnc_spawnPoint;
 call gonzka_fnc_loginReward;
 call gonzka_fnc_clientSeason;
 
+switch (worldName) do {
+	case "Tanoa": {
+        [] execVM "mapObjects\spawn_tanoa.sqf";
+    };
+	case "Malden": {
+        [] execVM "mapObjects\spawn_malden.sqf";
+    };
+	case "Altis": {
+        [] execVM "mapObjects\spawn_altis.sqf";
+    };
+};
+
 waitUntil {player getVariable ["playerReady",false]};
 diag_log "[Intruders Client] Player has pressed play";
 
@@ -58,15 +70,6 @@ diag_log "[Intruders Client] Eventhandlers completed";
 diag_log "[Intruders Client] Setting up user actions";
 call gonzka_fnc_setupActions;
 diag_log "[Intruders Client] User actions completed";
-
-uiNamespace setVariable ["loadingBarText",localize "STR_INIT_PlantsSetup"];
-if (worldName isEqualTo "Tanoa") then {
-    _mapObjects = [] execVM "mapObjects\spawn_tanoa.sqf";
-    waitUntil {scriptDone _mapObjects};
-} else {
-    _mapObjects = [] execVM "mapObjects\spawn_malden.sqf";
-    waitUntil {scriptDone _mapObjects};
-};
 
 diag_log "[Intruders Client] Waiting for Killer and Intruder";
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_KillerWaiting"];

@@ -5,7 +5,7 @@
 */
 
 private _code = ctrlText 1003;
-private _availableCodes = ["ARMAOPTERIX","NEWHAVEN"]; //PERMANENT CODES
+private _availableCodes = ["ARMAOPTERIX","SPECIALHAVEN"]; //PERMANENT CODES
 switch (season) do { //TIME LIMITED CODES
 	case "Halloween": {
 		_availableCodes = _availableCodes + ["TRICKORTREAT"];
@@ -53,7 +53,7 @@ switch (_code) do {
 	case "HOLIDAYSWEATER": {
 		["STR_GAME_SkinUnlocked", "STR_SKIN_CodeHolidaySweater", 15, "textures\ico_snowman.paa"] spawn gonzka_fnc_notification;
 	};
-	case "NEWHAVEN": {
+	case "SPECIALHAVEN": {
 		["STR_GAME_SkinUnlocked", "STR_SKIN_CodeNewHaven", 15, "a3\soft_f_gamma\suv_01\data\ui\portrait_suv_01_ca.paa"] spawn gonzka_fnc_notification;
 	};
 };

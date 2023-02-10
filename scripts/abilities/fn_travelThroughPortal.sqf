@@ -24,7 +24,7 @@ sleep 1;
 sleep 0.5;
 
 player setVariable ["undetectable", true, true];
-player setPos getPos _portal;
+player setPosATL getPosATL _portal;
 [player,"Acts_JetsCrewaidLCrouch_out"] remoteExec ["switchMove"];
 
 sleep 4;
