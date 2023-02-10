@@ -62,6 +62,7 @@ waitUntil {player getVariable ["playerReady",false]};
 diag_log "[Intruders Client] Player has pressed play";
 
 ["Einrichten des Clients"] spawn gonzka_fnc_loadingBar; // Start loading screen
+sleep 1;
 
 diag_log "[Intruders Client] Setting up Eventhandlers";
 call gonzka_fnc_setupEVH;
