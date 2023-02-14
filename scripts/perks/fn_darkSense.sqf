@@ -8,7 +8,7 @@ if !("darkSense" in (player getVariable "intruders_activePerks")) exitWith {};
 
 private _duration = 5;
 
-if (repairedGenerators isEqualTo totalGenerators) then {
+if (count repairedGenerators isEqualTo totalGenerators) then {
     _duration = 10;
 };
 

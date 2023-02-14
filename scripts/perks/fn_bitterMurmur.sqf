@@ -11,7 +11,7 @@ params [
 if !("bitterMurmur" in (player getVariable "intruders_activePerks")) exitWith {};
 
 {
-    if (repairedGenerators isEqualTo totalGenerators) then {
+    if (count repairedGenerators isEqualTo totalGenerators) then {
         [_x,"","",[1,1,1,1],10,false] spawn gonzka_fnc_auraNotification;
     } else {
         if (_x distance _generator <= 16) then {

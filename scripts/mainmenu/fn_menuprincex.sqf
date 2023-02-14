@@ -53,7 +53,6 @@ uiNamespace setVariable ["BeginStartBtnPushed",0];
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0085) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_clothingMenu";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0086) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_questTerminal;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0087) buttonSetAction "playSound 'Click1'; createDialog 'ShopMenu';";
-((uiNamespace getVariable "menuprincipal")displayCtrl 0088) buttonSetAction "playSound 'Click1'; player setVariable ['videorun', 0, false]; [''] call BIS_fnc_playVideo;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0089) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_fadebtn;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0186) buttonSetAction "playSound 'Click1'; createDialog 'RedeemCodeMenu';";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0187) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_menucredits;";

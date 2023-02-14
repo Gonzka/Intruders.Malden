@@ -5,12 +5,12 @@
 */
 
 if !("dejaVu" in (player getVariable "intruders_activePerks")) exitWith {};
-if (repairedGenerators isEqualTo totalGenerators || endgameActivated) exitWith {};
+if (count repairedGenerators isEqualTo totalGenerators || endgameActivated) exitWith {};
 
 private _nearestGens = nearestObjects [player, ["Land_TransferSwitch_01_F"], 300];
 private _inactiveGens = [];
 {
-	if !(_x getVariable ["active", false]) then {
+	if !(_x in repairedGenerators) then {
 		_inactiveGens pushBack _x;
 	};
 } forEach _nearestGens;

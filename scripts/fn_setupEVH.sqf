@@ -41,9 +41,9 @@ player addEventHandler ["Killed", {
 	}];
 } forEach [escapeVehicle_1, escapeVehicle_2];
 
-//Show markers of survivors who are unconscious and show markers of all survivors if the player himself is unconscious
-//And Bond Survivor Perk
 if (playerSide isEqualTo civilian) then {
+	//Show markers of survivors who are unconscious and show markers of all survivors if the player himself is unconscious
+	//And Bond Survivor Perk
 	addMissionEventHandler ["Draw3D", {
 		{
 			if (_x getVariable ["BIS_revive_incapacitated", false] || player getVariable ["BIS_revive_incapacitated", false] || ("bond" in (player getVariable "intruders_activePerks") && player distance _x <= 36)) then {
@@ -51,16 +51,16 @@ if (playerSide isEqualTo civilian) then {
 			};
 		} forEach playableUnits - [player, Killer];
 	}];
+	
+	//Workaround to add bloodpoints to a player who revived someone
+	player addEventHandler ["AnimDone", {
+		params ["_unit", "_anim"];
+		if (_anim isEqualTo "ainvpknlmstpsnonwnondnon_medicend" && {profileNamespace getVariable ["bis_reviveCount", 0] > prevReviveCount}) then {
+			prevReviveCount = profileNamespace getVariable ["bis_reviveCount", 0];
+			["STR_SCORE_Rescue",1500] call gonzka_fnc_addFunds;
+		};
+	}];
 };
-
-//Scripted event called on revived
-[missionNamespace, "reviveRevived", {
-    params ["_unit", "_revivor"];
-    if !(isNull _revivor) then {
-		["STR_SCORE_Rescue",1500] remoteExecCall ["gonzka_fnc_addFunds",_revivor];
-    };
-    hint "DEBUG: reviveRevived Eventhandler ausgelöst!";
-}] call BIS_fnc_addScriptedEventHandler;
 
 //LOCKPICKING
 disableSerialization;

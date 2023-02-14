@@ -14,6 +14,8 @@ clothing_filter = 0;
 clothing_equip = ["","","","","",""];
 skillCheck_hit = false;
 endgameCountdown = false;
+prevReviveCount = 0;
+profileNamespace setVariable ["bis_reviveCount", 0];
 
 if (isNil {profileNamespace getVariable "intruders_perkInventory"}) then {
     profileNamespace setVariable ["intruders_perkInventory",[]];

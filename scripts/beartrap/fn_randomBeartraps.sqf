@@ -4,8 +4,15 @@
     Automatic placement of a random trap at each generator
 */
 
+private _maxDist = switch (worldName) do {
+    case "Tanoa": {15};
+    case "Malden": {22};
+    case "Altis": {10};
+    case default {10};
+};
+
 {
-    private _pos = [getPos _x, 0, 30, 0, 0, 1] call BIS_fnc_findSafePos;
+    private _pos = [getPos _x, 0, _maxDist, 0, 0, 1] call BIS_fnc_findSafePos;
     private _trap = createVehicle ["Intruders_Object_Beartrap", _pos, [], 0, "NONE"];
     _trap allowDamage false;
     _trap enableSimulation true;

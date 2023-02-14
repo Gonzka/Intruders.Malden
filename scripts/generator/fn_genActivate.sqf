@@ -6,11 +6,12 @@
 
 private _generator = getPos player nearestObject "Land_TransferSwitch_01_F";
  
-if (_generator getVariable "active" || endgameActivated) exitWith {
+if (_generator in repairedGenerators || endgameActivated) exitWith {
 	["STR_GAME_Error", "STR_GAME_GenAlreadyActive", 5, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
 };
 
-_generator setVariable ["active",true,true];
+repairedGenerators pushBackUnique _generator; publicVariable "repairedGenerators";
+
 _generator animateSource ["switchPosition",-1];
 _generator animateSource ["switchLight",1];
 _generator setObjectTextureGlobal [1, "#(argb,8,8,3)color(0,1,0,1,ca)"];
@@ -26,12 +27,9 @@ private _switchLightRange = switch (worldName) do {
 playSound3D [selectRandom ["a3\missions_f_exp\data\sounds\exp_m07_lightson_01.wss", "a3\missions_f_exp\data\sounds\exp_m07_lightson_02.wss", "a3\missions_f_exp\data\sounds\exp_m07_lightson_03.wss"], _generator, false, getPosASL _generator, 3];
 createSoundSource ["powergenerator", position _generator, [], 0];
 
-repairedGenerators = repairedGenerators + 1;
-publicvariable "repairedGenerators";
-
 [_generator,"textures\gui\hud_generator.paa","",[0,1,0,1]] remoteExec ["gonzka_fnc_auraNotification", [0, -2] select isDedicated];
 
-if (repairedGenerators isEqualTo totalGenerators) then {
+if (count repairedGenerators isEqualTo totalGenerators) then {
 	[] remoteExec ["gonzka_fnc_initEndgame", [0, -2] select isDedicated];
 	endgameActivated = true; publicVariable "endgameActivated"; //Players who join now will not add another generator.
 	

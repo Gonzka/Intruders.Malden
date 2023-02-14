@@ -52,7 +52,7 @@ player selectWeapon secondaryWeapon player;
 //GEN MARKERS
 addMissionEventHandler ['Draw3D', {
 	{
-		if !(_x getVariable ['active',false]) then {
+		if !(_x in repairedGenerators) then {
 			drawIcon3D [getMissionPath 'textures\gui\hud_generator.paa', [1,1,1,1], ASLToAGL getPosASL _x, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro'];
 		};
 	} forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5 , genericGen_6, genericGen_7];

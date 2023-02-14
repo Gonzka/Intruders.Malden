@@ -48,10 +48,10 @@ if (_activePerk4 isNotEqualTo "") then {
 };
 
 while {true} do {
-	_genCounter ctrlSetText format ["textures\gui\hud_%1.paa", totalGenerators - repairedGenerators];
+	_genCounter ctrlSetText format ["textures\gui\hud_%1.paa", totalGenerators - count repairedGenerators];
 	
-	private _playerCount = civilian countSide allPlayers;
 	private _players = allPlayers - [Killer];
+	private _playerCount = count _players;
 	
 	if (_playerCount > 0) then {
 		[_players select 0,_pic1,_name1] call gonzka_fnc_statusBarPlayers;
