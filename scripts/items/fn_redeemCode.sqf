@@ -16,7 +16,7 @@ switch (season) do { //TIME LIMITED CODES
 };
 
 private _uid = getPlayerUID player;
-if (_uid in ["76561198082809482", "76561198131973133", "76561199072236388"]) then { //Gonzka, Affe, Alessio
+if (_uid in ["76561198082809482"]) then { //Gonzka
 	_availableCodes = _availableCodes + ["RESET", "NEWQUEST"]; //PERSONAL RESET CODE FOR ADMINS
 };
 
@@ -54,6 +54,6 @@ switch (_code) do {
 		["STR_GAME_SkinUnlocked", "STR_SKIN_CodeHolidaySweater", 15, "textures\ico_snowman.paa"] spawn gonzka_fnc_notification;
 	};
 	case "SPECIALHAVEN": {
-		["STR_GAME_SkinUnlocked", "STR_SKIN_CodeNewHaven", 15, "a3\soft_f_gamma\suv_01\data\ui\portrait_suv_01_ca.paa"] spawn gonzka_fnc_notification;
+		["STR_GAME_RewardAvailable", "STR_SKIN_CodeNewHaven", 15, "a3\missions_f_oldman\props\data\money_ca.paa"] spawn gonzka_fnc_notification;
 	};
 };

@@ -55,18 +55,30 @@ while {true} do {
 	
 	if (_playerCount > 0) then {
 		[_players select 0,_pic1,_name1] call gonzka_fnc_statusBarPlayers;
+	} else { //When a player disconnects
+		_pic1 ctrlSetText "";
+		_name1 ctrlSetText "";
 	};
 	
 	if (_playerCount > 1) then {
 		[_players select 1,_pic2,_name2] call gonzka_fnc_statusBarPlayers;
+	} else {
+		_pic2 ctrlSetText "";
+		_name2 ctrlSetText "";
 	};
 
 	if (_playerCount > 2) then {
 		[_players select 2,_pic3,_name3] call gonzka_fnc_statusBarPlayers;		
+	} else {
+		_pic3 ctrlSetText "";
+		_name3 ctrlSetText "";
 	};
 	
 	if (_playerCount > 3) then {
 		[_players select 3,_pic4,_name4] call gonzka_fnc_statusBarPlayers;	
+	} else {
+		_pic4 ctrlSetText "";
+		_name4 ctrlSetText "";
 	};
 	
 	sleep 1;

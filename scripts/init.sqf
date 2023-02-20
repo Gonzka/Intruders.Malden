@@ -78,7 +78,7 @@ waitUntil {!isNil "Killer"};
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_IntruderWaiting"];
 waitUntil {civilian countSide allPlayers > 0};
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_ReadyWaiting"];
-waitUntil {{_x getVariable ["playerReady",false]} count allPlayers == count allPlayers;};
+waitUntil {{_x getVariable ["playerReady",false] && !isNull _x} count allPlayers == count allPlayers;};
 diag_log "[Intruders Client] There are enough players";
 
 if (playerSide isEqualTo east) then {

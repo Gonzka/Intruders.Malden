@@ -17,16 +17,9 @@ if (_perk isEqualTo "") exitWith {
 };
 
 //SIDE CONDITIONS
-private _mySide = "";
-if (playerSide isEqualTo east) then {
-	_mySide = "killer";
-} else {
-	_mySide = "survivor";
-};
-
 private _side = getText (missionConfigFile >> "VirtualItems" >> _perk >> "side");
 
-if (_side != _mySide && _side != "") exitWith {
+if ((str playerSide) != _side && _side != "") exitWith {
 	["STR_GAME_Error", "STR_GAME_NotForYourSide", 5, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
 };
 

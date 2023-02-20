@@ -21,10 +21,16 @@ if (count (profileNamespace getVariable "intruders_perkInventory") < 1) exitWith
 	private _variable = getText (missionConfigFile >> "VirtualItems" >> _x >> "variable");
 	private _description = getText (missionConfigFile >> "VirtualItems" >> _x >> "description");
 	private _icon = getText (missionConfigFile >> "VirtualItems" >> _x >> "icon");
+	private _side = getText (missionConfigFile >> "VirtualItems" >> _x >> "side");
 	_inventory lbAdd format ["%1", localize _displayName];
 	_inventory lbSetData [(lbSize _inventory)-1, _variable];
 	_inventory lbSetPicture [(lbSize _inventory)-1, _icon];
 	_inventory lbSetTooltip [(lbSize _inventory)-1, format["%1\n\n%2", toUpper localize _displayName, localize _description]];
+	if ((str playerSide) isEqualTo _side) then {
+		_inventory lbSetColor [(lbSize _inventory)-1, [0, 1, 0, 1]];
+	} else {
+		_inventory lbSetColor [(lbSize _inventory)-1, [1, 0, 0, 1]];
+	};
 } forEach (profileNamespace getVariable "intruders_perkInventory");
 
 lbSort _inventory;

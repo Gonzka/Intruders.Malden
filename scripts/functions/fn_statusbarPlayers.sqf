@@ -6,11 +6,6 @@
 
 params ["_player","_pic","_name"];
 
-if (isNil "_player") exitWith { //When a player disconnects
-	_pic ctrlSetText "";
-	_name ctrlSetText "";
-};
-
 _pic ctrlSetText "textures\gui\hud_survivor.paa";
 _name ctrlSetText name _player;	
 

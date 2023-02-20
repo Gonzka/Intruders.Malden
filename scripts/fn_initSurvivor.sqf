@@ -12,7 +12,7 @@ player setPos getMarkerPos ((player getVariable "spawnPoint") select 0);
 player setDir (random 360);
 
 [] spawn gonzka_fnc_createFogParticles;
-[] spawn gonzka_fnc_initCharacter;
+call gonzka_fnc_initCharacter;
 [] spawn gonzka_fnc_spawnCamera;
 [] spawn gonzka_fnc_waterIsLava;
 

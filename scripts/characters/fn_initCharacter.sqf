@@ -64,6 +64,3 @@ if (playerSide isEqualTo east) then {
 };
 
 call gonzka_fnc_playerSkins;
-
-sleep 20;
-[] spawn gonzka_fnc_terrorMusic;

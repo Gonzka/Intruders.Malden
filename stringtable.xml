@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.13.0&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.13.0&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.13.1&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.13.1&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -436,6 +436,10 @@
 		<Key ID="STR_GAME_SkinUnlocked">
 			<Original>Skin unlocked</Original>
 			<German>Aussehen freigeschaltet</German>
+		</Key>
+		<Key ID="STR_GAME_RewardAvailable">
+			<Original>Reward available</Original>
+			<German>Belohnung verfügbar</German>
 		</Key>
 		<Key ID="STR_GAME_ShopRefreshTime">
 			<Original>refreshes in %1 hours</Original>
@@ -1166,8 +1170,8 @@
 			<German>Eigenes Gesicht</German>
 		</Key>
 		<Key ID="STR_SKIN_CodeNewHaven">
-			<Original>You have unlocked two exclusive vehicle paint jobs on: altis.new-haven.life. Run to a car dealer to buy your new skins!</Original>
-			<German>Du hast zwei exklusive Fahrzeuglackierungen auf: altis.new-haven.life freigeschaltet. Lauf zu einem Fahrzeughändler um deine neuen Skins zu kaufen!</German>
+			<Original>You can claim a reward on: altis.new-haven.life. Go there to the abandoned shack and you will get 1,000,000€!</Original>
+			<German>Du kannst auf: altis.new-haven.life eine Belohnung abholen. Gehe dort zur verlassenen Hütte und du bekommst 1.000.000€!</German>
 		</Key>
 		<Key ID="STR_SKIN_CodeArmaOpterix">
 			<Original>You have unlocked the ArmaOpterix collection. It includes journalist clothes and the face of Martin Opterix along with custom voicelines!</Original>

@@ -38,7 +38,7 @@ call initWeapon;
 player selectWeapon secondaryWeapon player;
 
 [] spawn gonzka_fnc_createFogParticles;
-[] spawn gonzka_fnc_initCharacter;
+call gonzka_fnc_initCharacter;
 [] spawn gonzka_fnc_spawnCamera;
 [] spawn gonzka_fnc_onlyFirstPerson;
 

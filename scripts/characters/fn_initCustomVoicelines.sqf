@@ -83,10 +83,9 @@ switch (face player) do {
 };
 
 [_voicelines,{
-	if (_sound isEqualTo "") exitWith {};
-	if (player getVariable ["voiceActive", false] || !alive player || player getVariable ["BIS_revive_incapacitated", false]) exitWith {};
-
 	private _sound = _this select 1;
+	if (_sound isEqualTo "" || {player getVariable ["voiceActive", false]} || {!alive player} || {player getVariable ["BIS_revive_incapacitated", false]}) exitWith {};
+
 	[player,[_sound,50]] remoteExecCall ["say3D"];
 	player setVariable ["voiceActive",true,true];
 	[_sound] spawn {

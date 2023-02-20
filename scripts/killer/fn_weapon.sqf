@@ -23,7 +23,7 @@ initWeapon = {
 	}];
 };
 
-chopWeapon = {	
+chopWeapon = {
 	player playAction "GestureSwing";
 	[player, selectRandom ["weaponSwing_1","weaponSwing_2","weaponSwing_3","weaponSwing_4","weaponSwing_5","weaponSwing_6","weaponSwing_7"]] remoteExecCall ["say3D"];
 	player forceWalk true;
@@ -32,10 +32,10 @@ chopWeapon = {
         player forceWalk false;
 	};
 	
-	private _nearEntities = getPosATL player nearEntities [["CAManBase"], 2.5];	
+	private _nearEntities = ASLToAGL getPosASL player nearEntities [["CAManBase"], 2.5];
 	private _allTargets = [];
 	{
-		if (alive _x && {isPlayer _x} && {[getPosATL player, getDir player, 90, getPosATL _x] call BIS_fnc_inAngleSector}) then {
+		if (alive _x && {isPlayer _x} && {[ASLToAGL getPosASL player, getDir player, 90, ASLToAGL getPosASL _x] call BIS_fnc_inAngleSector}) then {
 			_allTargets pushBack _x;
 		};
 	} forEach _nearEntities - [player];

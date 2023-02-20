@@ -39,5 +39,5 @@ profilenamespace setvariable ['GUI_BCG_RGB_A',1];
 [player, ""] remoteExec ["switchMove"]; //Animation fix
 
 if (playerSide isEqualTo east) then { //Killer object undefined fix
-    Killer = player;
+    Killer = player; publicVariable "Killer";
 };
