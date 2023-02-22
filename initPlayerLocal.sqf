@@ -1,7 +1,3 @@
-profileFace = face player;
-
-[] execVM "scripts\init.sqf";
-
 profilenamespace setvariable ['GUI_BCG_RGB_R',0.7];
 profilenamespace setvariable ['GUI_BCG_RGB_G',0.13];
 profilenamespace setvariable ['GUI_BCG_RGB_B',0.13];
@@ -36,8 +32,16 @@ profilenamespace setvariable ['GUI_BCG_RGB_A',1];
     };
 };
 
+if (playerSide isEqualTo sideLogic) exitWith {
+    [] execVM "scripts\initSpectator.sqf";
+};
+
+profileFace = face player;
+
 [player, ""] remoteExec ["switchMove"]; //Animation fix
 
 if (playerSide isEqualTo east) then { //Killer object undefined fix
     Killer = player; publicVariable "Killer";
 };
+
+[] execVM "scripts\init.sqf";

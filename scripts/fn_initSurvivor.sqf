@@ -8,12 +8,9 @@ waitUntil {!(isNull (findDisplay 46))};
 player enableStamina false;
 player allowSprint false;
 
-player setPos getMarkerPos ((player getVariable "spawnPoint") select 0);
-player setDir (random 360);
-
-[] spawn gonzka_fnc_createFogParticles;
 call gonzka_fnc_initCharacter;
-[] spawn gonzka_fnc_spawnCamera;
+[] spawn gonzka_fnc_spawnPlayer;
+[] spawn gonzka_fnc_createFogParticles;
 [] spawn gonzka_fnc_waterIsLava;
 
 //PERKS

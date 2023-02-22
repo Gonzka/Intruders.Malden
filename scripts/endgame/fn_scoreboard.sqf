@@ -15,7 +15,7 @@ if (bloodHunt) then { //2x Bloodpoints
 private _scoreTable = [];
 {
 	_scoreTable pushBack [_x getVariable "bloodPoints", name _x, _x getVariable "intruders_activePerks"];
-} forEach allPlayers;
+} forEach allPlayers - entities [["VirtualSpectator_F"], [], true];
 
 _scoreTable sort false;
 	
@@ -44,6 +44,11 @@ if ((_scoreTable select 0 select 0) >= 9000) then { //MINIMUM OF 9.000 POINTS
 
 [parsetext _text, toUpper localize "STR_BRIEF_GameOver"] spawn BIS_fnc_guiMessage;
 playSound "Orange_Timeline_FadeOut";
+
+//The first player of the playableUnits list sends the scoreboard to players who have chosen the spectator slot in the lobby. So this list will be sent only once.
+if ((playableUnits select 0) isEqualTo player) then {
+	[parsetext _text, toUpper localize "STR_BRIEF_GameOver"] remoteExec ["BIS_fnc_guiMessage", sideLogic];
+};
 
 //SAVE BLOODPOINTS
 private _totalBloodPoints = profileNamespace getVariable "intruders_bloodPoints";

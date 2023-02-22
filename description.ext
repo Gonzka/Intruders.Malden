@@ -9,6 +9,15 @@ author = "Gonzka";
 
 unsafeCVL = 1;
 briefing = 0;
+disableChannels[] = {
+	{0, false, true}, //--- Global Chat
+	{1, true, true}, //--- Side Chat
+	{2, true, true}, //--- Command Chat
+	{3, true, true}, //--- Group Chat
+	{4, true, true}, //--- Vehicle Chat
+	{5, false, false}, //--- Direct Chat
+	{6, true, true} //--- System Chat
+};
 
 ReviveMode = 2;
 ReviveUnconsciousStateMode = 0;

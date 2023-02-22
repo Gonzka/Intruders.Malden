@@ -32,7 +32,6 @@ private _config = missionConfigFile >> "VirtualItems";
 profileNamespace setVariable ["intruders_perkInventory",_globalInventory];
 
 //GLOBAL VARS
-player setVariable ["spawnPoint", [], true];
 player setVariable ["voiceActive", false, true];
 player setVariable ["bloodPoints", 0, true];
 player setVariable ["threatLevel", 0, true];

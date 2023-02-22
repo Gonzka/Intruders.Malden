@@ -15,14 +15,6 @@ waitUntil {!isNull (findDisplay 46)};
 0 fadeRadio 0;
 enableSentences false;
 
-0 enableChannel [true, false];
-{_x enableChannel false;} forEach [1, 2, 3, 4];
-if (playerSide isEqualTo civilian) then {
-    5 enableChannel true;
-} else {
-    5 enableChannel false;
-};
-
 showHUD [ 
     true, // scriptedHUD 
     false, // info 
@@ -42,7 +34,6 @@ call compileScript ["scripts\configuration.sqf"];
 diag_log "[Intruders Client] Variables initialized";
 
 [] spawn gonzka_fnc_menuprincex;
-call gonzka_fnc_spawnPoint;
 call gonzka_fnc_loginReward;
 call gonzka_fnc_clientSeason;
 
@@ -78,7 +69,7 @@ waitUntil {!isNil "Killer"};
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_IntruderWaiting"];
 waitUntil {civilian countSide allPlayers > 0};
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_ReadyWaiting"];
-waitUntil {{_x getVariable ["playerReady",false] && !isNull _x} count allPlayers == count allPlayers;};
+waitUntil {{_x getVariable ["playerReady",false] && !isNull _x} count (allPlayers - entities [["VirtualSpectator_F"], [], true]) == count (allPlayers - entities [["VirtualSpectator_F"], [], true])};
 diag_log "[Intruders Client] There are enough players";
 
 if (playerSide isEqualTo east) then {
@@ -94,7 +85,7 @@ if (playerSide isEqualTo east) then {
 [] spawn gonzka_fnc_killerLeftGame;
 
 if !(endgameActivated) then {
-    totalGenerators = count allPlayers; //For each player, a generator that needs repairs is added.
+    totalGenerators = count (allPlayers - entities [["VirtualSpectator_F"], [], true]); //For each player, a generator that needs repairs is added.
     if (totalGenerators > 5) then { //Up to a maximum of 5
         totalGenerators = 5;
     };

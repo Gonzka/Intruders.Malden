@@ -77,8 +77,7 @@ class Intruders {
 		class scream {};
 		class selfHeal {};
 		class setHoldActionDuration {};
-		class spawnCamera {};
-		class spawnPoint {};
+		class spawnPlayer {};
 		class statusbar {};
 		class statusbarPlayers {};
 		class waterIsLava {};

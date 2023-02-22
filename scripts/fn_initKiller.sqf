@@ -28,18 +28,15 @@ switch (player getVariable "killer") do {
 	};
 };
 
-player setPos getMarkerPos ((player getVariable "spawnPoint") select 0);
-player setDir (random 360);
-
 private _weaponFunctions = [] spawn gonzka_fnc_weapon;
 waitUntil {scriptDone _weaponFunctions};
 call initWeapon;
 
 player selectWeapon secondaryWeapon player;
 
-[] spawn gonzka_fnc_createFogParticles;
 call gonzka_fnc_initCharacter;
-[] spawn gonzka_fnc_spawnCamera;
+[] spawn gonzka_fnc_spawnPlayer;
+[] spawn gonzka_fnc_createFogParticles;
 [] spawn gonzka_fnc_onlyFirstPerson;
 
 //PERKS
