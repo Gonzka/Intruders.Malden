@@ -34,7 +34,6 @@ profileNamespace setVariable ["intruders_perkInventory",_globalInventory];
 //GLOBAL VARS
 player setVariable ["voiceActive", false, true];
 player setVariable ["bloodPoints", 0, true];
-player setVariable ["threatLevel", 0, true];
 player setVariable ["oblivious", false, true];
 player setVariable ["killer", ""];
 

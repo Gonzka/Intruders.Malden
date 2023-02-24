@@ -48,7 +48,7 @@ uiNamespace setVariable ["BeginStartBtnPushed",0];
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0005) ctrlSetFade 0;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0005) ctrlCommit 0;
 
-((uiNamespace getVariable "menuprincipal")displayCtrl 0083) buttonSetAction "playSound 'Click1'; uiNamespace setVariable ['BeginStartBtnPushed',1]; player setVariable ['playerReady',true,true]; closedialog 0;";
+((uiNamespace getVariable "menuprincipal")displayCtrl 0083) buttonSetAction "playSound 'Click1'; uiNamespace setVariable ['BeginStartBtnPushed',1]; player setVariable ['isReady',true,true]; closedialog 0;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0084) buttonSetAction "playSound 'Click1'; createDialog 'PerkMenu';";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0085) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_clothingMenu";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0086) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_questTerminal;";

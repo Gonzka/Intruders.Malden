@@ -6,36 +6,17 @@
 
 if (playerSide isEqualTo east) exitWith {};
 
-private _inTerrorRadius = (player getVariable "threatLevel") > 0;
-private _inTerrorRadiusUpdated = _inTerrorRadius;
-private _track = [
-	"Music_Menu_Contact","Music_Roaming_Night","Music_Roaming_Night_02","Music_Roaming_Day","Music_Roaming_Day_02", //CONTACT
-	"OM_Music02","OM_Music03", //OLDMAN
-	"AmbientTrack01a_F_Tacops","AmbientTrack01b_F_Tacops","AmbientTrack02a_F_Tacops","AmbientTrack02b_F_Tacops" //TACOPS
-];
-private _playlist = _track;
-music = true;
+private _music = false;
 
 while {sleep 1; alive player} do {
-	_inTerrorRadiusUpdated = (player getVariable "threatLevel") > 0;
-	if ((_inTerrorRadiusUpdated != _inTerrorRadius) || music) then {
-		removeAllMusicEventHandlers "MusicStop";
-		_inTerrorRadius = _inTerrorRadiusUpdated;
-		if (_inTerrorRadiusUpdated) then {
-			_track = selectRandom ["terrorMusic_1", "terrorMusic_2"];
-			music = true;
-		} else {
-			_track = selectRandom _playlist;
-			music = false; //true: ambient music, false: no ambient music
-			2 fadeMusic 0;
-			sleep 2;
-		};
-	};
-
-	if (music) then {
-		_EH = addMusicEventHandler ["MusicStop", {music = true}];
-		music = false;
-		playmusic _track;
+	if (inTerrorRadius && !_music) then {
+		playMusic selectRandom ["terrorMusic_1", "terrorMusic_2"];
 		0 fadeMusic 0.5;
+		_music = true;
+	};
+	if !(inTerrorRadius) then {
+		_music = false;
+		2 fadeMusic 0;
+		sleep 2;
 	};
 };

@@ -46,7 +46,7 @@ if (count repairedGenerators isEqualTo totalGenerators) then {
 
 //QUEST
 quest_generators = quest_generators + 1;
-if ((player getVariable "threatLevel") > 0) then {
+if (inTerrorRadius) then {
 	quest_terrorGenerators = quest_terrorGenerators + 1;
 };
 

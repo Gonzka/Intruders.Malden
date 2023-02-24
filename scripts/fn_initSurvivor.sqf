@@ -21,5 +21,4 @@ if ("botanyKnowledge" in (player getVariable "intruders_activePerks")) then { //
     player setUnitTrait ["Medic",true];
 };
 
-waitUntil {!(isNil "Killer")}; 
-[Killer] spawn gonzka_fnc_terrorRadius;
+[] spawn gonzka_fnc_terrorRadius;

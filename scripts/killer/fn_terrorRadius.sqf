@@ -4,32 +4,20 @@
     The terror radius is an area near the killer where the player can hear his heartbeat
 */
 
-params [
-    ["_killer", objNull, [objNull]]
-];
+private _radius = 32;
+private _intensity = 1.2;
+private _minPitch = 0.9;
+private _maxPitch = 1.1;
+private _beatInterval = 0.8;
 
-[] spawn gonzka_fnc_heartbeat;
-
-while {alive player} do {	
-	player setVariable ["threatLevel",0,true];
-	
-	if !(player getVariable "oblivious" || _killer getVariable ["undetectable", false]) then {
-		
-		if (player distance _killer >= 24 && player distance _killer < 32) then {
-			player setVariable ["threatLevel",1,true];
-		} else { 
-			if (player distance _killer >= 16 && player distance _killer < 24) then {
-				player setVariable ["threatLevel",2,true];
-			} else {
-				if (player distance _killer >= 8 && player distance _killer < 16) then {
-					player setVariable ["threatLevel",3,true];
-				} else {
-					if (player distance _killer < 8) then {
-						player setVariable ["threatLevel",4,true];
-					};
-				};
-			};
-		};	
+while {alive player} do {
+	private _dist = Killer distance player;
+    if (_dist < _radius && !(player getVariable "oblivious") && !(Killer getVariable ["undetectable", false])) then {
+		_intensity = (1 - _dist / _radius);
+		playSoundUI ["heartbeat", _intensity, _minPitch + (_maxPitch - _minPitch) * _intensity];
+		inTerrorRadius = true;
+	} else {
+		inTerrorRadius = false;
 	};
-	sleep 1;
+	sleep _beatInterval;
 };

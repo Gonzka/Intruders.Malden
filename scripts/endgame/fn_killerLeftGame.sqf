@@ -8,6 +8,6 @@ waitUntil {isNil "Killer"};
 
 sleep 1;
 
-["KillerLeft",true,10] remoteExecCall ['BIS_fnc_endMission',0];
+["KillerLeft",true,12] remoteExecCall ['BIS_fnc_endMission',0];
 
 call gonzka_fnc_scoreboard;

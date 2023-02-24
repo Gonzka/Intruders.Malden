@@ -106,7 +106,6 @@ class Intruders {
 	
 	class killer {
 		file = "scripts\killer";
-		class heartbeat {};
 		class onlyFirstPerson {};
 		class palettStun {};
 		class selectKiller {};

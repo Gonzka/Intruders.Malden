@@ -49,7 +49,7 @@ switch (worldName) do {
     };
 };
 
-waitUntil {player getVariable ["playerReady",false]};
+waitUntil {player getVariable ["isReady",false]};
 diag_log "[Intruders Client] Player has pressed play";
 
 ["Einrichten des Clients"] spawn gonzka_fnc_loadingBar; // Start loading screen
@@ -63,14 +63,14 @@ diag_log "[Intruders Client] Setting up user actions";
 call gonzka_fnc_setupActions;
 diag_log "[Intruders Client] User actions completed";
 
-diag_log "[Intruders Client] Waiting for Killer and Intruder";
+diag_log "[Intruders Client] Waiting for players";
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_KillerWaiting"];
 waitUntil {!isNil "Killer"};
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_IntruderWaiting"];
 waitUntil {civilian countSide allPlayers > 0};
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_ReadyWaiting"];
-waitUntil {{_x getVariable ["playerReady",false] && !isNull _x} count (allPlayers - entities [["VirtualSpectator_F"], [], true]) == count (allPlayers - entities [["VirtualSpectator_F"], [], true])};
-diag_log "[Intruders Client] There are enough players";
+waitUntil {count (allPlayers select {_x getVariable ["isReady",false] && {!isNull _x} && {side _x != sideLogic}}) isEqualTo count (allPlayers select {side _x != sideLogic})};
+diag_log "[Intruders Client] All players are ready";
 
 if (playerSide isEqualTo east) then {
     [] spawn gonzka_fnc_initKiller;
@@ -85,7 +85,7 @@ if (playerSide isEqualTo east) then {
 [] spawn gonzka_fnc_killerLeftGame;
 
 if !(endgameActivated) then {
-    totalGenerators = count (allPlayers - entities [["VirtualSpectator_F"], [], true]); //For each player, a generator that needs repairs is added.
+    totalGenerators = count (allPlayers select {side _x != sideLogic}); //For each player, a generator that needs repairs is added.
     if (totalGenerators > 5) then { //Up to a maximum of 5
         totalGenerators = 5;
     };
