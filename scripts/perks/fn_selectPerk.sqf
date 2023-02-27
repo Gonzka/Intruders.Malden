@@ -12,7 +12,7 @@ private _display = findDisplay 9999;
 private _inventory = _display displayCtrl 1500;
 private _perk = _inventory lbData (lbCurSel _inventory);
 
-if (_perk isEqualTo "") exitWith {
+if (_perk isEqualTo "") then {
 	["STR_GAME_Error", "STR_GAME_NotSelected", 5, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
 };
 
@@ -33,7 +33,7 @@ private _perkSlot3 = _display displayCtrl 1504;
 private _perkVar = format ["intruders_activePerks_%1",if (playerSide isEqualTo east) then {"killer"} else {"survivor"}];
 private _activePerks = profileNamespace getVariable _perkVar; //["","","",""];
 
-if (_perk in _activePerks) exitWith {
+if (_perk in _activePerks && _perk isNotEqualTo "") exitWith {
 	["STR_GAME_Error", "STR_GAME_AlreadyUsePerk", 5, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
 };
 
