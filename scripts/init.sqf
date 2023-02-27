@@ -4,6 +4,10 @@
     Master client initialization file
 */
 
+if (getPlayerUID player in deadPlayers) exitWith { //Prevents dead players from rejoining the game
+    failMission "Dead";
+};
+
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log "---------------------------------- Starting Intruders Client Init ----------------------------------";
 diag_log "----------------------------------------------------------------------------------------------------";

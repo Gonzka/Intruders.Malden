@@ -105,6 +105,15 @@ class CfgDebriefing {
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};
+	
+	class Dead {
+		title = "$STR_BRIEF_Dead";
+		subTitle = "$STR_BRIEF_AlreadyDied";
+		description = "";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {1.0,1.0,1.0,1};
+	};
 };
 
 class CfgHints {

@@ -12,10 +12,11 @@ private _switchLightRange = switch (worldName) do {
     [_x] remoteExec ["gonzka_fnc_generatorHoldAction", [0, -2] select isDedicated, _x];
 } forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5 , genericGen_6, genericGen_7];
 
-totalGenerators = 5; publicvariable "totalGenerators";
-repairedGenerators = []; publicvariable "repairedGenerators";
-intrudersWin = false; publicvariable "intrudersWin";
-endgameActivated = false; publicvariable "endgameActivated";
+totalGenerators = 5; publicVariable "totalGenerators";
+repairedGenerators = []; publicVariable "repairedGenerators";
+intrudersWin = false; publicVariable "intrudersWin";
+endgameActivated = false; publicVariable "endgameActivated";
+deadPlayers = []; publicVariable "deadPlayers";
 
 //CHESTS
 private _chestresult = []; 
@@ -42,7 +43,7 @@ private _chestgroups = [
     [_x] remoteExec ["gonzka_fnc_chestHoldAction", [0, -2] select isDedicated, _x];
 } forEach _chestresult;
 
-chestgroup = _chestresult; publicvariable "chestgroup";
+chestgroup = _chestresult; publicVariable "chestgroup";
 
 //TOTEMS
 private _totemResult = []; 
@@ -64,7 +65,7 @@ for "_i" from 0 to 4 do { //Select 5 Totems
     [_randSel] remoteExec ["gonzka_fnc_totemHoldAction", [0, -2] select isDedicated, _randSel];
 };
 
-totems = _totemResult; publicvariable "totems";
+totems = _totemResult; publicVariable "totems";
 
 //SEASONING
 seasons = [	

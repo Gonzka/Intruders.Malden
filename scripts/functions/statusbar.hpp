@@ -21,7 +21,7 @@ class statusBar
         };
 		
 		class Perks: RscPictureKeepAspect {
-            idc = -1;
+            idc = 4013;
             text = "textures\gui\hud_perks.paa";
             x = 0.76 * safezoneW + safezoneX;
             y = 0.6 * safezoneH + safezoneY;

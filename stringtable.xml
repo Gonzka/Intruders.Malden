@@ -587,6 +587,14 @@
 			<Original>You have returned to the lobby</Original>
 			<German>Du bist in die Lobby zurückgekehrt</German>
 		</Key>
+		<Key ID="STR_BRIEF_Dead">
+			<Original>You are dead</Original>
+			<German>Du bist tot</German>
+		</Key>
+		<Key ID="STR_BRIEF_AlreadyDied">
+			<Original>You have already died in this match</Original>
+			<German>Du bist in dieser Partie bereits gestorben</German>
+		</Key>
 	</Package>
 	<Package name="Hints">
 		<Key ID="STR_HINT_WendigoAbility">

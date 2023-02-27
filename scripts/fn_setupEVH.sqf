@@ -18,6 +18,8 @@ player addEventHandler ["Killed", {
 	["killed_1"] remoteExecCall ["playSound", [0, -2] select isDedicated];
 	["Initialize", [player, [civilian], false, true, true, true, true, false]] call BIS_fnc_EGSpectator;
 	
+	deadPlayers pushBackUnique getPlayerUID player; publicVariable "deadPlayers"; //Put the dead player's UID on a global list to prevent him from rejoining the game even though he has already died
+	
 	//QUEST
 	private _kills = Killer getVariable "quest_kills";
 	Killer setVariable ["quest_kills",_kills + 1,true];
