@@ -8,8 +8,10 @@ if !("smallGame" in (player getVariable "intruders_activePerks")) exitWith {};
 
 while {alive player} do {
     if (totems isEqualTo []) exitWith {};
+    //private _cleansedTotems = 5 - count totems;
+    //private _decreasedAngle = _cleansedTotems * 5;
     {
-        if (player distance _x <= 12 && {[position player, call gonzka_fnc_getCameraViewDir, 45, position _x] call BIS_fnc_inAngleSector}) exitWith {
+        if (player distance _x <= 12 && {[position player, call gonzka_fnc_getCameraViewDir, 45 /*- _decreasedAngle*/, position _x] call BIS_fnc_inAngleSector}) exitWith {
             playSound "premonition";
             ["STR_ITEM_SmallGame", "STR_GAME_SmallGameWarning", 5, "textures\ico_smallGame.paa"] spawn gonzka_fnc_notification;
             sleep 9.5;

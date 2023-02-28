@@ -56,7 +56,7 @@ switch (worldName) do {
 waitUntil {player getVariable ["isReady",false]};
 diag_log "[Intruders Client] Player has pressed play";
 
-["Einrichten des Clients"] spawn gonzka_fnc_loadingBar; // Start loading screen
+[localize "STR_INIT_ClientSetup"] spawn gonzka_fnc_loadingBar; // Start loading screen
 sleep 1;
 
 diag_log "[Intruders Client] Setting up Eventhandlers";

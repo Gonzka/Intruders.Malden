@@ -548,7 +548,7 @@ class RscButtonMenu : RscShortcutButton {
     };
     soundEnter[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundEnter",0.09,1};
     soundPush[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundPush",0.09,1};
-    soundClick[] = {"\A3\ui_f\data\sound\soundClick",0.09,1};
+    soundClick[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundClick",0.09,1};
     soundEscape[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",0.09,1};
     textureNoShortcut = "";
 };

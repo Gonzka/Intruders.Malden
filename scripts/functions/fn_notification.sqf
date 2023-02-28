@@ -25,7 +25,7 @@ if (isLocalized _text) then {
 	_text = localize _text;
 };
 
-_text = format["<t size='1.3' color='#B32121' font = 'PuristaBold' >%1</t><br/><t size='0.9' color='f9f9f0' font = 'PuristaMedium'>%2</t>",toUpper _title, _text];
+_text = format["<t size='1.3' color='#B32121' font = 'PuristaBold' >%1</t><br/><t size='0.9' font = 'PuristaMedium'>%2</t>",toUpper _title, _text];
 
 private _group = _display ctrlCreate ["RscStructuredText", -1];
 _group ctrlSetStructuredText parsetext _text;

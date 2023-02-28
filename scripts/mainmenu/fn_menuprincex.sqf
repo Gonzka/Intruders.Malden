@@ -19,8 +19,6 @@ if (playerSide isEqualTo east) then {
 	call gonzka_fnc_loadGear;
 };
 
-uiNamespace setVariable ["BeginStartBtnPushed",0];
-
 [] spawn gonzka_fnc_menuCinematic;
 
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0073) ctrlShow false;
@@ -48,7 +46,7 @@ uiNamespace setVariable ["BeginStartBtnPushed",0];
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0005) ctrlSetFade 0;
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0005) ctrlCommit 0;
 
-((uiNamespace getVariable "menuprincipal")displayCtrl 0083) buttonSetAction "playSound 'Click1'; uiNamespace setVariable ['BeginStartBtnPushed',1]; player setVariable ['isReady',true,true]; closedialog 0;";
+((uiNamespace getVariable "menuprincipal")displayCtrl 0083) buttonSetAction "playSound 'Click1'; player setVariable ['isReady',true,true]; closedialog 0;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0084) buttonSetAction "playSound 'Click1'; createDialog 'PerkMenu';";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0085) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_clothingMenu";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0086) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_questTerminal;";
@@ -58,7 +56,3 @@ uiNamespace setVariable ["BeginStartBtnPushed",0];
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0187) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_menucredits;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 0188) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_unfadebtn;";
 ((uiNamespace getVariable "menuprincipal")displayCtrl 1188) buttonSetAction "playSound 'Click1'; [] spawn gonzka_fnc_menucreditsuf;";
-
-waitUntil { 
-	if ((uiNamespace getVariable "BeginStartBtnPushed") isEqualTo 1) then { true; } else { false; }; 
-};
