@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.14.2&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.14.2&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.15.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.15.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -510,8 +510,12 @@
 			<German>Verdiene doppelte Blutpunkte in allen Partien!</German>
 		</Key>
 		<Key ID="STR_GAME_PremonitionWarning">
-			<Original>You are looking in the Killer's direction.</Original>
-			<German>Du schaust in die Richtung des Killers.</German>
+			<Original>You are looking towards the killer.</Original>
+			<German>Du schaust in Richtung des Killers.</German>
+		</Key>
+		<Key ID="STR_GAME_SmallGameWarning">
+			<Original>You are looking towards a totem.</Original>
+			<German>Du schaust in Richtung eines Totems.</German>
 		</Key>
 		<Key ID="STR_GAME_SprintBurstExhausted">
 			<Original>You are exhausted for 60 seconds and cannot sprint during that time.</Original>
@@ -970,8 +974,16 @@
 			<German>Vorwarnung</German>
 		</Key>
 		<Key ID="STR_ITEM_PremonitionDesc">
-			<Original>- Get an warning when looking in the direction of the Killer in a 45° cone within a range of 36 meters.\n\n- Premonition has a cool-down of 30 seconds each time it activates.</Original>
-			<German>- Erhalte eine Warnung, wenn du in einem 45 Grad-Kegel in die Richtung des Killers schaust, und zwar innerhalb einer Reichweite von 36 Metern.\n\n- Die Vorwarnung hat eine Abklingzeit von 30 Sekunden nach jeder Aktivierung.</German>
+			<Original>- Receive a warning upon looking in the Killer's direction in a 45° cone within 36 meters.\n\n- Premonition has a cool-down of 30 seconds each time it activates.</Original>
+			<German>- Erhalte eine Warnung, wenn du in einem 45 Grad-Kegel, innerhalb einer Reichweite von 36 Metern in die Richtung des Killers schaust.\n\n- Die Vorwarnung hat eine Abklingzeit von 30 Sekunden nach jeder Aktivierung.</German>
+		</Key>
+		<Key ID="STR_ITEM_SmallGame">
+			<Original>Small Game</Original>
+			<German>Niederwild</German>
+		</Key>
+		<Key ID="STR_ITEM_SmallGameDesc">
+			<Original>- Receive a warning upon looking in the direction of Totems in a 45° cone within 12 meters.\n\n- Small Game has a cool-down of 10 seconds each time it activates.</Original>
+			<German>- Erhalte eine Warnung, wenn du in einem 45 Grad-Kegel, innerhalb einer Reichweite von 12 Metern in die Richtung von Totems schaust.\n\n- Niederwild hat eine Abklingzeit von 10 Sekunden nach jeder Aktivierung.</German>
 		</Key>
 	</Package>
 	<Package name="Voicelines">

@@ -175,6 +175,16 @@ class VirtualItems {
 		released = true;
 	};
 	
+	class smallGame {
+		variable = "smallGame";
+		displayName = "STR_ITEM_SmallGame";
+		description = "STR_ITEM_SmallGameDesc";
+		icon = "textures\ico_smallGame.paa";
+		side = "CIV";
+		price = 15000;
+		released = true;
+	};
+	
 	class sprintBurst {
 		variable = "sprintBurst";
 		displayName = "STR_ITEM_SprintBurst";

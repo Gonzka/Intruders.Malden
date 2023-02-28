@@ -16,6 +16,7 @@ call gonzka_fnc_initCharacter;
 //PERKS
 call gonzka_fnc_plunderersInstinct;
 [] spawn gonzka_fnc_premonition;
+[] spawn gonzka_fnc_smallGame;
 
 if ("botanyKnowledge" in (player getVariable "intruders_activePerks")) then { //Survivor Perk Botany Knowledge
     player setUnitTrait ["Medic",true];

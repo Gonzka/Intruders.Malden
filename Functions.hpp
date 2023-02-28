@@ -67,6 +67,7 @@ class Intruders {
 		class auraNotification {};
 		class createFogParticles {};
 		class dammaged {};
+		class getCameraViewDir {};
 		class handleDamage {};
 		class jumpFnc {};
 		class loadingBar {};
@@ -139,6 +140,7 @@ class Intruders {
 		class plunderersInstinct {};
 		class premonition {};
 		class selectPerk {};
+		class smallGame {};
 		class sprintBurst {};
 		class updatePerkMenu {};
 		class updatePerkSlots {};
