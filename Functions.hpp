@@ -90,6 +90,7 @@ class Intruders {
 		class genActivate {};
 		class generatorHoldAction {};
 		class genFail {};
+		class genRegression {};
 		class skillCheckMenuCtrl {};
 		class sparkParticles {};
 	};
