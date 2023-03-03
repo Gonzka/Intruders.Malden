@@ -47,10 +47,14 @@ call gonzka_fnc_initCharacter;
 ["hex_retribution"] spawn gonzka_fnc_igniteHexTotem;
 
 //GEN MARKERS
-addMissionEventHandler ['Draw3D', {
+addMissionEventHandler ["Draw3D", {
 	{
-		if (!(_x in repairedGenerators) && !endgameActivated) then {
-			drawIcon3D [getMissionPath 'textures\gui\hud_generator.paa', [1,1,1,1], ASLToAGL getPosASL _x, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro'];
+		if (!(_x in repairedGenerators) && {!endgameActivated}) then {
+			if ("surveillance" in (player getVariable "intruders_activePerks") && {_x getVariable ["isRegressing", false]}) then {
+				drawIcon3D [getMissionPath "textures\gui\hud_generator.paa", [1,1,0,1], ASLToAGL getPosASL _x, 0.8, 0.8, 0]; //Yellow marker
+			} else {
+				drawIcon3D [getMissionPath "textures\gui\hud_generator.paa", [1,1,1,1], ASLToAGL getPosASL _x, 0.8, 0.8, 0];
+			};
 		};
 	} forEach generators;
 }];

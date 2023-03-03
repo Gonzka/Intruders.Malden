@@ -215,6 +215,16 @@ class VirtualItems {
 		released = true;
 	};
 	
+	class surveillance {
+		variable = "surveillance";
+		displayName = "STR_ITEM_Surveillance";
+		description = "STR_ITEM_SurveillanceDesc";
+		icon = "textures\ico_surveillance.paa";
+		side = "EAST";
+		price = 15000;
+		released = true;
+	};
+	
 	class technician {
 		variable = "technician";
 		displayName = "STR_ITEM_Technician";

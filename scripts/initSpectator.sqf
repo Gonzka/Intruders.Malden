@@ -30,10 +30,10 @@ openNotifications = [];
 [] spawn gonzka_fnc_statusbar; //Everything except the Perk GUI
 
 //As for the killer, all generators are marked
-addMissionEventHandler ['Draw3D', {
+addMissionEventHandler ["Draw3D", {
 	{
 		if (!(_x in repairedGenerators) && !endgameActivated) then {
-			drawIcon3D [getMissionPath 'textures\gui\hud_generator.paa', [1,1,1,1], ASLToAGL getPosASL _x, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro'];
+			drawIcon3D [getMissionPath "textures\gui\hud_generator.paa", [1,1,1,1], ASLToAGL getPosASL _x, 0.8, 0.8, 0];
 		};
 	} forEach generators;
 }];

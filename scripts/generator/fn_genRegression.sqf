@@ -32,8 +32,13 @@ while {_generator getVariable "duration" < _duration && isNull (_generator getVa
 	sleep 2;
 };
 
+//Regression was interrupted or the generator progress is fully reseted
+_generator setVariable ["isRegressing", false, true];
+
 if (_generator getVariable "duration" == _duration) then { //If the generator has no repair progress at all, the generator will light up red again
 	_generator setObjectTextureGlobal [1, "#(argb,8,8,3)color(1,0,0,1,ca)"];
+} else {
+	if ("surveillance" in (Killer getVariable "intruders_activePerks")) then { //Killer Perk
+		[_generator,"textures\gui\hud_generator.paa","",[1,0,0,1],16] remoteExec ["gonzka_fnc_auraNotification", 0/*east*/];
+	};
 };
-
-_generator setVariable ["isRegressing", false, true];

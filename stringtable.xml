@@ -1009,6 +1009,14 @@
 			<Original>- When you damage a generator, all Survivors within 24 meters of your position are revealed to you for 5 seconds.</Original>
 			<German>- Wenn du einen Generator beschädigst, werden alle Überlebenden in einem Umkreis von 24 Metern um dich herum für 5 Sekunden angezeigt.</German>
 		</Key>
+		<Key ID="STR_ITEM_Surveillance">
+			<Original>Surveillance</Original>
+			<German>Überwachung</German>
+		</Key>
+		<Key ID="STR_ITEM_SurveillanceDesc">
+			<Original>- The markers of regressing Generators are highlighted in yellow.\n\n- If the Regression progress is interrupted on a Generator, its marker will be highlighted in red for 16 seconds.</Original>
+			<German>- Alle zurückgehenden Generatoren werden mit einer gelben Markierung hervorgehoben.\n\n- Bei einer Unterbrechung des Rückgangs wird der jeweilige Generator für 16 Sekunden mit einer roten Markierung hervorgehoben.</German>
+		</Key>
 	</Package>
 	<Package name="Voicelines">
 		<Key ID="STR_VL_Helmut1">
