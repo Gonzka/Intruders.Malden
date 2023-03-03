@@ -129,6 +129,7 @@ class Intruders {
 	
 	class perks {
 		file = "scripts\perks";
+		class alert {};
 		class bitterMurmur {};
 		class boobyTrap {};
 		class counterforce {};
@@ -138,6 +139,7 @@ class Intruders {
 		class hope {};
 		class jamAndBanana {};
 		class lethalPursuer {};
+		class nowhereToHide {};
 		class plunderersInstinct {};
 		class premonition {};
 		class selectPerk {};

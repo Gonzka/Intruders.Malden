@@ -28,8 +28,9 @@ if (_location isKindOf "CAManBase") then {
 	};
 };
 
-call compile format ["
-    _eventHandlerId = addMissionEventHandler ['Draw3D', {drawIcon3D [getMissionPath '%2', %4, ASLToAGL getPosASL (objectFromNetId '%1'), 0.8, 0.8, 0, '%3', 1, 0.0315, 'EtelkaMonospacePro', 'center', true];}];
-    sleep %5;
-    removeMissionEventHandler ['Draw3D', _eventHandlerId];
-", netId _location, _icon, toUpper localize _message, _color, _duration];
+private _eventHandlerId = call compile format ["
+	addMissionEventHandler ['Draw3D', {drawIcon3D [getMissionPath '%2', %4, ASLToAGL getPosASL (objectFromNetId '%1'), 0.8, 0.8, 0, '%3', 1, 0.0315, 'EtelkaMonospacePro', 'center', true];}];
+", netId _location, _icon, toUpper localize _message, _color];
+
+sleep _duration;
+removeMissionEventHandler ["Draw3D", _eventHandlerId];

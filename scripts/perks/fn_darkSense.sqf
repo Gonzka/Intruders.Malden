@@ -6,10 +6,9 @@
 
 if !("darkSense" in (player getVariable "intruders_activePerks")) exitWith {};
 
-private _duration = 5;
+if (darkSenseTriggered) exitWith {}; //Since the effect of the perk cannot be stacked, the perk does not need to be executed twice
+darkSenseTriggered = true;
 
-if (count repairedGenerators isEqualTo totalGenerators) then {
-    _duration = 10;
-};
-
-[Killer,"","",[1,1,1,1],_duration] spawn gonzka_fnc_auraNotification;
+waitUntil {player distance Killer <= 24 && !(Killer getVariable ["undetectable", false]) && !(player getVariable ["oblivious", false])};
+[Killer,"","",[1,1,1,1],10] spawn gonzka_fnc_auraNotification;
+darkSenseTriggered = false;

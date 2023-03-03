@@ -13,8 +13,8 @@ params [
 	localize "STR_GAME_ResetTrap",
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
-	"_this distance _target < 2 && _target animationPhase 'door_1' isEqualTo 1 && isNull attachedTo _target",
-	"_this distance _target < 2 && _target animationPhase 'door_1' isEqualTo 1 && isNull attachedTo _target",
+	"_this distance _target < 2 && {_target animationPhase 'door_1' isEqualTo 1} && {isNull attachedTo _target}",
+	"_this distance _target < 2 && {_target animationPhase 'door_1' isEqualTo 1} && {isNull attachedTo _target}",
 	{
 		player switchMove "AinvPknlMstpSlayWrflDnon";
 		player playMoveNow "AinvPknlMstpSlayWrflDnon";

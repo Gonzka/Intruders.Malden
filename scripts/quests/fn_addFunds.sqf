@@ -9,6 +9,8 @@ params [
 	["_funds", 0, [0]]
 ];
 
+if (_funds isEqualTo 0) exitWith {};
+
 private _fortune = player getVariable "bloodPoints";
 _fortune = _fortune + _funds;
 player setVariable ["bloodPoints",_fortune,true];

@@ -97,7 +97,7 @@ chopWeapon = {
 	
 	if (quest_hit_openTimeSlot) then {
 		quest_uncloakingHit = quest_uncloakingHit + 1;
-		["STR_SCORE_SurpriseAttack",300] call gonzka_fnc_addFunds;
+		["STR_SCORE_SurpriseAttack",350] call gonzka_fnc_addFunds;
 	} else {
 		["STR_SCORE_Hit",200] call gonzka_fnc_addFunds;
 	};

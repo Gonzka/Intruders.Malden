@@ -13,8 +13,8 @@ private _actionID = [
     localize "STR_GAME_Chest",  
     "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_requestLeadership_ca.paa",  
     "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_requestLeadership_ca.paa", 
-    "_this distance _target < 2 && side _this != east && !(_target getVariable ['looted', false])",
-    "_this distance _target < 2 && side _this != east",
+    "_this distance _target < 2 && {!(_target getVariable ['looted', false])} && {side _this != east}",
+    "_this distance _target < 2 && {!(_target getVariable ['looted', false])}",
     {	
         playSound3D ["a3\sounds_f\sfx\objects\upload_terminal\terminal_lock_close.wss", _target, false, getPosASL _target, 4, 1, 20];
         player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";

@@ -47,8 +47,8 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 	localize "STR_SCORE_Heal",
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa",
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa",
-	"_this distance _target < 2 && side _this != east && _this != _target && damage _target > 0 && !(_target getVariable ['BIS_revive_incapacitated', false]) && alive _target",
-	"_this distance _target < 2 && side _this != east && _this != _target && damage _target > 0 && !(_target getVariable ['BIS_revive_incapacitated', false]) && alive _target",
+	"_this distance _target < 2 && {damage _target > 0} && {!(_target getVariable ['BIS_revive_incapacitated', false])} && {alive _target} && {side _this != east} && {_this != _target}",
+	"_this distance _target < 2 && {damage _target > 0} && {!(_target getVariable ['BIS_revive_incapacitated', false])} && {alive _target}",
 	{
 		_caller playMoveNow "AinvPknlMstpSlayWpstDnon_medicOther";
 	},
@@ -77,26 +77,26 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 	localize "STR_GAME_Destroy",
 	"\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\destroy_ca.paa",
 	"\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\destroy_ca.paa",
-	"count (nearestObjects [player, ['Intruders_Object_Palett'], 3]) > 0 && ((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 1 && side _this isEqualTo east",
-	"count (nearestObjects [player, ['Intruders_Object_Palett'], 3]) > 0 && ((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 1 && side _this isEqualTo east",
-	{
-		blockMainWeapon = true; 
-	},
+	"count (nearestObjects [player, ['Intruders_Object_Palett'], 3]) > 0 && {((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 1} && {side _this isEqualTo east}",
+	"",
+	{},
 	{},
 	{
 		private _nearestPaletts = nearestObjects [player, ["Intruders_Object_Palett"], 3];
 		if !(_nearestPaletts isEqualTo []) then {
-			player playAction "GestureSwing";
-			[player, selectRandom ["weaponSwing_1","weaponSwing_2","weaponSwing_3","weaponSwing_4","weaponSwing_5","weaponSwing_6","weaponSwing_7"]] remoteExecCall ["say3D"];
+			deleteVehicle _palett;
 			
 			private _palett = _nearestPaletts select 0;
 			private _soundSrc = "Land_HelipadEmpty_F" createVehicle getPos _palett;			
 			
 			[_soundSrc, selectRandom ["palletBreak_1", "palletBreak_2", "palletBreak_3"]] remoteExecCall ["say3D"];
 			
-			deleteVehicle _palett;
-			blockMainWeapon = false;
+			player playAction "GestureSwing";
+			[player, selectRandom ["weaponSwing_1","weaponSwing_2","weaponSwing_3","weaponSwing_4","weaponSwing_5","weaponSwing_6","weaponSwing_7"]] remoteExecCall ["say3D"];
+			
 			["STR_SCORE_Destruction",100] call gonzka_fnc_addFunds;
+
+			[] remoteExecCall ["gonzka_fnc_alert", civilian]; //Survivor Perk
 			
 			[_soundSrc] spawn {
 				sleep 1.5;
@@ -104,9 +104,7 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 			};
 		};
 	},
-	{
-		blockMainWeapon = false;
-	},
+	{},
 	[],
 	2,
 	nil,
@@ -120,8 +118,8 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 	localize "STR_GAME_PullDown",
 	"\a3\data_f_destroyer\data\UI\IGUI\Cfg\holdactions\holdAction_loadVehicle_ca.paa",
 	"\a3\data_f_destroyer\data\UI\IGUI\Cfg\holdactions\holdAction_loadVehicle_ca.paa",
-	"count (nearestObjects [player, ['Intruders_Object_Palett'], 3]) > 0 && ((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 0 && side _this isEqualTo civilian",
-	"count (nearestObjects [player, ['Intruders_Object_Palett'], 3]) > 0 && ((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 0 && side _this isEqualTo civilian",
+	"count (nearestObjects [player, ['Intruders_Object_Palett'], 3]) > 0 && {((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 0} && {side _this isEqualTo civilian}",
+	"((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 0",
 	{},
 	{},
 	{
@@ -136,7 +134,7 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 				if (Killer distance _x < 2) then {
 					[] remoteExec ["gonzka_fnc_palettStun",Killer];
 					
-					["STR_SCORE_Stun",250] remoteExecCall ["gonzka_fnc_addFunds",player];
+					["STR_SCORE_Stun",1000] remoteExecCall ["gonzka_fnc_addFunds",player];
 
 					//QUEST
 					private _stuns = player getVariable "quest_stuns";

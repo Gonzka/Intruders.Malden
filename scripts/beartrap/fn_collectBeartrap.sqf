@@ -13,8 +13,8 @@ params [
 	localize "STR_GAME_CollectTrap",
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
-	"_this distance _target < 2 && isNull attachedTo _target",
-	"_this distance _target < 2 && isNull attachedTo _target",
+	"_this distance _target < 2 && {isNull attachedTo _target}",
+	"_this distance _target < 2 && {isNull attachedTo _target}",
 	{
 		player switchMove "AinvPknlMstpSlayWrflDnon";
 		player playMoveNow "AinvPknlMstpSlayWrflDnon";

@@ -70,7 +70,7 @@ if !(player getVariable ["isCloaked", false]) then {
 	//QUEST
 	[] spawn {
 		quest_hit_openTimeSlot = true;
-		sleep 4;
+		sleep 5;
 		quest_hit_openTimeSlot = false;
 	};
 	

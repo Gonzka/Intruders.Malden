@@ -13,8 +13,8 @@ params [
 	localize "STR_GAME_DisarmTrap",
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa",
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa",
-	"_this distance _target < 2 && _target animationPhase 'door_1' isEqualTo 0",
-	"_this distance _target < 2 && _target animationPhase 'door_1' isEqualTo 0",
+	"_this distance _target < 2 && {_target animationPhase 'door_1' isEqualTo 0}",
+	"_this distance _target < 2 && {_target animationPhase 'door_1' isEqualTo 0}",
 	{},
 	{},
 	{

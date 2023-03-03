@@ -5,6 +5,16 @@ class VirtualItems {
 	
 	featuredItem = "sprintBurst";
 	
+	class alert {
+		variable = "alert";
+		displayName = "STR_ITEM_Alert";
+		description = "STR_ITEM_AlertDesc";
+		icon = "textures\ico_alert.paa";
+		side = "CIV";
+		price = 15000;
+		released = true;
+	};
+	
 	class armageddon {
 		variable = "armageddon";
 		displayName = "STR_ITEM_Armageddon";
@@ -145,11 +155,21 @@ class VirtualItems {
 		released = true;
 	};
 	
-	class lethalPursuer  {
+	class lethalPursuer {
 		variable = "lethalPursuer";
 		displayName = "STR_ITEM_LethalPursuer";
 		description = "STR_ITEM_LethalPursuerDesc";
 		icon = "textures\ico_lethalPursuer.paa";
+		side = "EAST";
+		price = 15000;
+		released = true;
+	};
+	
+	class nowhereToHide {
+		variable = "nowhereToHide";
+		displayName = "STR_ITEM_NowhereToHide";
+		description = "STR_ITEM_NowhereToHideDesc";
+		icon = "textures\ico_nowhereToHide.paa";
 		side = "EAST";
 		price = 15000;
 		released = true;

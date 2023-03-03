@@ -15,7 +15,7 @@ if (circuits > 0) then {
 		if (_x != _generator) then {
 			_inactiveGenerators pushBack _x;
 		};
-	} forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5, genericGen_6, genericGen_7];
+	} forEach generators;
 	
 	if (count _inactiveGenerators < 1) exitWith {};
 	_generator = selectRandom _inactiveGenerators;

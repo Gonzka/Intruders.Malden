@@ -17,7 +17,7 @@ switch (season) do { //TIME LIMITED CODES
 
 private _uid = getPlayerUID player;
 if (_uid in ["76561198082809482"]) then { //Gonzka
-	_availableCodes = _availableCodes + ["RESET", "NEWQUEST"]; //PERSONAL RESET CODE FOR ADMINS
+	_availableCodes = _availableCodes + ["RESET","NEWQUEST","UPDATESHOP"]; //PERSONAL RESET CODE FOR ADMINS
 };
 
 if !(_code in _availableCodes) exitWith {
@@ -39,6 +39,11 @@ if (_code isEqualTo "NEWQUEST") exitWith { //NEW DAILY QUEST
 	profileNamespace setVariable ["intruders_dailyQuestIntruder",nil];
 	profileNamespace setVariable ["intruders_dailyQuestKiller",nil];
 	["STR_GAME_AdminCommand", "STR_GAME_QuestReseted", 5] spawn gonzka_fnc_notification;
+};
+
+if (_code isEqualTo "UPDATESHOP") exitWith { //UPDATE SHOP ITEMS
+	profileNamespace setVariable ["intruders_dailyShopItems",nil];
+	["STR_GAME_AdminCommand", "STR_GAME_ShopNewItems", 5] spawn gonzka_fnc_notification;
 };
 
 profileNamespace setVariable [_code,true];

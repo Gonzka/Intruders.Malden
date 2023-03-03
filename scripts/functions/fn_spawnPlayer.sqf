@@ -127,5 +127,5 @@ sleep 1;
 if (playerSide isEqualTo east) then {
     call gonzka_fnc_lethalPursuer;
 } else {
-    call gonzka_fnc_dejaVu;
+    [] spawn gonzka_fnc_dejaVu;
 };

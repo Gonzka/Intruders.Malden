@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.15.0&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.15.0&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.16.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.16.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -316,6 +316,10 @@
 		<Key ID="STR_GAME_PullDown">
 			<Original>Pull down</Original>
 			<German>Umstossen</German>
+		</Key>
+		<Key ID="STR_GAME_Damage">
+			<Original>Damage</Original>
+			<German>Beschädigen</German>
 		</Key>
 		<Key ID="STR_GAME_LockpickRotate">
 			<Original>Rotate the lock</Original>
@@ -639,9 +643,9 @@
 			<Original>Chest Unlocked</Original>
 			<German>Kiste durchsucht</German>
 		</Key>
-		<Key ID="STR_SCORE_Generator">
-			<Original>Generator Repaired</Original>
-			<German>Generator repariert</German>
+		<Key ID="STR_SCORE_Repairs">
+			<Original>Repairs</Original>
+			<German>Reparaturen</German>
 		</Key>
 		<Key ID="STR_SCORE_SkillCheck">
 			<Original>Successful Skill Check</Original>
@@ -722,6 +726,10 @@
 		<Key ID="STR_SCORE_Destruction">
 			<Original>Destruction</Original>
 			<German>Zerstörung</German>
+		</Key>
+		<Key ID="STR_SCORE_DamageGenerator">
+			<Original>Damage Generator</Original>
+			<German>Generator beschädigen</German>
 		</Key>
 		<Key ID="STR_SCORE_Bonus">
 			<Original>Bonus</Original>
@@ -830,16 +838,16 @@
 			<German>Dunkle Wahrnehmung</German>
 		</Key>
 		<Key ID="STR_ITEM_DarkSenseDesc">
-			<Original>- Each time a Generator is completed, the Killer's Position is revealed to you for 5 seconds and for 10 seconds when the last Generator is completed.</Original>
-			<German>- Jedes Mal, wenn ein Generator repariert worden ist, wird dir die Position des Killers für 5 Sekunden angezeigt.\n\n- Wenn der letzte Generator mit Energie versorgt ist, wird dir die Position des Killers für 10 Sekunden angezeigt.</German>
+			<Original>- Each time a Generator is completed, the position of the Killer is revealed to you for 10 seconds, as soon as he come within 24 meters of you.</Original>
+			<German>- Jedes Mal, wenn ein Generator fertiggestellt wird, wird dir 10 Sekunden lang die Position des Killers angezeigt, wenn er sich dir auf 24 Meter nähert.</German>
 		</Key>
 		<Key ID="STR_ITEM_HexRuin">
 			<Original>Hex: Ruin </Original>
 			<German>Fluch: Ruin</German>
 		</Key>
 		<Key ID="STR_ITEM_HexRuinDesc">
-			<Original>- All Generators regress whenever they are not being repaired.\n\n- The Hex effects persist as long as the related Hex Totem is standing.</Original>
-			<German>- Wird ein Generator nicht von einem Überlebenden repariert, beginnt sofort ein Reparatur-Rückgang.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
+			<Original>- Whenever a Generator is not being repaired by a Survivor, it will immediately and automatically regress its Repair progress at 100 % of the normal Regression speed.\n\n- The Hex effects persist as long as the related Hex Totem is standing.</Original>
+			<German>- Wird ein Generator nicht von einem Überlebenden repariert, beginnt sofort und automatisch ein Reparatur-Rückgang mit 100 % der normalen Rückgangsgeschwindigkeit.\n\n- Die Flucheffekte bleiben bestehen, solange das entsprechende Fluchtotem existiert.</German>
 		</Key>
 		<Key ID="STR_ITEM_BotanyKnowledge">
 			<Original>Botany Knowledge </Original>
@@ -862,8 +870,8 @@
 			<German>Déjà-Vu-Erlebnis</German>
 		</Key>
 		<Key ID="STR_ITEM_DejaVuDesc">
-			<Original>- The Position of 3 Generators in closest proximity to one another are revealed to you for 30 seconds at the start of the Match.</Original>
-			<German>- Die Position von 3 Generatoren, die nah beieinander stehen, werden dir zu Beginn der Partie 30 Sekunden lang angezeigt.</German>
+			<Original>- 3 Generators in closest proximity to one another are revealed to you for 60 seconds at the start of the match, and each time a Generator is completed.</Original>
+			<German>- 3 Generatoren, die nah beieinander stehen, werden dir zu Beginn der Partie und jedes Mal, wenn ein Generator vollständig repariert wurde, 60 Sekunden lang angezeigt.</German>
 		</Key>
 		<Key ID="STR_ITEM_Unrelenting">
 			<Original>Unrelenting</Original>
@@ -984,6 +992,22 @@
 		<Key ID="STR_ITEM_SmallGameDesc">
 			<Original>- Receive a warning upon looking in the direction of Totems in a 45° cone within 12 meters.\n\n- Small Game has a cool-down of 10 seconds each time it activates.</Original>
 			<German>- Erhalte eine Warnung, wenn du in einem 45 Grad-Kegel, innerhalb einer Reichweite von 12 Metern in die Richtung von Totems schaust.\n\n- Niederwild hat eine Abklingzeit von 10 Sekunden nach jeder Aktivierung.</German>
+		</Key>
+		<Key ID="STR_ITEM_Alert">
+			<Original>Alert</Original>
+			<German>Wachsam</German>
+		</Key>
+		<Key ID="STR_ITEM_AlertDesc">
+			<Original>- Whenever the Killer destroys a Pallet, or damages a Generator, his position is revealed to you for 5 seconds.</Original>
+			<German>- Du siehst die Position des Killers für 5 Sekunden, wenn er einen Generator beschädigt oder eine Palette zerstört.</German>
+		</Key>
+		<Key ID="STR_ITEM_NowhereToHide">
+			<Original>Nowhere to hide</Original>
+			<German>Keine Versteckmöglichkeit</German>
+		</Key>
+		<Key ID="STR_ITEM_NowhereToHideDesc">
+			<Original>- When you damage a generator, all Survivors within 24 meters of your position are revealed to you for 5 seconds.</Original>
+			<German>- Wenn du einen Generator beschädigst, werden alle Überlebenden in einem Umkreis von 24 Metern um dich herum für 5 Sekunden angezeigt.</German>
 		</Key>
 	</Package>
 	<Package name="Voicelines">
@@ -1204,6 +1228,10 @@
 		<Key ID="STR_SKIN_HolidaySweater">
 			<Original>Holiday Sweater</Original>
 			<German>Weihnachtspullover</German>
+		</Key>
+		<Key ID="STR_SKIN_HolidaySweaterLore">
+			<Original>You should prepare yourself for the worst in the next match!</Original>
+			<German>Für die nächste Partie solltest du dich warm anziehen!</German>
 		</Key>
 		<Key ID="STR_SKIN_CodeHolidaySweater">
 			<Original>You have unlocked a Holiday Sweater.</Original>

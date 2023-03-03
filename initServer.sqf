@@ -1,6 +1,7 @@
 //GENERAL VARS
 setTimeMultiplier 0.1;
 
+generators = [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5 , genericGen_6, genericGen_7];
 private _switchLightRange = switch (worldName) do {
     case "Tanoa": {7};
     case "Malden": {31};
@@ -10,7 +11,7 @@ private _switchLightRange = switch (worldName) do {
 {
     {[_x, "OFF"] remoteExec ["switchLight",0,true]} forEach (nearestObjects [_x, [], _switchLightRange]);
     [_x] remoteExec ["gonzka_fnc_generatorHoldAction", [0, -2] select isDedicated, _x];
-} forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5 , genericGen_6, genericGen_7];
+} forEach generators;
 
 totalGenerators = 5; publicVariable "totalGenerators";
 repairedGenerators = []; publicVariable "repairedGenerators";

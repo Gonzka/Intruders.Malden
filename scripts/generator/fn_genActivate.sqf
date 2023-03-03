@@ -38,10 +38,9 @@ if (count repairedGenerators isEqualTo totalGenerators) then {
 	};
 };
 
-["STR_SCORE_Generator",1000] call gonzka_fnc_addFunds;
-
 //PERKS
-[] remoteExecCall ["gonzka_fnc_darkSense",civilian];
+[] remoteExec ["gonzka_fnc_darkSense",civilian];
+[] remoteExec ["gonzka_fnc_dejaVu",civilian];
 [_generator] remoteExecCall ["gonzka_fnc_bitterMurmur",east];
 
 //QUEST

@@ -25,7 +25,7 @@ class Clothing {
 				
 				{ "U_I_L_Uniform_01_tshirt_olive_F", $STR_SKIN_Harvester, $STR_SKIN_HarvesterLore, "", "playerSide isEqualTo civilian" },
 				
-				{ "U_BG_Guerrilla_6_1", $STR_SKIN_HolidaySweater, "", "", "playerSide isEqualTo civilian && profileNamespace getVariable ['HOLIDAYSWEATER',false]" }, //CODE - RESKIN
+				{ "U_BG_Guerrilla_6_1", $STR_SKIN_HolidaySweater, $STR_SKIN_HolidaySweaterLore, "", "playerSide isEqualTo civilian && profileNamespace getVariable ['HOLIDAYSWEATER',false]" }, //CODE - RESKIN
 				{ "U_C_Poloshirt_salmon", $STR_SKIN_SpookyScarySkeleton, $STR_SKIN_SpookyScarySkeletonLore, "", "playerSide isEqualTo civilian && profileNamespace getVariable ['TRICKORTREAT',false]" }, //CODE - RESKIN
 				
 				/*{ "U_B_GEN_Commander_F", $STR_SKIN_Gendarme, "", "", "playerSide isEqualTo civilian" },

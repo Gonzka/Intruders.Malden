@@ -13,8 +13,8 @@ params [
 	localize "STR_GAME_CleanseTotem",  
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",  
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa", 
-	"_this distance _target < 3 && side _this != east && !isObjectHidden _target",
-	"_this distance _target < 3 && side _this != east && !isObjectHidden _target",
+	"_this distance _target < 3 && {!isObjectHidden _target} && {side _this != east}",
+	"_this distance _target < 3 && {!isObjectHidden _target}",
 	{
 		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	},

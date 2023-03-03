@@ -37,7 +37,7 @@ switch (season) do {
 				_controller attachTo [_generator, [-0.3,-0.12,0.77]];
 				_controller setDir 40;
 			};
-		} forEach [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5, genericGen_6, genericGen_7];
+		} forEach generators;
 	};
 	
 	case "Winter": {
