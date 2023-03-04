@@ -44,14 +44,14 @@ private _actionID = [
 		[] spawn gonzka_fnc_genActivate;
 		[_caller, ""] remoteExec ["switchMove"];
 
-		["STR_SCORE_Repairs", round(repairTime * 20.83)] call gonzka_fnc_addFunds; repairTime = 0; //Score
+		["STR_SCORE_Repairs", round(repairTime * 20.83)] call gonzka_fnc_addBloodpoints; repairTime = 0; //Score
 	},
 	{
 		[_target, _target getVariable "duration"] remoteExecCall ["gonzka_fnc_setHoldActionDuration", [0, -2] select isDedicated];
 		_target setVariable ["isRepairedBy", objNull, true];
 		[_caller, ""] remoteExec ["switchMove"];
 		
-		["STR_SCORE_Repairs", round(repairTime * 20.83)] call gonzka_fnc_addFunds; repairTime = 0; //Score
+		["STR_SCORE_Repairs", round(repairTime * 20.83)] call gonzka_fnc_addBloodpoints; repairTime = 0; //Score
 		
 		if (!isNil "totem_hex_ruin" && {!isObjectHidden totem_hex_ruin}) then { //Ruin Killer Perk (Hex)
 			[_target, 1, true] spawn gonzka_fnc_genRegression;
@@ -81,7 +81,7 @@ _generator setVariable ["actionID", _actionID, true];
 		[_target] spawn gonzka_fnc_genRegression;
 		
 		playSound3D [selectRandom ["a3\sounds_f\vehicles\crashes\cars\quadbike_crash_default_1.wss", "a3\sounds_f\vehicles\crashes\cars\quadbike_crash_default_2.wss", "a3\sounds_f\vehicles\crashes\cars\quadbike_crash_default_3.wss", "a3\sounds_f\vehicles\crashes\cars\quadbike_crash_default_4.wss"], _target, false, getPosASL _target, 5, 1, 40];
-		["STR_SCORE_DamageGenerator",100] call gonzka_fnc_addFunds;
+		["STR_SCORE_DamageGenerator",100] call gonzka_fnc_addBloodpoints;
 		
 		player playAction "GestureSwing";
 		[player, selectRandom ["weaponSwing_1","weaponSwing_2","weaponSwing_3","weaponSwing_4","weaponSwing_5","weaponSwing_6","weaponSwing_7"]] remoteExecCall ["say3D"];

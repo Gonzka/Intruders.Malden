@@ -85,9 +85,11 @@ private _randomPoint = selectRandom _spawnPoints;
 player setPos getMarkerPos (_randomPoint select 0);
 player setDir (random 360);
 
+[] spawn gonzka_fnc_createFogParticles;
+
 //SPAWN CAMERA SEQUENCE
+call gonzka_fnc_spawnAnimation;
 playMusic selectRandom ["EventTrack02_F_EPB", "EventTrack01a_F_EPB", "EventTrack02a_F_EPB"]; //"EventTrack03_F_EPB", "EventTrack03a_F_EPB", "Music_Intro_02_MissionStart", "Music_Freeroam_01_MissionStart"
-//setMusicEventHandler ["MusicStop", "[] spawn gonzka_fnc_terrorMusic; removeMusicEventHandler ['MusicStop', _thisEventHandler];"];
 
 private _camera = "camera" camcreate (position player);
 _camera cameraeffect ["internal","back"];

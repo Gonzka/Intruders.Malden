@@ -29,7 +29,7 @@ params [
 		
 		[_target] remoteExec ["gonzka_fnc_stepInBeartrap",civilian];
 		
-		["STR_SCORE_SetTrap",100] call gonzka_fnc_addFunds;
+		["STR_SCORE_SetTrap",100] call gonzka_fnc_addBloodpoints;
 	},
 	{},
 	[],

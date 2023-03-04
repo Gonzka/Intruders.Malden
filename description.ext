@@ -38,9 +38,9 @@ class cfgFunctions {
 #include "defines.hpp"
 #include "scripts\mainmenu\menuprinc.hpp"
 #include "scripts\quests\questTerminal.hpp"
-#include "scripts\items\redeemCode.hpp"
-#include "scripts\perks\perkMenu.hpp"
+#include "scripts\shop\redeemCode.hpp"
 #include "scripts\shop\shopMenu.hpp"
+#include "scripts\perkmenu\perkMenu.hpp"
 #include "scripts\clothing\clothing.hpp"
 #include "scripts\killer\selectKillerMenu.hpp"
 

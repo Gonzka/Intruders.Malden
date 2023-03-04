@@ -97,9 +97,9 @@ chopWeapon = {
 	
 	if (quest_hit_openTimeSlot) then {
 		quest_uncloakingHit = quest_uncloakingHit + 1;
-		["STR_SCORE_SurpriseAttack",350] call gonzka_fnc_addFunds;
+		["STR_SCORE_SurpriseAttack",350] call gonzka_fnc_addBloodpoints;
 	} else {
-		["STR_SCORE_Hit",200] call gonzka_fnc_addFunds;
+		["STR_SCORE_Hit",200] call gonzka_fnc_addBloodpoints;
 	};
 	
 	[_tar] call gonzka_fnc_scream; //SURVIVOR SCREAM

@@ -5,8 +5,6 @@
 */
 
 waitUntil {!(isNull (findDisplay 46))};
-
-player enableStamina false;
 player allowSprint true;
 player setAnimSpeedCoef 1.15;
 
@@ -34,9 +32,7 @@ call initWeapon;
 
 player selectWeapon secondaryWeapon player;
 
-call gonzka_fnc_initCharacter;
 [] spawn gonzka_fnc_spawnPlayer;
-[] spawn gonzka_fnc_createFogParticles;
 [] spawn gonzka_fnc_onlyFirstPerson;
 
 //PERKS

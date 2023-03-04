@@ -14,7 +14,7 @@ if (isNull _unit || isNull _shooter) exitWith {knockout = false;};
 if (!knockout) then {
 	knockout = true;
 	
-	["STR_SCORE_Stun",1000] remoteExecCall ["gonzka_fnc_addFunds",_shooter];
+	["STR_SCORE_Stun",1000] remoteExecCall ["gonzka_fnc_addBloodpoints",_shooter];
 	
 	//QUEST
 	private _stuns = _shooter getVariable "quest_stuns";

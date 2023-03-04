@@ -5,19 +5,8 @@ class Intruders {
 		file = "scripts";
 		class initKiller {};
 		class initSurvivor {};
-		class keyHandler {};
 		class setupActions {};
 		class setupEVH {};
-	};
-	
-	class abilities {
-		file = "scripts\abilities";
-		class cloak {};
-		class cloakParticles {};
-		class cloakTransition {};
-		class knockedOut {};
-		class portalBlastWave {};
-		class travelThroughPortal {};
 	};
 	
 	class beartrap {
@@ -30,12 +19,6 @@ class Intruders {
 		class resetBeartrap {};
 		class setBeartrap {};
 		class stepInBeartrap {};
-	};
-	
-	class characters {
-		file = "scripts\characters";
-		class initCharacter {};
-		class initCustomVoicelines {};
 	};
 	
 	class clothing {
@@ -70,15 +53,14 @@ class Intruders {
 		class getCameraViewDir {};
 		class handleDamage {};
 		class jumpFnc {};
+		class keyHandler {};
 		class loadingBar {};
 		class notification {};
 		class numberText {};
 		class onFired {};
 		class playerSkins {};
 		class scream {};
-		class selfHeal {};
 		class setHoldActionDuration {};
-		class spawnPlayer {};
 		class statusbar {};
 		class statusbarPlayers {};
 		class waterIsLava {};
@@ -99,20 +81,25 @@ class Intruders {
 		file = "scripts\items";
 		class chestHoldAction {};
 		class firecracker {};
+		class firstAidKit {};
 		class flashbang {};
 		class openChest {};
-		class redeemCode {};
+		class rifleStun {};
 		class smokeBomb {};
 		class vitalCapsule {};
 	};
 	
 	class killer {
 		file = "scripts\killer";
+		class cloak {};
+		class cloakParticles {};
+		class cloakTransition {};
 		class onlyFirstPerson {};
 		class palettStun {};
+		class portalBlastWave {};
 		class selectKiller {};
-		class terrorMusic {};
 		class terrorRadius {};
+		class travelThroughPortal {};
 		class weapon {};
 	};
 	
@@ -125,6 +112,13 @@ class Intruders {
 		class menucreditsuf {};
 		class menuprincex {};
 		class unfadebtn {};
+	};
+	
+	class perkmenu {
+		file = "scripts\perkmenu";
+		class selectPerk {};
+		class updatePerkMenu {};
+		class updatePerkSlots {};
 	};
 	
 	class perks {
@@ -142,17 +136,13 @@ class Intruders {
 		class nowhereToHide {};
 		class plunderersInstinct {};
 		class premonition {};
-		class selectPerk {};
 		class smallGame {};
 		class sprintBurst {};
-		class updatePerkMenu {};
-		class updatePerkSlots {};
 		class whispers {};
 	};
 	
 	class quests {
 		file = "scripts\quests";
-		class addFunds {};
 		class initQuest {};
 		class questSuccess {};
 		class questTerminal {};
@@ -171,9 +161,18 @@ class Intruders {
 	
 	class shop {
 		file = "scripts\shop";
+		class addBloodpoints {};
 		class addPerk {};
 		class buyShopItem {};
+		class redeemCode {};
 		class updateShopMenu {};
+	};
+	
+	class start {
+		file = "scripts\start";
+		class setVoicelines {};
+		class spawnAnimation {};
+		class spawnPlayer {};
 	};
 	
 	class totems {

@@ -29,7 +29,7 @@ trapDir = getDir _trap;
 [player,"Acts_Injured_Driver_Loop"] remoteExec ["switchMove"];
 _trap attachTo [player, [0,0,0], "RightFoot", true];
 
-["STR_SCORE_Trapped",1000] remoteExecCall ["gonzka_fnc_addFunds",east];
+["STR_SCORE_Trapped",1000] remoteExecCall ["gonzka_fnc_addBloodpoints",east];
 
 [player] call gonzka_fnc_scream; //SURVIVOR SCREAM
 

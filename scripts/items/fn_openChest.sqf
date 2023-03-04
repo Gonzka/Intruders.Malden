@@ -84,7 +84,7 @@ if (_exit) exitWith {
 [format ["<img image='textures\ico_%1.paa' size = '1.2'/> +%2",_item,_amount] + "</t>",-1,-1,2,0.3,-0.3,1338] spawn bis_fnc_dynamicText;
 [["Intruders", _item], 15,"",35,"",true,false,false,true] call BIS_fnc_advHint;
 
-["STR_SCORE_Chest",250] call gonzka_fnc_addFunds;
+["STR_SCORE_Chest",250] call gonzka_fnc_addBloodpoints;
 
 _chest setVariable ["looted",true,true];
 

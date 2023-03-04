@@ -36,4 +36,4 @@ _trap setDir (random 360);
 [_trap] remoteExec ["gonzka_fnc_stepInBeartrap",civilian];
 [_trap] remoteExec ["gonzka_fnc_disarmBeartrap",civilian];
 
-["STR_SCORE_SetTrap",100] call gonzka_fnc_addFunds;
+["STR_SCORE_SetTrap",100] call gonzka_fnc_addBloodpoints;

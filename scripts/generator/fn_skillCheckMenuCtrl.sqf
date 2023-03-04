@@ -99,7 +99,7 @@ key_hit = {
 	if (_success) then {
 		quest_skillCheckCombo = quest_skillCheckCombo + 1; //QUEST
 		playSound "skillCheckSuccess";	
-		["STR_SCORE_SkillCheck",100] call gonzka_fnc_addFunds;
+		["STR_SCORE_SkillCheck",100] call gonzka_fnc_addBloodpoints;
 	} else {
 		quest_skillCheckCombo = 0; //QUEST
 		playSound "skillCheckFail";

@@ -14,7 +14,7 @@ player addEventHandler ["Killed", {
 	player removeWeapon (handgunWeapon player);
 	player removeWeapon (secondaryWeapon player);
 	
-	["STR_SCORE_Killed",1000] remoteExecCall ["gonzka_fnc_addFunds",east];
+	["STR_SCORE_Killed",1000] remoteExecCall ["gonzka_fnc_addBloodpoints",east];
 	["killed_1"] remoteExecCall ["playSound", [0, -2] select isDedicated];
 	["Initialize", [player, [civilian], false, true, true, true, true, false]] call BIS_fnc_EGSpectator;
 	
@@ -59,7 +59,7 @@ if (playerSide isEqualTo civilian) then {
 		params ["_unit", "_anim"];
 		if (_anim isEqualTo "ainvpknlmstpsnonwnondnon_medicend" && {profileNamespace getVariable ["bis_reviveCount", 0] > prevReviveCount}) then {
 			prevReviveCount = profileNamespace getVariable ["bis_reviveCount", 0];
-			["STR_SCORE_Rescue",1500] call gonzka_fnc_addFunds;
+			["STR_SCORE_Rescue",1500] call gonzka_fnc_addBloodpoints;
 		};
 	}];
 };

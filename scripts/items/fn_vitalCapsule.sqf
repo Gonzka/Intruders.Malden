@@ -20,6 +20,6 @@ _revivedUnit setVariable ["#rev", 1, true];
 player setDamage 0.28;
 [player] call gonzka_fnc_scream;
 
-["STR_SCORE_Rescue",1500] call gonzka_fnc_addFunds;
+["STR_SCORE_Rescue",1500] call gonzka_fnc_addBloodpoints;
 
 [player,"","",[1,1,1,1],5] remoteExec ["gonzka_fnc_auraNotification",east];

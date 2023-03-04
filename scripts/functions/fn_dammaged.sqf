@@ -19,7 +19,7 @@ if (_unit getVariable ["BIS_revive_incapacitated", false]) then {
 			if (incapacitatedCounter >= 3) then {
 				_unit setDamage 1;
 			} else {
-				["STR_SCORE_Incapacitated",500] remoteExecCall ["gonzka_fnc_addFunds",east];
+				["STR_SCORE_Incapacitated",500] remoteExecCall ["gonzka_fnc_addBloodpoints",east];
 				[] remoteExec ["gonzka_fnc_jamAndBanana",east]; //Jam and Banana Killer Perk
 				
 				//QUEST

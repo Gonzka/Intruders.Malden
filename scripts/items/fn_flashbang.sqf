@@ -24,7 +24,7 @@ private _angle = aCos ((_eyeDir select 0)*((_impactPos select 0) / _norm)+((_imp
 if (_angle < 90) then {
     //SCORING
     if (playerSide isEqualTo east) then {
-        ["STR_SCORE_Blind",1000] remoteExec ["gonzka_fnc_addFunds",_unit];
+        ["STR_SCORE_Blind",1000] remoteExec ["gonzka_fnc_addBloodpoints",_unit];
         
         //QUEST
         private _stuns = _unit getVariable "quest_stuns";
@@ -58,6 +58,6 @@ if (_angle < 90) then {
 } else {
     //SCORING
     if (playerSide isEqualTo east) then {
-        ["STR_SCORE_Evasion",250] call gonzka_fnc_addFunds;
+        ["STR_SCORE_Evasion",250] call gonzka_fnc_addBloodpoints;
     };
 };

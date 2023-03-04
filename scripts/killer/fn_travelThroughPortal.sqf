@@ -34,7 +34,7 @@ disableUserInput false;
 
 titleCut ["","BLACK IN",1];
 
-["STR_SCORE_PortalTravel",50] call gonzka_fnc_addFunds;
+["STR_SCORE_PortalTravel",50] call gonzka_fnc_addBloodpoints;
 
 //QUEST
 quest_portalTravels = quest_portalTravels + 1;

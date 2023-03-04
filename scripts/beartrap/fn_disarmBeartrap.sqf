@@ -27,7 +27,7 @@ params [
 		[_target, [selectRandom ["bearTrapSnap_1", "bearTrapSnap_2", "bearTrapSnap_3"], 1000]] remoteExecCall ["say3D"];
 		[_target,"textures\ico_abilityTrapper.paa","",[1,0,0,1]] remoteExec ["gonzka_fnc_auraNotification",east];
 		
-		["STR_SCORE_TrapDisarm",300] call gonzka_fnc_addFunds;
+		["STR_SCORE_TrapDisarm",300] call gonzka_fnc_addBloodpoints;
 	},
 	{},
 	[],

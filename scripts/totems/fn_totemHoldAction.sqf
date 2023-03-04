@@ -33,7 +33,7 @@ params [
 			[selectRandom ["thunder_1","thunder_2"]] remoteExecCall ["playSound", [0, -2] select isDedicated];
 			
 			[_target,"textures\ico_hexTotem.paa","",[1,0,0,1]] remoteExec ["gonzka_fnc_auraNotification",east];
-			["STR_SCORE_HexTotem",1500] call gonzka_fnc_addFunds;
+			["STR_SCORE_HexTotem",1500] call gonzka_fnc_addBloodpoints;
 			
 			//Retribution Killer Perk (Hex)
 			if !(isNil "totem_hex_retribution" || {isObjectHidden totem_hex_retribution}) then {
@@ -50,7 +50,7 @@ params [
 				totem_hex_undying = nil;
 			};
 		} else {
-			["STR_SCORE_Totem",1000] call gonzka_fnc_addFunds;
+			["STR_SCORE_Totem",1000] call gonzka_fnc_addBloodpoints;
 		};
 		
 		//Retribution Killer Perk (Hex)

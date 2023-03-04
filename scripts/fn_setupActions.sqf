@@ -14,7 +14,7 @@ if (playerSide isEqualTo east) then {
 player addAction["<img image='textures\gui\hud_escape.paa'/> " + localize "STR_GAME_LockpickAction",{[cursorObject] call pizza_fnc_lockpick},"",6,false,true,"",' cursorObject in [escapeVehicle_1, escapeVehicle_2] && player distance cursorObject < 5 && (locked cursorObject) > 1 && side player isEqualTo civilian '];
 
 //ITEMS
-player addAction["<img image='textures\ico_firstAidKit.paa'/> " + localize "STR_GAME_SelfHealAction",gonzka_fnc_selfHeal,"",0,false,true,"",' firstAidKits > 0 && damage player > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];
+player addAction["<img image='textures\ico_firstAidKit.paa'/> " + localize "STR_GAME_SelfHealAction",gonzka_fnc_firstAidKit,"",0,false,true,"",' firstAidKits > 0 && damage player > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];
 player addAction["<img image='textures\ico_smokeBomb.paa'/> " + localize "STR_GAME_SmokeBombAction",{smokeBombs = smokeBombs - 1; [player] remoteExec ["gonzka_fnc_smokeBomb", [0, -2] select isDedicated];},"",0,false,true,"",' smokeBombs > 0 '];
 player addAction["<img image='textures\ico_firecrackers.paa'/> " + localize "STR_GAME_FirecrackersAction",{firecrackers = firecrackers - 1; [] spawn gonzka_fnc_firecracker;},"",0,false,true,"",' firecrackers > 0 '];
 player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR_GAME_VitalCapsuleAction",{vitalCapsules = vitalCapsules - 1; [] spawn gonzka_fnc_vitalCapsule;},"",0,false,true,"",' vitalCapsules > 0 && {_x getVariable ["BIS_revive_incapacitated", false] || lifeState _x isEqualTo "INCAPACITATED"} count playableUnits - [player, Killer] > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];
@@ -31,7 +31,7 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 	{},
 	{
 		call gonzka_fnc_detachBeartrap; [player,""] remoteExec ["switchMove"];
-		["STR_SCORE_TrapEscape",500] call gonzka_fnc_addFunds;
+		["STR_SCORE_TrapEscape",500] call gonzka_fnc_addBloodpoints;
 	},
 	{},
 	[],
@@ -55,7 +55,7 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 	{},
 	{
 		_target setDamage 0;
-		["STR_SCORE_Heal",500] remoteExecCall ["gonzka_fnc_addFunds", _caller];
+		["STR_SCORE_Heal",500] remoteExecCall ["gonzka_fnc_addBloodpoints", _caller];
 		
 		//QUEST
 		private _heals = _caller getVariable "quest_heals";
@@ -94,7 +94,7 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 			player playAction "GestureSwing";
 			[player, selectRandom ["weaponSwing_1","weaponSwing_2","weaponSwing_3","weaponSwing_4","weaponSwing_5","weaponSwing_6","weaponSwing_7"]] remoteExecCall ["say3D"];
 			
-			["STR_SCORE_Destruction",100] call gonzka_fnc_addFunds;
+			["STR_SCORE_Destruction",100] call gonzka_fnc_addBloodpoints;
 
 			[] remoteExecCall ["gonzka_fnc_alert", civilian]; //Survivor Perk
 			
@@ -134,7 +134,7 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 				if (Killer distance _x < 2) then {
 					[] remoteExec ["gonzka_fnc_palettStun",Killer];
 					
-					["STR_SCORE_Stun",1000] remoteExecCall ["gonzka_fnc_addFunds",player];
+					["STR_SCORE_Stun",1000] remoteExecCall ["gonzka_fnc_addBloodpoints",player];
 
 					//QUEST
 					private _stuns = player getVariable "quest_stuns";
