@@ -39,6 +39,6 @@ if (_generator getVariable "duration" == _duration) then { //If the generator ha
 	_generator setObjectTextureGlobal [1, "#(argb,8,8,3)color(1,0,0,1,ca)"];
 } else {
 	if ("surveillance" in (Killer getVariable "intruders_activePerks")) then { //Killer Perk
-		[_generator,"textures\gui\hud_generator.paa","",[1,0,0,1],16] remoteExec ["gonzka_fnc_auraNotification", 0/*east*/];
+		[_generator,"textures\gui\hud_generator.paa","",[1,0,0,1],16] remoteExec ["gonzka_fnc_auraNotification", east];
 	};
 };
