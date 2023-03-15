@@ -13,6 +13,7 @@ if !(_nearbyTraps isEqualTo []) exitWith {
 };
 
 beartraps = beartraps - 1;
+player setUserActionText [beartrapActionId, "<img image='textures\ico_abilityTrapper.paa'/> " + format [localize "STR_GAME_TrapperAbilityAction", beartraps]];
 
 player switchMove "AinvPknlMstpSlayWrflDnon";
 player playMoveNow "AinvPknlMstpSlayWrflDnon";

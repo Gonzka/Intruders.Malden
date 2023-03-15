@@ -4,12 +4,6 @@
     Master addAction file handler for all client-based actions.
 */
 
-//PERKS & ABILITIES
-if (playerSide isEqualTo east) then {
-	player addAction["<img image='textures\ico_abilityWendigo.paa'/> " + localize "STR_GAME_WendigoAbilityAction",gonzka_fnc_cloak,"",0,false,true,"",' !cloakingCooldown && player getVariable "killer" isEqualTo "wendigo" '];
-	player addAction["<img image='textures\ico_abilityTrapper.paa'/> " + localize "STR_GAME_TrapperAbilityAction",gonzka_fnc_setBeartrap,"",0,false,true,"",' beartraps > 0 && player getVariable "killer" isEqualTo "trapper" '];
-};
-
 //LOCKPICKING
 player addAction["<img image='textures\gui\hud_escape.paa'/> " + localize "STR_GAME_LockpickAction",{[cursorObject] call pizza_fnc_lockpick},"",6,false,true,"",' cursorObject in [escapeVehicle_1, escapeVehicle_2] && player distance cursorObject < 5 && (locked cursorObject) > 1 && side player isEqualTo civilian '];
 

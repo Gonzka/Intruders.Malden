@@ -24,6 +24,7 @@ params [
 		deleteVehicle _target;
 		[player, selectRandom ["bearTrap_1", "bearTrap_2", "bearTrap_3", "bearTrap_4"]] remoteExecCall ["say3D"];
 		beartraps = beartraps + 1;
+		player setUserActionText [beartrapActionId, "<img image='textures\ico_abilityTrapper.paa'/> " + format [localize "STR_GAME_TrapperAbilityAction", beartraps]];
 	},
 	{},
 	[],

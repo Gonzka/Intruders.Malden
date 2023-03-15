@@ -566,8 +566,8 @@
 			<German>&lt;t color='#EEC900'&gt;Verhüllen / Enthüllen&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_GAME_TrapperAbilityAction">
-			<Original>&lt;t color='#EEC900'&gt;Set Trap&lt;/t&gt;</Original>
-			<German>&lt;t color='#EEC900'&gt;Falle platzieren&lt;/t&gt;</German>
+			<Original>&lt;t color='#EEC900'&gt;Set Trap (%1)&lt;/t&gt;</Original>
+			<German>&lt;t color='#EEC900'&gt;Falle platzieren (%1)&lt;/t&gt;</German>
 		</Key>
 	</Package>
 	<Package name="Debriefing">

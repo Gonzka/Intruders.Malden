@@ -22,7 +22,11 @@ switch (player getVariable "killer") do {
 		} forEach [portal_1, portal_2, portal_3, portal_4, portal_5, portal_6, portal_7];
 	};
 	case "trapper": {
+		beartrapActionId = player addAction["<img image='textures\ico_abilityTrapper.paa'/> " + format [localize "STR_GAME_TrapperAbilityAction", beartraps],gonzka_fnc_setBeartrap,"",0,false,true,"",' beartraps > 0 '];
 		call gonzka_fnc_randomBeartraps;
+	};
+	case "wendigo": {
+		player addAction["<img image='textures\ico_abilityWendigo.paa'/> " + localize "STR_GAME_WendigoAbilityAction",gonzka_fnc_cloak,"",0,false,true,"",' !cloakingCooldown '];
 	};
 };
 
