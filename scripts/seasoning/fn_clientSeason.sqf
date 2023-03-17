@@ -7,11 +7,11 @@
 playMusic "OM_Intro";
 
 if (bloodRush) then { //1.5x Bloodpoints
-	["STR_GAME_BloodRushEvent", "STR_GAME_BloodRushDesc", 15, "textures\ico_points.paa"] spawn gonzka_fnc_notification;
+	["STR_GAME_BloodRushEvent", "STR_GAME_BloodRushDesc", 15, "\intruders_mod\textures\gui\bloodpoints.paa"] spawn gonzka_fnc_notification;
 };
 
 if (bloodHunt) then { //2x Bloodpoints
-	["STR_GAME_BloodHuntEvent", "STR_GAME_BloodHuntDesc", 15, "textures\ico_points.paa"] spawn gonzka_fnc_notification;
+	["STR_GAME_BloodHuntEvent", "STR_GAME_BloodHuntDesc", 15, "\intruders_mod\textures\gui\bloodpoints.paa"] spawn gonzka_fnc_notification;
 };
 
 switch (season) do {
@@ -24,20 +24,6 @@ switch (season) do {
 
 		//Bonus Bloodpoints
 		bloodHunt = true;
-		
-		//Special Generators
-		{
-			private _generator = getPos _x nearestObject "Land_PowerGenerator_F";
-			private _gamePackage = createSimpleObject ["EauDeCombat_01_box_F", [0,0,0], true];   	
-			_gamePackage setObjectTexture [0, "textures\objects\intrudersGamePackage.paa"];
-			private _controller = createSimpleObject ["Land_GamingSet_01_controller_F", [0,0,0], true];
-			for "_i" from 0 to 1 do {
-				_gamePackage attachTo [_generator, [-0.1,-0.2,0.85]];
-				_gamePackage setDir 70;	
-				_controller attachTo [_generator, [-0.3,-0.12,0.77]];
-				_controller setDir 40;
-			};
-		} forEach generators;
 	};
 	
 	case "Winter": {

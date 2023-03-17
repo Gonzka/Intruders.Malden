@@ -1,10 +1,10 @@
 ﻿overviewText = "Intruders";
 overviewTextLocked = "Escape from Insanity";
-overviewPicture = "thumbnail.jpg";
+overviewPicture = "\intruders_mod\ui\background.jpg";
 
 onLoadName = "Intruders";
 onLoadMission = "Escape from Insanity";
-loadScreen = "thumbnail.jpg";
+loadScreen = "\intruders_mod\ui\background.jpg";
 author = "Gonzka";
 
 unsafeCVL = 1;
@@ -74,7 +74,7 @@ class CfgDebriefing {
 		title = "$STR_BRIEF_GameOver";
 		subtitle = "$STR_BRIEF_KillerWin";
 		description = "";
-		pictureBackground = "thumbnail.jpg";
+		pictureBackground = "\intruders_mod\ui\background.jpg";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};
@@ -83,7 +83,7 @@ class CfgDebriefing {
 		title = "$STR_BRIEF_GameOver";
 		subtitle = "$STR_BRIEF_IntrudersWin";
 		description = "";
-		pictureBackground = "thumbnail.jpg";
+		pictureBackground = "\intruders_mod\ui\background.jpg";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};
@@ -92,7 +92,7 @@ class CfgDebriefing {
 		title = "$STR_BRIEF_GameOver";
 		subtitle = "$STR_BRIEF_KillerLeft";
 		description = "";
-		pictureBackground = "thumbnail.jpg";
+		pictureBackground = "\intruders_mod\ui\background.jpg";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};
@@ -101,7 +101,7 @@ class CfgDebriefing {
 		title = "$STR_BRIEF_Goodbye";
 		subtitle = "$STR_BRIEF_LobbyReturn";
 		description = "<t align='center' size='1.1' font='PuristaMedium'>See you soon!</t><br/>";
-		pictureBackground = "thumbnail.jpg";
+		pictureBackground = "\intruders_mod\ui\background.jpg";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};
@@ -125,7 +125,7 @@ class CfgHints {
 			description = "$STR_HINT_WendigoAbilityDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_abilityWendigo.paa";
+			image = "\intruders_mod\textures\abilities\ico_abilityWendigo.paa";
 		};
 		
 		class buckethead {
@@ -133,7 +133,7 @@ class CfgHints {
 			description = "$STR_HINT_BucketheadAbilityDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_abilityBuckethead.paa";
+			image = "\intruders_mod\textures\abilities\ico_abilityBuckethead.paa";
 		};
 		
 		class trapper {
@@ -141,7 +141,7 @@ class CfgHints {
 			description = "$STR_HINT_TrapperAbilityDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_abilityTrapper.paa";
+			image = "\intruders_mod\textures\abilities\ico_abilityTrapper.paa";
 		};
 	
 		class flashbang {
@@ -214,7 +214,7 @@ class CfgWorlds {
 	class Tanoa {
 		author = "Affiger_Affe";
 		description = "$STR_TANOA_Map";
-		pictureMap = "textures\tanoa\tanoa.jpg";
+		pictureMap = "\intruders_mod\textures\tanoa\tanoa.jpg";
 
 		loadingTexts[] = {
 			"$STR_LOADING_1",
@@ -231,7 +231,7 @@ class CfgWorlds {
 	class Malden {
 		author = "Affiger_Affe";
 		description = "$STR_MALDEN_Map";
-		pictureMap = "textures\malden\malden.jpg";
+		pictureMap = "\intruders_mod\textures\malden\malden.jpg";
 
 		loadingTexts[] = {
 			"$STR_LOADING_1",
@@ -249,7 +249,7 @@ class CfgWorlds {
 	class Altis {
 		author = "Gonzka";
 		description = "$STR_ALTIS_Map";
-		pictureMap = "textures\altis\altis.jpg";
+		pictureMap = "\intruders_mod\textures\altis\altis.jpg";
 
 		loadingTexts[] = {
 			"$STR_LOADING_1",

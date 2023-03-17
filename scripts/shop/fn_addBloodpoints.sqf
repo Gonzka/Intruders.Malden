@@ -15,4 +15,4 @@ private _totalBloodpoints = player getVariable "bloodPoints";
 _totalBloodpoints = _totalBloodpoints + _bloodpoints;
 player setVariable ["bloodPoints",_totalBloodpoints,true];
 
-["+ " + str _bloodpoints + " " + localize "STR_SCORE_BloodPoints", _actionName, 4, "textures\ico_points.paa"] spawn gonzka_fnc_notification;
+["+ " + str _bloodpoints + " " + localize "STR_SCORE_BloodPoints", _actionName, 4, "\intruders_mod\textures\gui\bloodpoints.paa"] spawn gonzka_fnc_notification;

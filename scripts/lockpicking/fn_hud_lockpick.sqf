@@ -5,8 +5,8 @@ disableSerialization;
 // Description: A skyrim style lockpicking mini-game.
 
 // Image paths
-#define IMAGE_INTACT_LOCKPICK "textures\gui\lock_pick.paa"
-#define IMAGE_BROKEN_LOCKPICK "textures\gui\lock_pick_broken.paa"
+#define IMAGE_INTACT_LOCKPICK "\intruders_mod\textures\gui\lock_pick.paa"
+#define IMAGE_BROKEN_LOCKPICK "\intruders_mod\textures\gui\lock_pick_broken.paa"
 
 // Create hud and initalize display
 ("hud_lockpick" call BIS_fnc_rscLayer) cutRsc ["hud_default", "plain"];

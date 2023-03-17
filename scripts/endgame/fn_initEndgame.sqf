@@ -39,8 +39,8 @@ if (worldName in ["Malden","Tanoa"]) then {
 } forEach [escapeVehicle_1, escapeVehicle_2];
 
 addMissionEventHandler ["Draw3D", {
-    drawIcon3D [getMissionPath "textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_1, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #1", 1, 0.0315, "EtelkaMonospacePro"];
-    drawIcon3D [getMissionPath "textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_2, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #2", 1, 0.0315, "EtelkaMonospacePro"];
+    drawIcon3D ["\intruders_mod\textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_1, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #1", 1, 0.0315, "EtelkaMonospacePro"];
+    drawIcon3D ["\intruders_mod\textures\gui\hud_escape.paa", [1,1,1,1], ASLToAGL getPosASL escapeVehicle_2, 0.8, 0.8, 0, toUpper localize "STR_GAME_EscapeVehicle" + " #2", 1, 0.0315, "EtelkaMonospacePro"];
 }];
 
 //No One Escapes Death Killer Perk (Hex)

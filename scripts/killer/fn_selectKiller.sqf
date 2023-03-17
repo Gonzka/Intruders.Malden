@@ -21,7 +21,7 @@ switch (_killer) do {
 		
 		player addWeapon "intruders_axt";
 		
-		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Wendigo", 5, "textures\ico_wendigo.paa"] spawn gonzka_fnc_notification;
+		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Wendigo", 5, "\intruders_mod\textures\portraits\ico_wendigo.paa"] spawn gonzka_fnc_notification;
 	};
 	case 2: {
 		player setVariable ["killer","buckethead",true];
@@ -33,7 +33,7 @@ switch (_killer) do {
 		
 		player addWeapon "intruders_pickaxe";
 		
-		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Buckethead", 5, "textures\ico_buckethead.paa"] spawn gonzka_fnc_notification;
+		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Buckethead", 5, "\intruders_mod\textures\portraits\ico_buckethead.paa"] spawn gonzka_fnc_notification;
 	};
 	case 3: {
 		player setVariable ["killer","trapper",true];
@@ -45,7 +45,7 @@ switch (_killer) do {
 		
 		player addWeapon "intruders_machete";
 		
-		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Trapper", 5, "textures\ico_trapper.paa"] spawn gonzka_fnc_notification;
+		[localize "STR_GAME_KillerSelected", localize "STR_GAME_Trapper", 5, "\intruders_mod\textures\portraits\ico_trapper.paa"] spawn gonzka_fnc_notification;
 	};
 };
 

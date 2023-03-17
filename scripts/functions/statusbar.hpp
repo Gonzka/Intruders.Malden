@@ -13,7 +13,7 @@ class statusBar
     class controlsBackground {
         class Menu: RscPictureKeepAspect {
             idc = 4000;
-            text = "textures\gui\hud_0.paa";
+            text = "\intruders_mod\textures\gui\hud_0.paa";
             x = 0.008 * safezoneW + safezoneX;
             y = 0.56 * safezoneH + safezoneY;
             w = 0.324 * safezoneW;
@@ -22,7 +22,7 @@ class statusBar
 		
 		class Perks: RscPictureKeepAspect {
             idc = 4013;
-            text = "textures\gui\hud_perks.paa";
+            text = "\intruders_mod\textures\gui\hud_perks.paa";
             x = 0.76 * safezoneW + safezoneX;
             y = 0.6 * safezoneH + safezoneY;
             w = 0.324 * safezoneW;

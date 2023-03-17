@@ -25,7 +25,7 @@ params [
 		} forEach ["door_1","door_2","door_3","door_4","door_5"];
 		
 		[_target, [selectRandom ["bearTrapSnap_1", "bearTrapSnap_2", "bearTrapSnap_3"], 1000]] remoteExecCall ["say3D"];
-		[_target,"textures\ico_abilityTrapper.paa","",[1,0,0,1]] remoteExec ["gonzka_fnc_auraNotification",east];
+		[_target,"\intruders_mod\textures\abilities\ico_abilityTrapper.paa","",[1,0,0,1]] remoteExec ["gonzka_fnc_auraNotification",east];
 		
 		["STR_SCORE_TrapDisarm",300] call gonzka_fnc_addBloodpoints;
 	},

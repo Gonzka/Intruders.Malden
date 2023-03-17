@@ -13,7 +13,7 @@ class hud_lockpick {
         class Lock_Outer : RscPictureKeepAspect {
 
             idc = -1;
-            text = "textures\gui\lock_outer.paa";
+            text = "\intruders_mod\textures\gui\lock_outer.paa";
 
             x = safeZoneX + (0.3 * safeZoneW);
             y = safeZoneY + (0.3 * safeZoneH);
@@ -24,7 +24,7 @@ class hud_lockpick {
         class Lock_Inner : RscPictureKeepAspect {
 
             idc = 1000;
-            text = "textures\gui\lock_inner.paa";
+            text = "\intruders_mod\textures\gui\lock_inner.paa";
 
             x = safeZoneX + (0.3 * safeZoneW);
             y = safeZoneY + (0.3 * safeZoneH);
@@ -35,7 +35,7 @@ class hud_lockpick {
         class Lock_Pick : RscPicture {
 
             idc = 1001;
-            text = "textures\gui\lock_pick.paa";
+            text = "\intruders_mod\textures\gui\lock_pick.paa";
 
             x = safeZoneX + (0.297 * safeZoneW);
             y = safeZoneY + (0.216 * safeZoneH);

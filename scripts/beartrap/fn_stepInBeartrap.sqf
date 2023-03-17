@@ -21,7 +21,7 @@ if (player getVariable ["BIS_revive_incapacitated", false] || !alive player) exi
 
 player setDamage 0.28;
 
-[_trap,"textures\ico_abilityTrapper.paa","",[1,0,0,1],15] remoteExec ["gonzka_fnc_auraNotification",east];
+[_trap,"\intruders_mod\textures\abilities\ico_abilityTrapper.paa","",[1,0,0,1],15] remoteExec ["gonzka_fnc_auraNotification",east];
 
 trapPos = getPosATL _trap;
 trapDir = getDir _trap;

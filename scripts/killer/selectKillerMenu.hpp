@@ -77,7 +77,7 @@ class SelectKillerMenu {
             y = 0.39283185840708 * safezoneH + safezoneY;
 			w = 0.094 * safezoneW;
 			h = 0.168 * safezoneH;
-			text = "textures\ico_wendigo.paa";
+			text = "\intruders_mod\textures\portraits\ico_wendigo.paa";
 			tooltip = "$STR_GAME_WendigoTooltip";
 		};
 		
@@ -110,7 +110,7 @@ class SelectKillerMenu {
             y = 0.39283185840708 * safezoneH + safezoneY;
 			w = 0.094 * safezoneW;
 			h = 0.168 * safezoneH;
-			text = "textures\ico_buckethead.paa";
+			text = "\intruders_mod\textures\portraits\ico_buckethead.paa";
 			tooltip = "$STR_GAME_BucketheadTooltip";
 		};
 		
@@ -143,7 +143,7 @@ class SelectKillerMenu {
             y = 0.39283185840708 * safezoneH + safezoneY;
 			w = 0.094 * safezoneW;
 			h = 0.168 * safezoneH;
-			text = "textures\ico_trapper.paa";
+			text = "\intruders_mod\textures\portraits\ico_trapper.paa";
 			tooltip = "$STR_GAME_TrapperTooltip";
 		};
     };

@@ -20,7 +20,7 @@ if (isNil "_dailyQuest") then {
 	saveProfileNamespace;
 	_dailyQuest = profileNamespace getVariable format ["intruders_dailyQuest%1",_side];
 	
-	["STR_GAME_DailyQuest", "STR_GAME_DailyQuestActive", 10, "textures\gui\badge.paa"] spawn gonzka_fnc_notification; 
+	["STR_GAME_DailyQuest", "STR_GAME_DailyQuestActive", 10, "\intruders_mod\textures\gui\badge.paa"] spawn gonzka_fnc_notification; 
 };
 
 disableSerialization;
@@ -46,7 +46,7 @@ private _qRewardIcon = ((findDisplay 60580) displayCtrl 60584);
 
 _qTitle ctrlSetText toUpper localize _questTitle; 
 _qDescription ctrlSetStructuredText parseText format ["<t size='1.2'>%1</t>", localize _questTask];
-_qReward ctrlSetStructuredText parseText format ["+ " + "<img image='textures\ico_points.paa'/> " + "%1 " + localize "STR_SCORE_BloodPoints", [_rewardBloodpoints] call gonzka_fnc_numberText];
+_qReward ctrlSetStructuredText parseText format ["+ " + "<img image='\intruders_mod\textures\gui\bloodpoints.paa'/> " + "%1 " + localize "STR_SCORE_BloodPoints", [_rewardBloodpoints] call gonzka_fnc_numberText];
 
-_qRewardIcon ctrlSetText "textures\ico_points.paa";
+_qRewardIcon ctrlSetText "\intruders_mod\textures\gui\bloodpoints.paa";
 _qRewardIcon ctrlSetTooltip localize "STR_SCORE_BloodPoints";

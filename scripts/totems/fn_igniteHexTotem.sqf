@@ -38,7 +38,7 @@ call compile format ["
         if (isObjectHidden %1) then {
             removeMissionEventHandler ['Draw3D', _thisEventHandler];
         } else {
-            drawIcon3D [getMissionPath 'textures\ico_totem.paa', [1,1,1,1], ASLToAGL getPosASL %1, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro'];
+            drawIcon3D ['\intruders_mod\textures\gui\totem.paa', [1,1,1,1], ASLToAGL getPosASL %1, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro'];
         };
     }];
 ", _randSel];

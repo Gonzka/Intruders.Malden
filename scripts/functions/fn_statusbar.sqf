@@ -52,7 +52,7 @@ if (playerSide isEqualTo sideLogic) then {
 };
 
 while {true} do {
-	_genCounter ctrlSetText format ["textures\gui\hud_%1.paa", totalGenerators - count repairedGenerators];
+	_genCounter ctrlSetText format ["\intruders_mod\textures\gui\hud_%1.paa", totalGenerators - count repairedGenerators];
 	
 	private _players = allPlayers select {side _x isEqualTo civilian};
 	private _playerCount = count _players;

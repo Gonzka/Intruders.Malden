@@ -27,7 +27,7 @@ private _switchLightRange = switch (worldName) do {
 playSound3D [selectRandom ["a3\missions_f_exp\data\sounds\exp_m07_lightson_01.wss", "a3\missions_f_exp\data\sounds\exp_m07_lightson_02.wss", "a3\missions_f_exp\data\sounds\exp_m07_lightson_03.wss"], _generator, false, getPosASL _generator, 3];
 createSoundSource ["powergenerator", position _generator, [], 0];
 
-[_generator,"textures\gui\hud_generator.paa","",[0,1,0,1]] remoteExec ["gonzka_fnc_auraNotification", [0, -2] select isDedicated];
+[_generator,"\intruders_mod\textures\gui\hud_generator.paa","",[0,1,0,1]] remoteExec ["gonzka_fnc_auraNotification", [0, -2] select isDedicated];
 
 if (count repairedGenerators isEqualTo totalGenerators) then {
 	[] remoteExec ["gonzka_fnc_initEndgame", [0, -2] select isDedicated];

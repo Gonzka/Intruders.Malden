@@ -19,7 +19,7 @@ if (_chest getVariable ["boobyTrap",false]) exitWith { //Booby Trap Killer Perk
 	_chest setVariable ["looted",true,true];
 	[getPosATL _chest] call gonzka_fnc_fakeExplosion;
 	player setDamage 0.28;
-	[_chest,"textures\ico_boobyTrap.paa"] remoteExec ["gonzka_fnc_auraNotification",east];
+	[_chest,getMissionPath "textures\ico_boobyTrap.paa"] remoteExec ["gonzka_fnc_auraNotification",east];
 	[player] call gonzka_fnc_scream; //SURVIVOR SCREAM
 };
 

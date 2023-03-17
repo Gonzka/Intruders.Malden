@@ -327,7 +327,7 @@ class menuprincipal {
 		
 		class Logo: RscPicture {
             idc = 0001;
-            text = "textures\gui\title.paa";
+            text = "\intruders_mod\textures\gui\title.paa";
             x = -0.007 * safezoneW + safezoneX;
             y = 0.2 * safezoneH + safezoneY;
             w = 0.28 * safezoneW;

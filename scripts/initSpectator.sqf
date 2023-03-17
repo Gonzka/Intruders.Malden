@@ -33,7 +33,7 @@ openNotifications = [];
 addMissionEventHandler ["Draw3D", {
 	{
 		if (!(_x in repairedGenerators) && !endgameActivated) then {
-			drawIcon3D [getMissionPath "textures\gui\hud_generator.paa", [1,1,1,1], ASLToAGL getPosASL _x, 0.8, 0.8, 0];
+			drawIcon3D ["\intruders_mod\textures\gui\hud_generator.paa", [1,1,1,1], ASLToAGL getPosASL _x, 0.8, 0.8, 0];
 		};
 	} forEach generators;
 }];

@@ -19,7 +19,7 @@ if (_systemTime isNotEqualTo _lastReward) then {
 	_bloodPoints = _bloodPoints + 5000;
 	profileNamespace setVariable ["intruders_bloodPoints", _bloodPoints];
 	
-	["STR_GAME_WelcomeBack", "STR_GAME_LoginReward", 10, "textures\ico_points.paa"] spawn gonzka_fnc_notification; 
+	["STR_GAME_WelcomeBack", "STR_GAME_LoginReward", 10, "\intruders_mod\textures\gui\bloodpoints.paa"] spawn gonzka_fnc_notification; 
 	
 	//NEW DAILY QUEST
 	profileNamespace setVariable ["intruders_dailyQuestIntruder",nil];

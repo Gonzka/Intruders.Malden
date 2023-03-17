@@ -13,7 +13,7 @@ private _nearestGens = ([_inactiveGens, [], {selectRandom _inactiveGens distance
 private _eventHandlerId = call compile format ["addMissionEventHandler ['Draw3D', {
 	{
 		if (!(_x in repairedGenerators) && !endgameActivated) then {
-			drawIcon3D [getMissionPath 'textures\gui\hud_generator.paa', [1,1,1,1], ASLToAGL getPosASLVisual _x, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro', 'center', true];
+			drawIcon3D ['\intruders_mod\textures\gui\hud_generator.paa', [1,1,1,1], ASLToAGL getPosASLVisual _x, 0.8, 0.8, 0, '', 1, 0.0315, 'EtelkaMonospacePro', 'center', true];
 		} else {
 			removeMissionEventHandler ['Draw3D', _thisEventHandler];
 		};
