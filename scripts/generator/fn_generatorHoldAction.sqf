@@ -68,6 +68,10 @@ private _actionID = [
 _generator setVariable ["actionID", _actionID, true];
 
 //Damage the generator as a killer to make it regress
+private _brutalStrengthMultiplier = 1;
+if ("brutalStrength" in (player getVariable "intruders_activePerks")) then {
+	_brutalStrengthMultiplier = 1.2;
+};
 [
 	_generator,
 	localize "STR_GAME_Damage",
@@ -91,7 +95,7 @@ _generator setVariable ["actionID", _actionID, true];
 	},
 	{},
 	[],
-	2,
+	2 / _brutalStrengthMultiplier,
 	nil,
 	false,
 	false

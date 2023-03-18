@@ -49,7 +49,7 @@ if ("hex_noOneEscapesDeath" in (Killer getVariable "intruders_activePerks")) the
 };
 
 //ESCAPEVEHICLE LOCKPICKED?
-waitUntil {(locked escapeVehicle_1) < 2 || (locked escapeVehicle_2) < 2 || "armageddon" in (Killer getVariable ["intruders_activePerks",[]])};
+waitUntil {(locked escapeVehicle_1) < 2 || (locked escapeVehicle_2) < 2};
 endgameCountdown = true;
 playSound "air_raid";
 [1] spawn BIS_fnc_earthquake;

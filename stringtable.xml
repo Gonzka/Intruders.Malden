@@ -913,14 +913,6 @@
 			<Original>- At the start of the Match, the Positions of all Survivors are revealed to you for 9 seconds.\n\n- Extends the duration of a Survivor's Position being revealed to you by +2 seconds.</Original>
 			<German>- Zu Beginn der Partie werden dir die Positionen aller Überlebenden für 9 Sekunden angezeigt.\n\n- Immer wenn die Position eines Überlebenden eine Zeitlang angezeigt wird, wird die Dauer um 2 Sekunden verlängert.</German>
 		</Key>
-		<Key ID="STR_ITEM_Armageddon">
-			<Original>Armageddon</Original>
-			<German>Armageddon</German>
-		</Key>
-		<Key ID="STR_ITEM_ArmageddonDesc">
-			<Original>- Once the Escape Vehicles have arrived, the Endgame Collapse immediately begins.</Original>
-			<German>- Sobald die Fluchtfahrzeuge eingetroffen sind, beginnt sofort der Endspiel-Untergang.</German>
-		</Key>
 		<Key ID="STR_ITEM_HexNoOneEscapesDeath">
 			<Original>Hex: No One Escapes Death</Original>
 			<German>Fluch: Niemand entrinnt dem Tod</German>
@@ -1016,6 +1008,14 @@
 		<Key ID="STR_ITEM_SurveillanceDesc">
 			<Original>- The markers of regressing Generators are highlighted in yellow.\n\n- If the Regression progress is interrupted on a Generator, its marker will be highlighted in red for 16 seconds.</Original>
 			<German>- Alle zurückgehenden Generatoren werden mit einer gelben Markierung hervorgehoben.\n\n- Bei einer Unterbrechung des Rückgangs wird der jeweilige Generator für 16 Sekunden mit einer roten Markierung hervorgehoben.</German>
+		</Key>
+		<Key ID="STR_ITEM_BrutalStrength">
+			<Original>Brutal Strength</Original>
+			<German>Brutale Stärke</German>
+		</Key>
+		<Key ID="STR_ITEM_BrutalStrengthDesc">
+			<Original>- Destroy dropped Pallets and damage Generators 20 % faster.</Original>
+			<German>- Zerstöre umgestoßene Paletten und Generatoren 20 % schneller.</German>
 		</Key>
 	</Package>
 	<Package name="Voicelines">

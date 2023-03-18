@@ -15,16 +15,6 @@ class VirtualItems {
 		released = true;
 	};
 	
-	class armageddon {
-		variable = "armageddon";
-		displayName = "STR_ITEM_Armageddon";
-		description = "STR_ITEM_ArmageddonDesc";
-		icon = "textures\ico_armageddon.paa";
-		side = "EAST";
-		price = 15000;
-		released = true;
-	};
-	
 	class bitterMurmur {
 		variable = "bitterMurmur";
 		displayName = "STR_ITEM_BitterMurmur";
@@ -61,6 +51,16 @@ class VirtualItems {
 		description = "STR_ITEM_BotanyKnowledgeDesc";
 		icon = "textures\ico_botanyKnowledge.paa";
 		side = "CIV";
+		price = 15000;
+		released = true;
+	};
+	
+	class brutalStrength {
+		variable = "brutalStrength";
+		displayName = "STR_ITEM_BrutalStrength";
+		description = "STR_ITEM_BrutalStrengthDesc";
+		icon = "textures\ico_brutalStrength.paa";
+		side = "EAST";
 		price = 15000;
 		released = true;
 	};
