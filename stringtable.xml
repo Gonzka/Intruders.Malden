@@ -104,7 +104,7 @@
 			<German>Warte auf einen Überlebenden</German>
 		</Key>
 		<Key ID="STR_INIT_ReadyWaiting">
-			<Original>Wait for all players to be ready</Original>
+			<Original>Waiting for all players to be ready</Original>
 			<German>Warte bis alle Spieler bereit sind</German>
 		</Key>
 	</Package>
@@ -1348,14 +1348,6 @@
 		<Key ID="STR_SKIN_JournalistLore">
 			<Original>Journalist Martin Opterix has even interviewed with Z celebrities, like Udo Lindenberg, Germany's worst musician. Now he has an appointment with the killer.</Original>
 			<German>Der Journalist Martin Opterix hat sogar schon Interviews mit Z-Promis geführt, wie Udo Lindenberg, dem schlechtesten deutschen Musiker. Jetzt hat er einen Termin mit dem Killer.</German>
-		</Key>
-		<Key ID="STR_SKIN_WendigoDefaultTanoa">
-			<Original>Default (Jungle)</Original>
-			<German>Standard (Urwald)</German>
-		</Key>
-		<Key ID="STR_SKIN_WendigoDefaultMalden">
-			<Original>Default (Wasteland)</Original>
-			<German>Standard (Ödland)</German>
 		</Key>
 		<Key ID="STR_SKIN_WendigoBloody">
 			<Original>Bloody Antler</Original>

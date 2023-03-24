@@ -14,6 +14,7 @@ class Intruders {
 		class collectBeartrap {};
 		class detachBeartrap {};
 		class disarmBeartrap {};
+		class freeBeartrapAction {};
 		class markBeartrap {};
 		class randomBeartraps {};
 		class resetBeartrap {};
@@ -68,29 +69,31 @@ class Intruders {
 	
 	class generator {
 		file = "scripts\generator";
+		class damageGeneratorAction {};
 		class fakeExplosion {};
 		class genActivate {};
-		class generatorHoldAction {};
 		class genFail {};
 		class genRegression {};
+		class repairGeneratorAction {};
 		class skillCheckMenuCtrl {};
 		class sparkParticles {};
 	};
 	
 	class items {
 		file = "scripts\items";
-		class chestHoldAction {};
 		class firecracker {};
 		class firstAidKit {};
 		class flashbang {};
 		class openChest {};
 		class rifleStun {};
+		class searchChestAction {};
 		class smokeBomb {};
 		class vitalCapsule {};
 	};
 	
 	class killer {
 		file = "scripts\killer";
+		class breakPalletAction {};
 		class cloak {};
 		class cloakParticles {};
 		class cloakTransition {};

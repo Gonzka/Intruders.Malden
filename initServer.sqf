@@ -1,23 +1,21 @@
 //GENERAL VARS
 setTimeMultiplier 0.1;
-
+totalGenerators = 5; publicVariable "totalGenerators";
+repairedGenerators = []; publicVariable "repairedGenerators";
+intrudersWin = false; publicVariable "intrudersWin";
+endgameActivated = false; publicVariable "endgameActivated";
+deadPlayers = []; publicVariable "deadPlayers";
 generators = [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5 , genericGen_6, genericGen_7];
+
+//GENERATORS & LIGHT
 private _switchLightRange = switch (worldName) do {
     case "Tanoa": {7};
     case "Malden": {31};
     case "Altis": {28};
     case default {10};
 };
-{
-    {[_x, "OFF"] remoteExec ["switchLight",0,true]} forEach (nearestObjects [_x, [], _switchLightRange]);
-    [_x] remoteExec ["gonzka_fnc_generatorHoldAction", [0, -2] select isDedicated, _x];
-} forEach generators;
-
-totalGenerators = 5; publicVariable "totalGenerators";
-repairedGenerators = []; publicVariable "repairedGenerators";
-intrudersWin = false; publicVariable "intrudersWin";
-endgameActivated = false; publicVariable "endgameActivated";
-deadPlayers = []; publicVariable "deadPlayers";
+{ { [_x, "OFF"] remoteExec ["switchLight",0,true]; } forEach (nearestObjects [_x, [], _switchLightRange]); } forEach generators;
+[] remoteExecCall ["gonzka_fnc_repairGeneratorAction", [0, -2] select isDedicated, true];
 
 //CHESTS
 private _chestresult = []; 
@@ -37,14 +35,11 @@ private _chestgroups = [
     private _rIndex = _x find _randSel;
     _x deleteAt _rindex;
     _chestresult pushBack _randSel;
+    _randSel hideObjectGlobal false;
 } forEach _chestgroups;
 
-{
-    _x hideObjectGlobal false;
-    [_x] remoteExec ["gonzka_fnc_chestHoldAction", [0, -2] select isDedicated, _x];
-} forEach _chestresult;
-
 chestgroup = _chestresult; publicVariable "chestgroup";
+[] remoteExecCall ["gonzka_fnc_searchChestAction", [0, -2] select isDedicated, true];
 
 //TOTEMS
 private _totemResult = []; 

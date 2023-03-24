@@ -29,11 +29,11 @@ class Clothing {
 				{ "U_C_Poloshirt_salmon", $STR_SKIN_SpookyScarySkeleton, $STR_SKIN_SpookyScarySkeletonLore, "", "playerSide isEqualTo civilian && profileNamespace getVariable ['TRICKORTREAT',false]" }, //CODE - RESKIN
 				
 				/*{ "U_B_GEN_Commander_F", $STR_SKIN_Gendarme, "", "", "playerSide isEqualTo civilian" },
-				{ "U_C_Paramedic_01_F", $STR_SKIN_Paramedic, "", "", "playerSide isEqualTo civilian" },
-				{ "U_I_C_Soldier_Para_3_F", "Safari", "", "", "playerSide isEqualTo civilian" },*/
+				{ "U_C_Paramedic_01_F", $STR_SKIN_Paramedic, "", "", "playerSide isEqualTo civilian" },*/
 				
-				{ "U_B_T_FullGhillie_tna_F", $STR_SKIN_WendigoDefaultTanoa, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" },
-				{ "U_B_FullGhillie_ard", $STR_SKIN_WendigoDefaultMalden, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" },
+				{ "U_B_T_FullGhillie_tna_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" },
+				{ "U_I_FullGhillie_sard", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" },
+				{ "U_B_FullGhillie_ard", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" },
 				
 				{ "U_C_ConstructionCoverall_Red_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" },
 				{ "U_C_ConstructionCoverall_Black_F", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" },
@@ -65,8 +65,7 @@ class Clothing {
 				{ "H_Booniehat_oli", $STR_SKIN_Harvester, $STR_SKIN_HarvesterLore, "", "playerSide isEqualTo civilian" },
 				
 				/*{ "H_Beret_gen_F", $STR_SKIN_Gendarme, "", "", "playerSide isEqualTo civilian" },
-				{ "H_Cap_White_IDAP_F", $STR_SKIN_Paramedic, "", "", "playerSide isEqualTo civilian" },
-				{ "H_Hat_Safari_olive_F", "Safari", "", "", "playerSide isEqualTo civilian" },*/
+				{ "H_Cap_White_IDAP_F", $STR_SKIN_Paramedic, "", "", "playerSide isEqualTo civilian" },*/
 				
 				{ "Intruders_BucketHead", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" }, //MOD
 				{ "Intruders_BucketHead_Smile", $STR_SKIN_BucketheadSmile, "", "", "player getVariable 'killer' isEqualTo 'buckethead'" }, //MOD
@@ -93,8 +92,8 @@ class Clothing {
 				
 				{ "G_Spectacles", $STR_SKIN_Harvester, $STR_SKIN_HarvesterLore, "", "playerSide isEqualTo civilian" },
 				
-				{ "NWTS_goggle_deer_mossy", $STR_SKIN_WendigoDefaultTanoa, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" }, //MOD
-				{ "NWTS_goggle_deer", $STR_SKIN_WendigoDefaultMalden, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" }, //MOD
+				{ "NWTS_goggle_deer_mossy", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" }, //MOD
+				{ "NWTS_goggle_deer", $STR_SKIN_Default, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" }, //MOD
 				{ "NWTS_goggle_deer_bloody", $STR_SKIN_WendigoBloody, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" }, //MOD
 				{ "NWTS_goggle_deer_glow", $STR_SKIN_WendigoGlow, "", "", "player getVariable 'killer' isEqualTo 'wendigo'" } //MOD
 			};
@@ -114,8 +113,7 @@ class Clothing {
 				
 				{ "V_Press_F", "Journalist (Martin Opterix)", $STR_SKIN_JournalistLore, "", "playerSide isEqualTo civilian && profileNamespace getVariable ['ARMAOPTERIX',false]" } //CODE
 				
-				/*{ "V_TacVest_gen_F", $STR_SKIN_Gendarme, "", "", "playerSide isEqualTo civilian" },
-				{ "V_Pocketed_black_F", "Safari", "", "", "playerSide isEqualTo civilian" }*/
+				//{ "V_TacVest_gen_F", $STR_SKIN_Gendarme, "", "", "playerSide isEqualTo civilian" }
 			};
 		};
 		
