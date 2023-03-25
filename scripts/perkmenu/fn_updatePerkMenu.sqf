@@ -16,7 +16,6 @@ if (count (profileNamespace getVariable "intruders_perkInventory") < 1) exitWith
 };
 
 {
-	if (_x find "skin_" != -1) exitWith {}; //Show only perks
 	private _displayName = getText (missionConfigFile >> "VirtualItems" >> _x >> "displayName");
 	private _variable = getText (missionConfigFile >> "VirtualItems" >> _x >> "variable");
 	private _description = getText (missionConfigFile >> "VirtualItems" >> _x >> "description");

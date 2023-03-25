@@ -3,7 +3,17 @@
 
 class VirtualItems {
 	
-	featuredItem = "sprintBurst";
+	featuredItem = "mysterybox";
+
+	class mysterybox {
+		variable = "mysterybox";
+		displayName = "STR_SKIN_Mysterybox";
+		description = "STR_SKIN_MysteryboxDesc";
+		icon = "a3\data_f_heli\images\watermarkinfo_page07_ca.paa";
+		side = "";
+		price = 5000;
+		released = true;
+	};
 	
 	class alert {
 		variable = "alert";

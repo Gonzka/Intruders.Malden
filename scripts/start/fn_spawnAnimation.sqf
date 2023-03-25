@@ -62,5 +62,3 @@ if (playerSide isEqualTo east) then {
 	private _hintClass = player getVariable "killer";
 	[["Intruders", _hintClass], 15,"",35,"",true,false,false,true] call BIS_fnc_advHint;
 };
-
-call gonzka_fnc_playerSkins;

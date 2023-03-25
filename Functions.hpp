@@ -59,7 +59,6 @@ class Intruders {
 		class notification {};
 		class numberText {};
 		class onFired {};
-		class playerSkins {};
 		class scream {};
 		class setHoldActionDuration {};
 		class statusbar {};
@@ -166,6 +165,7 @@ class Intruders {
 		file = "scripts\shop";
 		class addBloodpoints {};
 		class addPerk {};
+		class addRandomSkin {};
 		class buyShopItem {};
 		class redeemCode {};
 		class updateShopMenu {};

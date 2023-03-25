@@ -59,20 +59,25 @@ quest_hit_openTimeSlot = false;
 quest_killAll = false;
 
 //PERSISTENT SYSTEM
-//Inventory
+//Perk Inventory
 if (isNil {profileNamespace getVariable "intruders_perkInventory"}) then {
     profileNamespace setVariable ["intruders_perkInventory",[]];
 };
 
-private _globalInventory = profileNamespace getVariable "intruders_perkInventory";
+private _perkInventory = profileNamespace getVariable "intruders_perkInventory";
 private _config = missionConfigFile >> "VirtualItems";
 {
     if !(isClass (_config >> _x)) then { //REMOVE ITEMS THAT DONT EXIST ANYMORE
-        _globalInventory deleteAt (_globalInventory find _x);
+        _perkInventory deleteAt (_perkInventory find _x);
     };
-} forEach _globalInventory;
+} forEach _perkInventory;
 
-profileNamespace setVariable ["intruders_perkInventory",_globalInventory];
+profileNamespace setVariable ["intruders_perkInventory",_perkInventory];
+
+//Skin Inventory
+if (isNil {profileNamespace getVariable "intruders_skinInventory"}) then {
+    profileNamespace setVariable ["intruders_skinInventory",[]];
+};
 
 //Equipped Perks
 private _perkVar = format ["intruders_activePerks_%1",if (playerSide isEqualTo east) then {"killer"} else {"survivor"}];
@@ -83,11 +88,10 @@ if (count (profileNamespace getVariable _perkVar) isEqualTo 3) then { profileNam
 player setVariable ["intruders_activePerks", profileNamespace getVariable _perkVar, true]; //PUBLIC VAR
 
 //Bloodpoints
-private _currencyVar = "intruders_bloodPoints";
-if (isNil {profileNamespace getVariable _currencyVar}) then {
-    profileNamespace setVariable [_currencyVar,15000]; //Initial value. Everyone starts with 15,000 blood points.
+if (isNil {profileNamespace getVariable "intruders_bloodPoints"}) then {
+    profileNamespace setVariable ["intruders_bloodPoints",15000]; //Initial value. Everyone starts with 15,000 blood points.
 };
 
 saveProfileNamespace;
 
-diag_log format ["[Intruders Client] Player: %1 (%2) | Inventory: %3 | Bloodpoints: %4 | Date: %5", profileName, getPlayerUID player, _globalInventory, profileNamespace getVariable _currencyVar, systemTime];
+diag_log format ["[Intruders Client] Player: %1 (%2) | Bloodpoints: %3 | Perk-Inventory: %4 | Skin-Inventory: %5 | Date: %6", profileName, getPlayerUID player, profileNamespace getVariable "intruders_bloodPoints", profileNamespace getVariable "intruders_perkInventory", profileNamespace getVariable "intruders_skinInventory", systemTime];

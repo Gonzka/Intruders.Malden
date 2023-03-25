@@ -17,5 +17,9 @@ if (_result) then {
 	profileNamespace setVariable ["intruders_bloodPoints", _bloodPoints];
 	saveProfileNamespace;
 	[] spawn gonzka_fnc_updateShopMenu;
-	[_item] call gonzka_fnc_addPerk;
+	if (_item isEqualTo "mysterybox") then {
+		[] call gonzka_fnc_addRandomSkin;
+	} else {
+		[_item] call gonzka_fnc_addPerk;
+	};
 };

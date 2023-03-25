@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.17.0&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.17.0&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.18.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.18.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -437,10 +437,6 @@
 			<Original>Perk unlocked</Original>
 			<German>Talent freigeschaltet</German>
 		</Key>
-		<Key ID="STR_GAME_SkinUnlocked">
-			<Original>Skin unlocked</Original>
-			<German>Aussehen freigeschaltet</German>
-		</Key>
 		<Key ID="STR_GAME_RewardAvailable">
 			<Original>Reward available</Original>
 			<German>Belohnung verfügbar</German>
@@ -460,6 +456,14 @@
 		<Key ID="STR_GAME_FeaturedItem">
 			<Original>FEATURED ITEM</Original>
 			<German>VORGESTELLTES ITEM</German>
+		</Key>
+		<Key ID="STR_GAME_SkinUnlocked">
+			<Original>This piece of clothing is now unlocked.</Original>
+			<German>Dieses Kleidungsstück ist jetzt freigeschaltet.</German>
+		</Key>
+		<Key ID="STR_GAME_NoMoreSkins">
+			<Original>There are no more skins in stock that you don't already own. Try again in the next update. Your blood points have been refunded.</Original>
+			<German>Es sind keine Skins mehr vorrätig, die du nicht schon besitzt. Versuche es nach dem nächsten Update erneut. Deine Blutpunkte wurden zurückerstattet.</German>
 		</Key>
 		<Key ID="STR_GAME_PumpkinAction">
 			<Original>Destroy Pumpkin</Original>
@@ -1230,40 +1234,8 @@
 			<German>Glückwunsch, du kannst auf altis.new-haven.life eine exklusive SUV-Fahrzeuglackierung abholen! Gehe dort zur verlassenen Hütte, um die Belohnung zu erhalten. Danach kannst du deinen neuen Skin bei einem Autohändler kaufen.</German>
 		</Key>
 		<Key ID="STR_SKIN_CodeArmaOpterix">
-			<Original>You have unlocked the ArmaOpterix collection. It includes journalist clothes and the face of Martin Opterix along with custom voicelines!</Original>
-			<German>Du hast die ArmaOpterix Kollektion freigeschaltet. Sie enthält Journalisten-Kleidung und das Gesicht von Martin Opterix, zusammen mit eigenen Sprecherzeilen!</German>
-		</Key>
-		<Key ID="STR_SKIN_HolidaySweater">
-			<Original>Holiday Sweater</Original>
-			<German>Weihnachtspullover</German>
-		</Key>
-		<Key ID="STR_SKIN_HolidaySweaterLore">
-			<Original>You should prepare yourself for the worst in the next match!</Original>
-			<German>Für die nächste Partie solltest du dich warm anziehen!</German>
-		</Key>
-		<Key ID="STR_SKIN_CodeHolidaySweater">
-			<Original>You have unlocked a Holiday Sweater.</Original>
-			<German>Du hast einen Weihnachtspullover freigeschaltet.</German>
-		</Key>
-		<Key ID="STR_SKIN_SpookyScarySkeleton">
-			<Original>Spooky Scary Skeleton</Original>
-			<German>Gespenstisch Gruseliges Skelett</German>
-		</Key>
-		<Key ID="STR_SKIN_SpookyScarySkeletonLore">
-			<Original>Even Helmut Mueller still goes from door to door on Halloween at his age. With his spooky skeleton T-shirt, he would love to scam some lollipops.</Original>
-			<German>Sogar Helmut Mueller zieht in seinem Alter immer noch an Halloween von Tür zu Tür. Mit seinem gruseligen Skelett T-Shirt möchte er am liebsten Dauerlutscher ergaunern.</German>
-		</Key>
-		<Key ID="STR_SKIN_CodeSpookyScarySkeleton">
-			<Original>You have unlocked a Spooky Scary Skeleton-Outfit.</Original>
-			<German>Du hast ein gespenstisch gruseliges Skelett-Outfit freigeschaltet.</German>
-		</Key>
-		<Key ID="STR_SKIN_Gendarme">
-			<Original>Gendarme</Original>
-			<German>Gendarm</German>
-		</Key>
-		<Key ID="STR_SKIN_Paramedic">
-			<Original>Paramedic</Original>
-			<German>Sanitäter</German>
+			<Original>You have unlocked the face of Martin Opterix along with custom voicelines!</Original>
+			<German>Du hast das Gesicht von Martin Opterix zusammen mit eigenen Sprecherzeilen freigeschaltet!</German>
 		</Key>
 		<Key ID="STR_SKIN_Drugbaron">
 			<Original>Drug Baron (Helmut Mueller)</Original>
@@ -1360,6 +1332,14 @@
 		<Key ID="STR_SKIN_BucketheadSmile">
 			<Original>Sadistic Grin</Original>
 			<German>Sadistisches Grinsen</German>
+		</Key>
+		<Key ID="STR_SKIN_Mysterybox">
+			<Original>Mysterybox</Original>
+			<German>Geheimkiste</German>
+		</Key>
+		<Key ID="STR_SKIN_MysteryboxDesc">
+			<Original>This box contains a random piece of clothing and can be purchased multiple times.</Original>
+			<German>Diese Kiste enthält ein zufälliges Kleidungsstück und kann mehrfach gekauft werden.</German>
 		</Key>
 	</Package>
 	<Package name="Quests">

@@ -4,7 +4,7 @@
     Master eventhandler file
 */
 
-player addEventHandler ["InventoryOpened", {findDisplay 602 closeDisplay 1; call gonzka_fnc_playerSkins; true}];
+player addEventHandler ["InventoryOpened", {findDisplay 602 closeDisplay 1; true}];
 player addEventHandler ["Fired",{_this call gonzka_fnc_onFired}];
 player addEventHandler ["HandleDamage", {_this call gonzka_fnc_handleDamage}];
 player addEventHandler ["Dammaged", {_this call gonzka_fnc_dammaged}];

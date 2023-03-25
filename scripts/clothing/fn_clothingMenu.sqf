@@ -22,7 +22,7 @@ oldFace = face player;
 createDialog "ClothingMenu";
 disableSerialization;
 
-(findDisplay 3100) displaySetEventHandler ["KeyDown","if ((_this select 1) isEqualTo 1) then {closeDialog 0; [] call gonzka_fnc_playerSkins;}"]; //Fix Custom Skin after ESC
+(findDisplay 3100) displaySetEventHandler ["KeyDown","if ((_this select 1) isEqualTo 1) then {closeDialog 0;}"];
 
 sliderSetRange [3102, 0, 360];
 
@@ -60,50 +60,39 @@ cMenu_lock = false;
 if (isNull (findDisplay 3100)) exitWith {};
 
 private _display = findDisplay 3100;
-private _treelist = _display displayCtrl 3101;
+private _treelist = _display displayCtrl 3101;  
 tvClear _treelist;
-private _clothingcat = ("true" configClasses (missionConfigFile >> "Clothing" >> "Category"));
-private "_treeVatId";
 {
     private _displaynamecat = getText(_x >> "displayname");
     private _conditions = getText(_x >> "conditions");
     if ([_conditions] call gonzka_fnc_levelCheck) then {
-        _treeVatId = _treelist tvAdd[[],_displaynamecat];
-    };
-    {
-        private "_pic";
-        private "_details";
-        private "_undertreeid";
-        private _className = _x select 0;
-        private _displayName = _x select 1;
-        private _tooltip = _x select 2;
-        private _pic = _x select 3;
-        if !(_className isEqualTo "NONE") then {
-            _details = [_className] call gonzka_fnc_fetchCfgDetails;
-            if (_pic isEqualTo "") then {
-                _pic = (_details select 2);
-            };
-        };
-        if ([_x] call gonzka_fnc_levelCheck) then {
-            if (isNil "_details") then {
-                _undertreeid = _treelist tvAdd [[_treeVatId], _displayName];
-                _treelist tvSetData [ [_treeVatId, _undertreeid], _className];
-            } else {
+        private _treeVatId = _treelist tvAdd[[],_displaynamecat];
+        {
+            private _className = _x select 0;
+            private _displayName = _x select 1;
+            private _tooltip = _x select 2;
+            private _pic = _x select 3;
+            if !(_className isEqualTo "NONE") then {
+                private _details = [_className] call gonzka_fnc_fetchCfgDetails;
                 if (_displayName isEqualTo "") then {
-                    _undertreeid = _treelist tvAdd [[_treeVatId], (_details select 1)];
-                } else {
-                    _undertreeid = _treelist tvAdd [[_treeVatId], _displayName];
+                    _displayName = _details select 1;
                 };
-                _treelist tvSetData [ [_treeVatId, _undertreeid], _className];
-                private _newpath = [_treeVatId] + [_undertreeid];
-                _treelist tvSetPicture [_newpath, _pic];
-                _treelist tvSetTooltip [_newpath, _tooltip];
+                if (_pic isEqualTo "") then {
+                    _pic = _details select 2;
+                };
             };
-        };
-    } forEach getArray (_x >> "clothing");
-} forEach _clothingcat;
-
-[] call gonzka_fnc_playerSkins;
+            private _undertreeid = _treelist tvAdd [[_treeVatId], _displayName];
+            private _newpath = [_treeVatId] + [_undertreeid];
+            _treelist tvSetData [_newpath, _className];
+            _treelist tvSetTooltip [_newpath, _tooltip];
+            if ([_x] call gonzka_fnc_levelCheck) then {
+                _treelist tvSetPicture [_newpath, _pic];
+            } else {
+                _treelist tvSetPicture [_newpath, "a3\ui_f\data\gui\rsc\rscdisplaymultiplayer\sessions_locked_ca.paa"];
+            };
+        } forEach getArray (_x >> "clothing");
+    };
+} forEach ("true" configClasses (missionConfigFile >> "Clothing"));
 
 waitUntil {isNull (findDisplay 3100)};
 
@@ -163,7 +152,6 @@ if (isNil "clothesEquiped") exitWith {
     };
 	
 	[player, oldFace] remoteExec ["setFace", 0, player];
-    [] call gonzka_fnc_playerSkins;
 };
 clothesEquiped = nil;
 

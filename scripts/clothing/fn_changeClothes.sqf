@@ -9,8 +9,8 @@
 disableSerialization;
 private _control = (_this select 0) select 0;
 private _selection = (_this select 0) select 1;
-if (_selection isEqualTo -1) exitWith {/*hint localize "STR_Shop_NoSelection";*/};
-if (isNull _control) exitWith {/*hint localize "STR_Shop_NoDisplay"*/};
+if (_selection isEqualTo -1) exitWith {};
+if (isNull _control) exitWith {};
 if (cMenu_lock) exitWith {};
 cMenu_lock = true;
 
@@ -34,4 +34,10 @@ if (_data isEqualTo "NONE") then {
 
 cMenu_lock = false;
 
-[] call gonzka_fnc_playerSkins;
+private _picture = _control tvPicture _selection;
+if (_picture isEqualTo "a3\ui_f\data\gui\rsc\rscdisplaymultiplayer\sessions_locked_ca.paa") then {
+    ((findDisplay 3100) displayCtrl 3103) ctrlEnable false;
+    clothing_equip set[clothing_filter,""];
+} else {
+    ((findDisplay 3100) displayCtrl 3103) ctrlEnable true;
+};

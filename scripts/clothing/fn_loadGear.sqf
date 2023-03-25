@@ -30,5 +30,4 @@ if (!(_vest isEqualTo "")) then {player addVest _vest};
 if (!(_backpack isEqualTo "")) then {player addBackpack _backpack};
 if (!(_face isEqualTo "") && playerSide isEqualTo civilian) then {player setFace _face; [player, _face] remoteExec ["setFace", -clientOwner, player]};
 
-[] call gonzka_fnc_playerSkins;
 [] spawn gonzka_fnc_setVoicelines;

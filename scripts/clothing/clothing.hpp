@@ -49,7 +49,7 @@ class ClothingMenu {
         };
         class EquipButton : RscButtonMenu
         {
-			idc = -1;
+			idc = 3103;
             text = "$STR_GAME_Equip";
 			font = PuristaLight;
             x = -0.00104166666666667 * safezoneW + safezoneX;
@@ -74,7 +74,7 @@ class ClothingMenu {
             w = 0.113020833333333 * safezoneW;
             h = 0.0267575462512172 * safezoneH;
 		    colorBackground[] = {-1,-1,-1,1};
-			onButtonClick = "playSound ""Click1""; closeDialog 0; [] call gonzka_fnc_playerSkins;";
+			onButtonClick = "playSound ""Click1""; closeDialog 0;";
 			onMouseEnter = "playSound ""Click2"";";
             class Attributes
             {
