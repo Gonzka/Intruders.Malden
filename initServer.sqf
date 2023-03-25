@@ -14,8 +14,10 @@ private _switchLightRange = switch (worldName) do {
     case "Altis": {28};
     case default {10};
 };
-{ { [_x, "OFF"] remoteExec ["switchLight",0,true]; } forEach (nearestObjects [_x, [], _switchLightRange]); } forEach generators;
-[] remoteExecCall ["gonzka_fnc_repairGeneratorAction", [0, -2] select isDedicated, true];
+{ 
+    { [_x, "OFF"] remoteExec ["switchLight",0,true]; } forEach (nearestObjects [_x, [], _switchLightRange]);
+    [_x] remoteExecCall ["gonzka_fnc_repairGeneratorAction", [0, -2] select isDedicated, _x]; 
+} forEach generators;
 
 //CHESTS
 private _chestresult = []; 
@@ -36,10 +38,10 @@ private _chestgroups = [
     _x deleteAt _rindex;
     _chestresult pushBack _randSel;
     _randSel hideObjectGlobal false;
+    [_randSel] remoteExecCall ["gonzka_fnc_searchChestAction", [0, -2] select isDedicated, _randSel];
 } forEach _chestgroups;
 
 chestgroup = _chestresult; publicVariable "chestgroup";
-[] remoteExecCall ["gonzka_fnc_searchChestAction", [0, -2] select isDedicated, true];
 
 //TOTEMS
 private _totemResult = []; 
