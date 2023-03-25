@@ -41,7 +41,7 @@ class VirtualItems {
 		description = "STR_ITEM_BondDesc";
 		icon = "textures\ico_bond.paa";
 		side = "CIV";
-		price = 20000;
+		price = 15000;
 		released = true;
 	};
 	
@@ -111,7 +111,7 @@ class VirtualItems {
 		description = "STR_ITEM_HexNoOneEscapesDeathDesc";
 		icon = "textures\ico_hexNoOneEscapesDeath.paa";
 		side = "EAST";
-		price = 25000;
+		price = 20000;
 		released = true;
 	};
 	
@@ -121,7 +121,7 @@ class VirtualItems {
 		description = "STR_ITEM_HexRetributionDesc";
 		icon = "textures\ico_hexRetribution.paa";
 		side = "EAST";
-		price = 20000;
+		price = 15000;
 		released = true;
 	};
 	
@@ -151,7 +151,7 @@ class VirtualItems {
 		description = "STR_ITEM_HopeDesc";
 		icon = "textures\ico_hope.paa";
 		side = "CIV";
-		price = 10000;
+		price = 15000;
 		released = true;
 	};
 	
@@ -161,7 +161,7 @@ class VirtualItems {
 		description = "STR_ITEM_JamAndBananaDesc";
 		icon = "textures\ico_jamAndBanana.paa";
 		side = "EAST";
-		price = 20000;
+		price = 15000;
 		released = true;
 	};
 	
@@ -191,7 +191,7 @@ class VirtualItems {
 		description = "STR_ITEM_PlunderersInstinctDesc";
 		icon = "textures\ico_plunderersInstinct.paa";
 		side = "CIV";
-		price = 15000;
+		price = 20000;
 		released = true;
 	};
 	
@@ -221,7 +221,7 @@ class VirtualItems {
 		description = "STR_ITEM_SprintBurstDesc";
 		icon = "textures\ico_sprintBurst.paa";
 		side = "CIV";
-		price = 25000;
+		price = 20000;
 		released = true;
 	};
 	
