@@ -6,8 +6,6 @@
 
 waitUntil {{side _x isEqualTo civilian && isNull objectParent _x} count playableUnits < 1};
 
-sleep 1;
-
 if (intrudersWin) then {
     ["IntrudersWin",playerSide isEqualTo civilian,12] remoteExecCall ['BIS_fnc_endMission',0];
 } else {
@@ -18,6 +16,4 @@ if (intrudersWin) then {
     ["KillerWin",playerSide isEqualTo east,12] remoteExecCall ['BIS_fnc_endMission',0];
 };
 
-sleep 1;
-
-call gonzka_fnc_scoreboard;
+[] spawn gonzka_fnc_scoreboard;

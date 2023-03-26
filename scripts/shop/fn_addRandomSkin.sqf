@@ -67,6 +67,13 @@ private _allSkins = [
 ];
 
 private _inventory = profileNamespace getVariable "intruders_skinInventory";
+
+{
+    if !(_x in _allSkins) then { //Cleanup: Non-existing classnames are removed from the profilenamespace
+        _inventory deleteAt (_inventory find _x);
+    };
+} forEach _inventory;
+
 _allSkins = _allSkins - _inventory; //No duplicates
 if (_allSkins isEqualTo []) exitWith {
     ["STR_GAME_Error", "STR_GAME_NoMoreSkins", 10, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
