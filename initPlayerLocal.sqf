@@ -40,8 +40,4 @@ profileFace = face player;
 
 [player, ""] remoteExec ["switchMove"]; //Animation fix
 
-if (playerSide isEqualTo east) then { //Killer object undefined fix
-    Killer = allPlayers select {side _x isEqualTo east} select 0; publicVariable "Killer";
-};
-
 [] execVM "scripts\init.sqf";

@@ -70,7 +70,7 @@ diag_log "[Intruders Client] User actions completed";
 
 diag_log "[Intruders Client] Waiting for players";
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_KillerWaiting"];
-waitUntil {!isNil "Killer"};
+waitUntil {Killer = allPlayers select {side _x isEqualTo east} select 0; !isNil "Killer"}; //Killer object undefined fix
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_IntruderWaiting"];
 waitUntil {civilian countSide allPlayers > 0};
 uiNamespace setVariable ["loadingBarText",localize "STR_INIT_ReadyWaiting"];
