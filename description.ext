@@ -69,28 +69,19 @@ class CfgVehicles {
 	};
 };
 
-class CfgDebriefing {
-	class KillerWin {
-		title = "$STR_BRIEF_GameOver";
-		subtitle = "$STR_BRIEF_KillerWin";
+class CfgDebriefing {	
+	class MatchFinished {
+		title = "$STR_BRIEF_MatchFinished";
+		subtitle = "$STR_BRIEF_LobbyReturn";
 		description = "";
 		pictureBackground = "\intruders_mod\ui\background.jpg";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};
 	
-	class IntrudersWin {
-		title = "$STR_BRIEF_GameOver";
-		subtitle = "$STR_BRIEF_IntrudersWin";
-		description = "";
-		pictureBackground = "\intruders_mod\ui\background.jpg";
-		picture = "";
-		pictureColor[] = {1.0,1.0,1.0,1};
-	};
-	
-	class KillerLeft {
-		title = "$STR_BRIEF_GameOver";
-		subtitle = "$STR_BRIEF_KillerLeft";
+	class KillerDisconnected {
+		title = "$STR_BRIEF_KillerDisconnected";
+		subtitle = "$STR_BRIEF_LobbyReturn";
 		description = "";
 		pictureBackground = "\intruders_mod\ui\background.jpg";
 		picture = "";

@@ -44,13 +44,13 @@ if ((_scoreTable select 0 select 0) >= 9000) then { //MINIMUM OF 9.000 POINTS
 };
 */
 
-[parsetext _text, toUpper localize "STR_BRIEF_GameOver"] spawn BIS_fnc_guiMessage;
+[parsetext _text, toUpper localize "STR_BRIEF_MatchFinished"] spawn BIS_fnc_guiMessage;
 playSound "Orange_Timeline_FadeOut";
 playMusic "EventTrack03_F_Curator";
 
 //The first player of the playableUnits list sends the scoreboard to players who have chosen the spectator slot in the lobby. So this list will be sent only once.
 if ((playableUnits select 0) isEqualTo player) then {
-	[parsetext _text, toUpper localize "STR_BRIEF_GameOver"] remoteExec ["BIS_fnc_guiMessage", sideLogic];
+	[parsetext _text, toUpper localize "STR_BRIEF_MatchFinished"] remoteExec ["BIS_fnc_guiMessage", sideLogic];
 	["EventTrack03_F_Curator"] remoteExecCall ["playMusic", sideLogic];
 };
 

@@ -37,7 +37,9 @@ player addEventHandler ["Killed", {
 			_unit action ["eject", _veh];
 		} else {
 			if (player isEqualTo _unit) then {
-				[] call gonzka_fnc_escape;
+				["Initialize", [player, [civilian], false, true, true, true, true, false]] call BIS_fnc_EGSpectator;
+				["STR_SCORE_Survived",5000] call gonzka_fnc_addBloodpoints;
+				quest_escape = true; //QUEST
 			};
 		};
 	}];

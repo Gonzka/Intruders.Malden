@@ -86,8 +86,8 @@ if (playerSide isEqualTo east) then {
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call gonzka_fnc_keyHandler"];
 
 [] spawn gonzka_fnc_initQuest;
-[] spawn gonzka_fnc_checkWinFailConditions;
-[] spawn gonzka_fnc_killerLeftGame;
+[] spawn gonzka_fnc_waitUntilMatchFinished;
+[] spawn gonzka_fnc_waitUntilKillerDisconnected;
 
 if !(endgameActivated) then {
     totalGenerators = count (allPlayers select {side _x != sideLogic}); //For each player, a generator that needs repairs is added.

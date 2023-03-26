@@ -575,21 +575,13 @@
 		</Key>
 	</Package>
 	<Package name="Debriefing">
-		<Key ID="STR_BRIEF_GameOver">
-			<Original>Game over</Original>
-			<German>Spielrunde beendet</German>
+		<Key ID="STR_BRIEF_MatchFinished">
+			<Original>Match finished</Original>
+			<German>Partie abgeschlossen</German>
 		</Key>
-		<Key ID="STR_BRIEF_KillerWin">
-			<Original>The Killer has won</Original>
-			<German>Der Killer hat gewonnen</German>
-		</Key>
-		<Key ID="STR_BRIEF_IntrudersWin">
-			<Original>The Survivors have won</Original>
-			<German>Die Überlebenden haben gewonnen</German>
-		</Key>
-		<Key ID="STR_BRIEF_KillerLeft">
-			<Original>The Killer has disconnected</Original>
-			<German>Der Killer hat die Verbindung getrennt</German>
+		<Key ID="STR_BRIEF_KillerDisconnected">
+			<Original>Killer disconnected</Original>
+			<German>Killer getrennt</German>
 		</Key>
 		<Key ID="STR_BRIEF_Goodbye">
 			<Original>Goodbye</Original>

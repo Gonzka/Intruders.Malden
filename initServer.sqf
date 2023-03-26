@@ -2,7 +2,6 @@
 setTimeMultiplier 0.1;
 totalGenerators = 5; publicVariable "totalGenerators";
 repairedGenerators = []; publicVariable "repairedGenerators";
-intrudersWin = false; publicVariable "intrudersWin";
 endgameActivated = false; publicVariable "endgameActivated";
 deadPlayers = []; publicVariable "deadPlayers";
 generators = [genericGen_1, genericGen_2, genericGen_3, genericGen_4, genericGen_5 , genericGen_6, genericGen_7];
