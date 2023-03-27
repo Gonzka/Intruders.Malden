@@ -8,11 +8,11 @@ params [
 	["_generator", objNull, [objNull]]
 ];
 
-private _actionID = [ 
-	_generator, 
-	localize "STR_GAME_Repair",  
-	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",  
-	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",  
+private _actionID = [
+	_generator,
+	localize "STR_GAME_Repair",
+	"\a3\ui_f_oldman\data\igui\cfg\holdactions\repair_ca.paa",
+	"\a3\ui_f_oldman\data\igui\cfg\holdactions\repair_ca.paa",
 	"_this distance _target < 2 && {side _this isEqualTo civilian} && {!endgameActivated} && {_target getVariable ['isRepairedBy', objNull] in [objNull, _this]}",
 	"_this distance _target < 2",
 	{
