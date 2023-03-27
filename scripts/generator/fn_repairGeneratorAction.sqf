@@ -18,6 +18,7 @@ private _actionID = [
 	{
 		_target setVariable ["isRepairedBy", _caller, true];
 		_caller playMoveNow "Acts_carFixingWheel";
+		[["Intruders", "skillChecks"], 15,"",35,"",true,true,true,true] call BIS_fnc_advHint;
 	},
 	{
 		params ["_target", "_caller", "_actionId", "_arguments", "_progress", "_maxProgress"];

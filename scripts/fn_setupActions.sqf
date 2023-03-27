@@ -51,7 +51,10 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 	"\a3\data_f_destroyer\data\UI\IGUI\Cfg\holdactions\holdAction_loadVehicle_ca.paa",
 	"count (nearestObjects [player, ['Intruders_Object_Palett'], 3]) > 0 && {((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 0} && {side _this isEqualTo civilian}",
 	"((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 0",
-	{},
+	{
+		[["Intruders", "palletStun"], 15,"",35,"",true,true,true,true] call BIS_fnc_advHint;
+		[["Intruders", "stuns"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint",east];
+	},
 	{},
 	{
 		{

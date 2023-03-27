@@ -109,14 +109,6 @@
 		</Key>
 	</Package>
 	<Package name="Gameplay">
-		<Key ID="STR_GAME_IntrudersTask">
-			<Original>Repair the Generators</Original>
-			<German>Repariere die Generatoren</German>
-		</Key>
-		<Key ID="STR_GAME_KillerTask">
-			<Original>Kill the Survivors</Original>
-			<German>Töte die Überlebenden</German>
-		</Key>
 		<Key ID="STR_GAME_SkillCheck">
 			<Original>Press the left mouse button</Original>
 			<German>Drücke die linke Maustaste</German>
@@ -601,6 +593,94 @@
 		</Key>
 	</Package>
 	<Package name="Hints">
+	    <Key ID="STR_HINT_SurvivorsRole">
+			<Original>Survivor's Role</Original>
+			<German>Rolle der Überlebenden</German>
+		</Key>
+		<Key ID="STR_HINT_SurvivorsRoleDesc">
+			<Original>%1%2As a Survivor, you must hide from the Killer while repairing generators to call escape vehicles.%1%2Once enough generators are repaired, you can open the escape vehicle and escape the match.%1</Original>
+			<German>%1%2Als Überlebender musst du dich vor dem Killer verstecken, während du Generatoren reparierst, um die Fluchtfahrzeuge zu rufen.%1%2Sobald genug Generatoren repariert sind, kannst du das Fluchtfahrzeug öffnen und der Partie entkommen.%1</German>
+		</Key>
+		<Key ID="STR_HINT_SkillChecks">
+			<Original>Skill Checks</Original>
+			<German>Fähigkeitschecks</German>
+		</Key>
+		<Key ID="STR_HINT_SkillChecksDesc">
+			<Original>%1%2Skill checks will appear as you work on generators.%1%2Tap the left mouse button when the pointer passes over the green success zone.%1%2Hitting the red area notifies the Killer of your location.%1</Original>
+			<German>%1%2Wenn du an Generatoren arbeitest, erscheinen Fähigkeitschecks.%1%2Tippe auf die linke Maustaste, wenn der Zeiger über der grünen Erfolgszone ist.%1%2Wenn du den roten Bereich erwischst, erfährt der Killer deine Position.%1</German>
+		</Key>
+		<Key ID="STR_HINT_TerrorRadius">
+			<Original>Terror Radius</Original>
+			<German>Terrorradius</German>
+		</Key>
+		<Key ID="STR_HINT_TerrorRadiusDesc">
+			<Original>%1%2When the Killer is near, your heart beats louder.%1</Original>
+			<German>%1%2Wenn der Killer in der Nähe ist, pocht dein Herz lauter.%1</German>
+		</Key>
+		<Key ID="STR_HINT_Teamwork">
+			<Original>Teamwork</Original>
+			<German>Teamwork</German>
+		</Key>
+		<Key ID="STR_HINT_TeamworkDesc">
+			<Original>%1%2Teamwork is an essential part of Intruders.%1%2You will need to rescue Survivors when they have been knocked out by a Killer.%1</Original>
+			<German>%1%2Teamwork ist ein wesentlicher Teil von Intruders.%1%2Du musst Überlebende retten, sobald sie vom Killer niedergeschlagen wurden.%1</German>
+		</Key>
+		<Key ID="STR_HINT_Healing">
+			<Original>Healing</Original>
+			<German>Heilen</German>
+		</Key>
+		<Key ID="STR_HINT_HealingDesc">
+			<Original>%1%2Other Survivors can heal you, just as you can heal injured Survivors yourself.%1</Original>
+			<German>%1%2Andere Überlebende können dich heilen, ebenso wie du verwundete Überlebende heilen kannst.%1</German>
+		</Key>
+		<Key ID="STR_HINT_PalletStun">
+			<Original>Pallet Stun</Original>
+			<German>Betäubung durch Paletten</German>
+		</Key>
+		<Key ID="STR_HINT_PalletStunDesc">
+			<Original>%1%2Pull down pallets to slow the Killer when they're chasing you.%1%2Dropping a pallet on a Killer will stun them.%1%2Killers can destroy the pallets.%1</Original>
+			<German>%1%2Stoße Paletten um, damit der Killer bei deiner Verfolgung ausgebremst wird.%1%2Stößt du eine Palette auf einen Killer, so wird dieser betäubt.%1%2Killer können diese Paletten zerstören.%1</German>
+		</Key>
+		<Key ID="STR_HINT_KillersRole">
+			<Original>Killer's Role</Original>
+			<German>Rolle des Killers</German>
+		</Key>
+		<Key ID="STR_HINT_KillersRoleDesc">
+			<Original>%1%2As the Killer, you must hunt down and kill all the Survivors.%1%2As the Killer, you will be able to see the positions of all generators on the map. You must prevent Survivors from repairing the generators.%1</Original>
+			<German>%1%2Jage und töte als Killer alle Überlebenden.%1%2Als Killer kannst du die Positionen aller Generatoren auf der Karte sehen. Du musst verhindern, dass die Überlebenden die Generatoren reparieren.%1</German>
+		</Key>
+		<Key ID="STR_HINT_GeneratorSounds">
+			<Original>Generator Sounds</Original>
+			<German>Generatorengeräusche</German>
+		</Key>
+		<Key ID="STR_HINT_GeneratorSoundsDesc">
+			<Original>%1%2When a survivor fails a Skill Check, a visual notification appears to show you where the sound came from.%1</Original>
+			<German>%1%2Sobald ein Überlebender bei einem Fähigkeitscheck versagt, zeigt dir ein Symbol an, woher das Geräusch kam.%1</German>
+		</Key>
+		<Key ID="STR_HINT_DamagingGenerators">
+			<Original>Damaging Generators</Original>
+			<German>Generatoren beschädigen</German>
+		</Key>
+		<Key ID="STR_HINT_DamagingGeneratorsDesc">
+			<Original>%1%2You can damage partially repaired generators to regress their progress.%1</Original>
+			<German>%1%2Du kannst einen teilweise reparierten Generator beschädigen, um den Fortschritt zurückzuwerfen.%1</German>
+		</Key>
+		<Key ID="STR_HINT_Stuns">
+			<Original>Stuns</Original>
+			<German>Betäubungen</German>
+		</Key>
+		<Key ID="STR_HINT_StunsDesc">
+			<Original>%1%2Survivors can knock over pallets to slow you down.%1</Original>
+			<German>%1%2Überlebende können Paletten umstoßen, um dich auszubremsen.%1</German>
+		</Key>
+		<Key ID="STR_HINT_BleedingOut">
+			<Original>Bleeding out</Original>
+			<German>Ausbluten</German>
+		</Key>
+		<Key ID="STR_HINT_BleedingOutDesc">
+			<Original>%1%2An unconscious Survivor slowly bleeds out, but they can be rescued by other Survivors.%1%2A Survivor will immediately be killed after being unconscious 3 times.%1</Original>
+			<German>%1%2Ist ein Überlebender bewusstlos, blutet er langsam aus. Er kann aber von anderen Überlebenden gerettet werden.%1%2Wer 3-mal bewusstlos wurde, wird sofort getötet.%1</German>
+		</Key>
 		<Key ID="STR_HINT_WendigoAbility">
 			<Original>Cloaking</Original>
 			<German>Verhüllung</German>
@@ -1668,40 +1748,48 @@
 	</Package>
 	<Package name="LoadingTexts">
 		<Key ID="STR_LOADING_1">
-			<Original>Each Killer has unique abilities.</Original>
-			<German>Jeder Killer besitzt einzigartige Fähigkeiten.</German>
+			<Original>To escape, Survivors must repair 5 of the 7 generators located throughout the map.</Original>
+			<German>Um zu entkommen, müssen Überlebende 5 der 7 Generatoren auf der Karte reparieren.</German>
 		</Key>
 		<Key ID="STR_LOADING_2">
-			<Original>Run and press 'V' to jump as a survivor.</Original>
-			<German>Laufe und drücke 'V' um als Überlebender zu springen.</German>
+			<Original>Skill checks will appear as you work on generators. Fail one and the Killer will be alerted.</Original>
+			<German>Wenn du an Generatoren arbeitest, erscheinen Fähigkeitschecks. Wenn du versagst, wird der Killer alarmiert.</German>
 		</Key>
 		<Key ID="STR_LOADING_3">
-			<Original>Press 'F' to play different voice lines.</Original>
-			<German>Drücke 'F' um verschiedene Sprecherzeilen abzuspielen.</German>
+			<Original>Killers are faster than Survivors. Avoid running in a straight line. Instead, drop pallets in the Killer's path or jump over obstacles to get away.</Original>
+			<German>Killer sind schneller als Überlebende. Vermeide es, in einer geraden Linie zu laufen. Platziere stattdessen Paletten auf dem Weg des Killers oder springe über Hindernisse, um ihm zu entwischen.</German>
 		</Key>
 		<Key ID="STR_LOADING_4">
-			<Original>Every second can decide about life and death, because a killer wants your head. So you should quickly turn on the generators to get off the island as soon as possible with the escape vehicles.</Original>
-			<German>Jede Sekunde kann über Leben und Tod entscheiden, denn ein Mörder will deinen Kopf. Du solltest also schnell die Generatoren einschalten, um zügig mit den Fluchtfahrzeugen von der Insel verschwinden zu können.</German>
+			<Original>If struck thrice by the Killer you'll enter the Unconscious State. You'll need to rely on your allies to rescue you before it's too late.</Original>
+			<German>Wenn du dreimal vom Killer getroffen wirst, setzt der Bewusstlosstatus ein. Du musst dich auf deine Verbündeten verlassen, die dich retten müssen, bevor es zu spät ist.</German>
 		</Key>
 		<Key ID="STR_LOADING_5">
-			<Original>Grab your axe and slice the intruders from belly to chest and gut them slowly but with relish.</Original>
-			<German>Schnapp dir deine Axt und schlitze die Eindringlinge vom Bauch bis zur Brust auf und weide sie langsam und genüsslich aus.</German>
+			<Original>Keep an eye out for noise alerts created when Survivors fail generator skill checks.</Original>
+			<German>Achte auf Geräuschwarnungen, wenn Überlebende die Fähigkeitschecks bei Generatoren vermasseln.</German>
 		</Key>
 		<Key ID="STR_LOADING_6">
-			<Original>Equip yourself with extra ammunition or flashbangs and successfully defend yourself against the monster!</Original>
-			<German>Rüste dich mit zusätzlicher Munition oder Blendgranaten und wehre dich erfolgreich gegen das Monster!</German>
+			<Original>Each Killer has their own power to learn and master.</Original>
+			<German>Jeder Killer hat andere Fähigkeiten, die er erlernen und meistern kann.</German>
 		</Key>
 		<Key ID="STR_LOADING_7">
+			<Original>Some characters have their own voicelines. Hold 'F' to select and play them.</Original>
+			<German>Einige Charaktere haben ihre eigenen Sprecherzeilen. Halte 'F' gedrückt, um sie auszuwählen und abzuspielen.</German>
+		</Key>
+		<Key ID="STR_LOADING_8">
 			<Original>Perks are the core mechanic of Intruders. Collect bloodpoints and unlock more and more.</Original>
 			<German>Talente sind die Kernmechanik von Intruders. Sammle Blutpunkte und schalte immer mehr frei.</German>
 		</Key>
-		<Key ID="STR_LOADING_8">
-			<Original>In chests, depending on your luck, you can find better or worse items that can help you escape. However, you must be quick so that no one else opens the chests before you!</Original>
-			<German>In Truhen findest du je nach Glück, bessere oder schlechtere Gegenstände, die dir die Flucht erleichtern können. Du musst jedoch schnell sein, damit kein anderer die Truhen vor dir öffnet!</German>
-		</Key>
 		<Key ID="STR_LOADING_9">
-			<Original>Press 'L.Shift' as a survivor while running and break into a sprint at 150 % of your normal running speed for a few seconds.</Original>
+			<Original>Chests can be found during the match. These chests contain helpful Items such as First Aid Kits, Toolboxes, Smoke Bombs, or Flashbangs.</Original>
+			<German>Im Laufe der Partie können Truhen gefunden werden. Diese Truhen enthalten hilfreiche Gegenstände wie Erste-Hilfe-Kästen, Werkzeugkästen, Rauchbomben oder Blendgranaten.</German>
+		</Key>
+		<Key ID="STR_LOADING_10">
+			<Original>As a survivor, press 'L.Shift' while running and break into a sprint at 150 % of your normal running speed for a few seconds.</Original>
 			<German>Drücke als Überlebender während du läufst 'L.Shift' und verfalle in einen Sprint mit 150 % deiner normalen Laufgeschwindigkeit für einige Sekunden.</German>
+		</Key>
+		<Key ID="STR_LOADING_11">
+			<Original>As a survivor, press 'V' while running to jump over obstacles.</Original>
+			<German>Drücke als Überlebender während du läufst 'V', um über Hindernisse zu springen.</German>
 		</Key>
 	</Package>
 </Project>

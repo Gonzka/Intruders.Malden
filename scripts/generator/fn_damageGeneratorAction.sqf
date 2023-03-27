@@ -17,7 +17,9 @@ if ("brutalStrength" in (player getVariable "intruders_activePerks")) then {
 		"\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\destroy_ca.paa",
 		"_this distance _target < 2 && {side _this isEqualTo east} && {!(_target in repairedGenerators)} && {!endgameActivated} && {_target getVariable 'duration' < 60} && {isNull (_target getVariable ['isRepairedBy', objNull])} && {!(_target getVariable ['isRegressing', false])}",
 		"_this distance _target < 2",
-		{},
+		{
+			[["Intruders", "damagingGenerators"], 15,"",35,"",true,true,true,true] call BIS_fnc_advHint;
+		},
 		{},
 		{
 			[_target] spawn gonzka_fnc_genRegression;

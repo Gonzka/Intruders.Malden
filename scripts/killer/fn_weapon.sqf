@@ -65,6 +65,7 @@ chopWeapon = {
 	};
 	
 	[10] remoteExecCall ["BIS_fnc_bloodEffect",_tar]; //Adds the bleeding effect post-processing effect to the players screen
+	[["Intruders", "healing"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint",civilian];
 	
 	//ON-HIT SPRINT
 	if !(_tar getVariable ["BIS_revive_incapacitated", false] && lifeState _tar == "INCAPACITATED") then {

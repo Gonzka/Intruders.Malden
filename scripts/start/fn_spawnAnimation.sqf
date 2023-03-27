@@ -41,6 +41,7 @@ if (playerSide isEqualTo civilian) then {
 			player say3D [selectRandom ["kolo_spawn_1","kolo_spawn_2","kolo_spawn_3","kolo_spawn_4"], 100];
 		};
 	};
+	[["Intruders", "survivorsRole"], 15,"",35,"",true,true,true,true] call BIS_fnc_advHint;
 };
 
 if (playerSide isEqualTo east) then {
@@ -59,6 +60,5 @@ if (playerSide isEqualTo east) then {
 		player say3D [selectRandom ["growlWeird_1","growlWeird_2","growlWeird_3","growlWeird_4"], 50];
 	};
 	
-	private _hintClass = player getVariable "killer";
-	[["Intruders", _hintClass], 15,"",35,"",true,false,false,true] call BIS_fnc_advHint;
+	[["Intruders", "killersRole"], 15,"",35,"",true,true,true,true] call BIS_fnc_advHint;
 };

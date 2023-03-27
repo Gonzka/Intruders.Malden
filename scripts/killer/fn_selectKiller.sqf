@@ -50,3 +50,5 @@ switch (_killer) do {
 };
 
 call gonzka_fnc_loadGear;
+
+[["Intruders", player getVariable "killer"], 15,"",35,"",true,true,false,true] call BIS_fnc_advHint;

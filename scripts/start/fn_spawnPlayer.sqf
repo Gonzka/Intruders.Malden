@@ -4,10 +4,11 @@
     Spawns the player on the map with a cinematic shot
 */
 
-private "_spawnPoints";
+private ["_spawnPoints","_mapName"];
 
 switch (worldName) do {
 	case "Tanoa": {
+		_mapName = localize "STR_TANOA_Map";
 		_spawnPoints = if (playerSide isEqualTo east) then {
 			[
 				["killerPos_1","STR_TANOA_KillerSpawn1"],
@@ -33,6 +34,7 @@ switch (worldName) do {
 		};
     };
 	case "Malden": {
+		_mapName = localize "STR_MALDEN_Map";
 		_spawnPoints = if (playerSide isEqualTo east) then {
 			[
 				["killerPos_1","STR_MALDEN_KillerSpawn1"],
@@ -57,6 +59,7 @@ switch (worldName) do {
 		};
 	};
 	case "Altis": {
+		_mapName = localize "STR_ALTIS_Map";
 		_spawnPoints = if (playerSide isEqualTo east) then {
 			[
 				["killerPos_1","STR_ALTIS_KillerSpawn1"],
@@ -78,6 +81,7 @@ switch (worldName) do {
 		};
 	};
 	default {
+		_mapName = worldName;
 		_spawnPoints = [["",""]];
 	};
 };
@@ -97,7 +101,7 @@ showCinemaBorder false;
 camUseNVG false;
 
 titleCut ["","BLACK IN",1];
-[parseText format ["<t font='PuristaBold' size='2.0'>%1</t><br/>%2", localize (_randomPoint select 1), if (playerSide isEqualTo east) then {localize "STR_GAME_KillerTask"} else {localize "STR_GAME_IntrudersTask"}], true, nil, 6, 1, 0] spawn BIS_fnc_textTiles;
+[parseText format ["<t font='PuristaBold' size='2.0'>%1</t><br/><t font='PuristaLight' size='1.5'>%2</t>", localize (_randomPoint select 1), _mapName], true, nil, 6, 1, 0] spawn BIS_fnc_textTiles;
 
 private _pos1 = player getRelPos [3, 0];
 private _pos2 = player getRelPos [-2, 50];
