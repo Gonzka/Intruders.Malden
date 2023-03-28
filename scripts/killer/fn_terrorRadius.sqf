@@ -16,7 +16,6 @@ while {alive player} do {
 		_intensity = (1 - _dist / _radius);
 		playSoundUI ["heartbeat", _intensity, _minPitch + (_maxPitch - _minPitch) * _intensity];
 		inTerrorRadius = true;
-		[["Intruders", "terrorRadius"], 15,"",35,"",true,true,true,true] call BIS_fnc_advHint;
 	} else {
 		inTerrorRadius = false;
 	};

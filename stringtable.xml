@@ -598,112 +598,64 @@
 			<German>Rolle der Überlebenden</German>
 		</Key>
 		<Key ID="STR_HINT_SurvivorsRoleDesc">
-			<Original>%1%2As a Survivor, you must hide from the Killer while repairing generators to call escape vehicles.%1%2Once enough generators are repaired, you can open the escape vehicle and escape the match.%1</Original>
-			<German>%1%2Als Überlebender musst du dich vor dem Killer verstecken, während du Generatoren reparierst, um die Fluchtfahrzeuge zu rufen.%1%2Sobald genug Generatoren repariert sind, kannst du das Fluchtfahrzeug öffnen und der Partie entkommen.%1</German>
+			<Original>%2As a Survivor, you must hide from the Killer while repairing generators to call escape vehicles.%1%2Teamwork is crucial to your success in a match. Other Survivors can heal you, just as you can heal injured Survivors yourself.%1%1%3Basic controls:%4%1%2Press %11 while running to jump.%1%2Press %12 while running to sprint for a short time.</Original>
+			<German>%2Als Überlebender musst du dich vor dem Killer verstecken, während du Generatoren reparierst, um die Fluchtfahrzeuge zu rufen.%1%2Teamarbeit ist ausschlaggebend, um eine Partie erfolgreich abzuschließen. Andere Überlebende können dich heilen, ebenso wie du verwundete Überlebende heilen kannst.%1%1%3Grundlegende Steuerung:%4%1%2Drücke beim Laufen %11, um zu springen.%1%2Drücke beim Laufen %12, um für kurze Zeit zu sprinten.</German>
 		</Key>
 		<Key ID="STR_HINT_SkillChecks">
 			<Original>Skill Checks</Original>
 			<German>Fähigkeitschecks</German>
 		</Key>
 		<Key ID="STR_HINT_SkillChecksDesc">
-			<Original>%1%2Skill checks will appear as you work on generators.%1%2Tap the left mouse button when the pointer passes over the green success zone.%1%2Hitting the red area notifies the Killer of your location.%1</Original>
-			<German>%1%2Wenn du an Generatoren arbeitest, erscheinen Fähigkeitschecks.%1%2Tippe auf die linke Maustaste, wenn der Zeiger über der grünen Erfolgszone ist.%1%2Wenn du den roten Bereich erwischst, erfährt der Killer deine Position.%1</German>
-		</Key>
-		<Key ID="STR_HINT_TerrorRadius">
-			<Original>Terror Radius</Original>
-			<German>Terrorradius</German>
-		</Key>
-		<Key ID="STR_HINT_TerrorRadiusDesc">
-			<Original>%1%2When the Killer is near, your heart beats louder.%1</Original>
-			<German>%1%2Wenn der Killer in der Nähe ist, pocht dein Herz lauter.%1</German>
-		</Key>
-		<Key ID="STR_HINT_Teamwork">
-			<Original>Teamwork</Original>
-			<German>Teamwork</German>
-		</Key>
-		<Key ID="STR_HINT_TeamworkDesc">
-			<Original>%1%2Teamwork is an essential part of Intruders.%1%2You will need to rescue Survivors when they have been knocked out by a Killer.%1</Original>
-			<German>%1%2Teamwork ist ein wesentlicher Teil von Intruders.%1%2Du musst Überlebende retten, sobald sie vom Killer niedergeschlagen wurden.%1</German>
-		</Key>
-		<Key ID="STR_HINT_Healing">
-			<Original>Healing</Original>
-			<German>Heilen</German>
-		</Key>
-		<Key ID="STR_HINT_HealingDesc">
-			<Original>%1%2Other Survivors can heal you, just as you can heal injured Survivors yourself.%1</Original>
-			<German>%1%2Andere Überlebende können dich heilen, ebenso wie du verwundete Überlebende heilen kannst.%1</German>
+			<Original>%2Skill checks will appear as you work on generators.%1%2Tap the left mouse button when the pointer passes over the green success zone.%1%2Hitting the red area notifies the Killer of your location.</Original>
+			<German>%2Wenn du an Generatoren arbeitest, erscheinen Fähigkeitschecks.%1%2Tippe auf die linke Maustaste, wenn der Zeiger über der grünen Erfolgszone ist.%1%2Wenn du den roten Bereich erwischst, erfährt der Killer deine Position.</German>
 		</Key>
 		<Key ID="STR_HINT_PalletStun">
 			<Original>Pallet Stun</Original>
 			<German>Betäubung durch Paletten</German>
 		</Key>
 		<Key ID="STR_HINT_PalletStunDesc">
-			<Original>%1%2Pull down pallets to slow the Killer when they're chasing you.%1%2Dropping a pallet on a Killer will stun them.%1%2Killers can destroy the pallets.%1</Original>
-			<German>%1%2Stoße Paletten um, damit der Killer bei deiner Verfolgung ausgebremst wird.%1%2Stößt du eine Palette auf einen Killer, so wird dieser betäubt.%1%2Killer können diese Paletten zerstören.%1</German>
+			<Original>%2Pull down pallets to slow the Killer when they're chasing you.%1%2Dropping a pallet on a Killer will stun them.%1%2Killers can destroy the pallets.</Original>
+			<German>%2Stoße Paletten um, damit der Killer bei deiner Verfolgung ausgebremst wird.%1%2Stößt du eine Palette auf einen Killer, so wird dieser betäubt.%1%2Killer können diese Paletten zerstören.</German>
 		</Key>
 		<Key ID="STR_HINT_KillersRole">
 			<Original>Killer's Role</Original>
 			<German>Rolle des Killers</German>
 		</Key>
 		<Key ID="STR_HINT_KillersRoleDesc">
-			<Original>%1%2As the Killer, you must hunt down and kill all the Survivors.%1%2As the Killer, you will be able to see the positions of all generators on the map. You must prevent Survivors from repairing the generators.%1</Original>
-			<German>%1%2Jage und töte als Killer alle Überlebenden.%1%2Als Killer kannst du die Positionen aller Generatoren auf der Karte sehen. Du musst verhindern, dass die Überlebenden die Generatoren reparieren.%1</German>
-		</Key>
-		<Key ID="STR_HINT_GeneratorSounds">
-			<Original>Generator Sounds</Original>
-			<German>Generatorengeräusche</German>
-		</Key>
-		<Key ID="STR_HINT_GeneratorSoundsDesc">
-			<Original>%1%2When a survivor fails a Skill Check, a visual notification appears to show you where the sound came from.%1</Original>
-			<German>%1%2Sobald ein Überlebender bei einem Fähigkeitscheck versagt, zeigt dir ein Symbol an, woher das Geräusch kam.%1</German>
-		</Key>
-		<Key ID="STR_HINT_DamagingGenerators">
-			<Original>Damaging Generators</Original>
-			<German>Generatoren beschädigen</German>
-		</Key>
-		<Key ID="STR_HINT_DamagingGeneratorsDesc">
-			<Original>%1%2You can damage partially repaired generators to regress their progress.%1</Original>
-			<German>%1%2Du kannst einen teilweise reparierten Generator beschädigen, um den Fortschritt zurückzuwerfen.%1</German>
-		</Key>
-		<Key ID="STR_HINT_Stuns">
-			<Original>Stuns</Original>
-			<German>Betäubungen</German>
-		</Key>
-		<Key ID="STR_HINT_StunsDesc">
-			<Original>%1%2Survivors can knock over pallets to slow you down.%1</Original>
-			<German>%1%2Überlebende können Paletten umstoßen, um dich auszubremsen.%1</German>
+			<Original>%2As the Killer, you must hunt down and kill all the Survivors.%1%2You will be able to see the positions of all generators on the map. You must prevent Survivors from repairing the generators.%1%2You can damage partially repaired generators to regress their progress.%1%2Each Killer has their own power to learn and master.</Original>
+			<German>%2Jage und töte als Killer alle Überlebenden.%1%2Du kannst die Positionen aller Generatoren auf der Karte sehen. Du musst verhindern, dass die Überlebenden die Generatoren reparieren.%1%2Du kannst einen teilweise reparierten Generator beschädigen, um den Fortschritt zurückzuwerfen.%1%2Jeder Killer hat andere Fähigkeiten, die er erlernen und meistern kann.</German>
 		</Key>
 		<Key ID="STR_HINT_BleedingOut">
 			<Original>Bleeding out</Original>
 			<German>Ausbluten</German>
 		</Key>
 		<Key ID="STR_HINT_BleedingOutDesc">
-			<Original>%1%2An unconscious Survivor slowly bleeds out, but they can be rescued by other Survivors.%1%2A Survivor will immediately be killed after being unconscious 3 times.%1</Original>
-			<German>%1%2Ist ein Überlebender bewusstlos, blutet er langsam aus. Er kann aber von anderen Überlebenden gerettet werden.%1%2Wer 3-mal bewusstlos wurde, wird sofort getötet.%1</German>
+			<Original>%2An unconscious Survivor slowly bleeds out, but they can be rescued by other Survivors.%1%2A Survivor will immediately be killed after being unconscious 3 times.</Original>
+			<German>%2Ist ein Überlebender bewusstlos, blutet er langsam aus. Er kann aber von anderen Überlebenden gerettet werden.%1%2Wer 3-mal bewusstlos wurde, wird sofort getötet.</German>
 		</Key>
 		<Key ID="STR_HINT_WendigoAbility">
 			<Original>Cloaking</Original>
 			<German>Verhüllung</German>
 		</Key>
 		<Key ID="STR_HINT_WendigoAbilityDesc">
-			<Original>%1%3Use the scroll wheel menu to cloak yourself. Use it again to uncloak.%4%1%2While cloaked, the Wendigo gains increased movement speed, almost complete invisibility and is undetectable (disabled heartbeat).%1%2The Wendigo cannot attack while cloaked.%1</Original>
-			<German>%1%3Benutzte das Scrollradmenü, um dich zu verhüllen. Benutzte es erneut, während du verhüllt bist, um die Verhüllung aufzuheben.%4%1%2Während er verhüllt ist, erhält der Wendigo eine erhöhte Bewegungsgeschwindigkeit, fast vollständige Unsichtbarkeit und ist unentdeckbar (deaktivierter Herzschlag).%1%2Der Wendigo kann nicht angreifen, während er verhüllt ist.%1</German>
+			<Original>%3Use the scroll wheel menu to cloak yourself. Use it again to uncloak.%4%1%2While cloaked, the Wendigo gains increased movement speed, almost complete invisibility and is undetectable (disabled heartbeat).%1%2The Wendigo cannot attack while cloaked.</Original>
+			<German>%3Benutzte das Scrollradmenü, um dich zu verhüllen. Benutzte es erneut, während du verhüllt bist, um die Verhüllung aufzuheben.%4%1%2Während er verhüllt ist, erhält der Wendigo eine erhöhte Bewegungsgeschwindigkeit, fast vollständige Unsichtbarkeit und ist unentdeckbar (deaktivierter Herzschlag).%1%2Der Wendigo kann nicht angreifen, während er verhüllt ist.</German>
 		</Key>
 	    <Key ID="STR_HINT_BucketheadAbility">
 			<Original>Portal Travel</Original>
 			<German>Portalreise</German>
 		</Key>
 		<Key ID="STR_HINT_BucketheadAbilityDesc">
-			<Original>%1%3Use the scroll wheel menu to travel to a Portal.%4%1%2After emerging from a Portal, you remain undetectable for 3 seconds (disabled heartbeat).%1%2Traveling to portals has a cooldown of 10 seconds.%1</Original>
-			<German>%1%3Benutzte das Scrollradmenü, um zu einem Portal zu reisen.%4%1%2Nach der Reise bleibst du noch für 3 Sekunden unentdeckbar (deaktivierter Herzschlag).%1%2Das Reisen zu den Portalen hat eine Abklingzeit von 10 Sekunden.%1</German>
+			<Original>%3Use the scroll wheel menu to travel to a Portal.%4%1%2After emerging from a Portal, you remain undetectable for 3 seconds (disabled heartbeat).%1%2Traveling to portals has a cooldown of 10 seconds.</Original>
+			<German>%3Benutzte das Scrollradmenü, um zu einem Portal zu reisen.%4%1%2Nach der Reise bleibst du noch für 3 Sekunden unentdeckbar (deaktivierter Herzschlag).%1%2Das Reisen zu den Portalen hat eine Abklingzeit von 10 Sekunden.</German>
 		</Key>
 		<Key ID="STR_HINT_TrapperAbility">
 			<Original>Bear Trap</Original>
 			<German>Bärenfalle</German>
 		</Key>
 		<Key ID="STR_HINT_TrapperAbilityDesc">
-			<Original>%1%3You start with 3 Bear Traps. Find and collect more throughout the Environment.%4%1%2Use the scroll wheel menu to set and arm a Bear Trap in a valid location in front of you. %1%2Press and hold the spacebar while standing near a disarmed Bear Trap to collect it, or reset it.%1%2Any Survivor who steps into an armed Bear Trap will be immobilized and injured, but can attempt to free himself from the trap.%1</Original>
-			<German>%1%3Du beginnst mit 3 Bärenfallen. Weitere kannst du in der Umgebung finden und einsammeln.%4%1%2Benutze das Scrollradmenü, um eine Bärenfalle an einer geeigneten Position vor dir zu legen.%1%2Drücke und halte die Leertaste, um eine Bärenfalle einzusammeln, oder an Ort und Stelle zurückzusetzen.%1%2Ein darin gefangener Spieler wird bewegungsunfähig und verletzt, kann aber versuchen, der Falle zu entkommen.%1</German>
+			<Original>%3You start with 3 Bear Traps. Find and collect more throughout the Environment.%4%1%2Use the scroll wheel menu to set and arm a Bear Trap in a valid location in front of you. %1%2Press and hold the spacebar while standing near a disarmed Bear Trap to collect it, or reset it.%1%2Any Survivor who steps into an armed Bear Trap will be immobilized and injured, but can attempt to free himself from the trap.</Original>
+			<German>%3Du beginnst mit 3 Bärenfallen. Weitere kannst du in der Umgebung finden und einsammeln.%4%1%2Benutze das Scrollradmenü, um eine Bärenfalle an einer geeigneten Position vor dir zu legen.%1%2Drücke und halte die Leertaste, um eine Bärenfalle einzusammeln, oder an Ort und Stelle zurückzusetzen.%1%2Ein darin gefangener Spieler wird bewegungsunfähig und verletzt, kann aber versuchen, der Falle zu entkommen.</German>
 		</Key>
 	</Package>
 	<Package name="Scoring">
@@ -830,68 +782,68 @@
 			<German>Werkzeugkasten</German>
 		</Key>
 		<Key ID="STR_ITEM_ToolboxDesc">
-			<Original>%1%2The zones for successful skill checks are larger.%1%2The toolbox is depleted after 6 skill checks.%1</Original>
-			<German>%1%2Die Zonen für erfolgreiche Fähigkeitenchecks sind größer.%1%2Der Werkzeugkasten wird nach 6 Fähigkeitenchecks aufgebraucht.%1</German>
+			<Original>%2The zones for successful skill checks are larger.%1%2The toolbox is depleted after 6 skill checks.</Original>
+			<German>%2Die Zonen für erfolgreiche Fähigkeitenchecks sind größer.%1%2Der Werkzeugkasten wird nach 6 Fähigkeitenchecks aufgebraucht.</German>
 		</Key>
 		<Key ID="STR_ITEM_SmokeBomb">
 			<Original>Smoke Bomb</Original>
 			<German>Rauchbombe</German>
 		</Key>
 		<Key ID="STR_ITEM_SmokeBombDesc">
-			<Original>%1%2Smoke Bombs cover a circular area with a thick smoke lasting 20 seconds.%1</Original>
-			<German>%1%2Rauchbomben decken einen kreisförmigen Bereich ab und erzeugen dichten Rauch, der 20 Sekunden anhält.%1</German>
+			<Original>%2Smoke Bombs cover a circular area with a thick smoke lasting 20 seconds.</Original>
+			<German>%2Rauchbomben decken einen kreisförmigen Bereich ab und erzeugen dichten Rauch, der 20 Sekunden anhält.</German>
 		</Key>
 		<Key ID="STR_ITEM_Flashbang">
 			<Original>Flashbang</Original>
 			<German>Blendgranate</German>
 		</Key>
 		<Key ID="STR_ITEM_FlashbangDesc">
-			<Original>%1%2Detonates into loud bangs and intense light flashes.%1</Original>
-			<German>%1%2Explodiert mit einem lauten Knall und blendendem Licht.%1</German>
+			<Original>%2Detonates into loud bangs and intense light flashes.</Original>
+			<German>%2Explodiert mit einem lauten Knall und blendendem Licht.</German>
 		</Key>
 		<Key ID="STR_ITEM_FirstAidKit">
 			<Original>First Aid Kit</Original>
 			<German>Erste-Hilfe-Kasten</German>
 		</Key>
 		<Key ID="STR_ITEM_FirstAidKitDesc">
-			<Original>%1%2The First Aid Kit is used to heal yourself.%1</Original>
-			<German>%1%2Erste-Hilfe-Kästen werden zur Selbstheilung verwendet.%1</German>
+			<Original>%2The First Aid Kit is used to heal yourself.</Original>
+			<German>%2Erste-Hilfe-Kästen werden zur Selbstheilung verwendet.</German>
 		</Key>
 		<Key ID="STR_ITEM_Circuit">
 			<Original>Defective Electric Circuit</Original>
 			<German>Defekter Stromschaltkreis</German>
 		</Key>
 		<Key ID="STR_ITEM_CircuitDesc">
-			<Original>%1%2On the next two failed Repair Skill Checks, the Killer receives a notification at the location of another generator.%1</Original>
-			<German>%1%2Bei den nächsten zwei misslungenen Reparatur-Fähigkeitschecks, erhält der Killer eine Meldung am Standort eines anderen Generators.%1</German>
+			<Original>%2On the next two failed Repair Skill Checks, the Killer receives a notification at the location of another generator.</Original>
+			<German>%2Bei den nächsten zwei misslungenen Reparatur-Fähigkeitschecks, erhält der Killer eine Meldung am Standort eines anderen Generators.</German>
 		</Key>
 		<Key ID="STR_ITEM_Rifle">
 			<Original>Rifle</Original>
 			<German>Gewehr</German>
 		</Key>
 		<Key ID="STR_ITEM_RifleDesc">
-			<Original>%1%2Is used to stun the Killer.%1%2The Rifle has 1 bullet by default.%1%2Additional bullets can be found in further chests.%1</Original>
-			<German>%1%2Wird zur Betäubung des Killers verwendet.%1%2Standardmäßig besitzt das Gewehr eine Patrone.%1%2Zusätzliche Patronen können in weiteren Kisten gefunden werden.%1</German>
+			<Original>%2Is used to stun the Killer.%1%2The Rifle has 1 bullet by default.%1%2Additional bullets can be found in further chests.</Original>
+			<German>%2Wird zur Betäubung des Killers verwendet.%1%2Standardmäßig besitzt das Gewehr eine Patrone.%1%2Zusätzliche Patronen können in weiteren Kisten gefunden werden.</German>
 		</Key>
 		<Key ID="STR_ITEM_Firecrackers">
 			<Original>Firecrackers</Original>
 			<German>Böller</German>
 		</Key>
 		<Key ID="STR_ITEM_FirecrackersLore">
-			<Original>Firecrackers can only be collected during events.%1</Original>
-			<German>Böller können nur bei Events erhalten werden.%1</German>
+			<Original>Firecrackers can only be collected during events.</Original>
+			<German>Böller können nur bei Events erhalten werden.</German>
 		</Key>
 		<Key ID="STR_ITEM_FirecrackersDesc">
-			<Original>%1%2Can be used as a blinding device or to celebrate.</Original>
-			<German>%1%2Kann als Blendgerät oder zum Feiern genutzt werden.</German>
+			<Original>%2Can be used as a blinding device or to celebrate.</Original>
+			<German>%2Kann als Blendgerät oder zum Feiern genutzt werden.</German>
 		</Key>
 		<Key ID="STR_ITEM_VitalCapsule">
 			<Original>Vital Capsule</Original>
 			<German>Vitalkapsel</German>
 		</Key>
 		<Key ID="STR_ITEM_vitalCapsuleDesc">
-			<Original>%1%2Spend some of your life energy to instantly revive a distant, unconscious survivor.%1%2You will be injured and can be knocked out with one hit as long as you do not heal yourself.%1%2Your position will be revealed to the killer for 5 seconds.%1</Original>
-			<German>%1%2Verbrauche einen Teil deiner Lebensenergie, um einen weit entfernten, bewusstlosen Überlebenden sofort wiederzubeleben.%1%2Du wirst verletzt und kannst mit einem Schlag niedergestreckt werden, solange du dich nicht selbst heilst.%1%2Deine Position wird dem Killer für 5 Sekunden angezeigt.%1</German>
+			<Original>%2Spend some of your life energy to instantly revive a distant, unconscious survivor.%1%2You will be injured and can be knocked out with one hit as long as you do not heal yourself.%1%2Your position will be revealed to the killer for 5 seconds.</Original>
+			<German>%2Verbrauche einen Teil deiner Lebensenergie, um einen weit entfernten, bewusstlosen Überlebenden sofort wiederzubeleben.%1%2Du wirst verletzt und kannst mit einem Schlag niedergestreckt werden, solange du dich nicht selbst heilst.%1%2Deine Position wird dem Killer für 5 Sekunden angezeigt.</German>
 		</Key>
 		<Key ID="STR_ITEM_JamAndBanana">
 			<Original>Jam and Banana</Original>
@@ -1790,6 +1742,10 @@
 		<Key ID="STR_LOADING_11">
 			<Original>As a survivor, press 'V' while running to jump over obstacles.</Original>
 			<German>Drücke als Überlebender während du läufst 'V', um über Hindernisse zu springen.</German>
+		</Key>
+		<Key ID="STR_LOADING_12">
+			<Original>When the Killer is near, your heart beats louder.</Original>
+			<German>Wenn der Killer in der Nähe ist, pocht dein Herz lauter.</German>
 		</Key>
 	</Package>
 </Project>

@@ -53,7 +53,6 @@ player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR
 	"((nearestObjects [player, ['Intruders_Object_Palett'], 3]) select 0) animationPhase 'Door_1' isEqualTo 0",
 	{
 		[["Intruders", "palletStun"], 15,"",35,"",true,true,true,true] call BIS_fnc_advHint;
-		[["Intruders", "stuns"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint",east];
 	},
 	{},
 	{

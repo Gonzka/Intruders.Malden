@@ -21,7 +21,6 @@ if (_chest getVariable ["boobyTrap",false]) exitWith { //Booby Trap Killer Perk
 	player setDamage 0.28;
 	[_chest,getMissionPath "textures\ico_boobyTrap.paa"] remoteExec ["gonzka_fnc_auraNotification",east];
 	[player] call gonzka_fnc_scream; //SURVIVOR SCREAM
-	[["Intruders", "healing"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint",civilian];
 };
 
 private _givenItems = ["toolbox", "flashbang", "firstAidKit", "circuit", "smokeBomb", "rifle", "vitalCapsule"];

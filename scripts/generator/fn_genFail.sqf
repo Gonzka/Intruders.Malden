@@ -26,5 +26,3 @@ playSound3D [selectRandom ["a3\sounds_f\vehicles\crashes\cars\quadbike_crash_def
 
 [_generator] spawn gonzka_fnc_sparkParticles;
 [_generator,"\intruders_mod\textures\gui\hud_generator.paa","",[1,0,0,1]] remoteExec ["gonzka_fnc_auraNotification",east];
-
-[["Intruders", "generatorSounds"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint",east];

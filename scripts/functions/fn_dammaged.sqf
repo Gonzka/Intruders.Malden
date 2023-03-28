@@ -27,8 +27,7 @@ if (_unit getVariable ["BIS_revive_incapacitated", false]) then {
 				Killer setVariable ["quest_knockDowns",_knockDowns + 1,true];
 				
 				["knockedDown_1"] remoteExecCall ["playSound", [0, -2] select isDedicated];
-				[["Intruders", "teamwork"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint",civilian - clientOwner];
-				[["Intruders", "bleedingOut"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint",east];
+				[["Intruders", "bleedingOut"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint", [0, -2] select isDedicated];
 			};
 			
 			call gonzka_fnc_detachBeartrap; //IF TRAPPED IN BEARTRAP

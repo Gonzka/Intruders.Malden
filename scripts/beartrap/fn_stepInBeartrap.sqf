@@ -36,5 +36,3 @@ _trap attachTo [player, [0,0,0], "RightFoot", true];
 //QUEST
 private _bearTrapCatches = Killer getVariable "quest_bearTrapCatches";
 Killer setVariable ["quest_bearTrapCatches",_bearTrapCatches + 1,true];
-
-[["Intruders", "healing"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint",civilian];

@@ -115,7 +115,7 @@ class CfgHints {
 			displayName = "$STR_HINT_SurvivorsRole";
 			description = "$STR_HINT_SurvivorsRoleDesc";
 			tip = "";
-			arguments[] = {};
+			arguments[] = {{{"GetOver"}}, {{"turbo"}}};
 			image = "\intruders_mod\textures\gui\hud_survivor.paa";
 		};
 		
@@ -125,30 +125,6 @@ class CfgHints {
 			tip = "";
 			arguments[] = {};
 			image = "\intruders_mod\textures\gui\hud_generator.paa";
-		};
-		
-		class terrorRadius {
-			displayName = "$STR_HINT_TerrorRadius";
-			description = "$STR_HINT_TerrorRadiusDesc";
-			tip = "";
-			arguments[] = {};
-			image = "a3\data_f_mark\images\watermarkinfo_page14_ca.paa";
-		};
-		
-		class teamwork {
-			displayName = "$STR_HINT_Teamwork";
-			description = "$STR_HINT_TeamworkDesc";
-			tip = "";
-			arguments[] = {};
-			image = "\intruders_mod\textures\gui\hud_incapacitated.paa";
-		};
-		
-		class healing {
-			displayName = "$STR_HINT_Healing";
-			description = "$STR_HINT_HealingDesc";
-			tip = "";
-			arguments[] = {};
-			image = "\intruders_mod\textures\gui\hud_injured.paa";
 		};
 		
 		class palletStun {
@@ -165,30 +141,6 @@ class CfgHints {
 			tip = "";
 			arguments[] = {};
 			image = "a3\ui_f\data\igui\cfg\revive\overlayiconsgroup\d75_ca.paa";
-		};
-		
-		class generatorSounds {
-			displayName = "$STR_HINT_GeneratorSounds";
-			description = "$STR_HINT_GeneratorSoundsDesc";
-			tip = "";
-			arguments[] = {};
-			image = "\intruders_mod\textures\gui\hud_generator.paa";
-		};
-		
-		class damagingGenerators {
-			displayName = "$STR_HINT_DamagingGenerators";
-			description = "$STR_HINT_DamagingGeneratorsDesc";
-			tip = "";
-			arguments[] = {};
-			image = "textures\ico_brutalStrength.paa";
-		};
-		
-		class stuns {
-			displayName = "$STR_HINT_Stuns";
-			description = "$STR_HINT_StunsDesc";
-			tip = "";
-			arguments[] = {};
-			image = "textures\ico_brutalStrength.paa";
 		};
 		
 		class bleedingOut {
@@ -306,7 +258,8 @@ class CfgWorlds {
 			"$STR_LOADING_8",
 			"$STR_LOADING_9",
 			"$STR_LOADING_10",
-			"$STR_LOADING_11"
+			"$STR_LOADING_11",
+			"$STR_LOADING_12"
 		};
 	};
 	
@@ -326,7 +279,8 @@ class CfgWorlds {
 			"$STR_LOADING_8",
 			"$STR_LOADING_9",
 			"$STR_LOADING_10",
-			"$STR_LOADING_11"
+			"$STR_LOADING_11",
+			"$STR_LOADING_12"
 		};
 	};
 	
@@ -346,7 +300,8 @@ class CfgWorlds {
 			"$STR_LOADING_8",
 			"$STR_LOADING_9",
 			"$STR_LOADING_10",
-			"$STR_LOADING_11"
+			"$STR_LOADING_11",
+			"$STR_LOADING_12"
 		};
 	};
 };
