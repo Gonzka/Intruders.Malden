@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.18.1&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.18.1&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.19.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.19.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>

@@ -5,7 +5,7 @@
 */
 
 player addEventHandler ["InventoryOpened", {findDisplay 602 closeDisplay 1; true}];
-player addEventHandler ["Fired",{_this spawn gonzka_fnc_onFired}];
+player addEventHandler ["Fired",{_this call gonzka_fnc_onFired}];
 player addEventHandler ["HandleDamage", {_this call gonzka_fnc_handleDamage}];
 player addEventHandler ["Dammaged", {_this call gonzka_fnc_dammaged}];
 

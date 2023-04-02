@@ -30,7 +30,7 @@ if (_unit getVariable ["BIS_revive_incapacitated", false]) then {
 				
 				//Kill the survivors when they are all incapacitated
 				private _incapacitatedUnits = playableUnits select {side _x isEqualTo civilian && (_x getVariable ["BIS_revive_incapacitated", false] || lifeState _x isEqualTo "INCAPACITATED")};
-				if (count _incapacitatedUnits isEqualTo (civilian countSide playableUnits)) then {
+				if (count _incapacitatedUnits isEqualTo ({side _x isEqualTo civilian && isNull objectParent _x} count playableUnits)) then {
 					{
 						_x setDamage 1;
 					} forEach _incapacitatedUnits;
