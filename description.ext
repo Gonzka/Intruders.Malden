@@ -48,8 +48,6 @@ class RscTitles {
 	#include "scripts\functions\notification.hpp"
 	#include "scripts\wheelmenu\wheelmenu.hpp"
 	#include "scripts\functions\statusbar.hpp"
-	#include "scripts\lockpicking\hud_default.hpp"
-	#include "scripts\lockpicking\hud_lockpick.hpp"
 	#include "scripts\generator\skillCheckMenu.hpp"
 	#include "scripts\endgame\timer.hpp"
 };

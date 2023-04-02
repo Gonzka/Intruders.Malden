@@ -41,6 +41,7 @@ class Intruders {
 		class endgameTimer {};
 		class initEndgame {};
 		class scoreboard {};
+		class unlockEscapeVehicleAction {};
 		class waitUntilKillerDisconnected {};
 		class waitUntilMatchFinished {};
 	};
@@ -192,19 +193,5 @@ class Intruders {
 		class setWheel {};
 		class setWheelCursor {};
 		class setWheelKey {};
-	};
-};
-
-class Lockpicking {
-    tag = "pizza";
-	
-	class lockpicking {
-		file = "scripts\lockpicking";
-		class handler_actions {};
-		class handler_keydown {};
-		class handler_keyup {};
-		class handler_mousedown {};
-		class hud_lockpick {};
-		class lockpick {};
 	};
 };

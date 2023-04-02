@@ -10,7 +10,7 @@ params [
 
 private _actionID = [ 
     _chest, 
-    localize "STR_GAME_Chest",  
+    localize "STR_GAME_Unlock",  
     "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_requestLeadership_ca.paa",  
     "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_requestLeadership_ca.paa", 
     "_this distance _target < 2 && {!(_target getVariable ['looted', false])} && {side _this != east}",

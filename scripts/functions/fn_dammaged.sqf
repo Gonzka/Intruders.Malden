@@ -9,7 +9,6 @@ params [
 ];
 
 if (_unit getVariable ["BIS_revive_incapacitated", false]) then {
-	if !(isNull (uiNamespace getVariable ["hud_lockpick", displayNull])) then {("hud_lockpick" call BIS_fnc_rscLayer) cutRsc ["hud_default", "plain"]}; //Close lockpick menu when the player becomes unconscious
 	[_unit] spawn {
 		_unit = _this select 0;
 		if (!knockout) then {

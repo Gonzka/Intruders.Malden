@@ -64,6 +64,11 @@ for "_i" from 0 to 4 do { //Select 5 Totems
 
 totems = _totemResult; publicVariable "totems";
 
+//ESCAPE VEHICLES
+{
+    [_x] remoteExecCall ["gonzka_fnc_unlockEscapeVehicleAction", [0, -2] select isDedicated, _x];
+} forEach [escapeVehicle_1, escapeVehicle_2];
+
 //SEASONING
 seasons = [	
     //  Start: Monat,Tag - Ende: Monat,Tag

@@ -121,15 +121,15 @@
 			<Original>This generator has already been repaired!</Original>
 			<German>Dieser Generator wurde bereits repariert!</German>
 		</Key>
-		<Key ID="STR_GAME_SuccessLockpick">
-			<Original>This escape vehicle has been lockpicked!</Original>
-			<German>Dieses Fluchtfahrzeug wurde geknackt!</German>
+		<Key ID="STR_GAME_UnlockedVehicle">
+			<Original>This escape vehicle has been unlocked!</Original>
+			<German>Dieses Fluchtfahrzeug wurde geöffnet!</German>
 		</Key>
 		<Key ID="STR_GAME_EscapeVehicle">
 			<Original>Escape Vehicle</Original>
 			<German>Fluchtfahrzeug</German>
 		</Key>
-		<Key ID="STR_GAME_Chest">
+		<Key ID="STR_GAME_Unlock">
 			<Original>Unlock</Original>
 			<German>Aufschliessen</German>
 		</Key>
@@ -312,18 +312,6 @@
 		<Key ID="STR_GAME_Damage">
 			<Original>Damage</Original>
 			<German>Beschädigen</German>
-		</Key>
-		<Key ID="STR_GAME_LockpickRotate">
-			<Original>Rotate the lock</Original>
-			<German>Schloss drehen</German>
-		</Key>
-		<Key ID="STR_GAME_LockpickClockwise">
-			<Original>Rotate the pick clockwise</Original>
-			<German>Dietrich im Uhrzeigersinn drehen</German>
-		</Key>
-		<Key ID="STR_GAME_LockpickCounterClockwise">
-			<Original>Rotate the pick counter-clockwise</Original>
-			<German>Dietrich gegen den Uhrzeigersinn drehen</German>
 		</Key>
 		<Key ID="STR_GAME_TakeVideotape">
 			<Original>Take videotape</Original>
@@ -532,10 +520,6 @@
 		<Key ID="STR_GAME_SelfHealAction">
 			<Original>&lt;t color='#EEC900'&gt;Self Healing&lt;/t&gt;</Original>
 			<German>&lt;t color='#EEC900'&gt;Selbstheilung&lt;/t&gt;</German>
-		</Key>
-		<Key ID="STR_GAME_LockpickAction">
-			<Original>&lt;t color='#EEC900'&gt;Lockpick Escape Vehicle&lt;/t&gt;</Original>
-			<German>&lt;t color='#EEC900'&gt;Fluchtfahrzeug knacken&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_GAME_PortalTravel">
 			<Original>&lt;t color='#EEC900'&gt;Travel to Portal %1&lt;/t&gt;</Original>
