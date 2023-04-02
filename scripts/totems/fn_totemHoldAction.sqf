@@ -32,7 +32,7 @@ params [
 			
 			[selectRandom ["thunder_1","thunder_2"]] remoteExecCall ["playSound", [0, -2] select isDedicated];
 			
-			[_target,"textures\ico_hexTotem.paa","",[1,0,0,1]] remoteExec ["gonzka_fnc_auraNotification",east];
+			[_target,"\intruders_mod\textures\gui\totem.paa","",[1,0,0,1]] remoteExec ["gonzka_fnc_auraNotification",east];
 			["STR_SCORE_HexTotem",1500] call gonzka_fnc_addBloodpoints;
 			
 			//Retribution Killer Perk (Hex)

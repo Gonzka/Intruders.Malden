@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.18.0&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.18.0&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.18.1&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.18.1&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -428,10 +428,6 @@
 		<Key ID="STR_GAME_PerkUnlocked">
 			<Original>Perk unlocked</Original>
 			<German>Talent freigeschaltet</German>
-		</Key>
-		<Key ID="STR_GAME_RewardAvailable">
-			<Original>Reward available</Original>
-			<German>Belohnung verfügbar</German>
 		</Key>
 		<Key ID="STR_GAME_ShopRefreshTime">
 			<Original>refreshes in %1 hours</Original>
@@ -1253,9 +1249,9 @@
 			<Original>Congratulations, you can get 1.000.000€ on altis.new-haven.life! Go there to the abandoned shack to claim the reward.</Original>
 			<German>Glückwunsch, du kannst auf altis.new-haven.life 1,000,000€ abholen! Gehe dort zur verlassenen Hütte, um die Belohnung zu erhalten.</German>
 		</Key>
-		<Key ID="STR_SKIN_CodeSUVHaven">
-			<Original>Congratulations, you can get an exclusive SUV vehicle paint job on altis.new-haven.life! Go there to the abandoned shack to claim the reward. Afterwards you can buy your new skin from a car dealer.</Original>
-			<German>Glückwunsch, du kannst auf altis.new-haven.life eine exklusive SUV-Fahrzeuglackierung abholen! Gehe dort zur verlassenen Hütte, um die Belohnung zu erhalten. Danach kannst du deinen neuen Skin bei einem Autohändler kaufen.</German>
+		<Key ID="STR_SKIN_CodeThx4Cash">
+			<Original>Congratulations, you can get 1.500.000€ on altis.new-haven.life! Go there to the abandoned shack to claim the reward.</Original>
+			<German>Glückwunsch, du kannst auf altis.new-haven.life 1,500,000€ abholen! Gehe dort zur verlassenen Hütte, um die Belohnung zu erhalten.</German>
 		</Key>
 		<Key ID="STR_SKIN_CodeArmaOpterix">
 			<Original>You have unlocked the face of Martin Opterix along with custom voicelines!</Original>

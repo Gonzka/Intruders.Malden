@@ -6,7 +6,7 @@
 
 //Bonus Bloodpoints
 if (bloodRush) then { //1.5x Bloodpoints
-	["STR_SCORE_Bonus",round (player getVariable "bloodPoints") * 0.5] call gonzka_fnc_addBloodpoints;
+	["STR_SCORE_Bonus",round ((player getVariable "bloodPoints") * 0.5)] call gonzka_fnc_addBloodpoints;
 };
 if (bloodHunt) then { //2x Bloodpoints
 	["STR_SCORE_Bonus",player getVariable "bloodPoints"] call gonzka_fnc_addBloodpoints;

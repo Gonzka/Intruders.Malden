@@ -20,5 +20,6 @@ if (_ammo isEqualTo "GrenadeHand_stone") then {
 };
 
 if (_unit ammo _weapon == 0) then { //IF RIFLE IS EMPTY
+    sleep 0.1;
     _unit removeWeapon _weapon;
 };

@@ -5,7 +5,7 @@
 */
 
 private _code = ctrlText 1003;
-private _availableCodes = ["ARMAOPTERIX","SPECIALHAVEN","SUVHAVEN"]; //PERMANENT CODES
+private _availableCodes = ["ARMAOPTERIX","SPECIALHAVEN","THX4CASH"]; //PERMANENT CODES
 private _uid = getPlayerUID player;
 if (_uid in ["76561198082809482"]) then { //Gonzka
 	_availableCodes = _availableCodes + ["RESET","NEWQUEST","UPDATESHOP"]; //PERSONAL RESET CODE FOR ADMINS
@@ -44,9 +44,9 @@ switch (_code) do {
 		[_code, "STR_SKIN_CodeArmaOpterix", 15, "a3\ui_f\data\gui\rsc\rscdisplayarsenal\face_ca.paa"] spawn gonzka_fnc_notification;
 	};
 	case "SPECIALHAVEN": {
-		["STR_GAME_RewardAvailable", "STR_SKIN_CodeSpecialHaven", 15, "a3\missions_f_oldman\props\data\money_ca.paa"] spawn gonzka_fnc_notification;
+		[_code, "STR_SKIN_CodeSpecialHaven", 15, "a3\missions_f_oldman\props\data\money_ca.paa"] spawn gonzka_fnc_notification;
 	};
-	case "SUVHAVEN": {
-		["STR_GAME_RewardAvailable", "STR_SKIN_CodeSUVHaven", 15, "a3\soft_f_gamma\suv_01\data\ui\portrait_suv_01_ca.paa"] spawn gonzka_fnc_notification;
+	case "THX4CASH": {
+		[_code, "STR_SKIN_CodeThx4Cash", 15, "a3\missions_f_oldman\props\data\money_ca.paa"] spawn gonzka_fnc_notification;
 	};
 };
