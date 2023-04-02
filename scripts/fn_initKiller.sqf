@@ -12,7 +12,7 @@ switch (player getVariable "killer") do {
 	case "buckethead": {
 		{			
 			call compile format ["
-			addMissionEventHandler ['Draw3D', {drawIcon3D ['\intruders_mod\textures\abilities\ico_abilityBuckethead.paa', [1,1,1,1], ASLToAGL getPosASL (objectFromNetId '%1'), 0.8, 0.8, 0, '%2', 1, 0.0315, 'EtelkaMonospacePro'];}];
+			addMissionEventHandler ['Draw3D', {drawIcon3D ['\intruders_mod\textures\abilities\ico_abilityBuckethead.paa', [1,1,1,1], ASLToAGL getPosASL (objectFromNetId '%1'), 0.8, 0.8, 0, '%2', 1, 0.025, 'EtelkaMonospacePro'];}];
 			", netId _x, toUpper (_x getVariable "portalName")];
 			
 			player addAction [format ["<img image='\intruders_mod\textures\abilities\ico_abilityBuckethead.paa'/> " + localize "STR_GAME_PortalTravel",_x getVariable "portalName"],{

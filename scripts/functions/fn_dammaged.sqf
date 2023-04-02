@@ -27,6 +27,14 @@ if (_unit getVariable ["BIS_revive_incapacitated", false]) then {
 				
 				["knockedDown_1"] remoteExecCall ["playSound", [0, -2] select isDedicated];
 				[["Intruders", "bleedingOut"], 15,"",35,"",true,true,true,true] remoteExecCall ["BIS_fnc_advHint", [0, -2] select isDedicated];
+				
+				//Kill the survivors when they are all incapacitated
+				private _incapacitatedUnits = playableUnits select {side _x isEqualTo civilian && (_x getVariable ["BIS_revive_incapacitated", false] || lifeState _x isEqualTo "INCAPACITATED")};
+				if (count _incapacitatedUnits isEqualTo (civilian countSide playableUnits)) then {
+					{
+						_x setDamage 1;
+					} forEach _incapacitatedUnits;
+				};
 			};
 			
 			call gonzka_fnc_detachBeartrap; //IF TRAPPED IN BEARTRAP

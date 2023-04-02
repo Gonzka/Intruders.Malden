@@ -21,8 +21,6 @@ private _actionID = [
 	{
 		params ["_target", "_caller", "_actionId", "_arguments", "_progress", "_maxProgress"];
 		
-		if (_progress < 2) exitWith { _target setVariable ["duration", _duration, true]; unlockTime = 0; }; //Anti-Holdaction Space Spam
-		
 		private _elapsedTime = _progress / 24 * _duration;
 		_target setVariable ["duration", _duration - _elapsedTime, true];
 		
