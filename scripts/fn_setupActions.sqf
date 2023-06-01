@@ -5,10 +5,10 @@
 */
 
 //ITEMS
-player addAction["<img image='textures\ico_firstAidKit.paa'/> " + localize "STR_GAME_SelfHealAction",gonzka_fnc_firstAidKit,"",0,false,true,"",' firstAidKits > 0 && damage player > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];
-player addAction["<img image='textures\ico_smokeBomb.paa'/> " + localize "STR_GAME_SmokeBombAction",{smokeBombs = smokeBombs - 1; [player] remoteExec ["gonzka_fnc_smokeBomb", [0, -2] select isDedicated];},"",0,false,true,"",' smokeBombs > 0 '];
-player addAction["<img image='textures\ico_firecrackers.paa'/> " + localize "STR_GAME_FirecrackersAction",{firecrackers = firecrackers - 1; [] spawn gonzka_fnc_firecracker;},"",0,false,true,"",' firecrackers > 0 '];
-player addAction["<img image='textures\ico_vitalCapsule.paa'/> " + localize "STR_GAME_VitalCapsuleAction",{vitalCapsules = vitalCapsules - 1; [] spawn gonzka_fnc_vitalCapsule;},"",0,false,true,"",' vitalCapsules > 0 && {_x getVariable ["BIS_revive_incapacitated", false] || lifeState _x isEqualTo "INCAPACITATED"} count playableUnits - [player, Killer] > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];
+player addAction["<img image='\intruders_mod\textures\items\ico_firstAidKit.paa'/> " + localize "STR_GAME_SelfHealAction",gonzka_fnc_firstAidKit,"",0,false,true,"",' firstAidKits > 0 && damage player > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];
+player addAction["<img image='\intruders_mod\textures\items\ico_smokeBomb.paa'/> " + localize "STR_GAME_SmokeBombAction",{smokeBombs = smokeBombs - 1; [player] remoteExec ["gonzka_fnc_smokeBomb", [0, -2] select isDedicated];},"",0,false,true,"",' smokeBombs > 0 '];
+player addAction["<img image='\intruders_mod\textures\items\ico_firecrackers.paa'/> " + localize "STR_GAME_FirecrackersAction",{firecrackers = firecrackers - 1; [] spawn gonzka_fnc_firecracker;},"",0,false,true,"",' firecrackers > 0 '];
+player addAction["<img image='\intruders_mod\textures\items\ico_vitalCapsule.paa'/> " + localize "STR_GAME_VitalCapsuleAction",{vitalCapsules = vitalCapsules - 1; [] spawn gonzka_fnc_vitalCapsule;},"",0,false,true,"",' vitalCapsules > 0 && {_x getVariable ["BIS_revive_incapacitated", false] || lifeState _x isEqualTo "INCAPACITATED"} count playableUnits - [player, Killer] > 0 && !(player getVariable ["BIS_revive_incapacitated", false]) '];
 
 //HEAL BY OTHER PLAYERS
 [

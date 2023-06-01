@@ -130,7 +130,7 @@ class CfgHints {
 			description = "$STR_HINT_PalletStunDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_brutalStrength.paa";
+			image = "\intruders_mod\textures\perks\ico_brutalStrength.paa";
 		};
 		
 		class killersRole {
@@ -178,7 +178,7 @@ class CfgHints {
 			description = "$STR_ITEM_FlashbangDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_flashbang.paa";
+			image = "\intruders_mod\textures\items\ico_flashbang.paa";
 		};
 		
 		class firstAidKit {
@@ -186,7 +186,7 @@ class CfgHints {
 			description = "$STR_ITEM_FirstAidKitDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_firstAidKit.paa";
+			image = "\intruders_mod\textures\items\ico_firstAidKit.paa";
 		};
 		
 		class toolbox {
@@ -194,7 +194,7 @@ class CfgHints {
 			description = "$STR_ITEM_ToolboxDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_toolbox.paa";
+			image = "\intruders_mod\textures\items\ico_toolbox.paa";
 		};
 		
 		class smokeBomb {
@@ -202,7 +202,7 @@ class CfgHints {
 			description = "$STR_ITEM_SmokeBombDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_smokeBomb.paa";
+			image = "\intruders_mod\textures\items\ico_smokeBomb.paa";
 		};
 		
 		class circuit {
@@ -210,7 +210,7 @@ class CfgHints {
 			description = "$STR_ITEM_CircuitDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_circuit.paa";
+			image = "\intruders_mod\textures\items\ico_circuit.paa";
 		};
 		
 		class rifle {
@@ -218,7 +218,7 @@ class CfgHints {
 			description = "$STR_ITEM_RifleDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_rifle.paa";
+			image = "\intruders_mod\textures\items\ico_rifle.paa";
 		};
 		
 		class vitalCapsule {
@@ -226,7 +226,7 @@ class CfgHints {
 			description = "$STR_ITEM_VitalCapsuleDesc";
 			tip = "";
 			arguments[] = {};
-			image = "textures\ico_vitalCapsule.paa";
+			image = "\intruders_mod\textures\items\ico_vitalCapsule.paa";
 		};
 		
 		class firecrackers {
@@ -234,7 +234,7 @@ class CfgHints {
 			description = "$STR_ITEM_FirecrackersDesc";
 			tip = "$STR_ITEM_FirecrackersLore";
 			arguments[] = {};
-			image = "textures\ico_firecrackers.paa";
+			image = "\intruders_mod\textures\items\ico_firecrackers.paa";
 		};
 	};
 };

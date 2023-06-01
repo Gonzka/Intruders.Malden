@@ -21,7 +21,7 @@ private _scoreTable = [];
 
 _scoreTable sort false;
 	
-private _text = format ["<t font='PuristaMedium' color='#B32121' size='1.8' align='center'>%1<br/><br/><t color='#ffffff'><img image='textures\ico_winner.paa'/><t size='1.4'> ",toUpper localize "STR_SCORE_BloodPoints"];
+private _text = format ["<t font='PuristaMedium' color='#B32121' size='1.8' align='center'>%1<br/><br/><t color='#ffffff'><img image='\intruders_mod\textures\gui\ico_winner.paa'/><t size='1.4'> ",toUpper localize "STR_SCORE_BloodPoints"];
 
 {
 	_text = _text + format ["%1: %2",_x select 1, _x select 0]; //Name and Bloodpoints

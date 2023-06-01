@@ -17,8 +17,8 @@ if (player getVariable ["hope", false]) then {
 } else {
     player setAnimSpeedCoef 1; 
 };
-["STR_ITEM_SprintBurst", "STR_GAME_SprintBurstExhausted", 5, "textures\ico_sprintburst.paa"] spawn gonzka_fnc_notification;
+["STR_ITEM_SprintBurst", "STR_GAME_SprintBurstExhausted", 5, "\intruders_mod\textures\perks\ico_sprintburst.paa"] spawn gonzka_fnc_notification;
 
 sleep 60;
 exhausted = false;
-["STR_ITEM_SprintBurst", "STR_GAME_SprintBurstReady", 5, "textures\ico_sprintburst.paa"] spawn gonzka_fnc_notification;
+["STR_ITEM_SprintBurst", "STR_GAME_SprintBurstReady", 5, "\intruders_mod\textures\perks\ico_sprintburst.paa"] spawn gonzka_fnc_notification;

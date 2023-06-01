@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.19.0&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.19.0&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.20.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.20.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -1228,14 +1228,6 @@
 		<Key ID="STR_SKIN_PersonalFace">
 			<Original>Personal Face</Original>
 			<German>Eigenes Gesicht</German>
-		</Key>
-		<Key ID="STR_SKIN_CodeSpecialHaven">
-			<Original>Congratulations, you can get 1.000.000€ on altis.new-haven.life! Go there to the abandoned shack to claim the reward.</Original>
-			<German>Glückwunsch, du kannst auf altis.new-haven.life 1,000,000€ abholen! Gehe dort zur verlassenen Hütte, um die Belohnung zu erhalten.</German>
-		</Key>
-		<Key ID="STR_SKIN_CodeThx4Cash">
-			<Original>Congratulations, you can get 1.500.000€ on altis.new-haven.life! Go there to the abandoned shack to claim the reward.</Original>
-			<German>Glückwunsch, du kannst auf altis.new-haven.life 1,500,000€ abholen! Gehe dort zur verlassenen Hütte, um die Belohnung zu erhalten.</German>
 		</Key>
 		<Key ID="STR_SKIN_CodeArmaOpterix">
 			<Original>You have unlocked the face of Martin Opterix along with custom voicelines!</Original>

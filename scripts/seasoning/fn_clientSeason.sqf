@@ -20,7 +20,7 @@ switch (season) do {
 		playMusic "lobby_halloween";
 		
 		//Event Notification
-		["STR_GAME_HalloweenEvent", "STR_GAME_HalloweenEventDesc", "textures\ico_pumpkin.paa", "21.10 - 11.11"] call gonzka_fnc_eventNotification;
+		["STR_GAME_HalloweenEvent", "STR_GAME_HalloweenEventDesc", "\intruders_mod\textures\gui\ico_pumpkin.paa", "21.10 - 11.11"] call gonzka_fnc_eventNotification;
 
 		//Bonus Bloodpoints
 		bloodHunt = true;
@@ -31,7 +31,7 @@ switch (season) do {
 		playMusic "lobby_winter";
 		
 		//Event Notification
-		["STR_GAME_WinterEvent", "STR_GAME_WinterEventDesc", "textures\ico_snowman.paa", "06.12 - 31.12"] call gonzka_fnc_eventNotification;
+		["STR_GAME_WinterEvent", "STR_GAME_WinterEventDesc", "\intruders_mod\textures\gui\ico_snowman.paa", "06.12 - 31.12"] call gonzka_fnc_eventNotification;
 		
 		//Bonus Bloodpoints
 		bloodRush = true;

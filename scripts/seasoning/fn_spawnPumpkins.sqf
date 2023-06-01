@@ -43,11 +43,11 @@ for "_i" from 0 to 6 do { //Spawn 7 Pumpkins
 			} else {
 				if (_random < 80) then { //30 %
 					["STR_SCORE_PumpkinTreat",10] call gonzka_fnc_addBloodpoints;
-					["STR_GAME_Hindered", "STR_GAME_TreatHindered", 6, "textures\ico_pumpkin.paa"] spawn gonzka_fnc_notification;
+					["STR_GAME_Hindered", "STR_GAME_TreatHindered", 6, "\intruders_mod\textures\gui\ico_pumpkin.paa"] spawn gonzka_fnc_notification;
 					_speed = 0.9;
 				} else { //20 %
 					["STR_SCORE_PumpkinTrick",1000] call gonzka_fnc_addBloodpoints;
-					["STR_GAME_Haste", "STR_GAME_TrickHaste", 6, "textures\ico_pumpkin.paa"] spawn gonzka_fnc_notification;
+					["STR_GAME_Haste", "STR_GAME_TrickHaste", 6, "\intruders_mod\textures\gui\ico_pumpkin.paa"] spawn gonzka_fnc_notification;
 					_speed = 1.25;
 				};
 				player setAnimSpeedCoef (getAnimSpeedCoef player * _speed);

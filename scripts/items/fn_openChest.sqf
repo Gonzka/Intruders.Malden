@@ -19,7 +19,7 @@ if (_chest getVariable ["boobyTrap",false]) exitWith { //Booby Trap Killer Perk
 	_chest setVariable ["looted",true,true];
 	[getPosATL _chest] call gonzka_fnc_fakeExplosion;
 	player setDamage 0.28;
-	[_chest,getMissionPath "textures\ico_boobyTrap.paa"] remoteExec ["gonzka_fnc_auraNotification",east];
+	[_chest,"\intruders_mod\textures\perks\ico_boobyTrap.paa"] remoteExec ["gonzka_fnc_auraNotification",east];
 	[player] call gonzka_fnc_scream; //SURVIVOR SCREAM
 };
 
@@ -81,7 +81,7 @@ if (_exit) exitWith {
 	["STR_GAME_Error", "STR_GAME_InventoryFull", 5, "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\warningcdc_ca.paa", true] spawn gonzka_fnc_notification;
 };
 
-[format ["<img image='textures\ico_%1.paa' size = '1.2'/> +%2",_item,_amount] + "</t>",-1,-1,2,0.3,-0.3,1338] spawn bis_fnc_dynamicText;
+[format ["<img image='\intruders_mod\textures\items\ico_%1.paa' size = '1.2'/> +%2",_item,_amount] + "</t>",-1,-1,2,0.3,-0.3,1338] spawn bis_fnc_dynamicText;
 [["Intruders", _item], 15,"",35,"",true,true,true,true] call BIS_fnc_advHint;
 
 ["STR_SCORE_Chest",250] call gonzka_fnc_addBloodpoints;
