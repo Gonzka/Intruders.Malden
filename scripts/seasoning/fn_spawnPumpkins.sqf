@@ -6,17 +6,17 @@
 
 if (season isNotEqualTo "Halloween") exitWith {};
 
+private _maxDist = switch (worldName) do {
+    case "Altis": {60};
+    case default {150};
+};
+
 for "_i" from 0 to 6 do { //Spawn 7 Pumpkins
-	private _pumpkin = "Intruders_Object_Pumpkin" createVehicle [0,0,0];
-	_pumpkin enableSimulation false; _pumpkin allowDamage false;
-	private _pos = [getMarkerPos "center", 0, 150, 0, 0, 1] call BIS_fnc_findSafePos;
+	private _pumpkin = "Land_Pumpkin_01_halloween_F" createVehicle [0,0,0];
+	_pumpkin allowDamage false;
+	private _pos = [getMarkerPos "center", 0, _maxDist, 0, 0, 1] call BIS_fnc_findSafePos;
 	_pumpkin setPos _pos;
 	_pumpkin setDir (random 360);  
-	
-	private _light = "#lightpoint" createVehicle position _pumpkin; 
-	[_light, 0.2] remoteExec ["setlightbrightness",0,true]; 
-	[_light, [1,0.3,0.1]] remoteExec ["setlightcolor",0,true]; 
-	[_light, [0.8,0.3,0.1]] remoteExec ["setlightambient",0,true];
 	
 	[
 		_pumpkin, 
@@ -28,12 +28,7 @@ for "_i" from 0 to 6 do { //Spawn 7 Pumpkins
 		{},
 		{},  
 		{
-			private _fakePumpkin = "Land_Pumpkin_01_F" createVehicle [0,0,0];
-			_fakePumpkin enableSimulation false; _fakePumpkin allowDamage false;
-			_fakePumpkin setPos getPos _target;
-			_fakePumpkin setDamage 1;
-			deleteVehicle _target;
-			deleteVehicle (nearestObject [_target, "#lightpoint"]);
+			_target setDamage 1;
 			
 			private _random = random 100;
 			private _speed = 1.0;
