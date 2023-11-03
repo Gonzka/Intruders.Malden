@@ -1233,6 +1233,10 @@
 			<Original>You have unlocked the face of Martin Opterix along with custom voicelines!</Original>
 			<German>Du hast das Gesicht von Martin Opterix zusammen mit eigenen Sprecherzeilen freigeschaltet!</German>
 		</Key>
+		<Key ID="STR_SKIN_CodeLimnos">
+			<Original>You have unlocked the animation "Resurrection" on server.limnos.life!</Original>
+			<German>Du hast die Animation "Auferstehung" auf server.limnos.life freigeschaltet!</German>
+		</Key>
 		<Key ID="STR_SKIN_Drugbaron">
 			<Original>Drug Baron (Helmut Mueller)</Original>
 			<German>Drogenbaron (Helmut Mueller)</German>

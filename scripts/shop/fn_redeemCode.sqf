@@ -5,7 +5,7 @@
 */
 
 private _code = ctrlText 1003;
-private _availableCodes = ["ARMAOPTERIX"]; //PERMANENT CODES
+private _availableCodes = ["ARMAOPTERIX","LIMNOS2023"]; //PERMANENT CODES
 private _uid = getPlayerUID player;
 if (_uid in ["76561198082809482"]) then { //Gonzka
 	_availableCodes = _availableCodes + ["RESET","NEWQUEST","UPDATESHOP"]; //PERSONAL RESET CODE FOR ADMINS
@@ -42,5 +42,8 @@ profileNamespace setVariable [_code,true];
 switch (_code) do {
 	case "ARMAOPTERIX": {
 		[_code, "STR_SKIN_CodeArmaOpterix", 15, "a3\ui_f\data\gui\rsc\rscdisplayarsenal\face_ca.paa"] spawn gonzka_fnc_notification;
+	};
+	case "LIMNOS2023": {
+		[_code, "STR_SKIN_CodeLimnos", 15, "a3\ui_f_curator\data\rsccommon\rscattributepunishmentanimation\pushupslegs.paa"] spawn gonzka_fnc_notification;
 	};
 };
