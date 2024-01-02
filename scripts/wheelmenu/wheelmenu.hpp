@@ -15,7 +15,7 @@ class AlkWheel {
 			sizeEx = "safezoneW / 40";
 			type = 0;
 			style = "2048 + 48";
-			text = "\intruders_mod\ui\Ico_Intruders_ca.paa";
+			text = "\intruders_mod\textures\gui\logo.paa";
 		};
 	};
 };

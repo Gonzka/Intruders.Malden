@@ -16,7 +16,7 @@
 	["cursor1.paa",0.15,0.15] call gonzka_fnc_setWheelCursor; //Updates the cursor to cursor1.paa located in your mission folder.
 */
 
-private _image = param [0, "\intruders_mod\ui\Ico_Intruders_ca.paa",[""]];
+private _image = param [0, "\intruders_mod\textures\gui\logo.paa",[""]];
 private _w = param [1, 10,[0]];
 private _h = param [2, 10,[0]];
 

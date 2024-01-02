@@ -182,21 +182,25 @@ class Clothing {
 		};
 	};
 	
+	class Headgear_Wendigo {
+		displayname = $STR_GAME_Hats;
+		conditions = "playerSide isEqualTo east && player getVariable 'killer' isEqualTo 'wendigo'";
+		clothing[] = {};
+	};
+	
 	class Headgear_Buckethead {
 		displayname = $STR_GAME_Hats;
 		conditions = "playerSide isEqualTo east && player getVariable 'killer' isEqualTo 'buckethead'";
 		clothing[] = {
 			{ "Intruders_BucketHead", $STR_SKIN_Default, "", "", "" }, //MOD
-			{ "Intruders_BucketHead_Smile", $STR_SKIN_BucketheadSmile, "", "", "" } //MOD
+			{ "Intruders_BucketHead_Smile", "", "", "", "'Intruders_BucketHead_Smile' in (profileNamespace getVariable 'intruders_skinInventory')" } //MOD
 		};
 	};
-
+	
 	class Headgear_Trapper {
 		displayname = $STR_GAME_Hats;
 		conditions = "playerSide isEqualTo east && player getVariable 'killer' isEqualTo 'trapper'";
-		clothing[] = {
-			{ "Intruders_HockeyMask", $STR_SKIN_Default, "", "", "" } //MOD
-		};
+		clothing[] = {};
 	};
 	
 	class Goggles_Survivor {
@@ -260,6 +264,17 @@ class Clothing {
 			{ "NWTS_goggle_deer", $STR_SKIN_Default, "", "", "" }, //MOD
 			{ "NWTS_goggle_deer_bloody", $STR_SKIN_WendigoBloody, "", "", "" }, //MOD
 			{ "NWTS_goggle_deer_glow", $STR_SKIN_WendigoGlow, "", "", "" } //MOD
+		};
+	};
+	
+	class Goggles_Trapper {
+		displayname = $STR_GAME_Glasses;
+		conditions = "playerSide isEqualTo east && player getVariable 'killer' isEqualTo 'trapper'";
+		clothing[] = {
+			{ "Intruders_HockeyMask", $STR_SKIN_Default, "", "", "" }, //MOD
+			{ "Intruders_HockeyMask_black", "", "", "", "'Intruders_HockeyMask_black' in (profileNamespace getVariable 'intruders_skinInventory')" }, //MOD
+			{ "Intruders_HockeyMask_white", "", "", "", "'Intruders_HockeyMask_white' in (profileNamespace getVariable 'intruders_skinInventory')" }, //MOD
+			{ "Intruders_HockeyMask_pantomime", "", "", "", "'Intruders_HockeyMask_pantomime' in (profileNamespace getVariable 'intruders_skinInventory')" } //MOD
 		};
 	};
 	

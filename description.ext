@@ -1,10 +1,10 @@
 ﻿overviewText = "Intruders";
 overviewTextLocked = "Escape from Insanity";
-overviewPicture = "\intruders_mod\ui\background.jpg";
+overviewPicture = "\intruders_ui\data\background.jpg";
 
 onLoadName = "Intruders";
 onLoadMission = "Escape from Insanity";
-loadScreen = "\intruders_mod\ui\background.jpg";
+loadScreen = "\intruders_ui\data\background.jpg";
 author = "Gonzka";
 
 unsafeCVL = 1;
@@ -72,7 +72,7 @@ class CfgDebriefing {
 		title = "$STR_BRIEF_MatchFinished";
 		subtitle = "$STR_BRIEF_LobbyReturn";
 		description = "";
-		pictureBackground = "\intruders_mod\ui\background.jpg";
+		pictureBackground = "\intruders_ui\data\background.jpg";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};
@@ -81,7 +81,7 @@ class CfgDebriefing {
 		title = "$STR_BRIEF_KillerDisconnected";
 		subtitle = "$STR_BRIEF_LobbyReturn";
 		description = "";
-		pictureBackground = "\intruders_mod\ui\background.jpg";
+		pictureBackground = "\intruders_ui\data\background.jpg";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};
@@ -90,7 +90,7 @@ class CfgDebriefing {
 		title = "$STR_BRIEF_Goodbye";
 		subtitle = "$STR_BRIEF_LobbyReturn";
 		description = "<t align='center' size='1.1' font='PuristaMedium'>See you soon!</t><br/>";
-		pictureBackground = "\intruders_mod\ui\background.jpg";
+		pictureBackground = "\intruders_ui\data\background.jpg";
 		picture = "";
 		pictureColor[] = {1.0,1.0,1.0,1};
 	};

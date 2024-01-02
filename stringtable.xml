@@ -2,8 +2,8 @@
 <Project name="Intruders -- Project">
     <Package name="Main Menu">	
 		<Key ID="STR_MM_Version">
-			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.20.0&lt;/t&gt;</Original>
-			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.20.0&lt;/t&gt;</German>
+			<Original>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.21.0&lt;/t&gt;</Original>
+			<German>&lt;t size='1.0' font='PuristaLight' align='right'&gt;2.21.0&lt;/t&gt;</German>
 		</Key>
 		<Key ID="STR_MM_Play">
 			<Original>PLAY</Original>
@@ -1328,10 +1328,6 @@
 		<Key ID="STR_SKIN_WendigoGlow">
 			<Original>Glowing Eyes</Original>
 			<German>Glühende Augen</German>
-		</Key>
-		<Key ID="STR_SKIN_BucketheadSmile">
-			<Original>Sadistic Grin</Original>
-			<German>Sadistisches Grinsen</German>
 		</Key>
 		<Key ID="STR_SKIN_Mysterybox">
 			<Original>Mysterybox</Original>

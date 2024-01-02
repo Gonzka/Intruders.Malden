@@ -63,7 +63,13 @@ private _allSkins = [
     "B_CombinationUnitRespirator_01_F",
     "B_ViperHarness_khk_F",
     "B_ViperHarness_oli_F",
-    "B_ViperHarness_blk_F"
+    "B_ViperHarness_blk_F",
+
+    //Killer
+    "Intruders_BucketHead_Smile",
+    "Intruders_HockeyMask_black",
+    "Intruders_HockeyMask_white",
+    "Intruders_HockeyMask_pantomime"
 ];
 
 private _inventory = profileNamespace getVariable "intruders_skinInventory";
